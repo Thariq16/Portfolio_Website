@@ -94,7 +94,7 @@
     height: 64px;
     border-radius: 12px;
     overflow: hidden;
-    background: white;
+    background: var(--primary);
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -110,7 +110,7 @@
 }
 
 .logoPlaceholder {
-    color: var(--muted-foreground);
+    color: white;
 }
 
 .jobInfo {
