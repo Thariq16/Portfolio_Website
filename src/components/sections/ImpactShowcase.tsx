@@ -56,10 +56,10 @@ export default function ImpactShowcase() {
                                     >
                                         {project.category}
                                     </span>
-                                    <div className={styles.impactScore}>
+                                    {/* <div className={styles.impactScore}>
                                         <span className={styles.scoreValue}>{project.impactScore}</span>
                                         <span className={styles.scoreLabel}>/10</span>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 <h3 className={styles.projectTitle}>{project.title}</h3>
