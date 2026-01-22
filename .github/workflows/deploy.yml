@@ -37,8 +37,7 @@ jobs:
         run: npm run build
         env:
           GITHUB_PAGES: 'true'
-          # Uncomment and set if deploying to repo subdirectory:
-          # NEXT_PUBLIC_BASE_PATH: '/Portfolio_Website'
+          NEXT_PUBLIC_BASE_PATH: '/Portfolio_Website'
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
