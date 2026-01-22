@@ -84,22 +84,23 @@
 
 .jobHeader {
     display: flex;
-    gap: 1.25rem;
-    margin-bottom: 1.5rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
     align-items: flex-start;
 }
 
 .logoContainer {
-    width: 56px;
-    height: 56px;
+    width: 64px;
+    height: 64px;
     border-radius: 12px;
     overflow: hidden;
-    background: var(--muted);
+    background: white;
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    padding: 6px;
+    border: 1px solid var(--border);
 }
 
 .logo {
@@ -154,7 +155,15 @@
     font-size: 1rem;
     color: var(--muted-foreground);
     line-height: 1.7;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    gap: 1rem;
 }
 
 .caseStudyBadge {
@@ -166,7 +175,6 @@
     font-size: 0.8125rem;
     font-weight: 600;
     border-radius: 100px;
-    margin-bottom: 1.25rem;
 }
 
 .viewButton {
@@ -176,12 +184,14 @@
     font-size: 0.9375rem;
     font-weight: 500;
     color: var(--primary);
-    transition: gap 0.2s ease;
+    transition: all 0.2s ease;
     padding: 0.5rem 0;
+    margin-left: auto;
 }
 
 .viewButton:hover {
     gap: 0.75rem;
+    opacity: 0.8;
 }
 
 /* Mobile */
