@@ -11,8 +11,8 @@ export default function CareerPage() {
     const { t, locale } = useLanguage();
     const career = t.career;
 
-    // Reverse to show oldest first (career progression)
-    const jobs = [...career.jobs].reverse();
+    // Jobs are already ordered newest first in dictionary
+    const jobs = career.jobs;
 
     return (
         <main className={styles.main}>
