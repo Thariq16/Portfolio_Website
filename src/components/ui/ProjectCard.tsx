@@ -48,6 +48,10 @@ export default function ProjectCard({ item }: { item: CaseStudy }) {
                         <span className={styles.metricLabel}>{m.label}</span>
                     </div>
                 ))}
+                {/* <div className={styles.impactBadge}>
+                    <span className={styles.impactScore}>{project.impactScore}</span>
+                    <span className={styles.impactLabel}>IMPACT</span>
+                </div> */}
             </div>
 
             <p className={styles.desc}>{item.context.goal}</p>

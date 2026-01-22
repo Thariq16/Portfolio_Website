@@ -4,47 +4,48 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './page.module.css';
 import { Button } from '@/components/ui/Button';
+import { getAssetPath } from '@/utils/assets';
 
 export default function AboutPage() {
     const builderStack = [
         {
             title: 'ENGINEERING',
             tools: [
-                { name: 'Flutter', icon: '/icons/flutter.svg' },
-                { name: 'MySQL', icon: '/icons/mysql.svg' },
-                { name: 'Python', icon: '/icons/python.svg' },
+                { name: 'Flutter', icon: getAssetPath('/icons/flutter.svg') },
+                { name: 'MySQL', icon: getAssetPath('/icons/mysql.svg') },
+                { name: 'Python', icon: getAssetPath('/icons/python.svg') },
             ],
         },
         {
             title: 'AI',
             tools: [
-                { name: 'Gemini', icon: '/icons/gemini.svg' },
-                { name: 'Antigravity', icon: '/icons/antigravity.svg' },
-                { name: 'Lovable', icon: '/icons/lovable.svg' },
-                { name: 'Claude', icon: '/icons/claude.svg' },
+                { name: 'Gemini', icon: getAssetPath('/icons/gemini.svg') },
+                { name: 'Antigravity', icon: getAssetPath('/icons/antigravity.svg') },
+                { name: 'Lovable', icon: getAssetPath('/icons/lovable.svg') },
+                { name: 'Claude', icon: getAssetPath('/icons/claude.svg') },
             ],
         },
         {
             title: 'DATA',
             tools: [
-                { name: 'HotJar', icon: '/icons/hotjar.svg' },
-                { name: 'MS Clarity', icon: '/icons/clarity.svg' },
-                { name: 'GA4', icon: '/icons/ga4.svg' },
+                { name: 'HotJar', icon: getAssetPath('/icons/hotjar.svg') },
+                { name: 'MS Clarity', icon: getAssetPath('/icons/clarity.svg') },
+                { name: 'GA4', icon: getAssetPath('/icons/ga4.svg') },
             ],
         },
         {
             title: 'PM TOOLS',
             tools: [
-                { name: 'Jira', icon: '/icons/jira.svg' },
-                { name: 'ClickUp', icon: '/icons/clickup.svg' },
-                { name: 'Azure DevOps', icon: '/icons/azuredevops.svg' },
+                { name: 'Jira', icon: getAssetPath('/icons/jira.svg') },
+                { name: 'ClickUp', icon: getAssetPath('/icons/clickup.svg') },
+                { name: 'Azure DevOps', icon: getAssetPath('/icons/azuredevops.svg') },
             ],
         },
         {
             title: 'DESIGN',
             tools: [
-                { name: 'Figma', icon: '/icons/figma.svg' },
-                { name: 'Illustrator', icon: '/icons/illustrator.svg' },
+                { name: 'Figma', icon: getAssetPath('/icons/figma.svg') },
+                { name: 'Illustrator', icon: getAssetPath('/icons/illustrator.svg') },
             ],
         },
     ];
@@ -113,7 +114,7 @@ export default function AboutPage() {
                     <div className={styles.portraitColumn}>
                         <div className={styles.portraitWrapper}>
                             <Image
-                                src="/images/portrait.jpg"
+                                src={getAssetPath('/images/portrait.jpg')}
                                 alt="Thariq - Product Manager"
                                 width={400}
                                 height={500}
