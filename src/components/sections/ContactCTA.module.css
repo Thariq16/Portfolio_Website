@@ -1,0 +1,41 @@
+.section {
+    padding: 6rem 1.5rem;
+    background-color: var(--secondary);
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.headline {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    color: var(--foreground);
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.note {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .headline {
+        font-size: 3rem;
+    }
+}
