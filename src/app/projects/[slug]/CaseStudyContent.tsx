@@ -211,16 +211,16 @@ export default function CaseStudyContent() {
                     {project.media && (
                         <section className={styles.section}>
                             <h2 className={styles.heading}>9. Media & Links</h2>
-                            <div className={styles.content}>
-                                <div className="flex flex-wrap gap-4 mb-4">
+                            <div className={styles.mediaSection}>
+                                <div className={styles.mediaButtons}>
                                     {project.media.website && (
                                         <a
                                             href={project.media.website}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-lg hover:bg-primary/20 transition-colors"
+                                            className={`${styles.mediaButton} ${styles.mediaButtonWebsite}`}
                                         >
-                                            <Globe size={18} />
+                                            <Globe size={20} />
                                             Visit Website
                                         </a>
                                     )}
@@ -229,36 +229,38 @@ export default function CaseStudyContent() {
                                             href={project.media.instagram}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500/10 to-pink-500/10 text-pink-600 rounded-lg hover:from-purple-500/20 hover:to-pink-500/20 transition-colors"
+                                            className={`${styles.mediaButton} ${styles.mediaButtonInstagram}`}
                                         >
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
                                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                                                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                                             </svg>
-                                            Follow on Instagram
+                                            Follow @chonk.sl
                                         </a>
                                     )}
                                 </div>
                                 {project.media.images && project.media.images.length > 0 && (
-                                    <div className="mt-4">
-                                        <p className="text-sm text-muted-foreground mb-3">Featured Media:</p>
-                                        <div className="flex flex-wrap gap-4">
+                                    <>
+                                        <p className={styles.featuredMediaTitle}>Featured Media</p>
+                                        <div className={styles.mediaCards}>
                                             {project.media.images.map((img: { url: string; caption: string }, idx: number) => (
                                                 <a
                                                     key={idx}
                                                     href={img.url}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="group block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors"
+                                                    className={styles.mediaCard}
                                                 >
-                                                    <span className="text-sm text-foreground group-hover:text-primary transition-colors">
-                                                        📸 {img.caption}
-                                                    </span>
+                                                    <span className={styles.mediaCardIcon}>📸</span>
+                                                    <div className={styles.mediaCardContent}>
+                                                        <span className={styles.mediaCardCaption}>{img.caption}</span>
+                                                        <span className={styles.mediaCardLink}>View on Instagram →</span>
+                                                    </div>
                                                 </a>
                                             ))}
                                         </div>
-                                    </div>
+                                    </>
                                 )}
                             </div>
                         </section>
