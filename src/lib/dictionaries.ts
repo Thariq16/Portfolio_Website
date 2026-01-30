@@ -84,7 +84,7 @@ export const dictionary = {
             subheadline: 'Founding experience in SaaS & AI Platforms. 8+ years driving revenue, monetization, and growth for global distributed teams.',
             ctaPrimary: 'Schedule Intro Call',
             ctaSecondary: 'View Case Studies',
-            location: 'Based in Medina, Al Madinah, Saudi Arabia (Iqama Transferable)',
+            location: 'Based in Riyadh, Saudi Arabia (Iqama Transferable)',
         },
         trust: {
             title: 'Trusted by leading tech companies',
@@ -132,7 +132,7 @@ export const dictionary = {
                     ],
                     context: {
                         goal: 'Optimise monetization and value articulation for Enterprise B2B SaaS.',
-                        details: 'Fortude operates in a competitive B2B SaaS analytics market. The core challenge was not demand generation, but **inefficient monetization** and **unclear value articulation**, leading to **stalled deals** and **underperforming acquisition spend** despite long sales cycles.',
+                        details: '[Fortude](https://www.fortude.io) operates in a competitive B2B SaaS analytics market. The core challenge was not demand generation, but **inefficient monetization** and **unclear value articulation**, leading to **stalled deals** and **underperforming acquisition spend** despite long sales cycles. Products include the AI assistant Charlie and testing tool [Fortest.io](https://www.fortest.io).',
                     },
                     role: {
                         details: 'Owned **product strategy for monetization** and growth initiatives, pricing validation, and cross-functional alignment. Worked closely with **Sales leadership** (deal insights), **Marketing** (GTM execution), and **Engineering** (pricing/gating).',
@@ -184,7 +184,7 @@ export const dictionary = {
                     ],
                     context: {
                         goal: 'The business needed to move from reactive issue resolution to proactive value delivery.',
-                        details: 'Sling Mobility operated a B2B mobility platform where customer churn was being driven by unexpected downtime and delayed issue detection. While the platform collected large volumes of operational data, it was not being translated into timely, actionable insights, resulting in **customer frustration** and **preventable revenue loss**.',
+                        details: '[Sling Mobility](https://www.slingmobility.com) operated a B2B mobility platform where customer churn was being driven by unexpected downtime and delayed issue detection. While the platform collected large volumes of operational data, it was not being translated into timely, actionable insights, resulting in **customer frustration** and **preventable revenue loss**.',
                     },
                     role: {
                         details: 'Owned **product strategy for retention-focused initiatives**, definition of the **data feedback loop** and alerting model, and prioritisation. Collaborated closely with Engineering on data pipelines, Operations on real-world failure patterns, and Leadership on **retention and revenue targets**.',
@@ -235,7 +235,7 @@ export const dictionary = {
                         { label: 'Engagement', value: 'Strong' },
                     ],
                     context: {
-                        goal: 'FieldR was created to serve athletes and sports communities that lacked accessible, actionable performance insights.',
+                        goal: '[FieldR](https://www.fieldr.lk) was created to serve athletes and sports communities that lacked accessible, actionable performance insights.',
                         details: 'The challenge was twofold: Validate whether users would **consistently use analytics tools** and prove whether they would **pay for them**. This required **tight feedback loops** and **disciplined scope control**.',
                     },
                     role: {
@@ -267,6 +267,58 @@ export const dictionary = {
                         badges: [
                             { value: '80% Conversion', label: 'Checkout Conversion', description: 'Optimized checkout flow using A/B testing and user research.' },
                             { value: '5M LKR Revenue', label: 'Annual Revenue', description: 'Scaled from zero to profitability within 18 months of launch.' }
+                        ]
+                    },
+                },
+                {
+                    slug: 'chonk-cookies-d2c',
+                    title: 'Chonk Cookies — Launching a D2C Brand from Zero-to-One',
+                    company: 'Chonk Cookies',
+                    logo: '',
+                    website: 'https://www.chonk.lk',
+                    market: 'D2C Food & Beverage | Social Commerce',
+                    timeframe: 'Mar 2024 – Dec 2025',
+                    category: 'Marketing' as CaseStudyCategory,
+                    impactScore: 8,
+                    jobSlug: '',
+                    metrics: [
+                        { label: 'ARR', value: 'SAR 30K' },
+                        { label: 'Channel', value: '100% Digital' },
+                        { label: 'Retention', value: 'High Repeat' },
+                    ],
+                    context: {
+                        goal: 'Test my ability to identify a global food trend and capture a local market with zero traditional advertising budget.',
+                        details: 'I wanted to build a premium Direct-to-Consumer (D2C) brand using only social commerce and data-driven optimization. The challenge was to **create market demand** and **build a loyal customer base** without any traditional advertising spend.',
+                    },
+                    role: {
+                        details: 'As founder, I owned **end-to-end brand strategy**, from market positioning to digital operations. Managed all aspects of **performance marketing**, **e-commerce**, and **community building**.',
+                    },
+                    constraints: {
+                        details: '**Zero traditional advertising budget**. Reliance on organic reach and social commerce. Need to compete with established dessert brands. Required **high visual appeal** to drive Instagram-first sales.',
+                    },
+                    discovery: {
+                        details: 'Identified a gap in the premium dessert market. Research showed that **"Instagrammable" experiences** drove significant organic reach. Keyword-based content strategy could boost visibility across social algorithms and AI-driven search engines.',
+                    },
+                    decisions: {
+                        details: 'Positioned Chonk as a **high-end, "Instagrammable" experience**. Adopted a **100% digital-first approach** with Instagram as the primary sales engine. Developed keyword-based content strategy for algorithm visibility.',
+                    },
+                    execution: {
+                        details: '**Performance Marketing:** Executed targeted Instagram ad campaigns through Meta Business Suite for pop-up events and product drops.\n\n**Conversion Optimization:** Used Microsoft Clarity and Google Analytics to map user flows, identifying and fixing friction points in mobile checkout.\n\n**Digital Operations:** Built end-to-end digital ecosystem from e-commerce storefront to automated customer communications.',
+                    },
+                    outcomes: {
+                        details: 'Achieved **SAR 30,000 Annual Recurring Revenue (ARR)** within the first year. Built a loyal community with **high repeat-customer rate** through active direct engagement. Successfully transitioned digital interest into **physical sales at high-traffic pop-up stalls** across Colombo. Selected as **[Top 28 finalist](https://ventureengine.lk)** at [Lanka Angel Network](https://www.lankaaangelnetwork.com)\'s Venture Engine pitch competition. Follow our journey on [Instagram @chonk.sl](https://www.instagram.com/chonk.sl/).',
+                    },
+                    learnings: {
+                        repeat: '**Community-first approach** created sustainable organic growth without paid advertising dependency.',
+                        change: 'Would invest earlier in **automated fulfillment** to scale physical distribution faster.',
+                    },
+                    featured: {
+                        headline: 'D2C Brand Launch with Zero Ad Budget',
+                        tag: 'Social Commerce',
+                        outcome: 'Built a premium dessert brand using only social commerce and data-driven optimization.',
+                        badges: [
+                            { value: 'SAR 30K ARR', label: 'Annual Revenue', description: 'Achieved within the first year through social commerce.' },
+                            { value: 'High Retention', label: 'Repeat Customers', description: 'Built loyal community through direct engagement.' }
                         ]
                     },
                 },
@@ -435,7 +487,7 @@ export const dictionary = {
             subheadline: 'أكثر من 8 سنوات في زيادة الإيرادات والنمو لفرق عالمية موزعة.',
             ctaPrimary: 'احجز مكالمة تعارف',
             ctaSecondary: 'عرض دراسات الحالة',
-            location: 'مقرها المدينة المنورة، المملكة العربية السعودية (إقامة قابلة للتحويل)',
+            location: 'مقرها الرياض، المملكة العربية السعودية (إقامة قابلة للتحويل)',
         },
         trust: {
             title: 'موثوق به لدى شركات التكنولوجيا الرائدة',
@@ -595,6 +647,49 @@ export const dictionary = {
                     learnings: {
                         repeat: 'التركيز الشديد على "ميزة قاتلة" واحدة.',
                         change: 'التركيز على شريحة المؤسسات في وقت أقرب.',
+                    },
+                },
+                {
+                    slug: 'chonk-cookies-d2c',
+                    title: 'Chonk Cookies — إطلاق علامة D2C من الصفر',
+                    company: 'Chonk Cookies',
+                    logo: '',
+                    website: 'https://www.chonk.lk',
+                    market: 'الأغذية والمشروبات | التجارة الاجتماعية',
+                    timeframe: 'مارس 2024 – ديسمبر 2025',
+                    category: 'Marketing' as CaseStudyCategory,
+                    impactScore: 8,
+                    jobSlug: '',
+                    metrics: [
+                        { label: 'الإيرادات السنوية', value: '30 ألف ريال' },
+                        { label: 'القناة', value: '100% رقمي' },
+                        { label: 'الاحتفاظ', value: 'تكرار عالي' },
+                    ],
+                    context: {
+                        goal: 'اختبار قدرتي على تحديد اتجاه غذائي عالمي والاستحواذ على سوق محلي بدون ميزانية إعلانية.',
+                        details: 'أردت بناء علامة تجارية مباشرة للمستهلك (D2C) باستخدام التجارة الاجتماعية والتحسين المبني على البيانات فقط.',
+                    },
+                    role: {
+                        details: 'كمؤسس، امتلكت استراتيجية العلامة التجارية من البداية للنهاية، من التموضع السوقي إلى العمليات الرقمية.',
+                    },
+                    constraints: {
+                        details: 'صفر ميزانية إعلانية تقليدية. الاعتماد على الوصول العضوي والتجارة الاجتماعية.',
+                    },
+                    discovery: {
+                        details: 'تحديد فجوة في سوق الحلويات الفاخرة. أظهر البحث أن التجارب "القابلة للنشر على Instagram" تدفع وصولاً عضوياً كبيراً.',
+                    },
+                    decisions: {
+                        details: 'تموضع Chonk كتجربة فاخرة "قابلة للنشر على Instagram". اعتماد نهج رقمي 100% مع Instagram كمحرك مبيعات رئيسي.',
+                    },
+                    execution: {
+                        details: 'التسويق الأدائي عبر Meta Business Suite. تحسين التحويل باستخدام Microsoft Clarity وGoogle Analytics.',
+                    },
+                    outcomes: {
+                        details: 'تحقيق 30,000 ريال سعودي إيرادات سنوية متكررة. بناء مجتمع مخلص مع معدل تكرار عملاء عالي. اختيارها ضمن **أفضل 28 متسابق** في مسابقة Venture Engine من Lanka Angel Network.',
+                    },
+                    learnings: {
+                        repeat: 'نهج المجتمع أولاً يخلق نمواً عضوياً مستداماً.',
+                        change: 'الاستثمار المبكر في التوصيل الآلي.',
                     },
                 },
             ] as CaseStudy[],
