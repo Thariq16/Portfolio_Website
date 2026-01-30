@@ -8,6 +8,7 @@ import { Calendar, ArrowLeft, Globe } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './page.module.css';
+import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/JsonLd';
 
 export default function CaseStudyContent() {
     const { t, locale } = useLanguage();
@@ -64,6 +65,21 @@ export default function CaseStudyContent() {
 
     return (
         <main className={styles.main}>
+            {/* JSON-LD Structured Data */}
+            <ArticleSchema
+                title={project.title}
+                description={project.context?.goal || project.title}
+                url={`https://thariq16.github.io/Portfolio_Website/projects/${slug}`}
+                author="Thariq Hamad"
+            />
+            <BreadcrumbSchema
+                items={[
+                    { name: 'Home', url: 'https://thariq16.github.io/Portfolio_Website' },
+                    { name: 'Case Studies', url: 'https://thariq16.github.io/Portfolio_Website/projects' },
+                    { name: project.company, url: `https://thariq16.github.io/Portfolio_Website/projects/${slug}` },
+                ]}
+            />
+
             {/* Navigation Back */}
             <div className="container py-8">
                 <Link href="/projects" className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-foreground">
