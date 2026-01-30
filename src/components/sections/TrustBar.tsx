@@ -3,6 +3,7 @@
 import React from 'react';
 import styles from './TrustBar.module.css';
 import { useLanguage } from '@/components/providers/LanguageProvider';
+import { getAssetPath } from '@/utils/assets';
 
 import Image from 'next/image';
 
@@ -10,7 +11,7 @@ const companies = [
     { name: 'Fortude', url: '#', logo: '/logos/fortude.png' },
     { name: 'Sling Mobility', url: '#', logo: '/logos/sling.svg' },
     { name: 'FieldR', url: '#', logo: '/logos/fieldr.png' },
-    { name: 'MillenniumIT', url: '#' },
+    { name: 'MillenniumIT', url: '#', logo: '/logos/millenniumit.svg' },
 ];
 
 export default function TrustBar() {
@@ -27,7 +28,7 @@ export default function TrustBar() {
                                 {company.logo ? (
                                     <div className={styles.logoWrapper}>
                                         <Image
-                                            src={company.logo}
+                                            src={getAssetPath(company.logo)}
                                             alt={company.name}
                                             width={140}
                                             height={50}
