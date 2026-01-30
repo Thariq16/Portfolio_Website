@@ -22,12 +22,43 @@ export default function CaseStudyContent() {
     }
 
     const formatText = (text: string) => {
-        const parts = text.split(/(\*\*.*?\*\*)/g);
-        return parts.map((part, index) => {
-            if (part.startsWith('**') && part.endsWith('**')) {
-                return <strong key={index} className="font-bold text-primary">{part.slice(2, -2)}</strong>;
+        // First, handle links [text](url) then bold **text**
+        const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+        const boldRegex = /\*\*(.*?)\*\*/g;
+
+        // Split by links first
+        const parts: React.ReactNode[] = [];
+        let lastIndex = 0;
+        let match;
+
+        const textWithLinks = text.replace(linkRegex, '___LINK_START___$1___LINK_SEP___$2___LINK_END___');
+        const segments = textWithLinks.split(/(___LINK_START___.*?___LINK_END___)/g);
+
+        return segments.map((segment, index) => {
+            if (segment.startsWith('___LINK_START___')) {
+                const linkMatch = segment.match(/___LINK_START___(.*)___LINK_SEP___(.*)___LINK_END___/);
+                if (linkMatch) {
+                    return (
+                        <a
+                            key={index}
+                            href={linkMatch[2]}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary underline hover:text-primary/80"
+                        >
+                            {linkMatch[1]}
+                        </a>
+                    );
+                }
             }
-            return part;
+            // Handle bold within non-link segments
+            const boldParts = segment.split(/(\*\*.*?\*\*)/g);
+            return boldParts.map((part, i) => {
+                if (part.startsWith('**') && part.endsWith('**')) {
+                    return <strong key={`${index}-${i}`} className="font-bold text-primary">{part.slice(2, -2)}</strong>;
+                }
+                return part;
+            });
         });
     };
 
@@ -159,6 +190,63 @@ export default function CaseStudyContent() {
                             </div>
                         </div>
                     </section>
+
+                    {/* 9. Media & Links (if available) */}
+                    {project.media && (
+                        <section className={styles.section}>
+                            <h2 className={styles.heading}>9. Media & Links</h2>
+                            <div className={styles.content}>
+                                <div className="flex flex-wrap gap-4 mb-4">
+                                    {project.media.website && (
+                                        <a
+                                            href={project.media.website}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-lg hover:bg-primary/20 transition-colors"
+                                        >
+                                            <Globe size={18} />
+                                            Visit Website
+                                        </a>
+                                    )}
+                                    {project.media.instagram && (
+                                        <a
+                                            href={project.media.instagram}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500/10 to-pink-500/10 text-pink-600 rounded-lg hover:from-purple-500/20 hover:to-pink-500/20 transition-colors"
+                                        >
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                                            </svg>
+                                            Follow on Instagram
+                                        </a>
+                                    )}
+                                </div>
+                                {project.media.images && project.media.images.length > 0 && (
+                                    <div className="mt-4">
+                                        <p className="text-sm text-muted-foreground mb-3">Featured Media:</p>
+                                        <div className="flex flex-wrap gap-4">
+                                            {project.media.images.map((img: { url: string; caption: string }, idx: number) => (
+                                                <a
+                                                    key={idx}
+                                                    href={img.url}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="group block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors"
+                                                >
+                                                    <span className="text-sm text-foreground group-hover:text-primary transition-colors">
+                                                        📸 {img.caption}
+                                                    </span>
+                                                </a>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+                        </section>
+                    )}
                 </div>
 
                 {/* CTA */}

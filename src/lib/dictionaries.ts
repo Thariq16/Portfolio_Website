@@ -68,6 +68,11 @@ export interface CaseStudy {
             description: string;
         }[];
     };
+    media?: {
+        website?: string;
+        instagram?: string;
+        images?: { url: string; caption: string }[];
+    };
 }
 
 export const dictionary = {
@@ -319,6 +324,13 @@ export const dictionary = {
                         badges: [
                             { value: 'SAR 30K ARR', label: 'Annual Revenue', description: 'Achieved within the first year through social commerce.' },
                             { value: 'High Retention', label: 'Repeat Customers', description: 'Built loyal community through direct engagement.' }
+                        ]
+                    },
+                    media: {
+                        website: 'https://www.chonk.lk',
+                        instagram: 'https://www.instagram.com/chonk.sl/',
+                        images: [
+                            { url: 'https://www.instagram.com/p/DNNZnoaRfKS/', caption: 'Pitching at Venture Engine 2024' }
                         ]
                     },
                 },
