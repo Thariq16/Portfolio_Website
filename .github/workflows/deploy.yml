@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy Next.js site to Pages
 
 on:
   push:
@@ -20,25 +20,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
       - name: Install dependencies
         run: npm ci
-
-      - name: Build
+      - name: Build with Next.js
         run: npm run build
-        env:
-          GITHUB_PAGES: 'true'
-          NEXT_PUBLIC_BASE_PATH: '/Portfolio_Website'
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -54,3 +43,9 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Ping Google Search Console
+        run: |
+          curl "http://www.google.com/ping?sitemap=https://thariqhamad.com/sitemap.xml" || exit 0
+      - name: Ping Bing
+        run: |
+          curl "http://www.bing.com/ping?sitemap=https://thariqhamad.com/sitemap.xml" || exit 0
