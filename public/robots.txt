@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://thariq16.github.io/Portfolio_Website/sitemap.xml
+Sitemap: https://thariqhamad.com/sitemap.xml
 
 # Crawl-delay (optional, be courteous to servers)
 Crawl-delay: 1
