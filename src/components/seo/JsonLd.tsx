@@ -158,11 +158,6 @@ export function WebsiteSchema({ name, url, description }: WebsiteSchemaProps) {
         name,
         url,
         description,
-        potentialAction: {
-            '@type': 'SearchAction',
-            target: `${url}/projects?q={search_term_string}`,
-            'query-input': 'required name=search_term_string',
-        },
     };
 
     return (

@@ -1,0 +1,322 @@
+/* EventManagement.module.css */
+
+.section {
+    padding: 100px 0;
+    background: #0c0d10;
+    position: relative;
+    overflow: hidden;
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(245, 158, 11, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ── Header ── */
+.header {
+    max-width: 680px;
+    margin: 0 0 64px;
+}
+
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #f59e0b;
+    margin-bottom: 16px;
+}
+
+.eyebrowDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #f59e0b;
+    box-shadow: 0 0 8px #f59e0b;
+}
+
+.title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0 0 16px;
+}
+
+.subtitle {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: #8b9ab0;
+    margin: 0;
+}
+
+/* ── Stats Grid ── */
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 72px;
+}
+
+.statCard {
+    background: rgba(245, 158, 11, 0.04);
+    border: 1px solid rgba(245, 158, 11, 0.12);
+    border-radius: 14px;
+    padding: 24px 20px;
+    text-align: center;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+}
+
+.statCard:hover {
+    background: rgba(245, 158, 11, 0.08);
+    border-color: rgba(245, 158, 11, 0.25);
+    transform: translateY(-3px);
+}
+
+.statIcon {
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+    background: rgba(245, 158, 11, 0.12);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f59e0b;
+    margin: 0 auto 14px;
+}
+
+.statValue {
+    font-size: 1.625rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 6px;
+}
+
+.statLabel {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #c8b08a;
+    margin-bottom: 4px;
+}
+
+.statSub {
+    font-size: 11px;
+    color: #4a5060;
+}
+
+/* ── Timeline ── */
+.timelineWrapper {
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    padding: 48px;
+    background: rgba(255, 255, 255, 0.015);
+}
+
+.timelineHeader {
+    margin-bottom: 48px;
+}
+
+.timelineTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #e8f0fe;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+}
+
+.timelineSubtitle {
+    font-size: 0.9rem;
+    color: #5a6a7a;
+    margin: 0;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.timelineItem {
+    display: grid;
+    grid-template-columns: 180px 40px 1fr;
+    gap: 0 16px;
+    align-items: flex-start;
+    padding-bottom: 36px;
+    position: relative;
+}
+
+.timelineItem:last-child {
+    padding-bottom: 0;
+}
+
+/* ── Timeline Left (Period) ── */
+.timelineLeft {
+    padding-top: 2px;
+    text-align: right;
+}
+
+.timelinePeriod {
+    font-size: 11px;
+    font-weight: 600;
+    color: #4a5a6a;
+    letter-spacing: 0.04em;
+    line-height: 1.4;
+}
+
+/* ── Timeline Dot & Line ── */
+.timelineDot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4px;
+    position: relative;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(245, 158, 11, 0.3);
+    border: 2px solid rgba(245, 158, 11, 0.5);
+    flex-shrink: 0;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.topRole .dot {
+    width: 14px;
+    height: 14px;
+    background: #f59e0b;
+    border-color: #f59e0b;
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.5);
+}
+
+.line {
+    width: 1.5px;
+    flex: 1;
+    min-height: 40px;
+    background: linear-gradient(to bottom, rgba(245, 158, 11, 0.2), rgba(245, 158, 11, 0.05));
+    margin-top: 6px;
+}
+
+/* ── Timeline Content ── */
+.timelineContent {
+    padding-top: 0;
+    padding-bottom: 8px;
+}
+
+.timelineRole {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: #d8e8f8;
+    margin-bottom: 3px;
+    letter-spacing: -0.01em;
+}
+
+.topRole .timelineRole {
+    color: #fbbf24;
+}
+
+.timelineOrg {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #7a8a9a;
+    margin-bottom: 8px;
+}
+
+.timelineHighlight {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    color: #5a6a7a;
+    margin: 0 0 10px;
+}
+
+.topRole .timelineHighlight {
+    color: #7a8a9a;
+}
+
+.topBadge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #f59e0b;
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    padding: 3px 10px;
+    border-radius: 999px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 72px 0;
+    }
+
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timelineWrapper {
+        padding: 28px 20px;
+    }
+
+    .timelineItem {
+        grid-template-columns: 0 24px 1fr;
+    }
+
+    .timelineLeft {
+        display: none;
+    }
+
+    .timelinePeriod {
+        display: none;
+    }
+
+    .timelineContent::before {
+        content: attr(data-period);
+        display: block;
+        font-size: 11px;
+        font-weight: 600;
+        color: #4a5a6a;
+        margin-bottom: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .statsGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .statValue {
+        font-size: 1.375rem;
+    }
+}

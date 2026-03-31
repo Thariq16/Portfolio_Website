@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { useLanguage } from '@/components/providers/LanguageProvider';
 import { ArrowRight, Briefcase, Calendar } from 'lucide-react';
 import styles from './page.module.css';
+import { BreadcrumbSchema } from '@/components/seo/JsonLd';
 
 export default function CareerPage() {
     const { t, locale } = useLanguage();
@@ -16,6 +17,10 @@ export default function CareerPage() {
 
     return (
         <main className={styles.main}>
+            <BreadcrumbSchema items={[
+                { name: 'Home', url: 'https://thariqhamad.com' },
+                { name: 'Career', url: 'https://thariqhamad.com/career' },
+            ]} />
             <div className="container">
                 <header className={styles.header}>
                     <h1 className={styles.title}>{career.title}</h1>

@@ -69,14 +69,14 @@ export default function CaseStudyContent() {
             <ArticleSchema
                 title={project.title}
                 description={project.context?.goal || project.title}
-                url={`https://thariq16.github.io/Portfolio_Website/projects/${slug}`}
+                url={`https://thariqhamad.com/projects/${slug}`}
                 author="Thariq Hamad"
             />
             <BreadcrumbSchema
                 items={[
-                    { name: 'Home', url: 'https://thariq16.github.io/Portfolio_Website' },
-                    { name: 'Case Studies', url: 'https://thariq16.github.io/Portfolio_Website/projects' },
-                    { name: project.company, url: `https://thariq16.github.io/Portfolio_Website/projects/${slug}` },
+                    { name: 'Home', url: 'https://thariqhamad.com' },
+                    { name: 'Case Studies', url: 'https://thariqhamad.com/projects' },
+                    { name: project.company, url: `https://thariqhamad.com/projects/${slug}` },
                 ]}
             />
 

@@ -2,11 +2,14 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'About',
-    description: 'Learn about Thariq Hamad, Senior Product Manager specializing in SaaS, AI products, and revenue growth. Founder of FieldR and Chonk Cookies, based in Riyadh, Saudi Arabia.',
+    description: 'The story behind Thariq Hamad — Senior PM, football performance analyst at Glacis United FC, and former Rotaract Club President. Builder of SaaS products, custom analysis platforms, and community programmes across Sri Lanka & the GCC.',
+    alternates: {
+        canonical: '/about',
+    },
     openGraph: {
         title: 'About Thariq Hamad | Senior Product Manager',
-        description: 'Learn about Thariq Hamad, Senior Product Manager with 8+ years experience in SaaS & AI platforms.',
-        url: 'https://thariq16.github.io/Portfolio_Website/about',
+        description: 'Senior PM. Football Performance Analyst. Rotaract Club President. 8+ years building products across SaaS, AI & the GCC.',
+        url: 'https://thariqhamad.com/about',
     },
 };
 

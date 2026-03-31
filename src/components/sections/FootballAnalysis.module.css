@@ -1,0 +1,280 @@
+/* FootballAnalysis.module.css */
+
+.section {
+    position: relative;
+    padding: 100px 0;
+    background: #050e1a;
+    overflow: hidden;
+}
+
+/* ── Pitch decoration ── */
+.pitchLines {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.04;
+}
+
+.pitchCircle {
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    transform: translateY(-50%);
+    width: 520px;
+    height: 520px;
+    border: 1.5px solid #10b981;
+    border-radius: 50%;
+}
+
+.pitchHalfLine {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: calc(10% + 260px - 0.75px);
+    width: 1.5px;
+    background: #10b981;
+}
+
+.pitchArc {
+    position: absolute;
+    top: 50%;
+    right: calc(10% + 520px);
+    transform: translateY(-50%);
+    width: 180px;
+    height: 300px;
+    border: 1.5px solid #10b981;
+    border-left: none;
+    border-radius: 0 999px 999px 0;
+}
+
+/* ── Layout ── */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ── Header ── */
+.header {
+    max-width: 680px;
+    margin: 0 0 64px;
+}
+
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #10b981;
+    margin-bottom: 16px;
+}
+
+.eyebrowDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #10b981;
+    box-shadow: 0 0 8px #10b981;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(0.8); }
+}
+
+.title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0 0 16px;
+}
+
+.subtitle {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: #8b9ab0;
+    margin: 0;
+}
+
+/* ── Capability Cards Grid ── */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 56px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(16, 185, 129, 0.12);
+    border-radius: 16px;
+    padding: 28px;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+    cursor: default;
+}
+
+.card:hover {
+    background: rgba(16, 185, 129, 0.06);
+    border-color: rgba(16, 185, 129, 0.28);
+    transform: translateY(-3px);
+}
+
+.cardTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.iconBox {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #10b981;
+}
+
+.badge {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #10b981;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    padding: 3px 10px;
+    border-radius: 999px;
+}
+
+.cardTitle {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #e8f0fe;
+    margin: 0 0 10px;
+    letter-spacing: -0.01em;
+}
+
+.cardDesc {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #7a8a9e;
+    margin: 0 0 18px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tag {
+    font-size: 11px;
+    font-weight: 500;
+    color: #4a6a5a;
+    background: rgba(16, 185, 129, 0.05);
+    border: 1px solid rgba(16, 185, 129, 0.1);
+    padding: 3px 9px;
+    border-radius: 6px;
+}
+
+/* ── Credentials Bar ── */
+.credBar {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 28px;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 14px;
+    flex-wrap: wrap;
+}
+
+.credLabel {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #4a5a6a;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.credList {
+    display: flex;
+    gap: 32px;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.credItem {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.credName {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #d1dce8;
+}
+
+.credMeta {
+    font-size: 11px;
+    color: #4a5a6a;
+}
+
+.credLink {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #10b981;
+    text-decoration: none;
+    flex-shrink: 0;
+    transition: opacity 0.2s;
+}
+
+.credLink:hover {
+    opacity: 0.75;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .section {
+        padding: 72px 0;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .credBar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .credList {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .pitchCircle,
+    .pitchHalfLine,
+    .pitchArc {
+        display: none;
+    }
+}

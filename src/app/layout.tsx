@@ -15,14 +15,14 @@ export const metadata: Metadata = {
   keywords: ['Product Manager', 'Senior PM', 'SaaS', 'AI Products', 'GCC', 'Saudi Arabia', 'Riyadh', 'Product Strategy', 'Revenue Growth', 'Startup', 'Enterprise'],
   authors: [{ name: 'Thariq Hamad' }],
   creator: 'Thariq Hamad',
-  metadataBase: new URL('https://thariq16.github.io/Portfolio_Website'),
+  metadataBase: new URL('https://thariqhamad.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://thariq16.github.io/Portfolio_Website',
+    url: 'https://thariqhamad.com',
     siteName: 'Thariq Hamad - Product Manager Portfolio',
     title: 'Thariq Hamad | Senior Product Manager',
     description: 'Senior Product Manager with 8+ years driving revenue, monetization, and growth for SaaS & AI platforms. Based in Riyadh, Saudi Arabia.',

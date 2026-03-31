@@ -1,0 +1,376 @@
+/* /football/page.module.css */
+
+.main {
+    min-height: 100vh;
+}
+
+/* ──────────────────────────────────── */
+/* HERO                                 */
+/* ──────────────────────────────────── */
+.hero {
+    position: relative;
+    padding: 120px 0 80px;
+    background: #050e1a;
+    overflow: hidden;
+}
+
+/* Pitch decoration */
+.pitchLines {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+}
+.pitchCircle {
+    position: absolute;
+    top: 50%;
+    right: -8%;
+    transform: translateY(-50%);
+    width: 480px;
+    height: 480px;
+    border: 1.5px solid #10b981;
+    border-radius: 50%;
+}
+.pitchHalfLine {
+    position: absolute;
+    top: 0; bottom: 0;
+    right: calc(8% + 240px - 0.75px);
+    width: 1.5px;
+    background: #10b981;
+}
+.pitchArc {
+    position: absolute;
+    top: 50%;
+    right: calc(8% + 480px);
+    transform: translateY(-50%);
+    width: 160px;
+    height: 280px;
+    border: 1.5px solid #10b981;
+    border-left: none;
+    border-radius: 0 999px 999px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #4a5a6a;
+    margin-bottom: 32px;
+}
+.breadcrumb a { color: #4a5a6a; text-decoration: none; }
+.breadcrumb a:hover { color: #10b981; }
+.breadcrumb span { color: #10b981; }
+
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #10b981;
+    margin-bottom: 20px;
+}
+.eyebrowDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #10b981;
+    box-shadow: 0 0 8px #10b981;
+    animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(0.8); }
+}
+
+.heroTitle {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.035em;
+    line-height: 1.05;
+    margin: 0 0 24px;
+}
+
+.heroSubtitle {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: #8b9ab0;
+    max-width: 720px;
+    margin: 0 0 48px;
+}
+
+/* Cred bar */
+.credBar {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-top: 32px;
+    border-top: 1px solid rgba(16, 185, 129, 0.12);
+}
+.credItem {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.credName {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #e8f0fe;
+}
+.credMeta {
+    font-size: 12px;
+    color: #4a5a6a;
+}
+
+/* ──────────────────────────────────── */
+/* CAPABILITIES                         */
+/* ──────────────────────────────────── */
+.capSection {
+    padding: 100px 0;
+    background: #070f1c;
+}
+
+.sectionHeader {
+    margin-bottom: 48px;
+}
+.sectionTitle {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    margin: 0 0 8px;
+}
+.sectionSub {
+    font-size: 0.9375rem;
+    color: #5a6a7a;
+    margin: 0;
+}
+
+.capGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.capCard {
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(16, 185, 129, 0.1);
+    border-radius: 16px;
+    padding: 28px;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+.capCard:hover {
+    background: rgba(16, 185, 129, 0.05);
+    border-color: rgba(16, 185, 129, 0.25);
+    transform: translateY(-3px);
+}
+
+.capTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.capIcon {
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.18);
+    display: flex; align-items: center; justify-content: center;
+    color: #10b981;
+}
+.capBadge {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #10b981;
+    background: rgba(16, 185, 129, 0.08);
+    border: 1px solid rgba(16, 185, 129, 0.18);
+    padding: 3px 10px;
+    border-radius: 999px;
+}
+.capTitle {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: #e8f0fe;
+    margin: 0 0 10px;
+}
+.capDesc {
+    font-size: 0.875rem;
+    line-height: 1.75;
+    color: #7a8a9e;
+    margin: 0 0 16px;
+}
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag {
+    font-size: 11px;
+    font-weight: 500;
+    color: #3a5a4a;
+    background: rgba(16, 185, 129, 0.04);
+    border: 1px solid rgba(16, 185, 129, 0.1);
+    padding: 3px 9px;
+    border-radius: 6px;
+}
+
+/* ──────────────────────────────────── */
+/* EXPERIENCE                           */
+/* ──────────────────────────────────── */
+.expSection {
+    padding: 100px 0;
+    background: #050e1a;
+    border-top: 1px solid rgba(16, 185, 129, 0.06);
+}
+
+.expList {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.expCard {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 48px;
+    padding: 36px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    transition: border-color 0.25s ease;
+}
+.expCard:hover {
+    border-color: rgba(16, 185, 129, 0.18);
+}
+
+.expLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.expRole {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #e8f0fe;
+    letter-spacing: -0.01em;
+}
+.expOrg {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #10b981;
+}
+.expMeta {
+    font-size: 12px;
+    color: #4a5a6a;
+    line-height: 1.5;
+}
+
+.expBullets {
+    list-style: none;
+    padding: 0; margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.expBullet {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: #7a8a9e;
+}
+.bulletDot {
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: #10b981;
+    margin-top: 8px;
+    flex-shrink: 0;
+}
+
+/* ──────────────────────────────────── */
+/* GCC AMBITION                         */
+/* ──────────────────────────────────── */
+.gcSection {
+    padding: 80px 0;
+    background: #070f1c;
+    border-top: 1px solid rgba(16, 185, 129, 0.06);
+}
+
+.gcCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    padding: 48px;
+    background: rgba(16, 185, 129, 0.04);
+    border: 1px solid rgba(16, 185, 129, 0.15);
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+.gcLeft { flex: 1; min-width: 280px; }
+.gcEyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #10b981;
+    margin-bottom: 12px;
+}
+.gcTitle {
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin: 0 0 16px;
+}
+.gcDesc {
+    font-size: 0.9375rem;
+    line-height: 1.75;
+    color: #7a8a9e;
+    margin: 0;
+    max-width: 560px;
+}
+.gcCta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    background: #10b981;
+    color: #050e1a;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.gcCta:hover { opacity: 0.9; transform: translateY(-2px); }
+
+/* ──────────────────────────────────── */
+/* RESPONSIVE                           */
+/* ──────────────────────────────────── */
+@media (max-width: 900px) {
+    .capGrid { grid-template-columns: 1fr; }
+    .expCard { grid-template-columns: 1fr; gap: 24px; }
+}
+
+@media (max-width: 768px) {
+    .hero { padding: 96px 0 64px; }
+    .credBar { gap: 24px; }
+    .capSection, .expSection { padding: 72px 0; }
+    .gcCard { padding: 32px 24px; }
+    .pitchCircle, .pitchHalfLine, .pitchArc { display: none; }
+}
