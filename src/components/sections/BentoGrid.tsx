@@ -3,6 +3,7 @@
 import React from 'react';
 import styles from './BentoGrid.module.css';
 import { useLanguage } from '@/components/providers/LanguageProvider';
+import Link from 'next/link';
 import clsx from 'clsx';
 import { DollarSign, Cpu, TrendingUp, ShoppingCart } from 'lucide-react';
 
@@ -10,10 +11,21 @@ export default function BentoGrid() {
     const { t } = useLanguage();
 
     const formatText = (text: string) => {
-        const parts = text.split(/(\*\*.*?\*\*)/g);
+        const parts = text.split(/(\*\*.*?\*\*|\[.*?\]\(.*?\))/g);
         return parts.map((part, index) => {
             if (part.startsWith('**') && part.endsWith('**')) {
                 return <span key={index} className={styles.highlight}>{part.slice(2, -2)}</span>;
+            }
+            if (part.startsWith('[') && part.includes('](') && part.endsWith(')')) {
+                const textMatch = part.match(/\[(.*?)\]/);
+                const urlMatch = part.match(/\((.*?)\)/);
+                if (textMatch && urlMatch) {
+                    return (
+                        <Link key={index} href={urlMatch[1]} className={styles.link}>
+                            {textMatch[1]}
+                        </Link>
+                    );
+                }
             }
             return part;
         });

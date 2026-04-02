@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/components/providers/LanguageProvider';
-import { Linkedin } from 'lucide-react';
+import { Linkedin, Mail } from 'lucide-react';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -19,6 +19,13 @@ export default function Footer() {
                     </div>
 
                     <div className={styles.links}>
+                        <a
+                            href="mailto:thariqhamad6@gmail.com"
+                            className={styles.link}
+                            aria-label="Email"
+                        >
+                            <Mail size={20} />
+                        </a>
                         <a
                             href="https://www.linkedin.com/in/thariqhamad"
                             target="_blank"

@@ -10,13 +10,9 @@ import styles from './Navbar.module.css';
 import clsx from 'clsx';
 
 export default function Navbar() {
-    const { t, locale, setLocale } = useLanguage();
+    const { t } = useLanguage();
     const { theme, toggleTheme } = useTheme();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const toggleLanguage = () => {
-        setLocale(locale === 'en' ? 'ar' : 'en');
-    };
 
     return (
         <header className={styles.header}>
@@ -30,19 +26,25 @@ export default function Navbar() {
                     <Link href="/" className={styles.navLink}>{t.nav.home}</Link>
                     <Link href="/career" className={styles.navLink}>{t.nav.career}</Link>
                     <Link href="/projects" className={styles.navLink}>{t.nav.projects}</Link>
+                    <Link href="/football" className={styles.navLink}>{t.nav.football}</Link>
                     <Link href="/about" className={styles.navLink}>{t.nav.about}</Link>
-                    <Button variant="outline" size="sm" onClick={toggleLanguage} className={styles.iconBtn}>
-                        {locale === 'en' ? 'AR' : 'EN'}
-                    </Button>
                     <Button variant="ghost" size="sm" onClick={toggleTheme} className={styles.iconBtn}>
                         {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
                     </Button>
-                    <Button
-                        className={styles.ctaBtn}
-                        onClick={() => window.open('https://calendar.app.google/vDMbaPoDc2vYVQaK8', '_blank')}
-                    >
-                        {t.nav.contact}
-                    </Button>
+                    <div className={styles.actionsBox} style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+                        <Button 
+                            variant="outline" 
+                            onClick={() => window.open('/cv/Thariq%20Hamad.pdf', '_blank')}
+                        >
+                            Download CV
+                        </Button>
+                        <Button
+                            className={styles.ctaBtn}
+                            onClick={() => window.open('https://calendar.app.google/vDMbaPoDc2vYVQaK8', '_blank')}
+                        >
+                            {t.nav.contact}
+                        </Button>
+                    </div>
                 </nav>
 
                 {/* Mobile Toggle */}
@@ -62,10 +64,14 @@ export default function Navbar() {
                     <Link href="/" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.home}</Link>
                     <Link href="/career" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.career}</Link>
                     <Link href="/projects" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.projects}</Link>
+                    <Link href="/football" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.football}</Link>
                     <Link href="/about" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.about}</Link>
                     <div className={styles.mobileActions}>
-                        <Button variant="outline" onClick={() => { toggleLanguage(); setIsMenuOpen(false); }}>
-                            {locale === 'en' ? 'Switch to Arabic' : 'Switch to English'}
+                        <Button 
+                            variant="outline" 
+                            onClick={() => window.open('/cv/Thariq%20Hamad.pdf', '_blank')}
+                        >
+                            Download CV
                         </Button>
                         <Button className={styles.ctaBtn} onClick={() => window.open('https://calendar.app.google/vDMbaPoDc2vYVQaK8', '_blank')}>
                             {t.nav.contact}

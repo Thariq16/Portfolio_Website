@@ -5,8 +5,8 @@ import styles from './EventManagement.module.css';
 import { Users, Trophy, Calendar, Star } from 'lucide-react';
 
 const stats = [
-    { icon: Trophy, value: '30+', label: 'Projects Completed', sub: 'As Club President' },
-    { icon: Users, value: 'LKR 125K', label: 'Funds Raised', sub: 'In a single term' },
+    { icon: Trophy, value: '150+', label: 'Projects Completed', sub: 'Overall' },
+    { icon: Users, value: 'SAR 714K', label: 'Funds Raised', sub: 'Overall' },
     { icon: Calendar, value: '5 Years', label: 'Of Service', sub: '2016 – 2021' },
     { icon: Star, value: '3 Clubs', label: '& 1 District', sub: 'Leadership across all levels' },
 ];
@@ -30,7 +30,7 @@ const journey = [
         role: 'Coordinator, Digital Communication Services',
         org: 'Rotaract District 3220 — Sri Lanka & Maldives',
         period: 'May 2018 – Jun 2019',
-        highlight: 'Elevated to District level — led digital communications strategy across Sri Lanka and the Maldives.',
+        highlight: 'Elevated to District level — architected a centralized, multi-user digital platform to streamline the reporting and management of District-wide projects. Engineered using PHP, Laravel, and MySQL.',
         isTop: false,
     },
     {
@@ -44,7 +44,7 @@ const journey = [
         role: 'President',
         org: 'Rotaract Club of PanColombo',
         period: 'Sep 2020 – Aug 2021',
-        highlight: 'Led the club through a full presidential term — completed 30 projects and raised LKR 125,000 for the club\'s future.',
+        highlight: 'Led the club through a full presidential term — completed 30 projects and raised SAR 1,500 for the club\'s future.',
         isTop: true,
     },
 ];

@@ -95,16 +95,18 @@ export default function AboutPage() {
                             <h2 className={styles.sectionLabel}>Currently</h2>
                             <p className={styles.paragraph}>
                                 Right now, I'm focused on the intersection of AI and human productivity.
-                                I'm diving deep into Python and building custom AI agents, exploring how
-                                we can automate the mundane to make room for the creative.
+                                Rather than just talking about AI, I'm building with it—using Python and agentic 
+                                frameworks (like Lovable, Antigravity, and Claude) to automate workflows and rapidly 
+                                prototype new products.
                             </p>
                         </div>
 
                         <div className={styles.storyBlock}>
                             <h2 className={styles.sectionLabel}>The Bottom Line</h2>
                             <p className={styles.paragraph}>
-                                I don't just manage backlogs; I manage business outcomes. If you're
-                                looking for a PM who treats your budget like his own investment, let's talk.
+                                I don't just manage backlogs; I've actively co-founded companies from the ground up 
+                                and run physical operations. If you're looking for a PM who thinks like a founder 
+                                and operates with engineering rigor, let's talk.
                             </p>
                         </div>
 
@@ -173,8 +175,8 @@ export default function AboutPage() {
                     {/* Stats */}
                     <div className={styles.rotaractStats}>
                         {[
-                            { icon: Trophy, value: '30+', label: 'Projects Completed', sub: 'As Club President' },
-                            { icon: Users, value: 'LKR 125K', label: 'Funds Raised', sub: 'In a single term' },
+                            { icon: Trophy, value: '150+', label: 'Projects Completed', sub: 'Overall' },
+                            { icon: Users, value: 'SAR 714K', label: 'Funds Raised', sub: 'Overall' },
                             { icon: Calendar, value: '5 Years', label: 'Of Service', sub: '2016–2021' },
                             { icon: Star, value: '3 Clubs', label: '& 1 District', sub: 'Leadership across all levels' },
                         ].map((stat, i) => {
@@ -199,9 +201,9 @@ export default function AboutPage() {
                             {[
                                 { role: 'Community Service Joint Director', org: 'Rotaract Club of IIT', period: 'May 2016–Jun 2017', highlight: 'Entry into Rotaract leadership — managing community service delivery and cross-club coordination.', isTop: false },
                                 { role: 'Secretary', org: 'Rotaract Club of IIT', period: 'Mar 2017–Jun 2018', highlight: 'Owned club operations, correspondence, records, and internal reporting for a full club year.', isTop: false },
-                                { role: 'Coordinator, Digital Communication Services', org: 'Rotaract District 3220 — Sri Lanka & Maldives', period: 'May 2018–Jun 2019', highlight: 'Elevated to District level — led digital communications strategy across Sri Lanka and the Maldives.', isTop: false },
+                                { role: 'Coordinator, Digital Communication Services', org: 'Rotaract District 3220 — Sri Lanka & Maldives', period: 'May 2018–Jun 2019', highlight: 'Elevated to District level — architected a centralized, multi-user digital platform to streamline the reporting and management of District-wide projects. Engineered using PHP, Laravel, and MySQL.', isTop: false },
                                 { role: 'Vice President', org: 'Rotaract Club of Colombo North', period: 'May 2019–May 2020', highlight: 'Stepped into executive leadership, supporting the President and driving programme delivery.', isTop: false },
-                                { role: 'President', org: 'Rotaract Club of PanColombo', period: 'Sep 2020–Aug 2021', highlight: "Led the club through a full presidential term — completed 30 projects and raised LKR 125,000 for the club's future.", isTop: true },
+                                { role: 'President', org: 'Rotaract Club of PanColombo', period: 'Sep 2020–Aug 2021', highlight: "Led the club through a full presidential term — completed 30 projects and raised SAR 1,500 for the club's future.", isTop: true },
                             ].map((step, i, arr) => (
                                 <div key={i} className={`${styles.timelineItem} ${step.isTop ? styles.topRole : ''}`}>
                                     <div className={styles.timelinePeriod}>{step.period}</div>

@@ -17,9 +17,11 @@ const categoryColors: Record<CaseStudyCategory, string> = {
 export default function ImpactShowcase() {
     const { t } = useLanguage();
 
-    // Sort case studies by impact score (highest first)
-    const sortedProjects = [...t.projects.items]
-        .sort((a: CaseStudy, b: CaseStudy) => b.impactScore - a.impactScore);
+    // Showcase top featured projects (Lead with zero-to-one stories to back up Hero claim)
+    const featuredSlugs = ['foundership-product', 'chonk-cookies-d2c', 'saas-growth-platform', 'retention-engine'];
+    const sortedProjects = featuredSlugs
+        .map(slug => t.projects.items.find((p: CaseStudy) => p.slug === slug))
+        .filter(Boolean) as CaseStudy[];
 
     return (
         <section className={styles.section}>
@@ -30,7 +32,7 @@ export default function ImpactShowcase() {
                         <h2 className={styles.title}>Impact & Value Creation</h2>
                     </div>
                     <p className={styles.subtitle}>
-                        Projects ranked by business impact and value delivered
+                        Selected projects highlighting business value and scaling
                     </p>
                 </header>
 
@@ -56,10 +58,6 @@ export default function ImpactShowcase() {
                                     >
                                         {project.category}
                                     </span>
-                                    {/* <div className={styles.impactScore}>
-                                        <span className={styles.scoreValue}>{project.impactScore}</span>
-                                        <span className={styles.scoreLabel}>/10</span>
-                                    </div> */}
                                 </div>
 
                                 <h3 className={styles.projectTitle}>{project.title}</h3>

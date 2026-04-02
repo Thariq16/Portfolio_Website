@@ -81,12 +81,13 @@ export const dictionary = {
             home: 'Home',
             projects: 'Case Studies',
             career: 'Career',
+            football: 'Football',
             about: 'About',
             contact: 'Book a Call',
         },
         hero: {
             headline: 'Senior Product Manager\nZero-to-One Specialist',
-            subheadline: 'Founding experience in SaaS & AI Platforms. 8+ years driving revenue, monetization, and growth for global distributed teams.',
+            subheadline: 'I\'ve built products from zero, scaled revenue past SAR 7.5M, and treated every budget like my own.',
             ctaPrimary: 'Schedule Intro Call',
             ctaSecondary: 'View Case Studies',
             location: 'Based in Riyadh, Saudi Arabia (Iqama Transferable)',
@@ -97,11 +98,11 @@ export const dictionary = {
         bento: {
             revenue: {
                 title: 'Revenue Strategy',
-                desc: 'Pricing, packaging, and commercial validation. Contributed to a **US$2M annual revenue pipeline** at Fortude.',
+                desc: 'Pricing, packaging, and commercial validation. Contributed to a **SAR 7.5M annual revenue pipeline** at Fortude.',
             },
             ai: {
                 title: 'AI Product Leadership',
-                desc: 'Product discovery, use-case definition, and workflow integration.',
+                desc: 'Product discovery, use-case definition, and workflow integration. Designed **AI workflows driving SAR 675K new ARR**.',
             },
             data: {
                 title: 'Data & Retention',
@@ -109,7 +110,7 @@ export const dictionary = {
             },
             gtm: {
                 title: 'GTM & CRO',
-                desc: 'Scaled Chonk Cookies to **5M LKR revenue**. **80% checkout conversion rate** via user experimentation.',
+                desc: 'Scaled [Chonk Cookies](/projects/chonk-cookies-d2c) to **SAR 60K revenue**. **80% checkout conversion rate** via user experimentation.',
             },
         },
         footer: {
@@ -121,7 +122,7 @@ export const dictionary = {
             items: [
                 {
                     slug: 'saas-growth-platform',
-                    title: 'Driving SaaS Revenue Growth Through Pricing & GTM Optimisation',
+                    title: 'Driving SaaS Revenue Growth Through Pricing & GTM Optimization',
                     company: 'Fortude',
                     logo: getAssetPath('/logos/fortude.png'),
                     website: 'https://www.fortude.co',
@@ -131,12 +132,12 @@ export const dictionary = {
                     impactScore: 9,
                     jobSlug: 'fortude-product-manager',
                     metrics: [
-                        { label: 'New Revenue', value: '$180K' },
+                        { label: 'New Revenue', value: 'SAR 675K' },
                         { label: 'ROAS', value: '1,800%' },
-                        { label: 'Pipeline', value: '$2M' },
+                        { label: 'Pipeline', value: 'SAR 7.5M' },
                     ],
                     context: {
-                        goal: 'Optimise monetization and value articulation for Enterprise B2B SaaS.',
+                        goal: 'Optimize monetization and value articulation for Enterprise B2B SaaS.',
                         details: '[Fortude](https://www.fortude.io) operates in a competitive B2B SaaS analytics market. The core challenge was not demand generation, but **inefficient monetization** and **unclear value articulation**, leading to **stalled deals** and **underperforming acquisition spend** despite long sales cycles. Products include the AI assistant Charlie and testing tool [Fortest.io](https://www.fortest.io).',
                     },
                     role: {
@@ -155,19 +156,19 @@ export const dictionary = {
                         details: 'Partnered with sales to pilot **revised pricing narratives**. Collaborated with marketing on **targeted GTM experiments**. Enabled pricing changes with **minimal engineering effort** and iterated weekly based on deal feedback.',
                     },
                     outcomes: {
-                        details: 'Generated **$180K in net-new revenue**. Achieved **1,800% ROAS** on targeted campaigns. Contributed to a **$2M projected annual revenue pipeline**. Improved alignment across product, sales, and marketing.',
+                        details: 'Generated **SAR 675K in net-new revenue**. Achieved **1,800% ROAS** on targeted campaigns. Contributed to a **SAR 7.5M projected annual revenue pipeline**. Improved alignment across product, sales, and marketing.',
                     },
                     learnings: {
                         repeat: 'Anchoring pricing decisions in **real deal data** reduced internal debate.',
                         change: 'Involve **customer success earlier** to refine expansion pricing opportunities.',
                     },
                     featured: {
-                        headline: '$2M SaaS Revenue Pipeline Strategy',
+                        headline: 'SAR 7.5M SaaS Revenue Pipeline Strategy',
                         tag: 'SaaS Monetization',
-                        outcome: 'Scaled a net-new business pipeline for Infor M3 ERP solutions by leveraging content-driven conversion funnels.',
+                        outcome: 'Restructured SaaS pricing and packaging based on deal data, driving a SAR 7.5M pipeline and closing SAR 675K in net-new ARR.',
                         badges: [
                             { value: '1,800% ROAS', label: 'Return on Ad Spend', description: 'Achieved via integrated LinkedIn employee advocacy and paid media.' },
-                            { value: '$180K New Revenue', label: 'Direct Revenue', description: 'Generated from 4 high-value enterprise clients in a single campaign.' }
+                            { value: 'SAR 675K New Revenue', label: 'Direct Revenue', description: 'Generated from 4 high-value enterprise clients in a single campaign.' }
                         ]
                     },
                 },
@@ -192,7 +193,7 @@ export const dictionary = {
                         details: '[Sling Mobility](https://www.slingmobility.com) operated a B2B mobility platform where customer churn was being driven by unexpected downtime and delayed issue detection. While the platform collected large volumes of operational data, it was not being translated into timely, actionable insights, resulting in **customer frustration** and **preventable revenue loss**.',
                     },
                     role: {
-                        details: 'Owned **product strategy for retention-focused initiatives**, definition of the **data feedback loop** and alerting model, and prioritisation. Collaborated closely with Engineering on data pipelines, Operations on real-world failure patterns, and Leadership on **retention and revenue targets**.',
+                        details: 'Owned **product strategy for retention-focused initiatives**, definition of the **data feedback loop** and alerting model, and prioritization. Collaborated closely with Engineering on data pipelines, Operations on real-world failure patterns, and Leadership on **retention and revenue targets**.',
                     },
                     constraints: {
                         details: '**Legacy data architecture** with limited real-time capabilities. Operational teams already **stretched with reactive workloads**. Need to **demonstrate impact quickly** to justify further investment. This required incremental but high-leverage product decisions, rather than a full platform rebuild.',
@@ -216,7 +217,7 @@ export const dictionary = {
                     featured: {
                         headline: 'Data-Driven Retention Loop for Mobility',
                         tag: 'Product Analytics & Retention',
-                        outcome: 'Engineered a closed-loop feedback system that reduced churn and increased customer lifetime value.',
+                        outcome: 'Built a real-time data feedback loop that increased customer retention by 17% and revenue by 30%.',
                         badges: [
                             { value: '+17% Retention', label: 'User Retention', description: 'Achieved by identifying and fixing drop-off points in the user journey.' },
                             { value: '+30% Revenue', label: 'Revenue Growth', description: 'Driven by operational optimizations and dynamic pricing experiments.' }
@@ -240,20 +241,20 @@ export const dictionary = {
                         { label: 'Engagement', value: 'Strong' },
                     ],
                     context: {
-                        goal: '[FieldR](https://www.fieldr.lk) was created to serve athletes and sports communities that lacked accessible, actionable performance insights.',
+                        goal: 'FieldR was created to serve athletes and sports communities that lacked accessible, actionable performance insights.',
                         details: 'The challenge was twofold: Validate whether users would **consistently use analytics tools** and prove whether they would **pay for them**. This required **tight feedback loops** and **disciplined scope control**.',
                     },
                     role: {
-                        details: 'As a **founder-level product owner**, I owned **product vision, roadmap, and prioritisation**. Led **user discovery** and validation. Defined the **monetization strategy** and worked directly with engineering and early adopters. This was **full end-to-end ownership**.',
+                        details: 'As a **founder-level product owner**, I owned **product vision, roadmap, and prioritization**. Led **user discovery** and validation. Defined the **monetization strategy** and worked directly with engineering and early adopters. This was **full end-to-end ownership**.',
                     },
                     constraints: {
-                        details: '**Limited resources** and no margin for overbuilding. Early users had **varied expectations** and skill levels. Needed to **monetise without alienating the community**. Every decision had to balance **value delivery and sustainability**.',
+                        details: '**Limited resources** and no margin for overbuilding. Early users had **varied expectations** and skill levels. Needed to **monetize without alienating the community**. Every decision had to balance **value delivery and sustainability**.',
                     },
                     discovery: {
                         details: 'Early user interviews and usage data revealed: Users valued **simple, comparative insights** far more than complex analytics. This challenged the initial assumption that “**more data = more value**”.',
                     },
                     decisions: {
-                        details: 'Prioritised **clarity over analytical depth** by avoiding advanced metrics early. Introduced **monetization only after habit formation**, delaying paywalls until engagement stabilised. Tied paid features to **progression and performance improvement**.',
+                        details: 'Prioritized **clarity over analytical depth** by avoiding advanced metrics early. Introduced **monetization only after habit formation**, delaying paywalls until engagement stabilized. Tied paid features to **progression and performance improvement**.',
                     },
                     execution: {
                         details: 'Released a **lean MVP** focused on core performance insights. **Iterated rapidly** based on community feedback. Introduced **tiered pricing** aligned with user maturity. Continuously tested onboarding and upgrade flows.',
@@ -268,10 +269,10 @@ export const dictionary = {
                     featured: {
                         headline: '0-1 Product Scale & Acquisition Strategy',
                         tag: 'Founder-Led Growth',
-                        outcome: 'Built and scaled a logistics product from scratch to profitability with minimal seed capital.',
+                        outcome: 'Designed, built, and launched Sri Lanka\'s first cricket analytics platform from zero to 2,800+ paid users.',
                         badges: [
                             { value: '80% Conversion', label: 'Checkout Conversion', description: 'Optimized checkout flow using A/B testing and user research.' },
-                            { value: '5M LKR Revenue', label: 'Annual Revenue', description: 'Scaled from zero to profitability within 18 months of launch.' }
+                            { value: 'SAR 60K Revenue', label: 'Annual Revenue', description: 'Scaled from zero to profitability within 18 months of launch.' }
                         ]
                     },
                 },
@@ -357,8 +358,8 @@ export const dictionary = {
                     description: `When I joined Fortude, the AI assistant 'Charlie' and the testing tool 'Fortest.io' were technically sound but lacked market traction. I stepped into a Product Marketing role to build their independent identities and social channels, moving them away from being seen as just "internal tools."
 
 **Key Outcomes:**
-• Built a **$2M USD sales pipeline** from scratch by activating the European market through high-engagement LinkedIn webinars
-• Secured **$180K in immediate sign-ups** by focusing on how AI could solve specific pain points for Infor M3 ERP users
+• Built a **SAR 7.5M sales pipeline** from scratch by activating the European market through high-engagement LinkedIn webinars
+• Secured **SAR 675K in immediate sign-ups** by focusing on how AI could solve specific pain points for Infor M3 ERP users
 • Led the **UI redesign for Charlie** to make it feel native to Microsoft Teams, which was the turning point for user adoption`,
                     skills: ['Stakeholder Management', 'Product Roadmap Management', 'Product Strategy', 'AI Products', 'Enterprise SaaS', 'Revenue Growth'],
                     caseStudyIds: ['saas-growth-platform'],
@@ -376,7 +377,7 @@ export const dictionary = {
 
 **Key Outcomes:**
 • Achieved **2,823 paid users** from 3,568 registrations by ruthlessly prioritizing features that coaches actually asked for in discovery sessions
-• Secured **US$5K in seed funding** and managed the entire roadmap across web and mobile
+• Secured **SAR 18K in seed funding** and managed the entire roadmap across web and mobile
 • Designed the **data architecture to capture 32+ performance metrics**, turning complex sports data into simple, actionable insights`,
                     skills: ['Product Leadership', 'Product Strategy', 'Go-to-Market Strategy', 'Product-Led Growth', 'Monetization Strategy', 'Founder Mindset'],
                     caseStudyIds: ['foundership-product'],
@@ -491,6 +492,7 @@ export const dictionary = {
             home: 'الرئيسية',
             projects: 'دراسات الحالة',
             career: 'المسيرة المهنية',
+            football: 'كرة القدم',
             about: 'عني',
             contact: 'احجز مكالمة',
         },
@@ -507,7 +509,7 @@ export const dictionary = {
         bento: {
             revenue: {
                 title: 'استراتيجية الإيرادات',
-                desc: 'التسعير والتعبئة والتحقق التجاري. المساهمة في **خط إيرادات سنوي بقيمة 2 مليون دولار** في Fortude.',
+                desc: 'التسعير والتعبئة والتحقق التجاري. المساهمة في **خط إيرادات سنوي بقيمة 7.5 مليون ريال** في Fortude.',
             },
             ai: {
                 title: 'قيادة منتجات الذكاء الاصطناعي',
@@ -519,7 +521,7 @@ export const dictionary = {
             },
             gtm: {
                 title: 'اكتشاف السوق وتحسين التحويل',
-                desc: 'توسيع Chonk Cookies إلى **إيرادات 5 مليون روبية**. **معدل تحويل 80%** عبر التجارب.',
+                desc: 'توسيع Chonk Cookies إلى **إيرادات 60 ألف ريال**. **معدل تحويل 80%** عبر التجارب.',
             },
         },
         footer: {
@@ -544,9 +546,9 @@ export const dictionary = {
                     impactScore: 9,
                     jobSlug: 'fortude-product-manager',
                     metrics: [
-                        { label: 'إيرادات جديدة', value: '$180K' },
+                        { label: 'إيرادات جديدة', value: '675 ألف ريال' },
                         { label: 'عائد الإعلان', value: '1,800%' },
-                        { label: 'قيمة المبيعات', value: '$2M' },
+                        { label: 'قيمة المبيعات', value: '7.5 مليون ريال' },
                     ],
                     context: {
                         goal: 'فتح مصادر إيرادات جديدة لمزود خدمات ERP.',
@@ -568,7 +570,7 @@ export const dictionary = {
                         details: 'اعتماد نهج Agile. التركيز على الاستقرار والامتثال الأمني أولاً لكسب ثقة المؤسسات.',
                     },
                     outcomes: {
-                        details: 'تحقيق 180 ألف دولار في السنة الأولى. تحقيق عائد 1800% على الإنفاق الإعلاني.',
+                        details: 'تحقيق 675 ألف ريال في السنة الأولى. تحقيق عائد 1800% على الإنفاق الإعلاني.',
                     },
                     learnings: {
                         repeat: 'التحقق المبكر مع العملاء قبل كتابة الكود.',
@@ -724,7 +726,7 @@ export const dictionary = {
                     location: 'كولومبو، سريلانكا',
                     dateRange: 'أكتوبر 2024 – الحالي',
                     summary: 'بناء جاذبية السوق لمنتجات الذكاء الاصطناعي.',
-                    description: 'بناء خط مبيعات بقيمة 2 مليون دولار وتأمين 180 ألف دولار في التسجيلات.',
+                    description: 'بناء خط مبيعات بقيمة 7.5 مليون ريال وتأمين 675 ألف ريال في التسجيلات.',
                     skills: ['إدارة أصحاب المصلحة', 'استراتيجية المنتج', 'منتجات الذكاء الاصطناعي'],
                     caseStudyIds: ['saas-growth-platform'],
                 } as Job,

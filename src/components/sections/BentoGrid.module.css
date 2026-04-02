@@ -96,3 +96,15 @@
     color: var(--success);
     font-weight: 700;
 }
+
+.link {
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.2s;
+}
+
+.link:hover {
+    color: var(--primary-foreground);
+    background-color: var(--primary);
+}

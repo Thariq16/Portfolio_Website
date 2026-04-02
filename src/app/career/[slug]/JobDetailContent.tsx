@@ -121,7 +121,7 @@ export default function JobDetailContent() {
                                     Detailed projects from this role
                                 </p>
                                 <div className={styles.caseStudyList}>
-                                    {relatedCaseStudies.map((cs: { slug: string; title: string; category: string; impactScore: number }) => (
+                                    {relatedCaseStudies.map((cs: { slug: string; title: string; category: string }) => (
                                         <Link
                                             key={cs.slug}
                                             href={`/projects/${cs.slug}`}
@@ -131,9 +131,6 @@ export default function JobDetailContent() {
                                                 <span className={styles.caseStudyTitle}>{cs.title}</span>
                                                 <div className={styles.caseStudyMeta}>
                                                     <span className={styles.categoryBadge}>{cs.category}</span>
-                                                    <span className={styles.impactBadge}>
-                                                        Impact: {cs.impactScore}/10
-                                                    </span>
                                                 </div>
                                             </div>
                                         </Link>

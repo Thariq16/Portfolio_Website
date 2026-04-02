@@ -13,7 +13,7 @@ const cards = [
         eyebrow: 'Performance Analysis · Football',
         title: 'The Analytical Edge',
         description:
-            'Performance Analyst at Glacis United FC (Gibraltar). Built a bespoke analysis platform in active use with a first team. Currently completing a Professional Diploma at Barca Innovation Hub.',
+            'Performance Analyst at Glacis United FC. Built a bespoke Python analysis platform for the club, currently in active use by the first team in the Gibraltar Premier Division. Completing a Professional Diploma at Barca Innovation Hub.',
         cta: 'View Football Work',
         href: '/football',
         pills: ['Glacis United FC', 'Barca Innovation Hub', 'Python · Pass Maps'],
@@ -25,10 +25,10 @@ const cards = [
         eyebrow: 'Rotaract International · 2016–2021',
         title: 'Leading Beyond Product',
         description:
-            'Rose from Joint Director to Club President across three Rotaract clubs and District 3220 (Sri Lanka & Maldives). Completed 30+ projects and raised LKR 125K in a single presidential term.',
+            'Rose from Joint Director to Club President across three Rotaract clubs and District 3220 (Sri Lanka & Maldives). Completed 150+ community and national-level projects, raising SAR 714K overall.',
         cta: 'Read the Story',
         href: '/about#rotaract',
-        pills: ['Club President', '30+ Projects', 'District 3220'],
+        pills: ['Club President', '150+ Projects', 'SAR 714K Raised'],
     },
 ];
 
