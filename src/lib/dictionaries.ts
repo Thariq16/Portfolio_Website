@@ -271,8 +271,8 @@ export const dictionary = {
                         tag: 'Founder-Led Growth',
                         outcome: 'Designed, built, and launched Sri Lanka\'s first cricket analytics platform from zero to 2,800+ paid users.',
                         badges: [
-                            { value: '80% Conversion', label: 'Checkout Conversion', description: 'Optimized checkout flow using A/B testing and user research.' },
-                            { value: 'SAR 60K Revenue', label: 'Annual Revenue', description: 'Scaled from zero to profitability within 18 months of launch.' }
+                            { value: '75% Conversion', label: 'Free-to-Paid Conversion', description: 'Converted 75% of active users to paid subscriptions through disciplined, habit-first monetization.' },
+                            { value: 'SAR 20K Pre-Seed', label: 'Seed Funding Raised', description: 'Secured pre-seed funding and expanded to international markets including Australia.' }
                         ]
                     },
                 },
@@ -335,6 +335,214 @@ export const dictionary = {
                         ]
                     },
                 },
+                {
+                    slug: 'ev-battery-ecosystem',
+                    title: "Building Sri Lanka's First EV Battery Swapping Ecosystem",
+                    company: 'Sling Mobility',
+                    logo: getAssetPath('/logos/sling.svg'),
+                    website: 'https://www.slingmobility.com',
+                    market: 'EV Mobility & Hardware-Software Platform | B2B2C',
+                    timeframe: '2021–2024',
+                    category: 'Software Development' as CaseStudyCategory,
+                    impactScore: 9,
+                    jobSlug: 'sling-mobility-product-lead',
+                    metrics: [
+                        { label: 'Battery Range', value: '60→100KM' },
+                        { label: 'Battery Lifetime', value: '2× Longer' },
+                        { label: 'Swap Time', value: '15 Seconds' },
+                    ],
+                    context: {
+                        goal: "Design and build the infrastructure, software, and hardware for Sri Lanka's first EV battery swapping network.",
+                        details: 'When [Sling Mobility](https://www.slingmobility.com) set out to create a last-mile EV delivery network in Sri Lanka, there was **no battery swapping infrastructure in the country**. Riders would run out of charge mid-route, battery degradation was rapid, and there was no data-driven visibility into vehicle or battery health. The product challenge was to design an **end-to-end hardware-software ecosystem** — cabinets, apps, sensors, and a command centre — entirely from scratch.',
+                    },
+                    role: {
+                        details: "As the **first employee and sole Product Lead**, I owned every layer: hardware design spec, software architecture, mobile app, command centre, and operational SOPs. I liaised with the country's largest electrical product producer for cabinet manufacturing, coordinated with an Indian sister company for battery production, and led a 34-person team spanning software developers, mechanics, and riders.",
+                    },
+                    constraints: {
+                        details: '**No existing reference architecture** — battery swapping at this scale had never been attempted in Sri Lanka. **Severe terrain variability** across the island required custom battery and motor configurations. **Limited engineering budget** demanded that every hardware investment be validated with data before scaling. Rider behaviour was unpredictable, making software design for real-world conditions especially difficult.',
+                    },
+                    discovery: {
+                        details: 'I conducted deep research into electricity consumption patterns, fuel economics, bike wear and tear, terrain elevation challenges, and electronic component failure modes. Rider interviews revealed that **range anxiety** and **unplanned downtime** were the two biggest trust-killers. Data from early deployments showed that most battery degradation was caused by **irregular charging cycles**, not battery age.',
+                    },
+                    decisions: {
+                        details: 'Built an **automated lock/unlock cabinet system** that identifies the rider, the discharged battery, and the nearest fully-charged battery — completing a swap in **15 seconds**. Designed a **command centre** to monitor vehicle movements, battery voltage, motor health, and ride routes in real time. Created a **revenue-share cabinet model** for roadside garages to expand the network without capital spend. Launched **battery tokens** enabling the public to fund new-gen batteries and receive revenue shares — funding 100 batteries through community capital.',
+                    },
+                    execution: {
+                        details: "Designed Sri Lanka's first battery swapping cabinet in partnership with the country's largest electrical product manufacturer. Implemented a **digital tracking infrastructure** for every bike and hardware component, with routine service alerts. Built a **rider-facing navigation feature** that tracked battery voltage and directed riders to the nearest swap station before power cut-out. Rolled out an **anti-theft battery system** with remote subscription-based shutoff. Deployed a **rider incentive scheme** tied to ride streaks and performance data.",
+                    },
+                    outcomes: {
+                        details: 'Extended battery range from **60KM to 100KM** per charge through command-centre optimization of charging cycles. Doubled battery lifetime from **2 to 4 years**, dramatically reducing hardware replacement costs. Grew daily ride counts from **25 to 62 per rider per day**. Reduced roadside assistance requests by **75%**. Launched **3 battery swapping stations** with a revenue-share model that grew network revenue by **30%**. The battery token programme funded **100 new-generation batteries** through community investment.',
+                    },
+                    learnings: {
+                        repeat: 'Starting with a **data-first command centre** before scaling hardware was the right call — it allowed us to optimize before committing capital.',
+                        change: 'I would invest earlier in **predictive battery failure models** to reduce the reactive maintenance burden on the operations team.',
+                    },
+                    featured: {
+                        headline: "Sri Lanka's First EV Battery Swapping Network",
+                        tag: 'Hardware-Software Co-Creation',
+                        outcome: 'Designed and built an end-to-end EV battery swapping ecosystem — from cabinet hardware to command-centre software — doubling battery life and tripling daily ride counts.',
+                        badges: [
+                            { value: '60→100KM Range', label: 'Battery Range Extended', description: 'Achieved via command-centre data optimization of charging cycles across the fleet.' },
+                            { value: '+30% Revenue', label: 'Network Revenue Growth', description: 'Driven by revenue-share battery swap cabinets placed in 10 garages and validated low-income households.' }
+                        ]
+                    },
+                },
+                {
+                    slug: 'charlie-ai-product-strategy',
+                    title: 'From Accurate to Adopted: Turning Charlie AI into a Product People Trust',
+                    company: 'Fortude',
+                    logo: getAssetPath('/logos/fortude.png'),
+                    website: 'https://www.fortude.co',
+                    market: 'Enterprise AI | B2B SaaS | Infor M3 ERP',
+                    timeframe: '2024–2025',
+                    category: 'Software Development' as CaseStudyCategory,
+                    impactScore: 8,
+                    jobSlug: 'fortude-product-manager',
+                    metrics: [
+                        { label: 'Usage Growth', value: '+75%' },
+                        { label: 'Enterprise Pilot', value: 'Toyota SL' },
+                        { label: 'Strategy Shift', value: 'Accuracy→Clarity' },
+                    ],
+                    context: {
+                        goal: "Solve the adoption failure of an AI Answer Assistant by shifting the product strategy from technical accuracy to user-perceived trustworthiness.",
+                        details: "[Fortude](https://www.fortude.co)'s Charlie AI Answer Assistant was designed to help Infor M3 ERP users query complex data through natural language. The product was technically functional, but **early adoption was stagnant**. Users were not abandoning it because it lacked features — they were abandoning it because they **didn't trust its responses**. When an AI assistant confidently delivers a wrong answer in an enterprise context, it doesn't get a second chance.",
+                    },
+                    role: {
+                        details: "I **owned the product strategy for Charlie AI**, working directly with the engineering team to redefine what 'good' looked like for the product. I facilitated discovery sessions with early adopters, defined the new validation architecture, and drove the roadmap from the strategy pivot through to a standalone Insight Assistant built on Charlie's architecture.",
+                    },
+                    constraints: {
+                        details: '**No ability to retrain the underlying model** — the pivot had to be achievable through product-layer changes, not ML infrastructure work. Enterprise customers have **zero tolerance for hallucinations**, meaning even a small error rate was catastrophic for trust. We had **limited early adopters** for testing, requiring every iteration to be deliberate and well-measured.',
+                    },
+                    discovery: {
+                        details: "User interviews with early adopters revealed a clear pattern: it wasn't that Charlie was frequently wrong — it was that users **couldn't tell when to trust it**. An answer delivered with identical confidence regardless of data quality created anxiety. The insight: **trust is a product feature**, not an engineering metric. Users needed clarity about *why* a response was given, not just *what* the response was.",
+                    },
+                    decisions: {
+                        details: 'Shifted the product strategy from **"maximize accuracy"** to **"maximize response clarity"**. The core decision was to implement a **validation agent** that checks data credibility before any response is delivered to the end user. Responses are only surfaced when the agent can confirm the supporting data is reliable — if not, the system explicitly flags the uncertainty rather than guessing. This was a deliberate trade-off: **slightly fewer answers, but dramatically higher trust**.',
+                    },
+                    execution: {
+                        details: "Worked with engineering to design and deploy the **credibility validation agent** as a pre-response layer in Charlie's architecture. Redesigned the **response format** to surface source context alongside answers, giving users auditability. Iterated the feature with the early adopter cohort using usage frequency and session depth as trust proxies. Once adoption stabilized, ideated and structured a roadmap to launch a **standalone Insight Assistant** tool leveraging Charlie's architecture — positioning it as a general-purpose enterprise knowledge layer.",
+                    },
+                    outcomes: {
+                        details: 'Achieved a **75% increase in usage** among early adopters following the strategy pivot and agent deployment. Signed up **Toyota Sri Lanka** to evaluate the standalone Insight Assistant for automating their manual service job tracking processes. Created a clear pathway to extend Charlie\'s architecture into new verticals beyond Infor M3, establishing a **platform strategy** rather than a single-product roadmap.',
+                    },
+                    learnings: {
+                        repeat: 'The decision to **slow down responses** in exchange for higher confidence was initially controversial internally — but it was exactly the right call. Enterprise users would rather wait for a trustworthy answer than get an instant uncertain one.',
+                        change: 'I would involve **customer success teams earlier** in the discovery process — they had the most direct signal on where user trust was breaking down.',
+                    },
+                    featured: {
+                        headline: 'AI Trust as a Product Strategy',
+                        tag: 'Enterprise AI Product',
+                        outcome: 'Pivoted Charlie AI from an accuracy-focused assistant to a trust-centred product, growing adoption by 75% and unlocking a Toyota Sri Lanka enterprise pilot.',
+                        badges: [
+                            { value: '+75% Usage', label: 'Early Adopter Growth', description: 'Achieved by implementing a credibility validation agent that users could understand and trust.' },
+                            { value: 'Toyota SL Pilot', label: 'Enterprise Expansion', description: 'Signed up to evaluate the standalone Insight Assistant for manual process automation.' }
+                        ]
+                    },
+                },
+                {
+                    slug: 'motion-miracles-gtm',
+                    title: 'From Creative Studio to Revenue Engine: 23 Game Launches & a FinTech MVP',
+                    company: 'Motion Miracles',
+                    logo: getAssetPath('/logos/motion-miracles.png'),
+                    website: 'https://www.motionmiracles.com',
+                    market: 'Mobile Gaming & FinTech | B2C & B2B',
+                    timeframe: 'Jan 2021 – May 2021',
+                    category: 'Ops' as CaseStudyCategory,
+                    impactScore: 7,
+                    jobSlug: 'motion-miracles-pm',
+                    metrics: [
+                        { label: 'Games Shipped', value: '23' },
+                        { label: 'New Revenue', value: 'SAR 200K' },
+                        { label: 'Products', value: '2 Types' },
+                    ],
+                    context: {
+                        goal: 'Transform delivery visibility and revenue capture across a multi-vertical creative studio simultaneously managing game publishing and a FinTech product launch.',
+                        details: '[Motion Miracles](https://www.motionmiracles.com) operated across animation, game development, and digital services. When I joined as Project Manager, the studio had **strong creative output but weak delivery governance** — projects slipped, resource allocation was opaque, and there was no unified view of financial performance across teams. At the same time, the organization was being asked to consult on the launch of a **BNPL FinTech product**, an entirely new domain requiring user research, KYC process design, and structured project management.',
+                    },
+                    role: {
+                        details: 'I started as Project Manager but quickly took on the **Operations Manager** responsibilities for the entire organization. I owned resource planning, financial tracking, KPI design for creative teams, and managed cross-team delivery. Simultaneously, I led the project management for the FinTech product consultation — including the KYC process design and user research oversight.',
+                    },
+                    constraints: {
+                        details: '**Highly varied workstreams** — animation, game development, and services teams operate on fundamentally different timelines and success metrics. The FinTech consultation was a **new domain with no internal precedent**. Resource contention between the studio\'s own projects and the external consultation required careful prioritization. The entire tenure lasted **5 months**, demanding rapid impact.',
+                    },
+                    discovery: {
+                        details: 'A quick audit of delivery processes revealed that **games were being completed but not strategically published** — they were shipped to whichever publisher was available, rather than matched to publishers with the best fit for each game\'s genre and audience. Revenue leakage was significant. For the FinTech product, user research revealed that the target demographic had **significant trust concerns** about BNPL products, making KYC UX design critical to conversion.',
+                    },
+                    decisions: {
+                        details: 'Built a **financial tracking tool** to give leadership real-time visibility into revenue, cost allocation, and project margins across all three departments. Implemented **KPI frameworks tailored to each creative team** — avoiding the mistake of applying the same metrics to animation, game dev, and services. For the FinTech product, structured a **KYC process** that balanced regulatory compliance with minimal user friction, informed by direct user research.',
+                    },
+                    execution: {
+                        details: 'Managed the **publisher selection and submission pipeline** for 23 hyper-casual games, matching each title to the most appropriate publisher based on genre, audience, and commercial terms. Built out **delivery dashboards** that gave leadership a clear view of project risks, timelines, and resource utilization. For the FinTech product: created the full project plan, tracked milestones, designed the KYC process flow, and coordinated the user research sessions to validate feature decisions.',
+                    },
+                    outcomes: {
+                        details: 'Launched **23 hyper-casual games** through multiple publishers, generating **SAR 200K in new revenue** within the tenure period. Delivered the **FinTech BNPL MVP** with a structured KYC process informed by user research. Established the organization\'s first unified **financial tracking and KPI dashboard**, giving the board clear visibility into performance across all departments for the first time.',
+                    },
+                    learnings: {
+                        repeat: 'Treating **game publishing as a distribution strategy** (matching title to publisher) rather than a submission process was the key to unlocking the revenue uplift.',
+                        change: 'I would push for a **longer engagement** — 5 months was enough to build the foundation, but not enough to see the full impact of the systems I put in place.',
+                    },
+                    featured: {
+                        headline: 'SAR 200K in 5 Months: Games & FinTech',
+                        tag: 'Cross-Vertical PM',
+                        outcome: 'Built delivery infrastructure and publisher strategy across a creative studio, shipping 23 games and SAR 200K new revenue while simultaneously launching a FinTech product.',
+                        badges: [
+                            { value: '23 Games', label: 'Games Launched', description: 'Shipped through strategic publisher selection across multiple game genres.' },
+                            { value: 'SAR 200K', label: 'New Revenue', description: 'Generated through optimized publisher relationships and game portfolio strategy.' }
+                        ]
+                    },
+                },
+                {
+                    slug: 'fieldr-origin-to-international',
+                    title: "From a University Project to Sri Lanka's First Cricket Analytics Platform",
+                    company: 'FieldR',
+                    logo: getAssetPath('/logos/fieldr.png'),
+                    website: 'https://www.fieldr.lk',
+                    market: 'Sports Analytics SaaS | Grassroots to International',
+                    timeframe: '2019–2021',
+                    category: 'Marketing' as CaseStudyCategory,
+                    impactScore: 9,
+                    jobSlug: 'fieldr-product-lead',
+                    metrics: [
+                        { label: 'Market Entry', value: 'Grassroots First' },
+                        { label: 'International', value: 'Australia (2 Clubs)' },
+                        { label: 'Revenue Streams', value: '2 Launched' },
+                    ],
+                    context: {
+                        goal: "Validate, launch, and expand Sri Lanka's first cricket analytics platform — starting from a university research project with no budget, no team, and no existing market.",
+                        details: "[FieldR](https://www.fieldr.lk) began as a final year research project exploring cricket performance data. When several cricket coaches from clubs registered under Sri Lanka Cricket reviewed the project, they provided **Letters of Intent** committing to use the application and urged commercialization. In 2021, the project secured **SAR 20K in pre-seed funding**. The challenge then became: how do you build a product business in a market that has never used data analytics before, with a small team, limited budget, and no clear GTM playbook?",
+                    },
+                    role: {
+                        details: 'As **Co-Founder and Product Lead**, I owned everything: product vision, UI design, user research, GTM strategy, monetization, and international expansion. I led a team of 12 across development, marketing, and operations. I also served as the primary commercial relationship holder with Sri Lanka Cricket coaches, scorers, and club administrators.',
+                    },
+                    constraints: {
+                        details: '**Zero precedent** — no cricket analytics product existed in Sri Lanka, meaning there was no market education to build on and no comparable pricing to reference. **Coaches and scorers were non-technical users**, so UX had to be exceptionally intuitive. **Budget constraints** meant every GTM experiment had to be low-cost and high-feedback. The risk of over-building was real — adding features before validating usage patterns would have killed the product.',
+                    },
+                    discovery: {
+                        details: 'Conducted direct user interviews and **A/B testing sessions** with coaches and scorers registered under Sri Lanka Cricket. Identified **30+ specific data points** that coaches cared about — not generic statistics, but performance indicators tied to real coaching decisions (e.g. fielding position heat maps, scoring rate by over range). Discovery also revealed that **grassroots club and school cricket** was far more underserved than national-level cricket, making it the right beachhead market.',
+                    },
+                    decisions: {
+                        details: 'Adopted a **schools and grassroots GTM** — going bottom-up rather than top-down through national boards. This built a larger, more loyal user base before approaching professional clubs. Introduced a **digital scoresheet** as a second, standalone revenue stream — giving everyday club players a reason to engage with FieldR even if they were not interested in advanced analytics. Expanded to **Australia** in 2021, signing two clubs from the Sri Lankan diaspora community as the first international users.',
+                    },
+                    execution: {
+                        details: 'Designed all UIs based on coach and scorer feedback, validated through **A/B testing** before final implementation. Built the **scoring and analytics data architecture** to capture 30+ performance metrics per game. Launched the **digital scoresheet** feature as a low-friction entry point for casual players. Executed the Australia expansion through community outreach to diaspora cricket clubs, securing two club sign-ups for the fielding performance analysis module.',
+                    },
+                    outcomes: {
+                        details: "Grew FieldR from a university project to **Sri Lanka's first cricket analytics SaaS platform**. Achieved **75% free-to-paid conversion** among active users. Expanded internationally to **Australia** within two years of launch. Established **two distinct revenue streams** (analytics subscriptions and digital scoresheet). Secured **SAR 20K pre-seed funding** based on traction and coach adoption.",
+                    },
+                    learnings: {
+                        repeat: 'Starting at the **grassroots level** built a far more loyal and vocal user base than a top-down institutional approach would have. Coaches became advocates who recruited other coaches.',
+                        change: 'I would invest earlier in **B2B partnerships with cricket academies** — they had the scale and budget to accelerate paid adoption much faster than individual coaches.',
+                    },
+                    featured: {
+                        headline: 'Grassroots-to-International Cricket Analytics',
+                        tag: 'Founder-Led GTM',
+                        outcome: "Took a university research project to Sri Lanka's first cricket analytics platform, achieving international reach in Australia and a 75% free-to-paid conversion rate.",
+                        badges: [
+                            { value: 'Australia Expansion', label: 'International Market', description: 'Signed 2 Australian clubs from the diaspora community for fielding performance analysis.' },
+                            { value: '2 Revenue Streams', label: 'Monetization Model', description: 'Analytics subscriptions plus a standalone digital scoresheet for everyday players.' }
+                        ]
+                    },
+                },
             ] as CaseStudy[],
         },
         about: {
@@ -353,7 +561,7 @@ export const dictionary = {
                     logo: getAssetPath('/logos/fortude.png'),
                     website: 'https://www.fortude.co',
                     location: 'Colombo, Sri Lanka · Hybrid',
-                    dateRange: 'Oct 2024 – Present',
+                    dateRange: 'Oct 2024 – Jan 2026',
                     summary: 'Building market traction for AI products through product marketing and UI redesign.',
                     description: `When I joined Fortude, the AI assistant 'Charlie' and the testing tool 'Fortest.io' were technically sound but lacked market traction. I stepped into a Product Marketing role to build their independent identities and social channels, moving them away from being seen as just "internal tools."
 
@@ -362,7 +570,7 @@ export const dictionary = {
 • Secured **SAR 675K in immediate sign-ups** by focusing on how AI could solve specific pain points for Infor M3 ERP users
 • Led the **UI redesign for Charlie** to make it feel native to Microsoft Teams, which was the turning point for user adoption`,
                     skills: ['Stakeholder Management', 'Product Roadmap Management', 'Product Strategy', 'AI Products', 'Enterprise SaaS', 'Revenue Growth'],
-                    caseStudyIds: ['saas-growth-platform'],
+                    caseStudyIds: ['saas-growth-platform', 'charlie-ai-product-strategy'],
                 } as Job,
                 {
                     slug: 'fieldr-product-lead',
@@ -377,10 +585,11 @@ export const dictionary = {
 
 **Key Outcomes:**
 • Achieved **2,823 paid users** from 3,568 registrations by ruthlessly prioritizing features that coaches actually asked for in discovery sessions
-• Secured **SAR 18K in seed funding** and managed the entire roadmap across web and mobile
-• Designed the **data architecture to capture 32+ performance metrics**, turning complex sports data into simple, actionable insights`,
+• Secured **SAR 20K in seed funding** and managed the entire roadmap across web and mobile
+• Designed the **data architecture to capture 32+ performance metrics**, turning complex sports data into simple, actionable insights
+• Expanded internationally to **Australia** in 2021, signing up 2 clubs for the fielding performance analysis module`,
                     skills: ['Product Leadership', 'Product Strategy', 'Go-to-Market Strategy', 'Product-Led Growth', 'Monetization Strategy', 'Founder Mindset'],
-                    caseStudyIds: ['foundership-product'],
+                    caseStudyIds: ['foundership-product', 'fieldr-origin-to-international'],
                 } as Job,
                 {
                     slug: 'sling-mobility-product-lead',
@@ -394,11 +603,12 @@ export const dictionary = {
                     description: `I was the first employee at Sling, which meant I had to build the product, the team, and the physical operations with no supervision. I managed a diverse team of 34, ranging from software developers to mechanics and a fleet of 20 riders.
 
 **Key Outcomes:**
-• Launched **Sri Lanka's first battery-swapping architecture**, growing daily ride counts from 23 to 90
+• Launched **Sri Lanka's first battery-swapping architecture**, growing daily ride counts from **25 to 62 per rider per day**
 • Reduced rider call-backs to tech office by **75%** by tracking specific app behaviors and simplifying the UX
+• Extended battery range from **60KM to 100KM** and battery lifetime from **2 to 4 years** via command-centre data optimization
 • Spearheaded a **pilot with Uber Sri Lanka** and secured **USAID funding** to launch the first two-wheeler EVs on their platform`,
                     skills: ['Battery Swapping Network', 'Cross-functional Team Leadership', 'Platform Product Management', 'Data-driven Decision Making', 'Operational Excellence'],
-                    caseStudyIds: ['retention-engine'],
+                    caseStudyIds: ['retention-engine', 'ev-battery-ecosystem'],
                 } as Job,
                 {
                     slug: 'motion-miracles-pm',
@@ -415,7 +625,7 @@ export const dictionary = {
 • **Visibility:** Built out delivery tracking dashboards from scratch to give leadership a clear view of project risks and progress
 • **Resource Strategy:** Owned the financial tracking and cost analysis, ensuring efficient utilization of developers and artists during global expansion planning`,
                     skills: ['Operational Planning', 'Delivery Management', 'Cross-functional Coordination', 'Budget Management', 'KPI Tracking'],
-                    caseStudyIds: [],
+                    caseStudyIds: ['motion-miracles-gtm'],
                 } as Job,
                 {
                     slug: 'goodlifex-program-associate',
@@ -440,7 +650,7 @@ export const dictionary = {
                     company: 'Win Authority Innovatives',
                     logo: '',
                     website: '',
-                    location: 'Colombo · Hybrid',
+                    location: 'Wyoming, USA · Remote',
                     dateRange: 'Aug 2018 – Dec 2019',
                     summary: 'First experience managing multiple SaaS projects in a high-pressure startup.',
                     description: `This was my first experience managing multiple SaaS and web projects simultaneously in a high-pressure startup setting. I learned how to balance client expectations with a small, 4-member dev team.
@@ -724,11 +934,11 @@ export const dictionary = {
                     logo: getAssetPath('/logos/fortude.png'),
                     website: 'https://www.fortude.co',
                     location: 'كولومبو، سريلانكا',
-                    dateRange: 'أكتوبر 2024 – الحالي',
+                    dateRange: 'أكتوبر 2024 – يناير 2026',
                     summary: 'بناء جاذبية السوق لمنتجات الذكاء الاصطناعي.',
                     description: 'بناء خط مبيعات بقيمة 7.5 مليون ريال وتأمين 675 ألف ريال في التسجيلات.',
                     skills: ['إدارة أصحاب المصلحة', 'استراتيجية المنتج', 'منتجات الذكاء الاصطناعي'],
-                    caseStudyIds: ['saas-growth-platform'],
+                    caseStudyIds: ['saas-growth-platform', 'charlie-ai-product-strategy'],
                 } as Job,
                 {
                     slug: 'fieldr-product-lead',
@@ -741,7 +951,7 @@ export const dictionary = {
                     summary: 'أول منصة تحليلات رياضية في سريلانكا.',
                     description: 'تحقيق 2,823 مستخدم مدفوع من 3,568 تسجيل.',
                     skills: ['قيادة المنتج', 'استراتيجية الانتقال للسوق', 'النمو'],
-                    caseStudyIds: ['foundership-product'],
+                    caseStudyIds: ['foundership-product', 'fieldr-origin-to-international'],
                 } as Job,
                 {
                     slug: 'sling-mobility-product-lead',
@@ -754,7 +964,7 @@ export const dictionary = {
                     summary: 'أول موظف. بناء المنتج والفريق.',
                     description: 'إطلاق أول بنية تبديل بطاريات في سريلانكا.',
                     skills: ['قيادة الفرق', 'إدارة المنتجات', 'التميز التشغيلي'],
-                    caseStudyIds: ['retention-engine'],
+                    caseStudyIds: ['retention-engine', 'ev-battery-ecosystem'],
                 } as Job,
                 {
                     slug: 'motion-miracles-pm',
@@ -767,7 +977,7 @@ export const dictionary = {
                     summary: 'إدارة التسليم الإبداعي.',
                     description: 'بناء لوحات تتبع التسليم.',
                     skills: ['التخطيط التشغيلي', 'إدارة التسليم'],
-                    caseStudyIds: [],
+                    caseStudyIds: ['motion-miracles-gtm'],
                 } as Job,
                 {
                     slug: 'goodlifex-program-associate',
@@ -788,7 +998,7 @@ export const dictionary = {
                     company: 'Win Authority Innovatives',
                     logo: '',
                     website: '',
-                    location: 'كولومبو',
+                    location: 'وايومنغ، الولايات المتحدة · عن بُعد',
                     dateRange: 'أغسطس 2018 – ديسمبر 2019',
                     summary: 'إدارة مشاريع SaaS متعددة.',
                     description: 'تسليم 8 مشاريع منفصلة.',
