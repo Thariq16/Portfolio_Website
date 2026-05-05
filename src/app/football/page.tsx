@@ -4,7 +4,7 @@ import React from 'react';
 import styles from './page.module.css';
 import { BarChart2, Monitor, Code2, GraduationCap, ExternalLink, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
-import { BreadcrumbSchema } from '@/components/seo/JsonLd';
+
 
 const capabilities = [
     {
@@ -71,10 +71,6 @@ const experience = [
 export default function FootballPage() {
     return (
         <main className={styles.main}>
-            <BreadcrumbSchema items={[
-                { name: 'Home', url: 'https://thariqhamad.com' },
-                { name: 'Football Performance Analysis', url: 'https://thariqhamad.com/football' },
-            ]} />
             {/* Hero */}
             <section className={styles.hero}>
                 <div className={styles.pitchLines} aria-hidden="true">

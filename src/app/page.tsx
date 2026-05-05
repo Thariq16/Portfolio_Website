@@ -15,6 +15,7 @@ export default function Home() {
         jobTitle="Senior Product Manager"
         description="Senior Product Manager with 8+ years driving revenue, monetization, and growth for SaaS & AI platforms. Expert in zero-to-one product development."
         url="https://thariqhamad.com"
+        image="https://thariqhamad.com/images/portrait.jpg"
         sameAs={[
           'https://www.linkedin.com/in/thariqhamad/',
         ]}

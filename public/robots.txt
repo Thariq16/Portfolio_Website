@@ -4,8 +4,6 @@ Allow: /
 # Sitemap
 Sitemap: https://thariqhamad.com/sitemap.xml
 
-# Crawl-delay (optional, be courteous to servers)
-Crawl-delay: 1
 
 # AI Crawlers (allow indexing)
 User-agent: GPTBot

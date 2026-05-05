@@ -6,7 +6,7 @@ import styles from './page.module.css';
 import { Button } from '@/components/ui/Button';
 import { getAssetPath } from '@/utils/assets';
 import { Trophy, Users, Calendar, Star } from 'lucide-react';
-import { BreadcrumbSchema } from '@/components/seo/JsonLd';
+
 
 export default function AboutPage() {
     const builderStack = [
@@ -54,10 +54,6 @@ export default function AboutPage() {
 
     return (
         <main className="container">
-            <BreadcrumbSchema items={[
-                { name: 'Home', url: 'https://thariqhamad.com' },
-                { name: 'About', url: 'https://thariqhamad.com/about' },
-            ]} />
             <div className={styles.wrapper}>
                 {/* Section 1: Bio */}
                 <section className={styles.bioSection}>

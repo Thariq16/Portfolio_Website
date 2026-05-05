@@ -32,6 +32,20 @@ export async function generateMetadata(
             title: `${item.title} | Thariq Hamad`,
             description,
             url: `https://thariqhamad.com/projects/${item.slug}`,
+            images: [
+                {
+                    url: '/images/og-projects.png',
+                    width: 1200,
+                    height: 630,
+                    alt: item.title,
+                },
+            ],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: `${item.title} | Thariq Hamad`,
+            description,
+            images: ['/images/og-projects.png'],
         },
         alternates: {
             canonical: `/projects/${item.slug}`,

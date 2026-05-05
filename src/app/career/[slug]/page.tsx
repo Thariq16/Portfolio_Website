@@ -28,6 +28,20 @@ export async function generateMetadata(
             title: `${job.title} at ${job.company} | Thariq Hamad`,
             description,
             url: `https://thariqhamad.com/career/${job.slug}`,
+            images: [
+                {
+                    url: '/images/og-image.png',
+                    width: 1200,
+                    height: 630,
+                    alt: `${job.title} at ${job.company}`,
+                },
+            ],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: `${job.title} at ${job.company} | Thariq Hamad`,
+            description,
+            images: ['/images/og-image.png'],
         },
         alternates: {
             canonical: `/career/${job.slug}`,
