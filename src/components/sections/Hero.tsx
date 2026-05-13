@@ -34,13 +34,11 @@ export default function Hero() {
                         >
                             {t.hero.ctaPrimary} <ArrowRight size={18} />
                         </Button>
-                        <Button 
-                            variant="outline" 
-                            size="lg"
-                            onClick={() => window.open('/cv/Thariq%20Hamad.pdf', '_blank')}
-                        >
-                            Download CV
-                        </Button>
+                        <Link href="/cv">
+                            <Button variant="outline" size="lg">
+                                Download CV
+                            </Button>
+                        </Link>
                         <Link href="/projects">
                             <Button variant="ghost" size="lg">
                                 {t.hero.ctaSecondary}

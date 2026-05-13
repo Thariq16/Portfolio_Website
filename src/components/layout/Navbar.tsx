@@ -26,18 +26,18 @@ export default function Navbar() {
                     <Link href="/" className={styles.navLink}>{t.nav.home}</Link>
                     <Link href="/career" className={styles.navLink}>{t.nav.career}</Link>
                     <Link href="/projects" className={styles.navLink}>{t.nav.projects}</Link>
+                    <Link href="/design" className={styles.navLink}>{t.nav.design}</Link>
                     <Link href="/football" className={styles.navLink}>{t.nav.football}</Link>
                     <Link href="/about" className={styles.navLink}>{t.nav.about}</Link>
                     <Button variant="ghost" size="sm" onClick={toggleTheme} className={styles.iconBtn}>
                         {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
                     </Button>
                     <div className={styles.actionsBox} style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
-                        <Button 
-                            variant="outline" 
-                            onClick={() => window.open('/cv/Thariq%20Hamad.pdf', '_blank')}
-                        >
-                            Download CV
-                        </Button>
+                        <Link href="/cv">
+                            <Button variant="outline">
+                                Download CV
+                            </Button>
+                        </Link>
                         <Button
                             className={styles.ctaBtn}
                             onClick={() => window.open('https://calendar.app.google/vDMbaPoDc2vYVQaK8', '_blank')}
@@ -64,15 +64,15 @@ export default function Navbar() {
                     <Link href="/" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.home}</Link>
                     <Link href="/career" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.career}</Link>
                     <Link href="/projects" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.projects}</Link>
+                    <Link href="/design" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.design}</Link>
                     <Link href="/football" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.football}</Link>
                     <Link href="/about" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.about}</Link>
                     <div className={styles.mobileActions}>
-                        <Button 
-                            variant="outline" 
-                            onClick={() => window.open('/cv/Thariq%20Hamad.pdf', '_blank')}
-                        >
-                            Download CV
-                        </Button>
+                        <Link href="/cv" onClick={() => setIsMenuOpen(false)}>
+                            <Button variant="outline">
+                                Download CV
+                            </Button>
+                        </Link>
                         <Button className={styles.ctaBtn} onClick={() => window.open('https://calendar.app.google/vDMbaPoDc2vYVQaK8', '_blank')}>
                             {t.nav.contact}
                         </Button>

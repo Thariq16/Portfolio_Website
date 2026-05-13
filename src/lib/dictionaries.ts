@@ -81,6 +81,7 @@ export const dictionary = {
             home: 'Home',
             projects: 'Case Studies',
             career: 'Career',
+            design: 'Design',
             football: 'Football',
             about: 'About',
             contact: 'Book a Call',
@@ -561,7 +562,7 @@ export const dictionary = {
                     logo: getAssetPath('/logos/fortude.png'),
                     website: 'https://www.fortude.co',
                     location: 'Colombo, Sri Lanka · Hybrid',
-                    dateRange: 'Oct 2024 – Jan 2026',
+                    dateRange: 'October 2024 – January 2026',
                     summary: 'Building market traction for AI products through product marketing and UI redesign.',
                     description: `When I joined Fortude, the AI assistant 'Charlie' and the testing tool 'Fortest.io' were technically sound but lacked market traction. I stepped into a Product Marketing role to build their independent identities and social channels, moving them away from being seen as just "internal tools."
 
@@ -579,7 +580,7 @@ export const dictionary = {
                     logo: getAssetPath('/logos/fieldr.png'),
                     website: 'https://www.fieldr.lk',
                     location: 'Colombo · Remote',
-                    dateRange: 'Jul 2019 – May 2025',
+                    dateRange: 'July 2019 – May 2025',
                     summary: "Sri Lanka's first cricket analytics platform. My 'Founder's MBA' in building products from zero.",
                     description: `As a co-founder, I took FieldR from a blank page to Sri Lanka's first cricket analytics platform. This was my "Founder's MBA"—it taught me that an imperfect product in the hands of users is better than a perfect one that never ships.
 
@@ -598,7 +599,7 @@ export const dictionary = {
                     logo: getAssetPath('/logos/sling.svg'),
                     website: 'https://www.slingmobility.com',
                     location: 'Colombo, Sri Lanka · On-site',
-                    dateRange: 'Jun 2021 – May 2024',
+                    dateRange: 'June 2021 – May 2024',
                     summary: 'First employee. Built the product, team, and physical operations for EV mobility.',
                     description: `I was the first employee at Sling, which meant I had to build the product, the team, and the physical operations with no supervision. I managed a diverse team of 34, ranging from software developers to mechanics and a fleet of 20 riders.
 
@@ -617,7 +618,7 @@ export const dictionary = {
                     logo: getAssetPath('/logos/motion-miracles.png'),
                     website: 'https://www.motionmiracles.com',
                     location: 'Colombo, Sri Lanka · Hybrid',
-                    dateRange: 'Jan 2021 – May 2021',
+                    dateRange: 'December 2020 – June 2021',
                     summary: 'Managing creative delivery across animation, game development, and service teams.',
                     description: `In this role, I stepped into the creative world to manage delivery across animation, game development, and service teams. It was a fast-paced environment where I had to align very different creative workstreams with strict quarterly KPIs.
 
@@ -634,7 +635,7 @@ export const dictionary = {
                     logo: getAssetPath('/logos/goodlifex.png'),
                     website: 'https://www.goodlifex.com',
                     location: 'Colombo, Sri Lanka · Remote',
-                    dateRange: 'Aug 2020 – Dec 2020',
+                    dateRange: 'August 2020 – December 2020',
                     summary: 'Helping founders navigate incubation and hit their growth targets.',
                     description: `This was a contract role where I sat on the other side of the table, helping other founders navigate the incubation process. I was responsible for keeping startups accountable to their own growth targets.
 
@@ -651,7 +652,7 @@ export const dictionary = {
                     logo: '',
                     website: '',
                     location: 'Wyoming, USA · Remote',
-                    dateRange: 'Aug 2018 – Dec 2019',
+                    dateRange: 'July 2018 – August 2020',
                     summary: 'First experience managing multiple SaaS projects in a high-pressure startup.',
                     description: `This was my first experience managing multiple SaaS and web projects simultaneously in a high-pressure startup setting. I learned how to balance client expectations with a small, 4-member dev team.
 
@@ -663,12 +664,12 @@ export const dictionary = {
                 } as Job,
                 {
                     slug: 'millenniumit-pm',
-                    title: 'Project Manager (Intern)',
-                    company: 'MillenniumIT',
+                    title: 'Project Manager',
+                    company: 'MillenniumIT ESP',
                     logo: getAssetPath('/logos/millenniumit.svg'),
                     website: 'https://www.mitesp.com',
                     location: 'Sri Lanka · On-site',
-                    dateRange: 'Jul 2017 – Jul 2018',
+                    dateRange: 'July 2017 – July 2018',
                     summary: 'Enterprise banking and capital markets. A deep-end introduction to regulated systems.',
                     description: `My entry into the industry was in the high-stakes world of enterprise banking and capital markets. It was a "deep end" introduction to regulated systems and cross-border coordination.
 
@@ -676,22 +677,6 @@ export const dictionary = {
 • **Global Coordination:** Helped manage communication and delivery across teams in Sri Lanka, India, Bangladesh, and the UK
 • **Risk Management:** Supporting senior leadership taught me how to identify and mitigate delivery risks in large-scale financial systems with zero room for error`,
                     skills: ['Stakeholder Management', 'Delivery Governance', 'Enterprise Software Delivery', 'Financial Services Systems', 'Risk Management'],
-                    caseStudyIds: [],
-                } as Job,
-                {
-                    slug: 'novitat-media-producer',
-                    title: 'Video Producer & Director',
-                    company: 'Novitat Media',
-                    logo: '',
-                    website: '',
-                    location: 'Sri Lanka',
-                    dateRange: 'Feb 2017 – Jun 2017',
-                    summary: 'Led end-to-end production of branded digital video content.',
-                    description: `Led end-to-end production of branded digital video content for a food media platform.
-
-**Key Focus Areas:**
-• Directed production, post-production, and creative collaboration aligned with brand goals`,
-                    skills: ['Video Production', 'Creative Direction', 'Brand Collaboration'],
                     caseStudyIds: [],
                 } as Job,
             ] as Job[],
@@ -702,6 +687,7 @@ export const dictionary = {
             home: 'الرئيسية',
             projects: 'دراسات الحالة',
             career: 'المسيرة المهنية',
+            design: 'تصميم',
             football: 'كرة القدم',
             about: 'عني',
             contact: 'احجز مكالمة',
