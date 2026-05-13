@@ -131,7 +131,7 @@ export default function DesignPage() {
                         </h1>
                         <p className={styles.heroSubtitle}>
                             Selected product design work from real-world projects — mobile apps, tablet
-                            experiences, and consumer platforms across Sri Lanka, Maldives, and Qatar.
+                            experiences, and consumer platforms across Sri Lanka, Maldives, Qatar, and Czech Republic.
                             Each design was built alongside the product I shipped.
                         </p>
                         <div className={styles.heroStats}>
@@ -146,7 +146,7 @@ export default function DesignPage() {
                             </div>
                             <div className={styles.statDivider} />
                             <div className={styles.stat}>
-                                <span className={styles.statValue}>3</span>
+                                <span className={styles.statValue}>4</span>
                                 <span className={styles.statLabel}>Markets</span>
                             </div>
                         </div>
