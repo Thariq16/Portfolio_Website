@@ -18,6 +18,10 @@ export default function Footer() {
                         &copy; {currentYear} Thariq Hamad. {t.footer.rights}
                     </div>
 
+                    <Link href="/privacy" className={styles.privacyLink}>
+                        {t.footer.privacy}
+                    </Link>
+
                     <div className={styles.links}>
                         <a
                             href="mailto:thariqhamad6@gmail.com"

@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/design',
         '/cv',
         '/football',
+        '/privacy',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: currentDate,

@@ -117,6 +117,13 @@ export const dictionary = {
         footer: {
             rights: 'All rights reserved.',
             builtWith: 'Built by Thariq Hamad',
+            privacy: 'Privacy Policy',
+        },
+        cookieBanner: {
+            message: 'We use Google Analytics and Microsoft Clarity to understand how visitors use this site. These tools may set cookies and collect anonymised usage data.',
+            accept: 'Accept All',
+            decline: 'Decline',
+            policyLink: 'Privacy Policy',
         },
         projects: {
             title: 'Case Studies',
@@ -723,6 +730,13 @@ export const dictionary = {
         footer: {
             rights: 'جميع الحقوق محفوظة.',
             builtWith: 'تم البناء بواسطة طارق حماد',
+            privacy: 'سياسة الخصوصية',
+        },
+        cookieBanner: {
+            message: 'نستخدم Google Analytics وMicrosoft Clarity لفهم كيفية استخدام الزوار لهذا الموقع. قد تضع هذه الأدوات ملفات تعريف ارتباط وتجمع بيانات استخدام مجهولة الهوية.',
+            accept: 'قبول الكل',
+            decline: 'رفض',
+            policyLink: 'سياسة الخصوصية',
         },
         projects: {
             title: 'دراسات الحالة',

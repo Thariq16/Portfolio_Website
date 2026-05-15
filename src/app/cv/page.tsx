@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Download, FileText, ArrowRight } from 'lucide-react';
+import { trackCVDownload } from '@/utils/analytics';
 import styles from './page.module.css';
 
 interface CVOption {
@@ -74,10 +75,13 @@ const cvOptions: CVOption[] = [
 ];
 
 export default function CVPage() {
-    const handleDownload = (filename: string) => {
+    const handleDownload = (cv: CVOption) => {
+        // Fire GA4 event before triggering download
+        trackCVDownload(cv.label, cv.filename);
+
         const link = document.createElement('a');
-        link.href = `/cv/${encodeURIComponent(filename)}`;
-        link.download = filename;
+        link.href = `/cv/${encodeURIComponent(cv.filename)}`;
+        link.download = cv.filename;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -146,7 +150,7 @@ export default function CVPage() {
 
                                 <button
                                     className={`${styles.downloadBtn} ${cv.featured ? styles.downloadBtnFeatured : ''}`}
-                                    onClick={() => handleDownload(cv.filename)}
+                                onClick={() => handleDownload(cv)}
                                     id={`cv-download-${cv.id}`}
                                 >
                                     <Download size={16} />

@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/Button';
 import styles from './Hero.module.css';
 import { ArrowRight, MapPin } from 'lucide-react';
 import Link from 'next/link';
+import { trackButtonClick, trackOutboundLink } from '@/utils/analytics';
 
 export default function Hero() {
     const { t } = useLanguage();
@@ -30,16 +31,19 @@ export default function Hero() {
                     <div className={styles.actions}>
                         <Button
                             size="lg"
-                            onClick={() => window.open('https://calendar.app.google/vDMbaPoDc2vYVQaK8', '_blank')}
+                            onClick={() => {
+                                trackOutboundLink('https://calendar.app.google/vDMbaPoDc2vYVQaK8', 'Schedule Intro Call');
+                                window.open('https://calendar.app.google/vDMbaPoDc2vYVQaK8', '_blank');
+                            }}
                         >
                             {t.hero.ctaPrimary} <ArrowRight size={18} />
                         </Button>
-                        <Link href="/cv">
+                        <Link href="/cv" onClick={() => trackButtonClick('Download CV', 'hero')}>
                             <Button variant="outline" size="lg">
                                 Download CV
                             </Button>
                         </Link>
-                        <Link href="/projects">
+                        <Link href="/projects" onClick={() => trackButtonClick('View Case Studies', 'hero')}>
                             <Button variant="ghost" size="lg">
                                 {t.hero.ctaSecondary}
                             </Button>

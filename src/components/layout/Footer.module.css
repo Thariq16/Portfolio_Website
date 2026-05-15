@@ -41,6 +41,19 @@
     color: var(--foreground);
 }
 
+.privacyLink {
+    font-size: 0.8rem;
+    color: var(--muted-foreground);
+    text-decoration: none;
+    transition: color 0.2s;
+    opacity: 0.75;
+}
+
+.privacyLink:hover {
+    color: var(--foreground);
+    opacity: 1;
+}
+
 .builtWith {
     text-align: center;
     font-size: 0.75rem;
