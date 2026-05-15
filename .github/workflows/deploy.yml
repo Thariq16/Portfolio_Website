@@ -30,6 +30,7 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
+          NEXT_PUBLIC_CLARITY_ID: ${{ secrets.NEXT_PUBLIC_CLARITY_ID }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -45,9 +46,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: Ping Google Search Console
-        run: |
-          curl "http://www.google.com/ping?sitemap=https://thariqhamad.com/sitemap.xml" || exit 0
-      - name: Ping Bing
-        run: |
-          curl "http://www.bing.com/ping?sitemap=https://thariqhamad.com/sitemap.xml" || exit 0
