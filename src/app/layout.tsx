@@ -83,7 +83,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={clsx(inter.className, 'antialiased')}>
+      <body className={clsx(inter.className, 'antialiased')} data-clarity-unmask="true">
         <CookieConsentProvider>
           <ThemeProvider>
             <LanguageProvider>
