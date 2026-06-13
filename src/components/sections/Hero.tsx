@@ -28,21 +28,25 @@ export default function Hero() {
                     <p className={styles.subheadline}>
                         {t.hero.subheadline}
                     </p>
+                    <p className={styles.availability}>
+                        Open to Senior PM · Head of Product · KSA &amp; GCC · Available now
+                    </p>
                     <div className={styles.actions}>
+                        <Link href="/cv" onClick={() => trackButtonClick('Download CV', 'hero')}>
+                            <Button size="lg">
+                                Download CV <ArrowRight size={18} />
+                            </Button>
+                        </Link>
                         <Button
+                            variant="outline"
                             size="lg"
                             onClick={() => {
-                                trackOutboundLink('https://calendar.app.google/vDMbaPoDc2vYVQaK8', 'Schedule Intro Call');
+                                trackOutboundLink('https://calendar.app.google/vDMbaPoDc2vYVQaK8', 'Book a Call');
                                 window.open('https://calendar.app.google/vDMbaPoDc2vYVQaK8', '_blank');
                             }}
                         >
-                            {t.hero.ctaPrimary} <ArrowRight size={18} />
+                            Book a Call
                         </Button>
-                        <Link href="/cv" onClick={() => trackButtonClick('Download CV', 'hero')}>
-                            <Button variant="outline" size="lg">
-                                Download CV
-                            </Button>
-                        </Link>
                         <Link href="/projects" onClick={() => trackButtonClick('View Case Studies', 'hero')}>
                             <Button variant="ghost" size="lg">
                                 {t.hero.ctaSecondary}

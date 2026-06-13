@@ -90,10 +90,10 @@ export default function AboutPage() {
                         <div className={styles.storyBlock}>
                             <h2 className={styles.sectionLabel}>Currently</h2>
                             <p className={styles.paragraph}>
-                                Right now, I'm focused on the intersection of AI and human productivity.
-                                Rather than just talking about AI, I'm building with it—using Python and agentic 
-                                frameworks (like Lovable, Antigravity, and Claude) to automate workflows and rapidly 
-                                prototype new products.
+                                Actively building new product concepts using AI-native tools — rapidly prototyping,
+                                validating, and iterating without waiting for a full engineering team.
+                                Open to Senior PM and Head of Product roles in KSA and the wider GCC,
+                                available immediately.
                             </p>
                         </div>
 

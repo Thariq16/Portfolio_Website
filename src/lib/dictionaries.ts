@@ -88,8 +88,8 @@ export const dictionary = {
         },
         hero: {
             headline: 'Senior Product Manager\nZero-to-One Specialist',
-            subheadline: 'I\'ve built products from zero, scaled revenue past SAR 7.5M, and treated every budget like my own.',
-            ctaPrimary: 'Schedule Intro Call',
+            subheadline: 'From Employee #1 on a 34-person EV team to a SAR 7.5M SaaS pipeline — built products from zero and measured every outcome in revenue.',
+            ctaPrimary: 'Book a Call',
             ctaSecondary: 'View Case Studies',
             location: 'Based in Riyadh, Saudi Arabia (Iqama Transferable)',
         },
@@ -149,7 +149,7 @@ export const dictionary = {
                         details: '[Fortude](https://www.fortude.io) operates in a competitive B2B SaaS analytics market. The core challenge was not demand generation, but **inefficient monetization** and **unclear value articulation**, leading to **stalled deals** and **underperforming acquisition spend** despite long sales cycles. Products include the AI assistant Charlie and testing tool [Fortest.io](https://www.fortest.io).',
                     },
                     role: {
-                        details: 'Owned **product strategy for monetization** and growth initiatives, pricing validation, and cross-functional alignment. Worked closely with **Sales leadership** (deal insights), **Marketing** (GTM execution), and **Engineering** (pricing/gating).',
+                        details: 'Owned **product strategy for monetization** and growth initiatives, pricing validation, and cross-functional alignment across a **~30-person team** spanning product, engineering, sales, and marketing. Reported directly to the **CSO and board** on pipeline and adoption targets. Worked closely with **Sales leadership** (deal insights), **Marketing** (GTM execution), and **Engineering** (pricing/gating).',
                     },
                     constraints: {
                         details: 'No immediate capacity for major feature development. Existing pricing was **tightly coupled to legacy contracts**. Sales needed **near-term revenue impact**. Required **optimizing existing assets** rather than building net-new capabilities.',
@@ -364,7 +364,7 @@ export const dictionary = {
                         details: 'When [Sling Mobility](https://www.slingmobility.com) set out to create a last-mile EV delivery network in Sri Lanka, there was **no battery swapping infrastructure in the country**. Riders would run out of charge mid-route, battery degradation was rapid, and there was no data-driven visibility into vehicle or battery health. The product challenge was to design an **end-to-end hardware-software ecosystem** — cabinets, apps, sensors, and a command centre — entirely from scratch.',
                     },
                     role: {
-                        details: "As the **first employee and sole Product Lead**, I owned every layer: hardware design spec, software architecture, mobile app, command centre, and operational SOPs. I liaised with the country's largest electrical product producer for cabinet manufacturing, coordinated with an Indian sister company for battery production, and led a 34-person team spanning software developers, mechanics, and riders.",
+                        details: "As the **first employee and sole Product Lead**, I owned every layer: hardware design spec, software architecture, mobile app, command centre, and operational SOPs. I liaised with the country's largest electrical product producer for cabinet manufacturing, coordinated with an Indian sister company for battery production, and led a **34-person team** spanning software developers, mechanics, and riders. **This model maps directly to GCC last-mile logistics and Vision 2030 mobility targets** — Saudi Arabia's 30% EV adoption goal by 2030 makes fleet electrification a national priority.",
                     },
                     constraints: {
                         details: '**No existing reference architecture** — battery swapping at this scale had never been attempted in Sri Lanka. **Severe terrain variability** across the island required custom battery and motor configurations. **Limited engineering budget** demanded that every hardware investment be validated with data before scaling. Rider behaviour was unpredictable, making software design for real-world conditions especially difficult.',
@@ -644,12 +644,12 @@ export const dictionary = {
                     website: 'https://www.goodlifex.com',
                     location: 'Colombo, Sri Lanka · Remote',
                     dateRange: 'August 2020 – December 2020',
-                    summary: 'Helping founders navigate incubation and hit their growth targets.',
-                    description: `This was a contract role where I sat on the other side of the table, helping other founders navigate the incubation process. I was responsible for keeping startups accountable to their own growth targets.
+                    summary: 'Coached early-stage founders on traction, pitching, and hitting weekly growth KPIs.',
+                    description: `Sat on the other side of the table — helping early-stage founders navigate incubation, sharpen their value propositions for investors, and stay accountable to weekly growth milestones.
 
 **Key Focus Areas:**
-• **Founder Coaching:** Worked directly with founders on pitch decks and business presentations, helping them simplify value propositions for investors
-• **Milestone Tracking:** Managed progress dashboards for the entire cohort, ensuring every startup met weekly KPIs to drive actual business outcomes`,
+• **Founder Coaching:** Worked 1:1 with founders on pitch decks and investor presentations, stripping complexity to expose the core value proposition
+• **Milestone Tracking:** Managed progress dashboards for the full cohort, ensuring every startup hit weekly KPIs and converted insights into business actions`,
                     skills: ['Stakeholder Engagement', 'Performance Reporting', 'Program Management', 'Process Improvement', 'KPI Tracking'],
                     caseStudyIds: [],
                 } as Job,

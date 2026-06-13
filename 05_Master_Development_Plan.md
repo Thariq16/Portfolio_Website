@@ -42,22 +42,19 @@ All 18 fixes applied and verified via browser inspection.
 
 ---
 
-## PHASE 2 — Positioning, Conversion & Structure (Week 1 · 🤝)
-*Rationale: the site has Head-of-Product evidence with mid-level framing. Fix the framing, then make the conversion path singular.*
+## ✅ PHASE 2 — Positioning, Conversion & Structure — COMPLETE
 
-| # | Task | Detail | Owner |
-|---|---|---|---|
-| 2.1 | LinkedIn headline update | Highest-leverage single edit in the whole plan | 👤 |
-| 2.2 | Hero rewrite | Outcome-led headline; concrete proof line (Employee #1 → 34 · SAR 7M+ pipeline · Sri Lanka's first battery-swap network); availability line; CTA pair = **Download CV (primary)** + Book a Call (secondary), case-studies as quiet link | 🤝 (Claude drafts, you approve) |
-| 2.3 | Leadership-scale strip on homepage | 1→34 team · ~30 cross-functional · board/CSO reporting · Maldivian government presentation | 🤖 |
-| 2.4 | Merge ImpactShowcase + FeaturedProjects → one "Selected Work" grid of 4 | Kills duplicate story, halves scroll; drop rank chips & carousel | 🤖 |
-| 2.5 | Career page blurb rewrites (Fortude roadmap/team/board framing; Motion Miracles leads with BNPL 0→1; GOOD LIFE X active voice) | Per audit 01 §2.5 | 🤝 |
-| 2.6 | Nav reorder: Case Studies before Career | Case studies are the differentiator | 🤖 |
-| 2.7 | About "Currently": lead with what you're building, demote tool name-drops | Per audit 01 §3.3 | 🤝 |
-| 2.8 | Team size + reporting line added to "My Role & Ownership" in every case study | The seniority data points | 🤝 |
-| 2.9 | KSA/Vision-2030 context line in Sling EV case study | Local-market resonance | 🤝 |
-
-**Exit test:** A stranger reading only the first viewport can answer: who is he, how senior, what does he want, what do I click. Hero → one obvious primary action.
+| # | Task | Status |
+|---|---|---|
+| 2.1 | LinkedIn headline update | 👤 Pending (manual action by Thariq) |
+| 2.2 | Hero rewrite — proof subheadline, availability line, Download CV primary CTA | ✅ |
+| 2.3 | Leadership scale strip (1→34, SAR 7.5M+, ~30 cross-functional, Board+CSO) | ✅ |
+| 2.4 | Merge ImpactShowcase + FeaturedProjects → "Selected Work" 2×2 grid, rank chips removed | ✅ |
+| 2.5 | Career blurbs: GOOD LIFE X rewritten active voice; Fortude/Motion already done | ✅ |
+| 2.6 | Nav reorder: Case Studies before Career (desktop + mobile) | ✅ |
+| 2.7 | About "Currently": leads with building + availability, tool name-drops demoted | ✅ |
+| 2.8 | Team size + reporting line in Fortude + Sling EV case study role sections | ✅ |
+| 2.9 | KSA/Vision-2030 context line in Sling EV case study | ✅ |
 
 ---
 

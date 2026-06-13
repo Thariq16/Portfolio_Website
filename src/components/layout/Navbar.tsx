@@ -24,8 +24,8 @@ export default function Navbar() {
                 {/* Desktop Nav */}
                 <nav className={styles.desktopNav}>
                     <Link href="/" className={styles.navLink}>{t.nav.home}</Link>
-                    <Link href="/career" className={styles.navLink}>{t.nav.career}</Link>
                     <Link href="/projects" className={styles.navLink}>{t.nav.projects}</Link>
+                    <Link href="/career" className={styles.navLink}>{t.nav.career}</Link>
                     <Link href="/design" className={styles.navLink}>{t.nav.design}</Link>
                     <Link href="/football" className={styles.navLink}>{t.nav.football}</Link>
                     <Link href="/about" className={styles.navLink}>{t.nav.about}</Link>
@@ -60,8 +60,8 @@ export default function Navbar() {
             {isMenuOpen && (
                 <div className={styles.mobileMenu}>
                     <Link href="/" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.home}</Link>
-                    <Link href="/career" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.career}</Link>
                     <Link href="/projects" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.projects}</Link>
+                    <Link href="/career" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.career}</Link>
                     <Link href="/design" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.design}</Link>
                     <Link href="/football" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.football}</Link>
                     <Link href="/about" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.about}</Link>

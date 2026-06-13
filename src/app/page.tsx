@@ -1,6 +1,6 @@
 import Hero from '@/components/sections/Hero';
 import TrustBar from '@/components/sections/TrustBar';
-import FeaturedProjects from '@/components/sections/FeaturedProjects';
+import LeadershipStrip from '@/components/sections/LeadershipStrip';
 import BentoGrid from '@/components/sections/BentoGrid';
 import ImpactShowcase from '@/components/sections/ImpactShowcase';
 import BeyondResume from '@/components/sections/BeyondResume';
@@ -30,9 +30,9 @@ export default function Home() {
       />
       <Hero />
       <TrustBar />
+      <LeadershipStrip />
       <BentoGrid />
       <ImpactShowcase />
-      <FeaturedProjects />
       <BeyondResume />
       <ContactCTA />
     </main>

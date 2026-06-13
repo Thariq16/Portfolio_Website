@@ -29,24 +29,20 @@ export default function ImpactShowcase() {
                 <header className={styles.header}>
                     <div className={styles.titleRow}>
                         <TrendingUp size={24} className={styles.icon} />
-                        <h2 className={styles.title}>Impact & Value Creation</h2>
+                        <h2 className={styles.title}>Selected Work</h2>
                     </div>
                     <p className={styles.subtitle}>
-                        Selected projects highlighting business value and scaling
+                        Four case studies — each with a real business outcome and a number to back it up
                     </p>
                 </header>
 
                 <div className={styles.grid}>
-                    {sortedProjects.map((project: CaseStudy, index: number) => (
+                    {sortedProjects.map((project: CaseStudy) => (
                         <Link
                             key={project.slug}
                             href={`/projects/${project.slug}`}
                             className={styles.card}
                         >
-                            <div className={styles.rank}>
-                                #{index + 1}
-                            </div>
-
                             <div className={styles.cardContent}>
                                 <div className={styles.cardHeader}>
                                     <span
