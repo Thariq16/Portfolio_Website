@@ -70,6 +70,10 @@ export const metadata: Metadata = {
       { rel: 'android-chrome-512x512', url: '/android-chrome-512x512.png' },
     ],
   },
+  manifest: '/manifest.json',
+  other: {
+    'theme-color': '#2563eb',
+  },
 };
 
 import Navbar from '@/components/layout/Navbar';
@@ -89,6 +93,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* Runs synchronously before paint — prevents light→dark flash */}
         <script
           dangerouslySetInnerHTML={{

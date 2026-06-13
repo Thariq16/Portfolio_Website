@@ -8,11 +8,20 @@ export const metadata: Metadata = {
         description: 'Selected mobile and product UI/UX designs from real-world projects across Sri Lanka, Maldives, and Qatar.',
         url: 'https://thariqhamad.com/design',
         type: 'website',
+        images: [
+            {
+                url: '/images/og-image.png',
+                width: 1200,
+                height: 630,
+                alt: 'Thariq Hamad – UI/UX Design Portfolio',
+            },
+        ],
     },
     twitter: {
         card: 'summary_large_image',
         title: 'UI/UX Design Portfolio | Thariq Hamad',
         description: 'Mobile app and product UI/UX designs from FieldR, Sling Mobility, ConnMe, and Allo Qatar.',
+        images: ['/images/og-image.png'],
     },
     alternates: {
         canonical: '/design',
