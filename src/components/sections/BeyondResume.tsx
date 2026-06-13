@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './BeyondResume.module.css';
 import { ArrowRight } from 'lucide-react';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const cards = [
     {
@@ -33,8 +34,9 @@ const cards = [
 ];
 
 export default function BeyondResume() {
+    const ref = useScrollReveal<HTMLElement>();
     return (
-        <section className={styles.section}>
+        <section ref={ref} className={`${styles.section} reveal`}>
             <div className={styles.container}>
                 <div className={styles.header}>
                     <p className={styles.eyebrow}>Beyond the Resume</p>

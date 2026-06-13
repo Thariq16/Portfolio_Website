@@ -6,6 +6,7 @@ import { useLanguage } from '@/components/providers/LanguageProvider';
 import { TrendingUp, ArrowRight } from 'lucide-react';
 import styles from './ImpactShowcase.module.css';
 import { CaseStudy, CaseStudyCategory } from '@/lib/dictionaries';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const categoryColors: Record<CaseStudyCategory, string> = {
     'Software Development': '#3b82f6',
@@ -16,6 +17,7 @@ const categoryColors: Record<CaseStudyCategory, string> = {
 
 export default function ImpactShowcase() {
     const { t } = useLanguage();
+    const ref = useScrollReveal<HTMLElement>();
 
     // Showcase top featured projects (Lead with zero-to-one stories to back up Hero claim)
     const featuredSlugs = ['foundership-product', 'chonk-cookies-d2c', 'saas-growth-platform', 'retention-engine'];
@@ -24,7 +26,7 @@ export default function ImpactShowcase() {
         .filter(Boolean) as CaseStudy[];
 
     return (
-        <section className={styles.section}>
+        <section ref={ref} className={`${styles.section} reveal`}>
             <div className="container">
                 <header className={styles.header}>
                     <div className={styles.titleRow}>

@@ -59,10 +59,11 @@ export default function Hero() {
                 <div className={styles.portraitWrap}>
                     <Image
                         src="/images/portrait.jpg"
-                        alt="Thariq Hamad"
+                        alt="Thariq Hamad, Senior Product Manager"
                         width={400}
                         height={400}
                         className={styles.portrait}
+                        sizes="320px"
                         priority
                     />
                 </div>

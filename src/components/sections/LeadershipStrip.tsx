@@ -2,6 +2,7 @@
 
 import React from 'react';
 import styles from './LeadershipStrip.module.css';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const stats = [
     { value: '1 → 34', label: 'Team Scaled', sub: 'Employee #1 to full ops team' },
@@ -11,8 +12,9 @@ const stats = [
 ];
 
 export default function LeadershipStrip() {
+    const ref = useScrollReveal<HTMLElement>();
     return (
-        <section className={styles.strip}>
+        <section ref={ref} className={`${styles.strip} reveal`}>
             <div className={styles.container}>
                 {stats.map((stat, i) => (
                     <div key={i} className={styles.stat}>

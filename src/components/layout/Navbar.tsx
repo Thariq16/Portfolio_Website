@@ -22,14 +22,14 @@ export default function Navbar() {
                 </Link>
 
                 {/* Desktop Nav */}
-                <nav className={styles.desktopNav}>
+                <nav className={styles.desktopNav} aria-label="Main navigation">
                     <Link href="/" className={styles.navLink}>{t.nav.home}</Link>
                     <Link href="/projects" className={styles.navLink}>{t.nav.projects}</Link>
                     <Link href="/career" className={styles.navLink}>{t.nav.career}</Link>
                     <Link href="/design" className={styles.navLink}>{t.nav.design}</Link>
                     <Link href="/football" className={styles.navLink}>{t.nav.football}</Link>
                     <Link href="/about" className={styles.navLink}>{t.nav.about}</Link>
-                    <Button variant="ghost" size="sm" onClick={toggleTheme} className={styles.iconBtn}>
+                    <Button variant="ghost" size="sm" onClick={toggleTheme} className={styles.iconBtn} aria-label={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}>
                         {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
                     </Button>
                     <div className={styles.actionsBox} style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
@@ -47,10 +47,10 @@ export default function Navbar() {
 
                 {/* Mobile Toggle */}
                 <div className={styles.mobileControls}>
-                    <Button variant="ghost" size="sm" onClick={toggleTheme} className={styles.iconBtn}>
+                    <Button variant="ghost" size="sm" onClick={toggleTheme} className={styles.iconBtn} aria-label={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}>
                         {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
                     </Button>
-                    <button className={styles.menuToggle} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                    <button className={styles.menuToggle} onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label={isMenuOpen ? 'Close menu' : 'Open menu'} aria-expanded={isMenuOpen}>
                         {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
                 </div>
@@ -58,7 +58,7 @@ export default function Navbar() {
 
             {/* Mobile Menu */}
             {isMenuOpen && (
-                <div className={styles.mobileMenu}>
+                <nav className={styles.mobileMenu} aria-label="Mobile navigation">
                     <Link href="/" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.home}</Link>
                     <Link href="/projects" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.projects}</Link>
                     <Link href="/career" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.career}</Link>
@@ -75,7 +75,7 @@ export default function Navbar() {
                             {t.nav.contact}
                         </Button>
                     </div>
-                </div>
+                </nav>
             )}
         </header>
     );
