@@ -79,6 +79,10 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3 {
+  font-family: var(--font-display), Georgia, 'Times New Roman', serif;
+}
+
 /* Container Utility */
 .container {
   width: 100%;

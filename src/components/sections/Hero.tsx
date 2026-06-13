@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/Button';
 import styles from './Hero.module.css';
 import { ArrowRight, MapPin } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { trackButtonClick, trackOutboundLink } from '@/utils/analytics';
 
 export default function Hero() {
@@ -14,6 +15,7 @@ export default function Hero() {
     return (
         <section className={styles.hero}>
             <div className={styles.container}>
+                <div className={styles.layout}>
                 <div className={styles.content}>
                     <div className={styles.badges}>
                         <span className={styles.locationBadge}>
@@ -53,6 +55,17 @@ export default function Hero() {
                             </Button>
                         </Link>
                     </div>
+                </div>
+                <div className={styles.portraitWrap}>
+                    <Image
+                        src="/images/portrait.jpg"
+                        alt="Thariq Hamad"
+                        width={400}
+                        height={400}
+                        className={styles.portrait}
+                        priority
+                    />
+                </div>
                 </div>
             </div>
         </section>

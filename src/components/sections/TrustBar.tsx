@@ -32,6 +32,7 @@ export default function TrustBar() {
                                         width={140}
                                         height={50}
                                         className={styles.logoImage}
+                                        style={{ width: 'auto', height: '50px' }}
                                     />
                                 </div>
                             ) : (

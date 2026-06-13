@@ -1,10 +1,14 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Fraunces } from 'next/font/google';
 import './globals.css';
 import clsx from 'clsx';
-// Will add ThemeProvider later if needed, or implement manually
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], variable: '--font-body' });
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  variable: '--font-display',
+  axes: ['SOFT', 'WONK'],
+});
 
 export const metadata: Metadata = {
   title: {
@@ -74,6 +78,7 @@ import { ThemeProvider } from '@/components/providers/ThemeProvider';
 import { LanguageProvider } from '@/components/providers/LanguageProvider';
 import { CookieConsentProvider } from '@/components/providers/CookieConsentProvider';
 import CookieBanner from '@/components/ui/CookieConsent';
+import WhatsAppButton from '@/components/ui/WhatsAppButton';
 import AnalyticsScripts from '@/components/analytics/AnalyticsScripts';
 
 export default function RootLayout({
@@ -91,7 +96,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={clsx(inter.className, 'antialiased')} data-clarity-unmask="true">
+      <body className={clsx(inter.variable, fraunces.variable, inter.className, 'antialiased')} data-clarity-unmask="true">
         <CookieConsentProvider>
           <ThemeProvider>
             <LanguageProvider>
@@ -99,6 +104,7 @@ export default function RootLayout({
               {children}
               <Footer />
               <CookieBanner />
+              <WhatsAppButton />
             </LanguageProvider>
           </ThemeProvider>
           <AnalyticsScripts />
