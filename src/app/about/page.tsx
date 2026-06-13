@@ -172,7 +172,7 @@ export default function AboutPage() {
                     <div className={styles.rotaractStats}>
                         {[
                             { icon: Trophy, value: '150+', label: 'Projects Completed', sub: 'Overall' },
-                            { icon: Users, value: 'SAR 714K', label: 'Funds Raised', sub: 'Overall' },
+                            { icon: Users, value: 'SAR 18.75M', label: 'Projects Managed', sub: 'Total Value' },
                             { icon: Calendar, value: '5 Years', label: 'Of Service', sub: '2016–2021' },
                             { icon: Star, value: '3 Clubs', label: '& 1 District', sub: 'Leadership across all levels' },
                         ].map((stat, i) => {
@@ -199,7 +199,7 @@ export default function AboutPage() {
                                 { role: 'Secretary', org: 'Rotaract Club of IIT', period: 'Mar 2017–Jun 2018', highlight: 'Owned club operations, correspondence, records, and internal reporting for a full club year.', isTop: false },
                                 { role: 'Coordinator, Digital Communication Services', org: 'Rotaract District 3220 — Sri Lanka & Maldives', period: 'May 2018–Jun 2019', highlight: 'Elevated to District level — architected a centralized, multi-user digital platform to streamline the reporting and management of District-wide projects. Engineered using PHP, Laravel, and MySQL.', isTop: false },
                                 { role: 'Vice President', org: 'Rotaract Club of Colombo North', period: 'May 2019–May 2020', highlight: 'Stepped into executive leadership, supporting the President and driving programme delivery.', isTop: false },
-                                { role: 'President', org: 'Rotaract Club of PanColombo', period: 'Sep 2020–Aug 2021', highlight: "Led the club through a full presidential term — completed 30 projects and raised SAR 1,500 for the club's future.", isTop: true },
+                                { role: 'President', org: 'Rotaract Club of PanColombo', period: 'Sep 2020–Aug 2021', highlight: "Led the club through a full presidential term — completed 30 projects and raised SAR 1.875M across various community and national-level initiatives.", isTop: true },
                             ].map((step, i, arr) => (
                                 <div key={i} className={`${styles.timelineItem} ${step.isTop ? styles.topRole : ''}`}>
                                     <div className={styles.timelinePeriod}>{step.period}</div>

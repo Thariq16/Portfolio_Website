@@ -25,10 +25,10 @@ const cards = [
         eyebrow: 'Rotaract International · 2016–2021',
         title: 'Leading Beyond Product',
         description:
-            'Rose from Joint Director to Club President across three Rotaract clubs and District 3220 (Sri Lanka & Maldives). Completed 150+ community and national-level projects, raising SAR 714K overall.',
+            'Rose from Joint Director to Club President across three Rotaract clubs and District 3220 (Sri Lanka & Maldives). Completed 150+ community and national-level projects, managing SAR 18.75M in total project value.',
         cta: 'Read the Story',
         href: '/about#rotaract',
-        pills: ['Club President', '150+ Projects', 'SAR 714K Raised'],
+        pills: ['Club President', '150+ Projects', 'SAR 18.75M Projects'],
     },
 ];
 

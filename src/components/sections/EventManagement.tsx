@@ -6,7 +6,7 @@ import { Users, Trophy, Calendar, Star } from 'lucide-react';
 
 const stats = [
     { icon: Trophy, value: '150+', label: 'Projects Completed', sub: 'Overall' },
-    { icon: Users, value: 'SAR 714K', label: 'Funds Raised', sub: 'Overall' },
+    { icon: Users, value: 'SAR 18.75M', label: 'Projects Managed', sub: 'Total Value' },
     { icon: Calendar, value: '5 Years', label: 'Of Service', sub: '2016 – 2021' },
     { icon: Star, value: '3 Clubs', label: '& 1 District', sub: 'Leadership across all levels' },
 ];

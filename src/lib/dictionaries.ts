@@ -94,16 +94,16 @@ export const dictionary = {
             location: 'Based in Riyadh, Saudi Arabia (Iqama Transferable)',
         },
         trust: {
-            title: 'Trusted by leading tech companies',
+            title: "Where I've Built",
         },
         bento: {
             revenue: {
                 title: 'Revenue Strategy',
-                desc: 'Pricing, packaging, and commercial validation. Contributed to a **SAR 7.5M annual revenue pipeline** at Fortude.',
+                desc: 'Pricing, packaging, and commercial validation. Built a **SAR 7.5M annual revenue pipeline** at Fortude.',
             },
             ai: {
                 title: 'AI Product Leadership',
-                desc: 'Product discovery, use-case definition, and workflow integration. Designed **AI workflows driving SAR 675K new ARR**.',
+                desc: 'Product discovery, use-case definition, and workflow integration. Designed **AI workflows driving SAR 750K new ARR**.',
             },
             data: {
                 title: 'Data & Retention',
@@ -111,7 +111,7 @@ export const dictionary = {
             },
             gtm: {
                 title: 'GTM & CRO',
-                desc: 'Scaled [Chonk Cookies](/projects/chonk-cookies-d2c) to **SAR 60K revenue**. **80% checkout conversion rate** via user experimentation.',
+                desc: 'Scaled [Chonk Cookies](/projects/chonk-cookies-d2c) to **SAR 60K revenue**. **Top 28 Venture Engine finalist** via social-commerce experimentation.',
             },
         },
         footer: {
@@ -135,12 +135,12 @@ export const dictionary = {
                     logo: getAssetPath('/logos/fortude.png'),
                     website: 'https://www.fortude.co',
                     market: 'B2B SaaS | Data & Analytics Platform',
-                    timeframe: '2024–2025',
+                    timeframe: 'Oct 2024 – Jan 2026',
                     category: 'Marketing' as CaseStudyCategory,
                     impactScore: 9,
                     jobSlug: 'fortude-product-manager',
                     metrics: [
-                        { label: 'New Revenue', value: 'SAR 675K' },
+                        { label: 'New Revenue', value: 'SAR 750K' },
                         { label: 'ROAS', value: '1,800%' },
                         { label: 'Pipeline', value: 'SAR 7.5M' },
                     ],
@@ -164,7 +164,7 @@ export const dictionary = {
                         details: 'Partnered with sales to pilot **revised pricing narratives**. Collaborated with marketing on **targeted GTM experiments**. Enabled pricing changes with **minimal engineering effort** and iterated weekly based on deal feedback.',
                     },
                     outcomes: {
-                        details: 'Generated **SAR 675K in net-new revenue**. Achieved **1,800% ROAS** on targeted campaigns. Contributed to a **SAR 7.5M projected annual revenue pipeline**. Improved alignment across product, sales, and marketing.',
+                        details: 'Generated **SAR 750K in net-new revenue**. Achieved **1,800% ROAS** on targeted campaigns. Built a **SAR 7.5M projected annual revenue pipeline**. Improved alignment across product, sales, and marketing.',
                     },
                     learnings: {
                         repeat: 'Anchoring pricing decisions in **real deal data** reduced internal debate.',
@@ -173,10 +173,10 @@ export const dictionary = {
                     featured: {
                         headline: 'SAR 7.5M SaaS Revenue Pipeline Strategy',
                         tag: 'SaaS Monetization',
-                        outcome: 'Restructured SaaS pricing and packaging based on deal data, driving a SAR 7.5M pipeline and closing SAR 675K in net-new ARR.',
+                        outcome: 'Restructured SaaS pricing and packaging based on deal data, driving a SAR 7.5M pipeline and closing SAR 750K in net-new ARR.',
                         badges: [
                             { value: '1,800% ROAS', label: 'Return on Ad Spend', description: 'Achieved via integrated LinkedIn employee advocacy and paid media.' },
-                            { value: 'SAR 675K New Revenue', label: 'Direct Revenue', description: 'Generated from 4 high-value enterprise clients in a single campaign.' }
+                            { value: 'SAR 750K New Revenue', label: 'Direct Revenue', description: 'Generated from 4 high-value enterprise clients in a single campaign.' }
                         ]
                     },
                 },
@@ -192,9 +192,9 @@ export const dictionary = {
                     impactScore: 8,
                     jobSlug: 'sling-mobility-product-lead',
                     metrics: [
-                        { label: 'Retention', value: '17% Up' },
-                        { label: 'Revenue', value: '30% Up' },
-                        { label: 'Maintenance', value: 'Proactive' },
+                        { label: 'Retention', value: '+17%' },
+                        { label: 'Revenue', value: '+30%' },
+                        { label: 'Downtime', value: '−75% Incidents' },
                     ],
                     context: {
                         goal: 'The business needed to move from reactive issue resolution to proactive value delivery.',
@@ -245,8 +245,8 @@ export const dictionary = {
                     jobSlug: 'fieldr-product-lead',
                     metrics: [
                         { label: 'Product Launch', value: '0 → 1' },
-                        { label: 'Paid Conversion', value: '75%' },
-                        { label: 'Engagement', value: 'Strong' },
+                        { label: 'Free-to-Paid', value: '75%' },
+                        { label: 'Market', value: 'Sri Lanka #1' },
                     ],
                     context: {
                         goal: 'FieldR was created to serve athletes and sports communities that lacked accessible, actionable performance insights.',
@@ -277,7 +277,7 @@ export const dictionary = {
                     featured: {
                         headline: '0-1 Product Scale & Acquisition Strategy',
                         tag: 'Founder-Led Growth',
-                        outcome: 'Designed, built, and launched Sri Lanka\'s first cricket analytics platform from zero to 2,800+ paid users.',
+                        outcome: "Designed, built, and launched Sri Lanka's first cricket analytics platform — achieving 75% free-to-paid conversion through disciplined, habit-first monetization.",
                         badges: [
                             { value: '75% Conversion', label: 'Free-to-Paid Conversion', description: 'Converted 75% of active users to paid subscriptions through disciplined, habit-first monetization.' },
                             { value: 'SAR 20K Pre-Seed', label: 'Seed Funding Raised', description: 'Secured pre-seed funding and expanded to international markets including Australia.' }
@@ -296,9 +296,9 @@ export const dictionary = {
                     impactScore: 8,
                     jobSlug: '',
                     metrics: [
-                        { label: 'ARR', value: 'SAR 30K' },
-                        { label: 'Channel', value: '100% Digital' },
-                        { label: 'Retention', value: 'High Repeat' },
+                        { label: 'Revenue', value: 'SAR 60K' },
+                        { label: 'Recognition', value: 'Venture Engine Top 28' },
+                        { label: 'Model', value: 'Zero Ad Spend' },
                     ],
                     context: {
                         goal: 'Test my ability to identify a global food trend and capture a local market with zero traditional advertising budget.',
@@ -320,7 +320,7 @@ export const dictionary = {
                         details: '**Performance Marketing:** Executed targeted Instagram ad campaigns through Meta Business Suite for pop-up events and product drops.\n\n**Conversion Optimization:** Used Microsoft Clarity and Google Analytics to map user flows, identifying and fixing friction points in mobile checkout.\n\n**Digital Operations:** Built end-to-end digital ecosystem from e-commerce storefront to automated customer communications.',
                     },
                     outcomes: {
-                        details: 'Achieved **SAR 30,000 Annual Recurring Revenue (ARR)** within the first year. Built a loyal community with **high repeat-customer rate** through active direct engagement. Successfully transitioned digital interest into **physical sales at high-traffic pop-up stalls** across Colombo. Selected as **[Top 28 finalist](https://ventureengine.lk)** at [Lanka Angel Network](https://www.lankaaangelnetwork.com)\'s Venture Engine pitch competition. Follow our journey on [Instagram @chonk.sl](https://www.instagram.com/chonk.sl/).',
+                        details: 'Achieved **SAR 60K in revenue** within the first year through social commerce and pop-up events. Built a loyal community with a **strong repeat-customer rate** through active direct engagement. Successfully transitioned digital interest into **physical sales at high-traffic pop-up stalls** across Colombo. Selected as **[Top 28 finalist](https://ventureengine.lk)** at [Lanka Angel Network](https://www.lankaaangelnetwork.com)\'s Venture Engine pitch competition. Follow our journey on [Instagram @chonk.sl](https://www.instagram.com/chonk.sl/).',
                     },
                     learnings: {
                         repeat: '**Community-first approach** created sustainable organic growth without paid advertising dependency.',
@@ -329,10 +329,10 @@ export const dictionary = {
                     featured: {
                         headline: 'D2C Brand Launch with Zero Ad Budget',
                         tag: 'Social Commerce',
-                        outcome: 'Built a premium dessert brand using only social commerce and data-driven optimization.',
+                        outcome: 'Built a premium dessert brand using only social commerce and data-driven optimization, reaching SAR 60K revenue and a Venture Engine Top 28 recognition.',
                         badges: [
-                            { value: 'SAR 30K ARR', label: 'Annual Revenue', description: 'Achieved within the first year through social commerce.' },
-                            { value: 'High Retention', label: 'Repeat Customers', description: 'Built loyal community through direct engagement.' }
+                            { value: 'SAR 60K Revenue', label: 'First-Year Revenue', description: 'Achieved within the first year through social commerce and pop-up events.' },
+                            { value: 'Venture Engine Top 28', label: 'Lanka Angel Network', description: 'Selected as finalist at Sri Lanka\'s premier startup pitch competition.' }
                         ]
                     },
                     media: {
@@ -357,7 +357,7 @@ export const dictionary = {
                     metrics: [
                         { label: 'Battery Range', value: '60→100KM' },
                         { label: 'Battery Lifetime', value: '2× Longer' },
-                        { label: 'Swap Time', value: '15 Seconds' },
+                        { label: 'Swap Time', value: '90→20 sec' },
                     ],
                     context: {
                         goal: "Design and build the infrastructure, software, and hardware for Sri Lanka's first EV battery swapping network.",
@@ -454,14 +454,14 @@ export const dictionary = {
                     logo: getAssetPath('/logos/motion-miracles.png'),
                     website: 'https://www.motionmiracles.com',
                     market: 'Mobile Gaming & FinTech | B2C & B2B',
-                    timeframe: 'Jan 2021 – May 2021',
+                    timeframe: 'Dec 2020 – Jun 2021',
                     category: 'Ops' as CaseStudyCategory,
                     impactScore: 7,
                     jobSlug: 'motion-miracles-pm',
                     metrics: [
                         { label: 'Games Shipped', value: '23' },
                         { label: 'New Revenue', value: 'SAR 200K' },
-                        { label: 'Products', value: '2 Types' },
+                        { label: 'Tenure', value: '5 Months' },
                     ],
                     context: {
                         goal: 'Transform delivery visibility and revenue capture across a multi-vertical creative studio simultaneously managing game publishing and a FinTech product launch.',
@@ -564,35 +564,35 @@ export const dictionary = {
             jobs: [
                 {
                     slug: 'fortude-product-manager',
-                    title: 'Product Manager',
+                    title: 'Senior Product Manager',
                     company: 'Fortude',
                     logo: getAssetPath('/logos/fortude.png'),
                     website: 'https://www.fortude.co',
                     location: 'Colombo, Sri Lanka · Hybrid',
                     dateRange: 'October 2024 – January 2026',
-                    summary: 'Building market traction for AI products through product marketing and UI redesign.',
-                    description: `When I joined Fortude, the AI assistant 'Charlie' and the testing tool 'Fortest.io' were technically sound but lacked market traction. I stepped into a Product Marketing role to build their independent identities and social channels, moving them away from being seen as just "internal tools."
+                    summary: 'Owned product strategy and GTM for AI products — built a SAR 7.5M pipeline and SAR 750K in net-new revenue.',
+                    description: `At Fortude I owned end-to-end product strategy for two AI products — Charlie (AI Answer Assistant) and Fortest.io (testing tool) — leading a ~30-person cross-functional team across product, engineering, sales, and marketing. Reported directly to the CSO and board on pipeline and adoption targets.
 
 **Key Outcomes:**
-• Built a **SAR 7.5M sales pipeline** from scratch by activating the European market through high-engagement LinkedIn webinars
-• Secured **SAR 675K in immediate sign-ups** by focusing on how AI could solve specific pain points for Infor M3 ERP users
-• Led the **UI redesign for Charlie** to make it feel native to Microsoft Teams, which was the turning point for user adoption`,
+• Built a **SAR 7.5M annual revenue pipeline** from scratch by activating the European enterprise market
+• Generated **SAR 750K in net-new revenue** by reframing AI value around specific Infor M3 ERP pain points
+• Pivoted Charlie AI strategy from accuracy to trust, driving a **75% increase in early-adopter usage** and unlocking a Toyota Sri Lanka enterprise pilot`,
                     skills: ['Stakeholder Management', 'Product Roadmap Management', 'Product Strategy', 'AI Products', 'Enterprise SaaS', 'Revenue Growth'],
                     caseStudyIds: ['saas-growth-platform', 'charlie-ai-product-strategy'],
                 } as Job,
                 {
                     slug: 'fieldr-product-lead',
-                    title: 'Product Lead (Co-Founder)',
+                    title: 'Co-Founder & Product Lead',
                     company: 'FieldR',
                     logo: getAssetPath('/logos/fieldr.png'),
                     website: 'https://www.fieldr.lk',
                     location: 'Colombo · Remote',
-                    dateRange: 'July 2019 – May 2025',
+                    dateRange: 'June 2019 – May 2025',
                     summary: "Sri Lanka's first cricket analytics platform. My 'Founder's MBA' in building products from zero.",
                     description: `As a co-founder, I took FieldR from a blank page to Sri Lanka's first cricket analytics platform. This was my "Founder's MBA"—it taught me that an imperfect product in the hands of users is better than a perfect one that never ships.
 
 **Key Outcomes:**
-• Achieved **2,823 paid users** from 3,568 registrations by ruthlessly prioritizing features that coaches actually asked for in discovery sessions
+• Achieved **75% free-to-paid conversion** by ruthlessly prioritizing features that coaches actually asked for in discovery sessions
 • Secured **SAR 20K in seed funding** and managed the entire roadmap across web and mobile
 • Designed the **data architecture to capture 32+ performance metrics**, turning complex sports data into simple, actionable insights
 • Expanded internationally to **Australia** in 2021, signing up 2 clubs for the fielding performance analysis module`,
@@ -606,7 +606,7 @@ export const dictionary = {
                     logo: getAssetPath('/logos/sling.svg'),
                     website: 'https://www.slingmobility.com',
                     location: 'Colombo, Sri Lanka · On-site',
-                    dateRange: 'June 2021 – May 2024',
+                    dateRange: 'June 2021 – October 2024',
                     summary: 'First employee. Built the product, team, and physical operations for EV mobility.',
                     description: `I was the first employee at Sling, which meant I had to build the product, the team, and the physical operations with no supervision. I managed a diverse team of 34, ranging from software developers to mechanics and a fleet of 20 riders.
 
@@ -626,12 +626,13 @@ export const dictionary = {
                     website: 'https://www.motionmiracles.com',
                     location: 'Colombo, Sri Lanka · Hybrid',
                     dateRange: 'December 2020 – June 2021',
-                    summary: 'Managing creative delivery across animation, game development, and service teams.',
-                    description: `In this role, I stepped into the creative world to manage delivery across animation, game development, and service teams. It was a fast-paced environment where I had to align very different creative workstreams with strict quarterly KPIs.
+                    summary: 'Launched a FinTech BNPL product and drove SAR 200K revenue across 23 game launches in 5 months.',
+                    description: `In this role, I managed delivery across animation, game development, and service teams — and simultaneously led project management for a BNPL FinTech product launch, including KYC process design and user research.
 
-**Key Focus Areas:**
-• **Visibility:** Built out delivery tracking dashboards from scratch to give leadership a clear view of project risks and progress
-• **Resource Strategy:** Owned the financial tracking and cost analysis, ensuring efficient utilization of developers and artists during global expansion planning`,
+**Key Outcomes:**
+• Led publisher strategy for **23 hyper-casual games**, matching titles to publishers by genre and audience — generating **SAR 200K in new revenue**
+• Delivered a **FinTech BNPL MVP** with a structured KYC process informed by direct user research on trust and conversion friction
+• Built the organization's first unified **financial tracking and KPI dashboard** across all departments`,
                     skills: ['Operational Planning', 'Delivery Management', 'Cross-functional Coordination', 'Budget Management', 'KPI Tracking'],
                     caseStudyIds: ['motion-miracles-gtm'],
                 } as Job,
@@ -936,7 +937,7 @@ export const dictionary = {
                     location: 'كولومبو، سريلانكا',
                     dateRange: 'أكتوبر 2024 – يناير 2026',
                     summary: 'بناء جاذبية السوق لمنتجات الذكاء الاصطناعي.',
-                    description: 'بناء خط مبيعات بقيمة 7.5 مليون ريال وتأمين 675 ألف ريال في التسجيلات.',
+                    description: 'بناء خط مبيعات بقيمة 7.5 مليون ريال وتأمين 750 ألف ريال في الإيرادات الجديدة.',
                     skills: ['إدارة أصحاب المصلحة', 'استراتيجية المنتج', 'منتجات الذكاء الاصطناعي'],
                     caseStudyIds: ['saas-growth-platform', 'charlie-ai-product-strategy'],
                 } as Job,
@@ -947,9 +948,9 @@ export const dictionary = {
                     logo: getAssetPath('/logos/fieldr.png'),
                     website: 'https://www.fieldr.lk',
                     location: 'كولومبو',
-                    dateRange: 'يوليو 2019 – مايو 2025',
+                    dateRange: 'يونيو 2019 – مايو 2025',
                     summary: 'أول منصة تحليلات رياضية في سريلانكا.',
-                    description: 'تحقيق 2,823 مستخدم مدفوع من 3,568 تسجيل.',
+                    description: 'تحقيق نسبة تحويل 75% من المستخدمين المجانيين إلى المدفوعين.',
                     skills: ['قيادة المنتج', 'استراتيجية الانتقال للسوق', 'النمو'],
                     caseStudyIds: ['foundership-product', 'fieldr-origin-to-international'],
                 } as Job,

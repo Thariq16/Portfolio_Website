@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     },
     openGraph: {
         title: 'Case Studies | Thariq Hamad',
-        description: 'Product management case studies: $180K revenue generated, 17% retention improvement, 75% conversion rates.',
+        description: 'Product management case studies: SAR 750K new revenue generated, 17% retention improvement, 75% free-to-paid conversion.',
         url: 'https://thariqhamad.com/projects',
         images: [
             {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     twitter: {
         card: 'summary_large_image',
         title: 'Case Studies | Thariq Hamad',
-        description: 'Product management case studies: $180K revenue generated, 17% retention improvement, 75% conversion rates.',
+        description: 'Product management case studies: SAR 750K new revenue generated, 17% retention improvement, 75% free-to-paid conversion.',
         images: ['/images/og-projects.png'],
     },
 };
