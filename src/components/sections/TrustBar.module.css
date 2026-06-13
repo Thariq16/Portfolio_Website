@@ -21,24 +21,18 @@
     margin-bottom: 2rem;
 }
 
-.marqueeContainer {
-    position: relative;
-    width: 100%;
-    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-}
-
-.marqueeTrack {
+.logoGrid {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 4rem;
-    width: max-content;
-    animation: scroll 30s linear infinite;
+    flex-wrap: wrap;
 }
 
 .logoItem {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 150px;
 }
 
 .logoWrapper {
@@ -74,12 +68,3 @@
     color: var(--foreground);
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-33.33%);
-    }
-}

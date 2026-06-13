@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/components/providers/LanguageProvider';
 import { useTheme } from '@/components/providers/ThemeProvider';
 import { Button } from '@/components/ui/Button';
-import { Moon, Sun, Menu, X, Globe } from 'lucide-react';
+import { Moon, Sun, Menu, X } from 'lucide-react';
 import styles from './Navbar.module.css';
 import clsx from 'clsx';
 
@@ -33,10 +33,8 @@ export default function Navbar() {
                         {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
                     </Button>
                     <div className={styles.actionsBox} style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
-                        <Link href="/cv">
-                            <Button variant="outline">
-                                Download CV
-                            </Button>
+                        <Link href="/cv" className={styles.navLink}>
+                            Download CV
                         </Link>
                         <Button
                             className={styles.ctaBtn}

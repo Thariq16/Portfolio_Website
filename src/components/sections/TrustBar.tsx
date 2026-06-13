@@ -21,26 +21,24 @@ export default function TrustBar() {
         <section className={styles.section}>
             <div className={styles.container}>
                 <p className={styles.label}>{t.trust.title}</p>
-                <div className={styles.marqueeContainer}>
-                    <div className={styles.marqueeTrack}>
-                        {[...companies, ...companies, ...companies].map((company, i) => (
-                            <div key={i} className={styles.logoItem}>
-                                {company.logo ? (
-                                    <div className={styles.logoWrapper}>
-                                        <Image
-                                            src={getAssetPath(company.logo)}
-                                            alt={company.name}
-                                            width={140}
-                                            height={50}
-                                            className={styles.logoImage}
-                                        />
-                                    </div>
-                                ) : (
-                                    <span className={styles.logoText}>{company.name}</span>
-                                )}
-                            </div>
-                        ))}
-                    </div>
+                <div className={styles.logoGrid}>
+                    {companies.map((company, i) => (
+                        <div key={i} className={styles.logoItem}>
+                            {company.logo ? (
+                                <div className={styles.logoWrapper}>
+                                    <Image
+                                        src={getAssetPath(company.logo)}
+                                        alt={company.name}
+                                        width={140}
+                                        height={50}
+                                        className={styles.logoImage}
+                                    />
+                                </div>
+                            ) : (
+                                <span className={styles.logoText}>{company.name}</span>
+                            )}
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
