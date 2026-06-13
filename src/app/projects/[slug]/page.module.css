@@ -102,6 +102,56 @@
     font-weight: 500;
 }
 
+/* Anchor badges */
+.anchorBadges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.875rem;
+}
+
+.anchorBadge {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--primary) 12%, transparent);
+    color: var(--primary);
+    border: 1px solid color-mix(in srgb, var(--primary) 25%, transparent);
+    letter-spacing: 0.01em;
+}
+
+/* TL;DR card */
+.tldr {
+    max-width: 800px;
+    margin-bottom: 3rem;
+    padding: 1.25rem 1.5rem;
+    background: color-mix(in srgb, var(--primary) 6%, var(--card));
+    border: 1px solid color-mix(in srgb, var(--primary) 20%, transparent);
+    border-radius: 12px;
+}
+
+.tldrLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.6875rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary);
+    margin-bottom: 0.625rem;
+}
+
+.tldrText {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--foreground);
+    font-weight: 500;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr;

@@ -301,7 +301,7 @@ export const dictionary = {
                         { label: 'Model', value: 'Zero Ad Spend' },
                     ],
                     context: {
-                        goal: 'Test my ability to identify a global food trend and capture a local market with zero traditional advertising budget.',
+                        goal: 'Validate whether a zero-budget D2C brand could compete on social commerce alone — and prove that premium positioning could convert casual browsers into repeat customers.',
                         details: 'I wanted to build a premium Direct-to-Consumer (D2C) brand using only social commerce and data-driven optimization. The challenge was to **create market demand** and **build a loyal customer base** without any traditional advertising spend.',
                     },
                     role: {
@@ -320,7 +320,7 @@ export const dictionary = {
                         details: '**Performance Marketing:** Executed targeted Instagram ad campaigns through Meta Business Suite for pop-up events and product drops.\n\n**Conversion Optimization:** Used Microsoft Clarity and Google Analytics to map user flows, identifying and fixing friction points in mobile checkout.\n\n**Digital Operations:** Built end-to-end digital ecosystem from e-commerce storefront to automated customer communications.',
                     },
                     outcomes: {
-                        details: 'Achieved **SAR 60K in revenue** within the first year through social commerce and pop-up events. Built a loyal community with a **strong repeat-customer rate** through active direct engagement. Successfully transitioned digital interest into **physical sales at high-traffic pop-up stalls** across Colombo. Selected as **[Top 28 finalist](https://ventureengine.lk)** at [Lanka Angel Network](https://www.lankaaangelnetwork.com)\'s Venture Engine pitch competition. Follow our journey on [Instagram @chonk.sl](https://www.instagram.com/chonk.sl/).',
+                        details: 'Selected as a **[Top 28 finalist](https://ventureengine.lk)** at [Lanka Angel Network](https://www.lankaaangelnetwork.com)\'s Venture Engine pitch competition — externally validating the business model against 300+ startups. Built a loyal community with a **strong repeat-customer rate** through direct community engagement and consistent content. Successfully transitioned digital interest into **physical sales at high-traffic pop-up stalls** across Colombo. Achieved **SAR 60K in revenue** within the first year — entirely through social commerce, pop-up events, and word-of-mouth, with zero traditional advertising spend.',
                     },
                     learnings: {
                         repeat: '**Community-first approach** created sustainable organic growth without paid advertising dependency.',

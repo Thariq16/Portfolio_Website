@@ -4,6 +4,7 @@ import LeadershipStrip from '@/components/sections/LeadershipStrip';
 import BentoGrid from '@/components/sections/BentoGrid';
 import ImpactShowcase from '@/components/sections/ImpactShowcase';
 import BeyondResume from '@/components/sections/BeyondResume';
+import TestimonialsStrip from '@/components/sections/TestimonialsStrip';
 import ContactCTA from '@/components/sections/ContactCTA';
 import { PersonSchema, WebsiteSchema } from '@/components/seo/JsonLd';
 
@@ -33,6 +34,7 @@ export default function Home() {
       <LeadershipStrip />
       <BentoGrid />
       <ImpactShowcase />
+      <TestimonialsStrip />
       <BeyondResume />
       <ContactCTA />
     </main>

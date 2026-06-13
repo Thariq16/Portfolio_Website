@@ -4,7 +4,7 @@ import React from 'react';
 import { useParams } from 'next/navigation';
 import { useLanguage } from '@/components/providers/LanguageProvider';
 import { Button } from '@/components/ui/Button';
-import { Calendar, ArrowLeft, Globe } from 'lucide-react';
+import { Calendar, ArrowLeft, Globe, Zap } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './page.module.css';
@@ -121,6 +121,15 @@ export default function CaseStudyContent() {
                                     </a>
                                 )}
                             </div>
+                            {project.featured?.badges && project.featured.badges.length > 0 && (
+                                <div className={styles.anchorBadges}>
+                                    {project.featured.badges.map((badge: { value: string; label: string; description?: string }, i: number) => (
+                                        <span key={i} className={styles.anchorBadge} title={badge.description}>
+                                            {badge.value}
+                                        </span>
+                                    ))}
+                                </div>
+                            )}
                         </div>
                     </div>
 
@@ -133,6 +142,17 @@ export default function CaseStudyContent() {
                         ))}
                     </div>
                 </header>
+
+                {/* TL;DR outcome card */}
+                {project.featured?.outcome && (
+                    <div className={styles.tldr}>
+                        <div className={styles.tldrLabel}>
+                            <Zap size={14} />
+                            TL;DR
+                        </div>
+                        <p className={styles.tldrText}>{project.featured.outcome}</p>
+                    </div>
+                )}
 
                 <div className={styles.grid}>
                     {/* 1. Context */}

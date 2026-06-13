@@ -1,0 +1,81 @@
+.section {
+    padding: 4rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.label {
+    text-align: center;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted-foreground);
+    margin-bottom: 2.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 1.75rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.quote {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--foreground);
+    font-style: italic;
+    position: relative;
+}
+
+.quote::before {
+    content: '"';
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--primary);
+    opacity: 0.3;
+    display: block;
+    margin-bottom: -0.5rem;
+    font-style: normal;
+}
+
+.author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.name {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--foreground);
+}
+
+.role {
+    font-size: 0.8125rem;
+    color: var(--muted-foreground);
+}
+
+.relationship {
+    font-size: 0.75rem;
+    color: var(--primary);
+    font-weight: 500;
+}
