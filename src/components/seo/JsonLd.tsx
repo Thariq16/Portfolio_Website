@@ -51,6 +51,7 @@ export function PersonSchema({
         <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            suppressHydrationWarning
         />
     );
 }
@@ -110,6 +111,7 @@ export function ArticleSchema({
         <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            suppressHydrationWarning
         />
     );
 }
@@ -139,6 +141,7 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
         <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            suppressHydrationWarning
         />
     );
 }
@@ -162,6 +165,7 @@ export function WebsiteSchema({ name, url, description }: WebsiteSchemaProps) {
         <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            suppressHydrationWarning
         />
     );
 }
