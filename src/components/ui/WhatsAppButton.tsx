@@ -6,7 +6,7 @@ import { trackOutboundLink } from '@/utils/analytics';
 
 // Replace YOUR_NUMBER with your WhatsApp number (country code, no +, no spaces)
 // e.g. "966501234567" for a Saudi number
-const WHATSAPP_NUMBER = 'YOUR_NUMBER';
+const WHATSAPP_NUMBER = '966565329004';
 const WHATSAPP_MESSAGE = encodeURIComponent(
     "Hi Thariq, I came across your portfolio and I'd love to connect."
 );
