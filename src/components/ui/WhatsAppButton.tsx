@@ -12,8 +12,6 @@ const WHATSAPP_MESSAGE = encodeURIComponent(
 );
 
 export default function WhatsAppButton() {
-    if (WHATSAPP_NUMBER === 'YOUR_NUMBER') return null;
-
     const href = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
 
     return (
