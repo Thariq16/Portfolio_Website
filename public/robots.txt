@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /job-application/
 
 # Sitemap
 Sitemap: https://thariqhamad.com/sitemap.xml
@@ -8,15 +9,20 @@ Sitemap: https://thariqhamad.com/sitemap.xml
 # AI Crawlers (allow indexing)
 User-agent: GPTBot
 Allow: /
+Disallow: /job-application/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /job-application/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /job-application/
 
 User-agent: anthropic-ai
 Allow: /
+Disallow: /job-application/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /job-application/

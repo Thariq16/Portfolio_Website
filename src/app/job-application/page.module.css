@@ -1,0 +1,393 @@
+/* =========================================
+   Job Search Dashboard — Scoped Styles
+   ========================================= */
+
+.main {
+    min-height: 100vh;
+    padding-bottom: 5rem;
+}
+
+/* ── Hero ── */
+.hero {
+    padding: 4rem 0 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(37, 99, 235, 0.1), transparent 70%);
+    pointer-events: none;
+}
+
+[data-theme='dark'] .hero::before {
+    background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(59, 130, 246, 0.13), transparent 70%);
+}
+
+.heroInner {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.heroBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.35rem 0.9rem;
+    border-radius: 100px;
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    color: var(--primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+[data-theme='dark'] .heroBadge {
+    background: rgba(59, 130, 246, 0.12);
+    border-color: rgba(59, 130, 246, 0.25);
+}
+
+.heroTitle {
+    font-size: clamp(1.9rem, 4.5vw, 2.75rem);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    color: var(--foreground);
+}
+
+.heroAccent {
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.heroSubtitle {
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+}
+
+/* ── Note ── */
+.note {
+    background: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    border-radius: 0.75rem;
+    padding: 0.9rem 1.1rem;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: var(--foreground);
+    margin-bottom: 1.75rem;
+}
+
+[data-theme='dark'] .note {
+    background: rgba(245, 158, 11, 0.1);
+    border-color: rgba(245, 158, 11, 0.3);
+}
+
+/* ── KPI Grid ── */
+.kpiGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.9rem;
+    margin-bottom: 1.75rem;
+}
+
+.kpi {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 0.9rem;
+    padding: 1rem 1.1rem;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.kpi:hover {
+    border-color: rgba(37, 99, 235, 0.3);
+    transform: translateY(-1px);
+}
+
+.kpiNum {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--primary);
+    font-family: var(--font-display), Georgia, serif;
+}
+
+.kpiLabel {
+    font-size: 0.72rem;
+    color: var(--muted-foreground);
+    margin-top: 0.3rem;
+    line-height: 1.4;
+}
+
+/* ── Charts ── */
+.chartsGrid {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+}
+
+@media (max-width: 800px) {
+    .chartsGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.25rem;
+}
+
+.cardHeading {
+    margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--foreground);
+}
+
+.barchart {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    height: 190px;
+    padding-top: 20px;
+}
+
+.barCol {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.barVal {
+    font-size: 11px;
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.bar {
+    width: 70%;
+    background: linear-gradient(180deg, #3b82f6, #2563eb);
+    border-radius: 4px 4px 0 0;
+    min-height: 2px;
+}
+
+.barLabel {
+    font-size: 10px;
+    color: var(--muted-foreground);
+    margin-top: 6px;
+    text-align: center;
+}
+
+.hbarchart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hbarRow {
+    display: grid;
+    grid-template-columns: 140px 1fr 34px;
+    align-items: center;
+    gap: 8px;
+}
+
+.hbarLabel {
+    font-size: 12px;
+    color: var(--foreground);
+    text-align: right;
+}
+
+.hbarTrack {
+    background: var(--muted);
+    border-radius: 4px;
+    height: 14px;
+    overflow: hidden;
+}
+
+.hbarFill {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6, #0a66c2);
+    border-radius: 4px;
+}
+
+.hbarVal {
+    font-size: 12px;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* ── Tabs ── */
+.tabs {
+    display: flex;
+    gap: 4px;
+    margin: 1.5rem 0 1rem;
+    flex-wrap: wrap;
+    border-bottom: 2px solid var(--border);
+}
+
+.tabBtn {
+    background: none;
+    border: none;
+    padding: 0.65rem 1rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: var(--muted-foreground);
+    border-bottom: 3px solid transparent;
+    font-family: inherit;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.tabBtn:hover {
+    color: var(--foreground);
+}
+
+.tabBtnActive,
+.tabBtnActive:hover {
+    color: var(--primary);
+    font-weight: 700;
+    border-bottom-color: var(--primary);
+}
+
+/* ── Controls ── */
+.controls {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.85rem;
+    align-items: center;
+}
+
+.searchInput,
+.select {
+    padding: 0.5rem 0.65rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    font-family: inherit;
+    background: var(--background);
+    color: var(--foreground);
+}
+
+.searchInput {
+    flex: 1;
+    min-width: 180px;
+}
+
+.pillCount {
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+/* ── Table ── */
+.tableScroll {
+    max-height: 560px;
+    overflow: auto;
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+}
+
+.table thead th {
+    background: var(--primary);
+    color: #fff;
+    text-align: left;
+    padding: 0.6rem 0.65rem;
+    position: sticky;
+    top: 0;
+    font-weight: 600;
+}
+
+.table tbody td {
+    padding: 0.55rem 0.65rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    color: var(--foreground);
+}
+
+.table tbody td:first-child {
+    white-space: nowrap;
+}
+
+.table tbody tr:nth-child(even) {
+    background: var(--muted);
+}
+
+.table tbody tr:hover {
+    background: rgba(37, 99, 235, 0.06);
+}
+
+.msgCell {
+    max-width: 480px;
+    white-space: pre-wrap;
+    line-height: 1.5;
+}
+
+/* ── Badges ── */
+.badge {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 100px;
+    font-size: 10.5px;
+    font-weight: 700;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.bLinkedin { background: #0a66c2; }
+.bAts { background: #059669; }
+.bIndeed { background: #2557a7; }
+.bRecruiter { background: #d97706; }
+.bDirect { background: #7c3aed; }
+.bAi { background: #dc2626; }
+.bOther { background: #64748b; }
+
+.sRejected { background: #dc2626; }
+.sNoresponse { background: #94a3b8; }
+
+/* ── Footer note ── */
+.footerNote {
+    text-align: center;
+    color: var(--muted-foreground);
+    font-size: 0.78rem;
+    padding: 1.5rem 0 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+    .hero {
+        padding: 2.5rem 0 1.5rem;
+    }
+
+    .hbarRow {
+        grid-template-columns: 90px 1fr 30px;
+    }
+
+    .hbarLabel {
+        font-size: 10.5px;
+    }
+}
