@@ -41,7 +41,7 @@ type TabId = 'all' | 'recent' | 'recruiters' | 'linkedin' | 'messages';
 
 const TABS: { id: TabId; label: string }[] = [
     { id: 'all', label: 'All Applications' },
-    { id: 'recent', label: 'Recent (Apr 2 – Jul 1)' },
+    { id: 'recent', label: 'Since New CV (Apr 2 – Jul 1)' },
     { id: 'recruiters', label: 'Recruiter Outreach' },
     { id: 'linkedin', label: 'LinkedIn Recruiter Contacts' },
     { id: 'messages', label: 'Recruiter Messages' },
@@ -126,9 +126,9 @@ export default function JobApplicationPage() {
         const noResponseCount = applications.length - rejectedCount;
         return [
             { label: 'Total applications logged', value: applications.length },
-            { label: 'Applications, Apr 2 – Jul 1', value: recent.length },
+            { label: 'Applications since new CV (Apr 2 – Jul 1)', value: recent.length },
             { label: 'Distinct companies (full range)', value: new Set(applications.map(a => a.company)).size },
-            { label: 'Distinct companies (Apr 2 – Jul 1)', value: new Set(recent.map(a => a.company)).size },
+            { label: 'Distinct companies since new CV (Apr 2 – Jul 1)', value: new Set(recent.map(a => a.company)).size },
             { label: 'Rejections found', value: rejectedCount },
             { label: 'No response yet', value: noResponseCount },
             { label: 'Recruiter / company outreach', value: recruiterOutreach.length },
@@ -220,7 +220,7 @@ export default function JobApplicationPage() {
                         </div>
                     </div>
                     <div className={styles.card}>
-                        <h3 className={styles.cardHeading}>Applications by Channel (Apr 2 – Jul 1)</h3>
+                        <h3 className={styles.cardHeading}>Applications by Channel — Since New CV (Apr 2 – Jul 1)</h3>
                         <div className={styles.hbarchart}>
                             {channelCounts.map(([label, val]) => (
                                 <div key={label} className={styles.hbarRow}>
@@ -233,6 +233,11 @@ export default function JobApplicationPage() {
                             ))}
                         </div>
                     </div>
+                </div>
+
+                <div className={styles.cvNote}>
+                    The Apr 2 – Jul 1 window marks the period since receiving the revamped CV from the Professional
+                    Pyramid team — tracked separately below to gauge its impact on response rates.
                 </div>
 
                 <div className={styles.tabs}>

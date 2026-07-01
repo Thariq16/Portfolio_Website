@@ -93,6 +93,23 @@
     border-color: rgba(245, 158, 11, 0.3);
 }
 
+.cvNote {
+    background: rgba(37, 99, 235, 0.06);
+    border: 1px solid rgba(37, 99, 235, 0.18);
+    border-left: 3px solid var(--primary);
+    border-radius: 0.5rem;
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+    line-height: 1.55;
+    color: var(--muted-foreground);
+    margin: 1.25rem 0 0;
+}
+
+[data-theme='dark'] .cvNote {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.22);
+}
+
 /* ── KPI Grid ── */
 .kpiGrid {
     display: grid;
