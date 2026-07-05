@@ -257,23 +257,72 @@
 }
 
 .badge {
-    font-size: 0.62rem;
-    font-weight: 700;
-    padding: 0.18rem 0.55rem;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.66rem;
+    font-weight: 600;
+    padding: 0.22rem 0.6rem;
     border-radius: 100px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
     white-space: nowrap;
-    color: #fff;
+    background: var(--muted);
+    color: var(--muted-foreground);
+    border: 1px solid var(--border);
 }
 
-.bTrackBuilder { background: var(--primary); }
-.bTrackAnalyst { background: #b8863a; }
-.bPillar       { background: #6b6250; }
-.bFormat       { background: #64748b; }
+.bTrackBuilder {
+    background: rgba(37, 99, 235, 0.08);
+    border-color: rgba(37, 99, 235, 0.25);
+    color: var(--primary);
+}
+[data-theme='dark'] .bTrackBuilder {
+    background: rgba(59, 130, 246, 0.12);
+    border-color: rgba(59, 130, 246, 0.3);
+}
 
-.sReady      { background: #1f8a4c; }
-.sSkeleton   { background: #b8763a; }
-.sNotcleared { background: #b83a3a; }
+.bTrackAnalyst {
+    background: rgba(124, 58, 237, 0.08);
+    border-color: rgba(124, 58, 237, 0.25);
+    color: #7c3aed;
+}
+[data-theme='dark'] .bTrackAnalyst {
+    background: rgba(167, 139, 250, 0.12);
+    border-color: rgba(167, 139, 250, 0.3);
+    color: #c4b5fd;
+}
+
+.bPillar {
+    background: var(--muted);
+    border-color: var(--border);
+    color: var(--muted-foreground);
+}
+
+.bFormat {
+    background: transparent;
+    border-color: var(--border);
+    color: var(--muted-foreground);
+}
+
+.sReady {
+    background: rgba(34, 197, 94, 0.1);
+    border-color: rgba(34, 197, 94, 0.3);
+    color: #16a34a;
+}
+[data-theme='dark'] .sReady { color: #4ade80; }
+
+.sSkeleton {
+    background: rgba(245, 158, 11, 0.1);
+    border-color: rgba(245, 158, 11, 0.3);
+    color: #b45309;
+}
+[data-theme='dark'] .sSkeleton { color: #fbbf24; }
+
+.sNotcleared {
+    background: rgba(220, 38, 38, 0.08);
+    border-color: rgba(220, 38, 38, 0.25);
+    color: #dc2626;
+}
+[data-theme='dark'] .sNotcleared { color: #f87171; }
 
 .scoreWrap {
     margin-left: auto;
@@ -420,7 +469,14 @@
 }
 
 .bEdited {
-    background: #7c3aed;
+    background: rgba(124, 58, 237, 0.1);
+    border-color: rgba(124, 58, 237, 0.3);
+    color: #7c3aed;
+}
+[data-theme='dark'] .bEdited {
+    background: rgba(167, 139, 250, 0.14);
+    border-color: rgba(167, 139, 250, 0.35);
+    color: #c4b5fd;
 }
 
 .editBox {
