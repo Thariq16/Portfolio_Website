@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /job-application/
+Disallow: /personal-branding/
 
 # Sitemap
 Sitemap: https://thariqhamad.com/sitemap.xml
@@ -10,19 +11,24 @@ Sitemap: https://thariqhamad.com/sitemap.xml
 User-agent: GPTBot
 Allow: /
 Disallow: /job-application/
+Disallow: /personal-branding/
 
 User-agent: ChatGPT-User
 Allow: /
 Disallow: /job-application/
+Disallow: /personal-branding/
 
 User-agent: Google-Extended
 Allow: /
 Disallow: /job-application/
+Disallow: /personal-branding/
 
 User-agent: anthropic-ai
 Allow: /
 Disallow: /job-application/
+Disallow: /personal-branding/
 
 User-agent: ClaudeBot
 Allow: /
 Disallow: /job-application/
+Disallow: /personal-branding/
