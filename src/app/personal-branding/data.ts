@@ -30,11 +30,11 @@ I'm not going to name it — the specifics aren't the point, and I'm not turning
 
 I used to think the value of a story like this was in showing you recovered. I don't think that anymore. The value is in being honest that it happened, and what it actually taught me — because it taught me more about product management than any course I've ever taken.
 
-I'd heard that failure teaches you more than success does. I didn't understand how literally true that was until I'd lived through the second one.
+Being the Head of Product on a failed product is a strange kind of blessing in this career. Success teaches you a few things. Failure teaches you many you can avoid in the next stage. I didn't understand how literally true that was until I'd lived through this one.
 
 If you're early in product and everything you've shipped has gone reasonably well so far — that's not a bad thing, but it means there's a category of lesson you haven't been forced to learn yet. I'd rather tell you what it cost me than let you find out the same way I did.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: 'Moved to Post 1/opener 2026-07-05 — no anonymization gymnastics needed, strongest opener in the set. PBOS fix 2026-07-06: reworded a near-literal Generic Language Filter violation ("Failure teaches..."). Date confirmed 2026-07-06 (second adjustment) — now Tue, Jul 7.',
+        note: "Moved to Post 1/opener 2026-07-05 — no anonymization gymnastics needed, strongest opener in the set. Correction 2026-07-06: an earlier pass today wrongly flattened this into generic paraphrase, misreading Thariq's own verbatim quote as a Generic Language Filter violation. Restored his real words, verbatim, from facts-source.md's CLEARED section. Date confirmed 2026-07-06 (second adjustment) — now Tue, Jul 7.",
     },
     {
         num: 2, date: 'Thu, Jul 9, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'KSA Product Reviews',
@@ -87,9 +87,9 @@ That's what turned it around. Once people could see why an answer deserved trust
 
 Usage among early adopters grew 75%.
 
-The model never got smarter during any of this. What changed was what the user could actually see.`,
+The model never got smarter during any of this. What changed was what the user could actually see. Trust is a product feature, not an engineering metric.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: 'Rewritten 2026-07-04 from your own raw account in "Fortude Story.docx." Company, product names, and the Toyota Sri Lanka detail stay fully out per the anonymization rule. Moved from opener to Post 4 on 2026-07-05. PBOS fix 2026-07-06: cut a recurring "not X, it\'s Y" antithesis and an advice-shaped closing line.',
+        note: 'Rewritten 2026-07-04 from your own raw account in "Fortude Story.docx." Company, product names, and the Toyota Sri Lanka detail stay fully out per the anonymization rule. Moved from opener to Post 4 on 2026-07-05. PBOS fix 2026-07-06: cut an antithesis tic and an advice-shaped closer. Correction same day: swapped in Thariq\'s own verbatim quotable line for this story, which hadn\'t been used before.',
     },
     {
         num: 5, date: 'Thu, Jul 16, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'AI & Product Development',
