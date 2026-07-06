@@ -119,7 +119,7 @@ export default function PersonalBrandingPage() {
                             Personal Branding <span className={styles.heroAccent}>Content Calendar</span>
                         </h1>
                         <p className={styles.heroSubtitle}>
-                            {posts.length} drafted posts (Jul 5 – Aug 25, 2026) · Builder Thariq &amp; Analyst Thariq tracks
+                            {posts.length} drafted posts (Jul 7 – Aug 27, 2026) · Builder Thariq &amp; Analyst Thariq tracks
                         </p>
                     </div>
                 </div>
@@ -152,7 +152,7 @@ export default function PersonalBrandingPage() {
                         <div className={styles.kpiLabel}>Avg score</div>
                     </div>
                     <div className={styles.kpi}>
-                        <div className={styles.kpiNum}>Jul 5 – Aug 25</div>
+                        <div className={styles.kpiNum}>Jul 7 – Aug 27</div>
                         <div className={styles.kpiLabel}>Date range</div>
                     </div>
                 </div>
