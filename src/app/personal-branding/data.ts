@@ -24,17 +24,17 @@ export const posts: Post[] = [
         num: 1, date: 'Tue, Jul 7, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
         title: 'Failed product story — OPENER', status: 'Ready', format: 'Text-only', image: false, score: 9.5,
         why: 'Strongest hook in the batch, fully cleared, no anonymization needed — recommended opener.',
-        body: `I was Head of Product on something that ran for six years. Then a trust breakdown triggered a social backlash, and user activity went from normal to zero within six weeks.
+        body: `I was Head of Product on something that ran for six years, and then a trust breakdown triggered a social backlash and user activity went from normal to zero in about six weeks. I'm not going to name it. The specifics aren't really the point, and I'm not turning this into a case study with a tidy resolution because there isn't one — the product's on hibernation now, user data deleted, platform made inaccessible.
 
-I'm not going to name it — the specifics aren't the point, and I'm not turning it into a case study with a tidy resolution, because there isn't one. The product is on hibernation now. User data deleted, platform made inaccessible. Six years of work, gone in six weeks, because trust broke and we couldn't rebuild it fast enough to matter.
+Six years of work, gone in six weeks.
 
-I used to think the value of a story like this was in showing you recovered. I don't think that anymore. The value is in being honest that it happened, and what it actually taught me — because it taught me more about product management than any course I've ever taken.
+I used to think the value in telling a story like this was showing that you recovered. I don't really think that anymore. I think the value is just being honest that it happened and what it actually taught me, and it taught me more than any course or mentor or anything else has.
 
-Being the Head of Product on a failed product is a strange kind of blessing in this career. Success teaches you a few things. Failure teaches you many you can avoid in the next stage. I didn't understand how literally true that was until I'd lived through this one.
+Being the Head of Product on a failed product is a blessing you can have in your career, because success teaches you a few things, failure teaches you many that you can avoid in the next stage. I don't think I understood how literally true that was until I'd actually lived through it.
 
-If you're early in product and everything you've shipped has gone reasonably well so far — that's not a bad thing, but it means there's a category of lesson you haven't been forced to learn yet. I'd rather tell you what it cost me than let you find out the same way I did.`,
+If you're early in product and most of what you've shipped has gone fine so far, that's not a bad thing, but there's a category of lesson you just haven't hit yet. I'd rather tell you what it cost me than have you find out the same way I did.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: "Moved to Post 1/opener 2026-07-05 — no anonymization gymnastics needed, strongest opener in the set. Correction 2026-07-06: an earlier pass today wrongly flattened this into generic paraphrase, misreading Thariq's own verbatim quote as a Generic Language Filter violation. Restored his real words, verbatim, from facts-source.md's CLEARED section. Date confirmed 2026-07-06 (second adjustment) — now Tue, Jul 7.",
+        note: "Moved to Post 1/opener 2026-07-05 — no anonymization gymnastics needed, strongest opener in the set. Correction 2026-07-06: an earlier pass today wrongly flattened this into generic paraphrase, misreading Thariq's own verbatim quote as a Generic Language Filter violation. Restored his real words, verbatim, from facts-source.md's CLEARED section. Second correction, same day: rewrote the surrounding paragraphs to break the 'every paragraph ends on a crafted rhetorical button' pattern a human reviewer flagged as AI-polished — looser run-ons, split off a short stand-alone line, cut a tidy superlative. Date confirmed 2026-07-06 (second adjustment) — now Tue, Jul 7.",
     },
     {
         num: 2, date: 'Thu, Jul 9, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'KSA Product Reviews',
@@ -44,16 +44,16 @@ If you're early in product and everything you've shipped has gone reasonably wel
 
 Worth looking at closely, then. A recurring theme across Jeeny's Play Store reviews is drivers appearing to be "arriving" on the map while the icon hasn't actually moved for several minutes — followed by a cancellation after the rider's already invested a 10+ minute wait. On the driver side, a separate complaint pattern shows up too: the demand map lighting up red zones that don't correspond to actual incoming ride requests, and drivers getting matched to fares 8-17km away for SAR 5-10 — a mismatch that all but guarantees the driver cancels or the rider gives up first.
 
-Both complaints point at the same underlying gap: the live-tracking feature is built to show position, not to show confidence in that position. A stale pin and an accurate pin look identical to the rider — there's no signal telling you "this hasn't updated in 90 seconds" versus "this is live right now." Silence reads as normal until it very obviously isn't, and by then the wait's already sunk.
+Both complaints point at the same underlying gap, I think — the live-tracking feature shows position, but it doesn't show confidence in that position. A stale pin and an accurate pin look identical to the rider — there's no signal telling you "this hasn't updated in 90 seconds" versus "this is live right now." Silence reads as normal until it very obviously isn't, and by then the wait's already sunk.
 
 Two fixes I'd want to test if I were on this: first, a simple staleness indicator on the driver pin itself — not a redesign, just an honest "last updated Xs ago" so a rider isn't guessing. Second, on the matching side, a visible cancellation-likelihood signal before a match is confirmed rather than after — so a rider facing a long-distance, low-probability match can choose to wait for a better one instead of finding out the hard way ten minutes in.
 
-None of this is a small-team-can't-do-it problem. It's a "which metric are we actually optimizing" problem — and right now it looks like the metric is match speed, not match confidence. Those aren't the same thing, and riders can tell the difference even when they can't name it.`,
+None of this is a small-team-can't-do-it problem. It's a "which metric are we actually optimizing" problem, and right now it looks like the metric is match speed, not match confidence. Those aren't really the same thing, and I think riders can tell the difference even if they couldn't put a name to it.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         links: [
             ['Jeeny — Google Play', 'https://play.google.com/store/apps/details?id=com.jeeny.rider'],
         ],
-        note: "Research note: built from Jeeny's own Google Play/App Store listings, Arab News' coverage of Jeeny's Vision 2030 positioning, and complaint patterns on Jeeny's Google Play review section. Rider feedback here is a paraphrased pattern, not a verbatim quote — flagged deliberately, not put in quotation marks. Sources: Jeeny — Google Play; Saudi ride-hailing app Jeeny goes the distance to meet Vision 2030 goals — Arab News.",
+        note: "Research note: built from Jeeny's own Google Play/App Store listings, Arab News' coverage of Jeeny's Vision 2030 positioning, and complaint patterns on Jeeny's Google Play review section. Rider feedback here is a paraphrased pattern, not a verbatim quote — flagged deliberately, not put in quotation marks. Sources: Jeeny — Google Play; Saudi ride-hailing app Jeeny goes the distance to meet Vision 2030 goals — Arab News. Second pass 2026-07-06: loosened sentence rhythm per the batch-wide 'sounds like AI' fix.",
     },
     {
         num: 3, date: 'Sun, Jul 12, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Growing Technology',
@@ -65,11 +65,11 @@ In the enterprise AI conversations I've been part of, that question stalls rollo
 
 The GCC advantage here, if anyone builds for it deliberately: this region is making infrastructure-level AI and Vision 2030-aligned digital transformation bets faster than almost anywhere else. But a lot of the AI products arriving here were built assuming a US/EU market's tolerance for "the model is 94% accurate, ship it." That tolerance doesn't transfer.
 
-The products that actually win enterprise adoption in this region will be the ones designed around trust and auditability from day one, not accuracy metrics bolted on after a Silicon Valley launch.
+The products that actually win here, I think, will be the ones built around trust and auditability from day one — not accuracy metrics bolted on after they've already launched somewhere else.
 
 That's a product strategy problem before it's an engineering one.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: "PBOS fix 2026-07-06: softened two unqualified universal claims that failed Devil's Advocate's Generalisation Test.",
+        note: "PBOS fix 2026-07-06: softened two unqualified universal claims that failed Devil's Advocate's Generalisation Test. Second pass, same day: loosened sentence rhythm per the batch-wide 'sounds like AI' fix.",
     },
     {
         num: 4, date: 'Tue, Jul 14, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -83,13 +83,13 @@ Neither of those is an accuracy problem. Both are a rollout problem — how we i
 
 So we built a validation layer that grades every answer's sources for relevance before the answer ever reaches the user, scored against a real framework (RAGAS: faithfulness, accuracy, relevancy, among other checks) — and we surfaced that as a trust score per answer, plus a simple thumbs up / thumbs down the user could act on, with a prompt for what went wrong on a thumbs down.
 
-That's what turned it around. Once people could see why an answer deserved trust, not just that it sounded confident, usage started moving. Not long after, we pitched the same tool to a new client — they liked it enough to want to run with it.
+That's what actually turned it around — once people could see why an answer deserved trust, not just that it sounded confident, usage started moving. Not long after, we pitched the same tool to a new client, and they liked it enough to want to run with it.
 
 Usage among early adopters grew 75%.
 
-The model never got smarter during any of this. What changed was what the user could actually see. Trust is a product feature, not an engineering metric.`,
+The model never actually got smarter through any of this. What changed was what the user could see. Trust is a product feature, not an engineering metric.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: 'Rewritten 2026-07-04 from your own raw account in "Fortude Story.docx." Company, product names, and the Toyota Sri Lanka detail stay fully out per the anonymization rule. Moved from opener to Post 4 on 2026-07-05. PBOS fix 2026-07-06: cut an antithesis tic and an advice-shaped closer. Correction same day: swapped in Thariq\'s own verbatim quotable line for this story, which hadn\'t been used before.',
+        note: 'Rewritten 2026-07-04 from your own raw account in "Fortude Story.docx." Company, product names, and the Toyota Sri Lanka detail stay fully out per the anonymization rule. Moved from opener to Post 4 on 2026-07-05. PBOS fix 2026-07-06: cut an antithesis tic and an advice-shaped closer. Correction same day: swapped in Thariq\'s own verbatim quotable line for this story, which hadn\'t been used before. Second pass, same day: loosened sentence rhythm per the batch-wide \'sounds like AI\' fix — his verbatim quote kept untouched.',
     },
     {
         num: 5, date: 'Thu, Jul 16, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'AI & Product Development',
@@ -107,9 +107,9 @@ The framework I use now, after watching an enterprise AI assistant I led earn ad
 
 Question 3 is the one most roadmaps skip entirely. It's also the one that determines whether your AI feature gets adopted or gets quietly ignored after the initial curiosity wears off.
 
-It's the question I now spend as much design time on as the model itself.`,
+It's the one I end up spending as much design time on as the model itself, if I'm honest.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: 'PBOS fix 2026-07-06: closing line was a direct command to the reader — reworded as a first-person statement of practice.',
+        note: "PBOS fix 2026-07-06: closing line was a direct command to the reader — reworded as a first-person statement of practice. Second pass, same day: loosened closing rhythm per the batch-wide 'sounds like AI' fix.",
     },
     {
         num: 6, date: 'Sun, Jul 19, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Potential in the Market',
@@ -123,13 +123,13 @@ So where's the real gap? Three places: large compound developments (already happ
 
 EVIQ's own rollout already reflects some of this logic — its near-term buildout is concentrated on cities and the highway corridors connecting them (Riyadh, Jeddah, Dammam) rather than a blanket household push, with a 2030 target of 5,000 chargers across 1,000 hubs.
 
-The part I don't see many companies treating as a product problem yet: who owns and services this infrastructure inside a compound or a campus, not just who installs the charger. That operational layer is the actual opportunity — and it's a narrower, more specific bet than "EVs are growing, therefore charging companies win."`,
+The part I don't see many companies treating as a product problem yet: who owns and services this infrastructure inside a compound or a campus, not just who installs the charger. That operational layer is the real opportunity, I think — a narrower, more specific bet than just "EVs are growing, so charging companies win."`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         links: [
             ['EVIQ to complete 60 EV charging stations by end of 2025, focus shifts to highways — Arab News', 'https://www.arabnews.com/node/2621290/business-economy'],
             ['ABB supplies EV chargers for residential compound in Saudi Arabia — ABB official news center', 'https://new.abb.com/news/detail/67379/abb-supplies-ev-chargers-for-residential-compound-in-saudi-arabia'],
         ],
-        note: 'Post links as the first comment, not inline, per LinkedIn\'s algorithm. Both sources checked directly. A widely-repeated "1,500 solar-powered two-wheeler stations" stat was deliberately skipped — no reputable primary source found. Pairs naturally with Post 13\'s Energy-as-a-Service post.',
+        note: 'Post links as the first comment, not inline, per LinkedIn\'s algorithm. Both sources checked directly. A widely-repeated "1,500 solar-powered two-wheeler stations" stat was deliberately skipped — no reputable primary source found. Pairs naturally with Post 13\'s Energy-as-a-Service post. Second pass 2026-07-06: loosened closing rhythm per the batch-wide \'sounds like AI\' fix.',
     },
     {
         num: 7, date: 'Tue, Jul 21, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -141,9 +141,9 @@ I came from a pure IT background. I knew nothing about electronics, IoT, or how 
 
 By the time the bikes actually arrived, I wasn't the same product lead who'd joined. I was assigned the full application design — website, inventory system, rider app — because I'd used the delay to actually understand what I was building, not just manage it.
 
-A blocker I couldn't control turned out to still be time I controlled. What I did inside it was the only part that was ever up to me.`,
+A blocker I couldn't control turned out to still be time I controlled, and what I did inside it was really the only part that was ever up to me.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: 'Source: Sling Mobility Story.docx, read in full 2026-07-05. Real, specific, dated — no invented figures. PBOS fix 2026-07-06: removed "The lesson I keep coming back to:" label, reworded as first-person reflection.',
+        note: "Source: Sling Mobility Story.docx, read in full 2026-07-05. Real, specific, dated — no invented figures. PBOS fix 2026-07-06: removed \"The lesson I keep coming back to:\" label, reworded as first-person reflection. Second pass, same day: loosened closing rhythm per the batch-wide 'sounds like AI' fix.",
     },
     {
         num: 8, date: 'Thu, Jul 23, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'KSA Product Reviews',
@@ -161,11 +161,11 @@ A blocker I couldn't control turned out to still be time I controlled. What I di
 
 The answer isn't universal, and most of the public discussion treats it like one. Swapping wins for high-utilization commercial fleets — delivery bikes, last-mile logistics, anything where downtime is the actual cost driver, not just charge time. Charging wins for passenger vehicles where the car sits idle most of the day anyway and home/office charging fits the existing routine.
 
-The mistake I've seen repeated is choosing an infrastructure model based on which one is more exciting to announce, rather than which one matches the actual utilization pattern of the vehicle class being deployed. A swap network built for passenger cars solves a problem passenger car owners don't really have. A charging-only strategy for a last-mile delivery fleet recreates the exact downtime problem swapping exists to solve.
+The mistake I keep seeing is picking an infrastructure model because it's more exciting to announce, rather than because it actually matches how the vehicle class gets used. A swap network built for passenger cars solves a problem passenger car owners don't really have, and a charging-only strategy for a last-mile delivery fleet just recreates the exact downtime problem swapping was supposed to solve.
 
-The pattern I keep seeing is infrastructure model getting decided before vehicle class does — and that's an expensive order to reverse once the hardware's already in the ground.`,
+Infrastructure model keeps getting decided before vehicle class does, and that's an expensive order to get backwards once the hardware's already in the ground.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: 'NIO figures verified via web search 2026-07-02 — sources: cnevpost.com, nio.com official release. PBOS fix 2026-07-06: reworded a prescriptive closer into an observed pattern.',
+        note: "NIO figures verified via web search 2026-07-02 — sources: cnevpost.com, nio.com official release. PBOS fix 2026-07-06: reworded a prescriptive closer into an observed pattern. Second pass, same day: loosened sentence rhythm throughout per the batch-wide 'sounds like AI' fix.",
     },
     {
         num: 10, date: 'Tue, Jul 28, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -181,9 +181,9 @@ We converted 75% of free users to paid, on 2,823 paying users out of 3,568 regis
 
 What I'd do differently: we spent too long chasing analytical depth before we'd nailed simplicity. The coaches who actually used the tool weekly wanted three numbers they could trust and act on before a match, not thirty they had to interpret. We learned that lesson through user pushback, not through planning for it upfront.
 
-Six years, one research project, two countries. Still the clearest example I have of what "founder-level ownership" actually means day to day.`,
+Six years, one research project, two countries — still the clearest example I've got of what "founder-level ownership" actually means, day to day.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: '',
+        note: "Second pass 2026-07-06: loosened closing rhythm per the batch-wide 'sounds like AI' fix.",
     },
     {
         num: 11, date: 'Thu, Jul 30, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'AI & Product Development',
@@ -195,9 +195,9 @@ It worked. Genuinely well — specific, correct answers, not vague AI-generated 
 
 The instant a tool can answer "what has this person been working on and how are they performing" on demand, you've created a new kind of access that didn't exist before — whether you meant to or not. So before this went anywhere near a real rollout, we had to build two things that had nothing to do with the AI itself: PII-handling rules, and department-based access control, so only someone's actual manager could see their own team's data, not anyone with tool access.
 
-A capability being technically real never meant it was ready to ship. The harder, less glamorous work was always deciding who got to ask the question in the first place.`,
+A capability being technically real never meant it was ready to ship — the harder, less glamorous work was always figuring out who got to ask the question in the first place.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: 'Source: Fortude Story.docx, HR/insights pivot detail. PII/department-access-control detail is real, not generalized — no employee, client, or company detail is identifying. PBOS fix 2026-07-06: removed "The lesson:" label, reworded as first-person reflection.',
+        note: "Source: Fortude Story.docx, HR/insights pivot detail. PII/department-access-control detail is real, not generalized — no employee, client, or company detail is identifying. PBOS fix 2026-07-06: removed \"The lesson:\" label, reworded as first-person reflection. Second pass, same day: loosened closing rhythm per the batch-wide 'sounds like AI' fix.",
     },
     {
         num: 12, date: 'Sun, Aug 2, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -209,11 +209,11 @@ The battery was heavy enough that a rider fumbling with it in under a minute was
 
 Then came the fraud problem. Batteries were a real asset — if swapping was too easy to trigger remotely, we'd have people opening cabinets they weren't standing in front of. So the final system checked whether the rider's location was within a 5-meter radius of the cabinet before releasing a pigeonhole, backed up by CCTV and voice-command stations at each cabinet, so a rider having trouble could get help from our command center directly instead of improvising.
 
-None of that shows up on a product roadmap slide. All of it is the actual work of taking an idea from "this should work in theory" to "this is safe and fast enough that a rider trusts it without thinking twice."
+None of that shows up on a product roadmap slide, but it's the actual work of taking an idea from "this should work in theory" to "this is safe and fast enough that a rider trusts it without thinking twice."
 
-The unglamorous, physical, get-your-hands-on-the-hardware decisions are usually the ones that determine whether a product ships at the quality it actually needs.`,
+Unglamorous, physical, get-your-hands-on-the-hardware decisions are usually the ones that end up deciding whether a product ships at the quality it actually needs — that's been true on pretty much everything I've built since.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: '',
+        note: "Second pass 2026-07-06: loosened closing rhythm per the batch-wide 'sounds like AI' fix.",
     },
     {
         num: 13, date: 'Tue, Aug 4, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Potential in the Market',
@@ -225,9 +225,9 @@ We started as a straightforward battery-swap service — a rider needs power, we
 
 That's a genuinely different business once you make that shift — the batteries stop being infrastructure you own and start being an asset the community owns alongside you, and your job changes from "run the swap network" to "manage the energy asset."
 
-Most EV infrastructure conversations stop at charging versus swapping. The bigger question is who owns the asset once you've built the network — and whether you've designed your business to answer that question at all.`,
+Most EV infrastructure conversations stop at charging versus swapping, but the bigger question, I think, is who owns the asset once you've built the network — and whether you've actually designed your business to answer that.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: 'Source: Sling Mobility Story.docx — "Battery as a Service / Energy as a Service" is Thariq\'s own term. Pairs naturally with Post 6\'s KSA EV market research.',
+        note: "Source: Sling Mobility Story.docx — \"Battery as a Service / Energy as a Service\" is Thariq's own term. Pairs naturally with Post 6's KSA EV market research. Second pass 2026-07-06: loosened closing rhythm per the batch-wide 'sounds like AI' fix.",
     },
     {
         num: 14, date: 'Thu, Aug 6, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -239,9 +239,9 @@ That was deliberate. It's easy to validate a UI with people who already understa
 
 We found roadblocks. None of them were showstoppers — but we only knew that because we'd tested against confusion on purpose, instead of testing against people already primed to understand us.
 
-Testing only with people who already get the pitch isn't testing the UX. It's testing the pitch.`,
+Testing only with people who already get the pitch isn't really testing the UX, if I'm honest — it's testing the pitch, and those two things get confused more often than they should.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: 'Source: Sling Mobility Story.docx, UX-validation-process detail. PBOS fix 2026-07-06: removed an advice-shaped closer addressed directly at the reader.',
+        note: "Source: Sling Mobility Story.docx, UX-validation-process detail. PBOS fix 2026-07-06: removed an advice-shaped closer addressed directly at the reader. Second pass, same day: loosened closer rhythm further per the batch-wide 'sounds like AI' fix.",
     },
     {
         num: 15, date: 'Sun, Aug 9, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Growing Technology',
@@ -251,9 +251,9 @@ Testing only with people who already get the pitch isn't testing the UX. It's te
 
 This single constraint reshaped everything downstream: separate environments per client, a roughly two-week test window with manual validation against their own knowledge base before anything went live, and a real QA and project-management process just to update or patch the product safely once it was inside a wall we couldn't see over ourselves.
 
-This is the part of enterprise AI adoption in this region that doesn't get talked about enough. Serious buyers here aren't usually asking "can the model do this" first — they're asking "who else can see my data if I say yes to this." Any product that can't answer that cleanly, with real architecture behind the answer rather than a compliance slide, is going to stall regardless of how good the underlying model is.`,
+This is the part of enterprise AI adoption in this region that doesn't get talked about enough, I think. Serious buyers here aren't usually asking "can the model do this" first — they're asking "who else can see my data if I say yes to this," and any product that can't answer that cleanly, with real architecture behind the answer rather than a compliance slide, is going to stall no matter how good the underlying model actually is.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: "Source: Fortude Story.docx, on-prem/per-client-instance deployment detail. The GCC-data-sovereignty framing is Thariq's own market read, not a direct source quote.",
+        note: "Source: Fortude Story.docx, on-prem/per-client-instance deployment detail. The GCC-data-sovereignty framing is Thariq's own market read, not a direct source quote. Second pass 2026-07-06: loosened sentence rhythm per the batch-wide 'sounds like AI' fix.",
     },
     {
         num: 16, date: 'Tue, Aug 11, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -263,9 +263,9 @@ This is the part of enterprise AI adoption in this region that doesn't get talke
 
 The product was a test-automation tool I ran GTM for. The discount wasn't really why it won. Enterprise clients running major platform releases a couple of times a year can't afford broken IT for a day or two around that window, and our entire pitch was built around that calendar, not a features list. We packaged pre-built test suites into three tiers by severity, recorded and screenshotted every test session so a fix could be reproduced without re-running anything, and led every conversation with one line: this cuts the time it takes you to find and fix a bug by roughly 90%.
 
-The discount got us in the room. The 90% number is what kept the deal there.`,
+The discount got us in the room, but the 90% number is what actually kept the deal there once we were in it.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: 'Source: Fortude Story.docx (Case Study 1, ForTest). Company/product name withheld per the anonymization rule. PBOS fix 2026-07-06: reworded an antithesis tic and cut a generic tacked-on closing paragraph.',
+        note: "Source: Fortude Story.docx (Case Study 1, ForTest). Company/product name withheld per the anonymization rule. PBOS fix 2026-07-06: reworded an antithesis tic and cut a generic tacked-on closing paragraph. Second pass, same day: loosened closer rhythm per the batch-wide 'sounds like AI' fix.",
     },
     {
         num: 17, date: 'Thu, Aug 13, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'AI & Product Development',
@@ -333,9 +333,9 @@ Working as a performance analyst at first-team level, I produce two structured o
 
 Building this forced me to ask the same question I ask in product work, more than any of the visualizations did: what decision does this actually inform, and who's making that decision under time pressure? A pass map that looks impressive but doesn't change what a coach does before kickoff is a wasted afternoon of engineering.
 
-Sports analytics and enterprise product work share more of a spine than people expect. Both come down to building something that earns trust fast enough to actually get used before the moment it mattered has passed.`,
+Sports analytics and enterprise product work share more of a spine than people expect, I've found — both come down to building something that earns trust fast enough to actually get used before the moment it mattered has already passed.`,
         hashtags: '#PerformanceAnalysis #SportsTech #ProductManagement',
-        note: 'NOT CLEARED — you said 2026-07-05 these three need more time before use. Canonical draft: analyst-thariq/linkedin-crossover-posts.md Draft 1. Also flagged: posting Posts 21-23 back-to-back conflicts with the "occasional, ~monthly" crossover cadence in platform-rules.md. PBOS fix 2026-07-06 (wording only, clearance unchanged): reworded an antithesis tic.',
+        note: "NOT CLEARED — you said 2026-07-05 these three need more time before use. Canonical draft: analyst-thariq/linkedin-crossover-posts.md Draft 1. Also flagged: posting Posts 21-23 back-to-back conflicts with the \"occasional, ~monthly\" crossover cadence in platform-rules.md. PBOS fix 2026-07-06 (wording only, clearance unchanged): reworded an antithesis tic. Second pass, same day (wording only): loosened closing rhythm per the batch-wide 'sounds like AI' fix.",
     },
     {
         num: 22, date: 'Tue, Aug 25, 2026', time: '8:00–10:00 AM AST', track: 'Analyst', pillar: 'Crossover — Tactical Opinion',
@@ -345,9 +345,9 @@ Sports analytics and enterprise product work share more of a spine than people e
 
 Most club-level analytics conversations are still built entirely around what happened in the match. The more useful, less-discussed question is what the data says about what's about to happen to a player's body — before it becomes an injury instead of a statistic.
 
-That's the layer of performance analysis I actually want to spend a career on. Not just what won the match, but what kept the team available to compete in the next one.`,
+That's the layer of performance analysis I actually want to spend a career on — less what won the match, more what kept the team available to compete in the next one.`,
         hashtags: '#PerformanceAnalysis #SportsTech #InjuryPrevention',
-        note: 'NOT CLEARED — same caveat as Post 21. Canonical draft: analyst-thariq/linkedin-crossover-posts.md Draft 2.',
+        note: "NOT CLEARED — same caveat as Post 21. Canonical draft: analyst-thariq/linkedin-crossover-posts.md Draft 2. Second pass 2026-07-06 (wording only, clearance unchanged): loosened closing rhythm per the batch-wide 'sounds like AI' fix.",
     },
     {
         num: 23, date: 'Thu, Aug 27, 2026', time: '8:00–10:00 AM AST', track: 'Analyst', pillar: 'Crossover — Credibility & Process',
