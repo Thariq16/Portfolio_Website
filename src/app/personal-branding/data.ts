@@ -61,15 +61,13 @@ None of this is a small-team-can't-do-it problem. It's a "which metric are we ac
         why: 'Solid, well-argued opinion, but general commentary without a personal proof point or citation — lower ceiling than the case-study posts.',
         body: `Every enterprise conversation in the Gulf right now has an AI angle. Most of them stall at the same point: the demo is impressive, and then someone asks "okay, but who's accountable when it gives a wrong answer to a customer."
 
-In the enterprise AI conversations I've been part of, that question stalls rollouts more often than any technical limitation does. I've watched vendors solve the accuracy problem and completely ignore the accountability problem — and accountability is what actually blocks enterprise buy-in, especially in regulated or relationship-driven industries where a wrong answer costs more than a bad UX moment does.
+In the enterprise AI conversations I've been part of, that question stalls rollouts more often than any technical limitation does. I've watched vendors solve the accuracy problem and completely ignore the accountability problem — and if I were leading product on one of these tools, accountability is what I'd want solved before accuracy, especially in regulated or relationship-driven industries where a wrong answer costs more than a bad UX moment does.
 
-The GCC advantage here, if anyone builds for it deliberately: this region is making infrastructure-level AI and Vision 2030-aligned digital transformation bets faster than almost anywhere else. But a lot of the AI products arriving here were built assuming a US/EU market's tolerance for "the model is 94% accurate, ship it." That tolerance doesn't transfer.
+The GCC advantage here, if I were building for it deliberately: this region is making infrastructure-level AI and Vision 2030-aligned digital transformation bets faster than almost anywhere else. But a lot of the AI products arriving here were built assuming a US/EU market's tolerance for "the model is 94% accurate, ship it." That tolerance doesn't transfer, and I wouldn't want to find that out after a GCC launch.
 
-The products that actually win here, I think, will be the ones built around trust and auditability from day one — not accuracy metrics bolted on after they've already launched somewhere else.
-
-That's a product strategy problem before it's an engineering one.`,
+If it were my roadmap, trust and auditability would be built in from day one, not bolted on after a launch built for somewhere else — that's a product strategy call before it's ever an engineering one.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: "PBOS fix 2026-07-06: softened two unqualified universal claims that failed Devil's Advocate's Generalisation Test. Second pass, same day: loosened sentence rhythm per the batch-wide 'sounds like AI' fix.",
+        note: "PBOS fix 2026-07-06: softened two unqualified universal claims that failed Devil's Advocate's Generalisation Test. Second pass, same day: loosened sentence rhythm per the batch-wide 'sounds like AI' fix. Third pass 2026-07-08: rewritten for narrative stance per PBOS/EDITORIAL/02_Content_Guardrails.md's new 'candidate, not consultant' rule — was giving the market advice, now frames the same claims as what Thariq himself would build/insist on if he had the seat.",
     },
     {
         num: 4, date: 'Tue, Jul 14, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -119,17 +117,17 @@ It's the one I end up spending as much design time on as the model itself, if I'
 
 Battery-swap and battery-as-a-service models make the most sense in markets where home charging is unreliable — frequent power cuts, no dedicated parking, no fixed address to install a charger at. That's not the typical Saudi household story. Grid reliability here is high, and charging is increasingly getting built into new residential developments as a fixed amenity rather than retrofitted later — ABB recently supplied EV chargers directly into a residential compound project in Riyadh, with different charger specs for apartment units versus villas. That's the pattern actually forming: infrastructure investment flowing into large, planned residential communities, not scattered individual household retrofits.
 
-So where's the real gap? Three places: large compound developments (already happening, per that example), university campuses — confined, high-density populations with short daily travel distances — and dense urban districts where residence density is high but road capacity isn't, where a two-wheeler EV fleet for last-mile delivery matters more than another public charger for personal cars.
+So where's the real gap? Three places: large compound developments (already happening, per that example), university campuses — confined, high-density populations with short daily travel distances — and dense urban districts where, in my read, road capacity hasn't kept pace with residence density — a two-wheeler EV fleet for last-mile delivery matters more there than another public charger for personal cars.
 
 EVIQ's own rollout already reflects some of this logic — its near-term buildout is concentrated on cities and the highway corridors connecting them (Riyadh, Jeddah, Dammam) rather than a blanket household push, with a 2030 target of 5,000 chargers across 1,000 hubs.
 
-The part I don't see many companies treating as a product problem yet: who owns and services this infrastructure inside a compound or a campus, not just who installs the charger. That operational layer is the real opportunity, I think — a narrower, more specific bet than just "EVs are growing, so charging companies win."`,
+The part I don't see many companies treating as a product problem yet: who owns and services this infrastructure inside a compound or a campus, not just who installs the charger. Public charging still matters for tourism and event-driven demand, but if this were my roadmap, that operational layer is where I'd actually build — a narrower, more specific bet than just "EVs are growing, so charging companies win."`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         links: [
             ['EVIQ to complete 60 EV charging stations by end of 2025, focus shifts to highways — Arab News', 'https://www.arabnews.com/node/2621290/business-economy'],
             ['ABB supplies EV chargers for residential compound in Saudi Arabia — ABB official news center', 'https://new.abb.com/news/detail/67379/abb-supplies-ev-chargers-for-residential-compound-in-saudi-arabia'],
         ],
-        note: 'Post links as the first comment, not inline, per LinkedIn\'s algorithm. Both sources checked directly. A widely-repeated "1,500 solar-powered two-wheeler stations" stat was deliberately skipped — no reputable primary source found. Pairs naturally with Post 13\'s Energy-as-a-Service post. Second pass 2026-07-06: loosened closing rhythm per the batch-wide \'sounds like AI\' fix.',
+        note: 'Post links as the first comment, not inline, per LinkedIn\'s algorithm. Both sources checked directly. A widely-repeated "1,500 solar-powered two-wheeler stations" stat was deliberately skipped — no reputable primary source found. Pairs naturally with Post 13\'s Energy-as-a-Service post. Second pass 2026-07-06: loosened closing rhythm per the batch-wide \'sounds like AI\' fix. Third pass 2026-07-08: reworded closer for narrative stance — was framed as a gap \'companies\' should notice, now framed as what Thariq would build if it were his roadmap. Fourth pass, same day (see pbos-audit-2026-07-08.md): hedged an unsourced claim and added a one-clause trade-off acknowledgment per the Devil\'s Advocate Simplicity Test.',
     },
     {
         num: 7, date: 'Tue, Jul 21, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -161,11 +159,11 @@ A blocker I couldn't control turned out to still be time I controlled, and what 
 
 The answer isn't universal, and most of the public discussion treats it like one. Swapping wins for high-utilization commercial fleets — delivery bikes, last-mile logistics, anything where downtime is the actual cost driver, not just charge time. Charging wins for passenger vehicles where the car sits idle most of the day anyway and home/office charging fits the existing routine.
 
-The mistake I keep seeing is picking an infrastructure model because it's more exciting to announce, rather than because it actually matches how the vehicle class gets used. A swap network built for passenger cars solves a problem passenger car owners don't really have, and a charging-only strategy for a last-mile delivery fleet just recreates the exact downtime problem swapping was supposed to solve.
+If I were the one deciding, I wouldn't pick an infrastructure model because it's more exciting to announce — I'd pick it because it actually matches how the vehicle class gets used. A swap network built for passenger cars solves a problem passenger car owners don't really have, and a charging-only strategy for a last-mile delivery fleet just recreates the exact downtime problem swapping was supposed to solve.
 
-Infrastructure model keeps getting decided before vehicle class does, and that's an expensive order to get backwards once the hardware's already in the ground.`,
+Vehicle class first, infrastructure model second — that's the order I'd insist on, because getting it backwards is an expensive mistake once the hardware's already in the ground.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: "NIO figures verified via web search 2026-07-02 — sources: cnevpost.com, nio.com official release. PBOS fix 2026-07-06: reworded a prescriptive closer into an observed pattern. Second pass, same day: loosened sentence rhythm throughout per the batch-wide 'sounds like AI' fix.",
+        note: "NIO figures verified via web search 2026-07-02 — sources: cnevpost.com, nio.com official release. PBOS fix 2026-07-06: reworded a prescriptive closer into an observed pattern. Second pass, same day: loosened sentence rhythm throughout per the batch-wide 'sounds like AI' fix. Third pass 2026-07-08: reworded for narrative stance — was commenting on others' mistakes, now framed as what Thariq would decide himself.",
     },
     {
         num: 10, date: 'Tue, Jul 28, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -183,7 +181,7 @@ What I'd do differently: we spent too long chasing analytical depth before we'd 
 
 Six years, one research project, two countries — still the clearest example I've got of what "founder-level ownership" actually means, day to day.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: "Second pass 2026-07-06: loosened closing rhythm per the batch-wide 'sounds like AI' fix.",
+        note: "Second pass 2026-07-06: loosened closing rhythm per the batch-wide 'sounds like AI' fix. Housekeeping, 2026-07-08 (see pbos-audit-2026-07-08.md): this post was missing its sourcing note during earlier passes — content was already clean. Source: facts-source.md Case Studies 5 and 6 (FieldR). 75% conversion, 2,823 paid users of 3,568 registrations, 30+ tracked data points, Spiralation Seed Funding selection, and the Australia expansion are all real per CV/Investor Deck. Nasif Nuha and Azhar Anees named as co-founders per Thariq's own account.",
     },
     {
         num: 11, date: 'Thu, Jul 30, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'AI & Product Development',
@@ -195,9 +193,9 @@ It worked. Genuinely well — specific, correct answers, not vague AI-generated 
 
 The instant a tool can answer "what has this person been working on and how are they performing" on demand, you've created a new kind of access that didn't exist before — whether you meant to or not. So before this went anywhere near a real rollout, we had to build two things that had nothing to do with the AI itself: PII-handling rules, and department-based access control, so only someone's actual manager could see their own team's data, not anyone with tool access.
 
-A capability being technically real never meant it was ready to ship — the harder, less glamorous work was always figuring out who got to ask the question in the first place.`,
+A capability being technically real never meant it was ready to ship — the harder, less glamorous work was always figuring out who got to ask the question in the first place. That's not a problem you solve once, either — every new use case for the same underlying tool reopens it.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: "Source: Fortude Story.docx, HR/insights pivot detail. PII/department-access-control detail is real, not generalized — no employee, client, or company detail is identifying. PBOS fix 2026-07-06: removed \"The lesson:\" label, reworded as first-person reflection. Second pass, same day: loosened closing rhythm per the batch-wide 'sounds like AI' fix.",
+        note: "Source: Fortude Story.docx, HR/insights pivot detail. PII/department-access-control detail is real, not generalized — no employee, client, or company detail is identifying. PBOS fix 2026-07-06: removed \"The lesson:\" label, reworded as first-person reflection. Second pass, same day: loosened closing rhythm per the batch-wide 'sounds like AI' fix. Fourth pass, 2026-07-08 (see pbos-audit-2026-07-08.md): Insight Generation's chain wants an outcome step before Reflection; no clean postable outcome exists in facts-source.md for this pivot (the only downstream result is NDA-covered), so added an honest acknowledgment that the governance question reopens each time, rather than inventing a resolution.",
     },
     {
         num: 12, date: 'Sun, Aug 2, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -213,7 +211,7 @@ None of that shows up on a product roadmap slide, but it's the actual work of ta
 
 Unglamorous, physical, get-your-hands-on-the-hardware decisions are usually the ones that end up deciding whether a product ships at the quality it actually needs — that's been true on pretty much everything I've built since.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: "Second pass 2026-07-06: loosened closing rhythm per the batch-wide 'sounds like AI' fix.",
+        note: "Second pass 2026-07-06: loosened closing rhythm per the batch-wide 'sounds like AI' fix. Housekeeping, 2026-07-08 (see pbos-audit-2026-07-08.md): this post was missing its sourcing note during earlier passes — content was already clean. Source: facts-source.md Case Study 4 (Sling Mobility), cabinet-engineering and geofencing detail from Sling Mobility Story.docx — the 4.5-foot pigeonhole height, 5-meter geofence radius, and CCTV/voice-command detail are all real, specific figures.",
     },
     {
         num: 13, date: 'Tue, Aug 4, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Potential in the Market',
@@ -223,11 +221,11 @@ Unglamorous, physical, get-your-hands-on-the-hardware decisions are usually the 
 
 We started as a straightforward battery-swap service — a rider needs power, we hand them a charged battery, repeat. But the battery was the single biggest physical asset in the entire business, sitting mostly idle in a cabinet between swaps. So the real second phase wasn't "add more stations." It was tokenizing partial ownership of the batteries themselves, opening that asset up to community investment, and shifting the business model from selling swaps to selling energy as an ongoing service.
 
-That's a genuinely different business once you make that shift — the batteries stop being infrastructure you own and start being an asset the community owns alongside you, and your job changes from "run the swap network" to "manage the energy asset."
+That's a genuinely different business once you make that shift, and a harder one to run — the batteries stop being infrastructure you own and start being an asset the community owns alongside you, and your job changes from "run the swap network" to "manage the energy asset," with everything that adds in accountability to people who now have a stake in it.
 
-Most EV infrastructure conversations stop at charging versus swapping, but the bigger question, I think, is who owns the asset once you've built the network — and whether you've actually designed your business to answer that.`,
+Most EV infrastructure conversations stop at charging versus swapping, but the question I'd keep asking on any team building this is who owns the asset once you've built the network — and whether the business is actually designed to answer that.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: "Source: Sling Mobility Story.docx — \"Battery as a Service / Energy as a Service\" is Thariq's own term. Pairs naturally with Post 6's KSA EV market research. Second pass 2026-07-06: loosened closing rhythm per the batch-wide 'sounds like AI' fix.",
+        note: "Source: Sling Mobility Story.docx — \"Battery as a Service / Energy as a Service\" is Thariq's own term. Pairs naturally with Post 6's KSA EV market research. Second pass 2026-07-06: loosened closing rhythm per the batch-wide 'sounds like AI' fix. Third pass 2026-07-08: closer reworded for narrative stance — 'the bigger question is' read as neutral analysis, now framed as the question Thariq himself would keep asking on a team. Fourth pass, same day (see pbos-audit-2026-07-08.md): the post named the tokenization pivot's upside but never its cost, per Content Guardrails' 'trade-offs beat frameworks' — added a general, logically-entailed acknowledgment of added accountability rather than an unsourced specific.",
     },
     {
         num: 14, date: 'Thu, Aug 6, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -251,9 +249,9 @@ Testing only with people who already get the pitch isn't really testing the UX, 
 
 This single constraint reshaped everything downstream: separate environments per client, a roughly two-week test window with manual validation against their own knowledge base before anything went live, and a real QA and project-management process just to update or patch the product safely once it was inside a wall we couldn't see over ourselves.
 
-This is the part of enterprise AI adoption in this region that doesn't get talked about enough, I think. Serious buyers here aren't usually asking "can the model do this" first — they're asking "who else can see my data if I say yes to this," and any product that can't answer that cleanly, with real architecture behind the answer rather than a compliance slide, is going to stall no matter how good the underlying model actually is.`,
+This is the part of enterprise AI adoption in this region I'd want any product I led to get right early — not the only blocker, but one I'd never leave unanswered. In my experience, buyers here often aren't asking "can the model do this" first — they're asking "who else can see my data if I say yes to this," and if I couldn't answer that cleanly, with real architecture behind the answer rather than a compliance slide, I'd expect the deal to stall no matter how good the model actually was.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
-        note: "Source: Fortude Story.docx, on-prem/per-client-instance deployment detail. The GCC-data-sovereignty framing is Thariq's own market read, not a direct source quote. Second pass 2026-07-06: loosened sentence rhythm per the batch-wide 'sounds like AI' fix.",
+        note: "Source: Fortude Story.docx, on-prem/per-client-instance deployment detail. The GCC-data-sovereignty framing is Thariq's own market read, not a direct source quote. Second pass 2026-07-06: loosened sentence rhythm per the batch-wide 'sounds like AI' fix. Third pass 2026-07-08: closer reworded for narrative stance — was general market observation ('any product that can't...'), now framed as Thariq's own standard for anything he'd lead. Fourth pass, same day (see pbos-audit-2026-07-08.md): fixed single-cause framing (data isolation presented as *the* blocker, not *a* blocker) and hedged an unqualified 'serious buyers' claim per the Devil's Advocate Generalisation Test.",
     },
     {
         num: 16, date: 'Tue, Aug 11, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
