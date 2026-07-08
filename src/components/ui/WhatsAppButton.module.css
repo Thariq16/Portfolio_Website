@@ -6,8 +6,8 @@
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background: #25d366;
-    color: #ffffff;
+    background: var(--foreground);
+    color: var(--background);
     display: flex;
     align-items: center;
     justify-content: center;

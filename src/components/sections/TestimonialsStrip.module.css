@@ -12,9 +12,11 @@
 
 .label {
     text-align: center;
-    font-size: 0.75rem;
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.14em;
     color: var(--muted-foreground);
     margin-bottom: 2.5rem;
 }
@@ -26,10 +28,10 @@
 }
 
 .card {
-    padding: 1.75rem;
-    background: var(--card);
+    border-radius: var(--radius);
+    padding: 2rem;
+    background: var(--background);
     border: 1px solid var(--border);
-    border-radius: 16px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -37,8 +39,9 @@
 }
 
 .quote {
-    font-size: 1rem;
-    line-height: 1.65;
+    font-family: var(--font-display), Georgia, serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
     color: var(--foreground);
     font-style: italic;
     position: relative;
@@ -65,7 +68,7 @@
 
 .name {
     font-size: 0.9375rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--foreground);
 }
 
@@ -75,7 +78,10 @@
 }
 
 .relationship {
-    font-size: 0.75rem;
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: var(--primary);
     font-weight: 500;
 }

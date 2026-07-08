@@ -4,19 +4,19 @@
 }
 
 .header {
-    text-align: center;
-    margin-bottom: 4rem;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto 4rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
 }
 
 .title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
     margin-bottom: 0.75rem;
-    background: linear-gradient(135deg, var(--foreground) 0%, var(--primary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--foreground);
 }
 
 .subtitle {
@@ -47,39 +47,35 @@
 }
 
 .timelineDot {
-    width: 14px;
-    height: 14px;
+    width: 9px;
+    height: 9px;
     border-radius: 50%;
     background: var(--primary);
-    border: 3px solid var(--background);
-    box-shadow: 0 0 0 3px var(--primary);
     z-index: 1;
     flex-shrink: 0;
-    margin-top: 1.75rem;
+    margin-top: 2.35rem;
 }
 
 .timelineLine {
-    width: 2px;
+    width: 1px;
     flex: 1;
-    background: linear-gradient(180deg, var(--primary) 0%, var(--border) 100%);
+    background: var(--border);
     margin-top: 0;
 }
 
 /* Job Card */
 .jobCard {
+    border-radius: var(--radius);
     flex: 1;
-    background: var(--card);
+    background: var(--background);
     border: 1px solid var(--border);
-    border-radius: 16px;
     padding: 2rem;
     margin-bottom: 2.5rem;
-    transition: all 0.3s ease;
+    transition: background 0.3s ease;
 }
 
 .jobCard:hover {
-    border-color: var(--primary);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-    transform: translateY(-2px);
+    background: var(--card);
 }
 
 .jobHeader {
@@ -90,11 +86,12 @@
 }
 
 .logoContainer {
+    border-radius: var(--radius);
     width: 64px;
     height: 64px;
-    border-radius: 12px;
     overflow: hidden;
-    background: var(--primary);
+    background: #241f16;
+    /* Fixed warm ink chip — company logos are light-on-dark */
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -169,21 +166,25 @@
 .caseStudyBadge {
     display: inline-flex;
     align-items: center;
-    padding: 0.5rem 1rem;
-    background: var(--primary);
-    color: white;
-    font-size: 0.8125rem;
-    font-weight: 600;
-    border-radius: 100px;
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    padding: 0.5rem 0;
+    color: var(--primary);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
 .viewButton {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.9375rem;
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
     font-weight: 500;
-    color: var(--primary);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--foreground);
     transition: all 0.2s ease;
     padding: 0.5rem 0;
     margin-left: auto;

@@ -3,21 +3,13 @@
 }
 
 .title {
-    font-size: 2.5rem;
-    font-weight: 800;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
     margin-bottom: 3rem;
-    position: relative;
-    display: inline-block;
-}
-
-.title::after {
-    content: '';
-    position: absolute;
-    bottom: -0.5rem;
-    left: 0;
-    width: 4rem;
-    height: 4px;
-    background-color: var(--primary);
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    display: block;
 }
 
 .grid {

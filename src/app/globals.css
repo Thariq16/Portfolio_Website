@@ -1,61 +1,62 @@
 :root {
-  /* Light Mode */
-  --background: #ffffff;
-  /* Primary Background */
-  --foreground: #0f172a;
-  /* Primary Text (Slate 900) */
-  --card: #f8fafc;
-  /* Surface (Slate 50) */
-  --card-foreground: #0f172a;
-  --popover: #ffffff;
-  --popover-foreground: #0f172a;
-  --primary: #2563eb;
-  /* Action Accent (Royal Blue) */
-  --primary-foreground: #ffffff;
-  --secondary: #f1f5f9;
-  /* Slate 100 */
-  --secondary-foreground: #0f172a;
-  --muted: #f1f5f9;
-  --muted-foreground: #64748b;
-  /* Secondary Text (Slate 500) */
-  --accent: #f1f5f9;
-  --accent-foreground: #0f172a;
-  --destructive: #ef4444;
-  --destructive-foreground: #ffffff;
-  --success: #10b981;
-  /* Success Accent (Emerald Green) */
-  --success-foreground: #ffffff;
-  --border: #e2e8f0;
-  /* Border (Slate 200) */
-  --input: #e2e8f0;
-  --ring: #2563eb;
+  /* Light Mode — Editorial Ledger */
+  --background: #f6f2e8;
+  /* Warm paper */
+  --foreground: #1d1a13;
+  /* Ink */
+  --card: #f1ecdf;
+  /* Slightly deeper paper for surfaces */
+  --card-foreground: #1d1a13;
+  --popover: #f6f2e8;
+  --popover-foreground: #1d1a13;
+  --primary: #1e5a43;
+  /* Ledger green — the single accent */
+  --primary-foreground: #f6f2e8;
+  --secondary: #ece6d6;
+  --secondary-foreground: #1d1a13;
+  --muted: #ece6d6;
+  --muted-foreground: #6d6250;
+  /* Soft ink */
+  --accent: #ece6d6;
+  --accent-foreground: #1d1a13;
+  --destructive: #9c3b2b;
+  /* Ledger red */
+  --destructive-foreground: #f6f2e8;
+  --success: #1e5a43;
+  /* Same as primary — one accent, used sparingly */
+  --success-foreground: #f6f2e8;
+  --border: rgba(80, 66, 40, 0.25);
+  /* Hairline rule */
+  --input: rgba(80, 66, 40, 0.25);
+  --ring: #1e5a43;
 
-  --radius: 0.5rem;
+  --radius: 6px;
 }
 
 [data-theme='dark'] {
-  /* Dark Mode */
-  --background: #020617;
-  /* Slate 950 - Executive Black */
-  --foreground: #f8fafc;
-  /* Slate 50 */
-  --card: #020617;
-  --card-foreground: #f8fafc;
-  --popover: #020617;
-  --popover-foreground: #f8fafc;
-  --primary: #3b82f6;
-  --primary-foreground: #ffffff;
-  --secondary: #1e293b;
-  --secondary-foreground: #f8fafc;
-  --muted: #1e293b;
-  --muted-foreground: #94a3b8;
-  --accent: #1e293b;
-  --accent-foreground: #f8fafc;
-  --destructive: #7f1d1d;
-  --destructive-foreground: #f8fafc;
-  --border: #1e293b;
-  --input: #1e293b;
-  --ring: #3b82f6;
+  /* Dark Mode — warm near-black, ivory ink */
+  --background: #14110b;
+  --foreground: #ece5d3;
+  --card: #1a1610;
+  --card-foreground: #ece5d3;
+  --popover: #14110b;
+  --popover-foreground: #ece5d3;
+  --primary: #85b89d;
+  /* Ledger green, lifted for dark paper */
+  --primary-foreground: #14110b;
+  --secondary: #242019;
+  --secondary-foreground: #ece5d3;
+  --muted: #242019;
+  --muted-foreground: #a2977f;
+  --accent: #242019;
+  --accent-foreground: #ece5d3;
+  --destructive: #c4695a;
+  --destructive-foreground: #14110b;
+  --success: #85b89d;
+  --success-foreground: #14110b;
+  --border: rgba(210, 193, 155, 0.22);
+  --input: rgba(210, 193, 155, 0.22);
+  --ring: #85b89d;
 }
 
 * {
@@ -81,6 +82,29 @@ a {
 
 h1, h2, h3 {
   font-family: var(--font-display), Georgia, 'Times New Roman', serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+/* Editorial micro-typography — labels, dates, figures */
+.mono,
+code, kbd {
+  font-family: var(--font-mono), 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+}
+
+.eyebrow {
+  font-family: var(--font-mono), 'JetBrains Mono', monospace;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+/* Hairline rule */
+.rule {
+  border: 0;
+  border-top: 1px solid var(--border);
 }
 
 /* Container Utility */

@@ -8,9 +8,6 @@ import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const cards = [
     {
-        accent: '#10b981',
-        accentBg: 'rgba(16,185,129,0.06)',
-        accentBorder: 'rgba(16,185,129,0.18)',
         eyebrow: 'Performance Analysis · Football',
         title: 'The Analytical Edge',
         description:
@@ -20,9 +17,6 @@ const cards = [
         pills: ['Glacis United FC', 'Barca Innovation Hub', 'Python · Pass Maps'],
     },
     {
-        accent: '#f59e0b',
-        accentBg: 'rgba(245,158,11,0.06)',
-        accentBorder: 'rgba(245,158,11,0.18)',
         eyebrow: 'Rotaract International · 2016–2021',
         title: 'Leading Beyond Product',
         description:
@@ -49,11 +43,6 @@ export default function BeyondResume() {
                             key={i}
                             href={card.href}
                             className={styles.card}
-                            style={{
-                                '--accent': card.accent,
-                                '--accentBg': card.accentBg,
-                                '--accentBorder': card.accentBorder,
-                            } as React.CSSProperties}
                         >
                             <div className={styles.cardInner}>
                                 <div className={styles.cardTop}>

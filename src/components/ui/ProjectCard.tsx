@@ -6,10 +6,17 @@ import { ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
 import { CaseStudy } from '@/lib/dictionaries';
 import Image from 'next/image';
+import CasePlate from './CasePlate';
 
 export default function ProjectCard({ item }: { item: CaseStudy }) {
+    const heroMetric = item.metrics[0];
     return (
         <article className={styles.card}>
+            {heroMetric && (
+                <div className={styles.plateWrap}>
+                    <CasePlate seed={item.slug} metricValue={heroMetric.value} metricLabel={heroMetric.label} />
+                </div>
+            )}
             <div className={styles.header}>
                 <div className={styles.titleInfo}>
                     <div className={styles.companyRow}>
@@ -42,7 +49,7 @@ export default function ProjectCard({ item }: { item: CaseStudy }) {
             </div>
 
             <div className={styles.metricsGrid}>
-                {item.metrics.slice(0, 3).map((m, i) => (
+                {(item.metrics.length > 1 ? item.metrics.slice(1, 4) : item.metrics).map((m, i) => (
                     <div key={i} className={styles.metricItem}>
                         <span className={styles.metricValue}>{m.value}</span>
                         <span className={styles.metricLabel}>{m.label}</span>

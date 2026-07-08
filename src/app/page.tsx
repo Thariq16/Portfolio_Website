@@ -1,7 +1,7 @@
 import Hero from '@/components/sections/Hero';
 import TrustBar from '@/components/sections/TrustBar';
 import LeadershipStrip from '@/components/sections/LeadershipStrip';
-import BentoGrid from '@/components/sections/BentoGrid';
+import SkillConstellation from '@/components/sections/SkillConstellation';
 import ImpactShowcase from '@/components/sections/ImpactShowcase';
 import BeyondResume from '@/components/sections/BeyondResume';
 import TestimonialsStrip from '@/components/sections/TestimonialsStrip';
@@ -32,7 +32,7 @@ export default function Home() {
       <Hero />
       <TrustBar />
       <LeadershipStrip />
-      <BentoGrid />
+      <SkillConstellation />
       <ImpactShowcase />
       <TestimonialsStrip />
       <BeyondResume />

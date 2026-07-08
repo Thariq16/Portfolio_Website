@@ -18,12 +18,10 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(37, 99, 235, 0.1), transparent 70%);
     pointer-events: none;
 }
 
 [data-theme='dark'] .hero::before {
-    background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(59, 130, 246, 0.13), transparent 70%);
 }
 
 .heroInner {
@@ -37,13 +35,13 @@
 }
 
 .heroBadge {
+    border-radius: var(--radius);
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
     padding: 0.35rem 0.9rem;
-    border-radius: 100px;
-    background: rgba(37, 99, 235, 0.08);
-    border: 1px solid rgba(37, 99, 235, 0.2);
+    background: var(--border);
+    border: 1px solid var(--border);
     color: var(--primary);
     font-size: 0.75rem;
     font-weight: 600;
@@ -52,23 +50,20 @@
 }
 
 [data-theme='dark'] .heroBadge {
-    background: rgba(59, 130, 246, 0.12);
-    border-color: rgba(59, 130, 246, 0.25);
+    background: var(--border);
+    border-color: var(--border);
 }
 
 .heroTitle {
     font-size: clamp(1.9rem, 4.5vw, 3rem);
-    font-weight: 800;
+    font-weight: 500;
     line-height: 1.15;
     letter-spacing: -0.03em;
     color: var(--foreground);
 }
 
 .heroAccent {
-    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--foreground);
 }
 
 .heroSubtitle {
@@ -79,6 +74,7 @@
 }
 
 .heroHint {
+    border-radius: var(--radius);
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
@@ -86,7 +82,6 @@
     color: var(--muted-foreground);
     background: var(--card);
     border: 1px solid var(--border);
-    border-radius: 100px;
     padding: 0.4rem 1rem;
 }
 
@@ -115,8 +110,8 @@
 
 /* ── Card ── */
 .card {
+    border-radius: var(--radius);
     position: relative;
-    border-radius: 1.25rem;
     border: 1px solid var(--border);
     background: var(--card);
     padding: 1.5rem;
@@ -127,33 +122,33 @@
 }
 
 .card:hover {
-    box-shadow: 0 8px 32px rgba(37, 99, 235, 0.1);
-    border-color: rgba(37, 99, 235, 0.2);
+    box-shadow: 0 8px 32px var(--border);
+    border-color: var(--border);
     transform: translateY(-2px);
 }
 
 /* Featured card gets a glow border */
 .cardFeatured {
-    border-color: rgba(37, 99, 235, 0.35);
-    background: linear-gradient(160deg, rgba(37, 99, 235, 0.04) 0%, var(--card) 50%);
-    box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.15), 0 4px 24px rgba(37, 99, 235, 0.08);
+    border-color: var(--border);
+    background: var(--card);
+    box-shadow: 0 0 0 1px var(--border), 0 4px 24px var(--border);
 }
 
 .cardFeatured:hover {
-    box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.3), 0 8px 36px rgba(37, 99, 235, 0.15);
-    border-color: rgba(37, 99, 235, 0.45);
+    box-shadow: 0 0 0 1px var(--border), 0 8px 36px var(--border);
+    border-color: var(--border);
 }
 
 .featuredBadge {
+    border-radius: var(--radius);
     position: absolute;
     top: -0.6rem;
     left: 1.25rem;
     font-size: 0.7rem;
-    font-weight: 700;
-    background: linear-gradient(90deg, #2563eb, #7c3aed);
-    color: #fff;
+    font-weight: 600;
+    background: var(--primary);
+    color: var(--primary-foreground);
     padding: 0.2rem 0.75rem;
-    border-radius: 100px;
     letter-spacing: 0.02em;
 }
 
@@ -168,7 +163,6 @@
     flex-shrink: 0;
     width: 44px;
     height: 44px;
-    border-radius: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,20 +176,20 @@
 
 .cardTitle {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--foreground);
     line-height: 1.3;
     margin: 0;
 }
 
 .categoryBadge {
+    border-radius: var(--radius);
     display: inline-block;
     font-size: 0.68rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.04em;
     padding: 0.15rem 0.55rem;
-    border-radius: 100px;
 }
 
 .cardDesc {
@@ -214,24 +208,24 @@
 }
 
 .tag {
+    border-radius: var(--radius);
     font-size: 0.68rem;
     font-weight: 500;
     color: var(--muted-foreground);
     padding: 0.15rem 0.5rem;
-    border-radius: 4px;
     background: var(--muted);
     border: 1px solid var(--border);
 }
 
 /* Download Button */
 .downloadBtn {
+    border-radius: var(--radius);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     width: 100%;
     padding: 0.65rem 1rem;
-    border-radius: 0.75rem;
     border: 1px solid var(--border);
     background: var(--muted);
     color: var(--foreground);
@@ -245,95 +239,95 @@
 .downloadBtn:hover {
     background: var(--primary);
     border-color: var(--primary);
-    color: #fff;
+    color: var(--primary-foreground);
     transform: translateY(-1px);
-    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.25);
+    box-shadow: 0 4px 16px var(--border);
 }
 
 .downloadBtnFeatured {
-    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    background: var(--primary);
     border-color: transparent;
-    color: #fff;
-    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.2);
+    color: var(--primary-foreground);
+    box-shadow: 0 4px 16px var(--border);
 }
 
 .downloadBtnFeatured:hover {
-    background: linear-gradient(135deg, #1d4ed8 0%, #6d28d9 100%);
+    background: var(--primary); opacity: 0.9;
     border-color: transparent;
-    box-shadow: 0 6px 24px rgba(37, 99, 235, 0.35);
+    box-shadow: 0 6px 24px var(--border);
 }
 
 /* ── Colour Accents per category ── */
 /* Fintech — blue */
 .accentFintech {
-    background: rgba(37, 99, 235, 0.1);
-    color: #2563eb;
-    border: 1px solid rgba(37, 99, 235, 0.2);
+    background: var(--border);
+    color: var(--primary);
+    border: 1px solid var(--border);
 }
 [data-theme='dark'] .accentFintech {
-    background: rgba(59, 130, 246, 0.15);
-    color: #93c5fd;
-    border-color: rgba(59, 130, 246, 0.25);
+    background: var(--border);
+    color: var(--primary);
+    border-color: var(--border);
 }
 
 /* Business Analyst — violet */
 .accentBA {
-    background: rgba(124, 58, 237, 0.1);
-    color: #7c3aed;
-    border: 1px solid rgba(124, 58, 237, 0.2);
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--border);
 }
 [data-theme='dark'] .accentBA {
-    background: rgba(139, 92, 246, 0.15);
-    color: #c4b5fd;
-    border-color: rgba(139, 92, 246, 0.25);
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--border);
 }
 
 /* Digital Transformation — cyan */
 .accentDT {
-    background: rgba(6, 182, 212, 0.1);
-    color: #0891b2;
-    border: 1px solid rgba(6, 182, 212, 0.2);
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--border);
 }
 [data-theme='dark'] .accentDT {
-    background: rgba(6, 182, 212, 0.15);
-    color: #67e8f9;
-    border-color: rgba(6, 182, 212, 0.25);
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--border);
 }
 
 /* Startup — emerald */
 .accentStartup {
-    background: rgba(16, 185, 129, 0.1);
-    color: #059669;
-    border: 1px solid rgba(16, 185, 129, 0.2);
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--border);
 }
 [data-theme='dark'] .accentStartup {
-    background: rgba(16, 185, 129, 0.15);
-    color: #6ee7b7;
-    border-color: rgba(16, 185, 129, 0.25);
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--border);
 }
 
 /* Strategy — amber */
 .accentStrategy {
-    background: rgba(245, 158, 11, 0.1);
-    color: #d97706;
-    border: 1px solid rgba(245, 158, 11, 0.2);
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--border);
 }
 [data-theme='dark'] .accentStrategy {
-    background: rgba(245, 158, 11, 0.15);
-    color: #fcd34d;
-    border-color: rgba(245, 158, 11, 0.25);
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--border);
 }
 
 /* Football — green */
 .accentFootball {
-    background: rgba(34, 197, 94, 0.1);
-    color: #16a34a;
-    border: 1px solid rgba(34, 197, 94, 0.2);
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--border);
 }
 [data-theme='dark'] .accentFootball {
-    background: rgba(34, 197, 94, 0.15);
-    color: #86efac;
-    border-color: rgba(34, 197, 94, 0.25);
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--border);
 }
 
 /* ── Footer Note ── */

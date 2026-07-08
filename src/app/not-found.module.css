@@ -27,14 +27,11 @@
 
 .errorCode {
   font-size: 5rem;
-  font-weight: 800;
+  font-weight: 500;
   line-height: 1;
   margin-bottom: 0.5rem;
   letter-spacing: -0.05em;
-  background: linear-gradient(135deg, var(--foreground) 0%, var(--muted-foreground) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  color: var(--foreground);}
 
 .title {
   font-size: 2rem;

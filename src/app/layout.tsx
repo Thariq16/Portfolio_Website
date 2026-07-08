@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Fraunces } from 'next/font/google';
+import { Inter, Fraunces, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import clsx from 'clsx';
 
@@ -8,6 +8,11 @@ const fraunces = Fraunces({
   subsets: ['latin'],
   variable: '--font-display',
   axes: ['SOFT', 'WONK'],
+});
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-mono',
+  weight: ['400', '500'],
 });
 
 export const metadata: Metadata = {
@@ -72,7 +77,7 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json',
   other: {
-    'theme-color': '#2563eb',
+    'theme-color': '#1e5a43',
   },
 };
 
@@ -102,7 +107,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={clsx(inter.variable, fraunces.variable, inter.className, 'antialiased')} data-clarity-unmask="true">
+      <body className={clsx(inter.variable, fraunces.variable, jetbrainsMono.variable, inter.className, 'antialiased')} data-clarity-unmask="true">
         <CookieConsentProvider>
           <ThemeProvider>
             <LanguageProvider>

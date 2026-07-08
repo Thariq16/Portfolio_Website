@@ -3,17 +3,11 @@
 import React from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/components/providers/LanguageProvider';
-import { TrendingUp, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import styles from './ImpactShowcase.module.css';
-import { CaseStudy, CaseStudyCategory } from '@/lib/dictionaries';
+import { CaseStudy } from '@/lib/dictionaries';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
-
-const categoryColors: Record<CaseStudyCategory, string> = {
-    'Software Development': '#3b82f6',
-    'Marketing': '#8b5cf6',
-    'UX': '#ec4899',
-    'Ops': '#f59e0b',
-};
+import CasePlate from '@/components/ui/CasePlate';
 
 export default function ImpactShowcase() {
     const { t } = useLanguage();
@@ -30,7 +24,6 @@ export default function ImpactShowcase() {
             <div className="container">
                 <header className={styles.header}>
                     <div className={styles.titleRow}>
-                        <TrendingUp size={24} className={styles.icon} />
                         <h2 className={styles.title}>Selected Work</h2>
                     </div>
                     <p className={styles.subtitle}>
@@ -45,15 +38,18 @@ export default function ImpactShowcase() {
                             href={`/projects/${project.slug}`}
                             className={styles.card}
                         >
+                            {project.metrics[0] && (
+                                <div className={styles.plateWrap}>
+                                    <CasePlate
+                                        seed={project.slug}
+                                        metricValue={project.metrics[0].value}
+                                        metricLabel={project.metrics[0].label}
+                                    />
+                                </div>
+                            )}
                             <div className={styles.cardContent}>
                                 <div className={styles.cardHeader}>
-                                    <span
-                                        className={styles.category}
-                                        style={{
-                                            background: `${categoryColors[project.category]}20`,
-                                            color: categoryColors[project.category]
-                                        }}
-                                    >
+                                    <span className={styles.category}>
                                         {project.category}
                                     </span>
                                 </div>
@@ -62,7 +58,7 @@ export default function ImpactShowcase() {
                                 <p className={styles.company}>{project.company}</p>
 
                                 <div className={styles.metrics}>
-                                    {project.metrics.slice(0, 2).map((metric: { value: string; label: string }, idx: number) => (
+                                    {(project.metrics.length > 1 ? project.metrics.slice(1, 3) : project.metrics).map((metric: { value: string; label: string }, idx: number) => (
                                         <div key={idx} className={styles.metric}>
                                             <span className={styles.metricValue}>{metric.value}</span>
                                             <span className={styles.metricLabel}>{metric.label}</span>

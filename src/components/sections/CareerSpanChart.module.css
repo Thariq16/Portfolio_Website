@@ -1,0 +1,95 @@
+.chart {
+    max-width: 900px;
+    margin: 0 auto 4rem;
+    padding: 2rem 2rem 2.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--background);
+}
+
+.chartLabel {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+    margin-bottom: 1.75rem;
+}
+
+.plotArea {
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+.gridline {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--border);
+}
+
+.yearLabel {
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0;
+    transform: translateX(-50%);
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.625rem;
+    color: var(--muted-foreground);
+    letter-spacing: 0.06em;
+}
+
+.rows {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    padding: 0.25rem 0;
+}
+
+.row {
+    position: relative;
+    height: 22px;
+}
+
+.bar {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: var(--primary);
+    border-radius: 2px;
+    transform-origin: left center;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    min-width: 8px;
+}
+
+.barLabel {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.625rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+    white-space: nowrap;
+    position: absolute;
+    right: calc(100% + 0.5rem);
+}
+
+/* Labels for bars starting near the left edge flip to the right side */
+.labelRight .barLabel {
+    right: auto;
+    left: calc(100% + 0.5rem);
+}
+
+@media (max-width: 640px) {
+    .chart {
+        padding: 1.25rem 1rem 2rem;
+    }
+    .barLabel {
+        font-size: 0.5625rem;
+    }
+}

@@ -1,0 +1,44 @@
+.plate {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+}
+
+.rule {
+    stroke: var(--border);
+    stroke-width: 0.5;
+    opacity: 0.5;
+}
+
+.bar {
+    fill: var(--primary);
+}
+
+.baseline {
+    stroke: var(--border);
+    stroke-width: 1;
+}
+
+.metric {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 30px;
+    font-weight: 500;
+    fill: var(--primary);
+    stroke: var(--card);
+    stroke-width: 6px;
+    stroke-linejoin: round;
+    paint-order: stroke fill;
+}
+
+.metricLabel {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 9.5px;
+    letter-spacing: 0.14em;
+    fill: var(--muted-foreground);
+    stroke: var(--card);
+    stroke-width: 4px;
+    stroke-linejoin: round;
+    paint-order: stroke fill;
+}

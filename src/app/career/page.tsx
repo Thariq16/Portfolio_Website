@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useLanguage } from '@/components/providers/LanguageProvider';
 import { ArrowRight, Briefcase, Calendar } from 'lucide-react';
+import CareerSpanChart from '@/components/sections/CareerSpanChart';
 import styles from './page.module.css';
 
 
@@ -22,6 +23,8 @@ export default function CareerPage() {
                     <h1 className={styles.title}>{career.title}</h1>
                     <p className={styles.subtitle}>{career.subtitle}</p>
                 </header>
+
+                <CareerSpanChart jobs={jobs} />
 
                 <div className={styles.timeline}>
                     {jobs.map((job, index) => (

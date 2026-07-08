@@ -4,13 +4,13 @@
     z-index: 50;
     width: 100%;
     border-bottom: 1px solid var(--border);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(246, 242, 232, 0.85);
     backdrop-filter: blur(8px);
     transition: background-color 0.3s ease;
 }
 
 [data-theme='dark'] .header {
-    background-color: rgba(2, 6, 23, 0.8);
+    background-color: rgba(20, 17, 11, 0.85);
 }
 
 .container {
@@ -21,9 +21,10 @@
 }
 
 .logo {
-    font-weight: 700;
+    font-family: var(--font-display), Georgia, serif;
+    font-weight: 600;
     font-size: 1.125rem;
-    letter-spacing: -0.025em;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
 }
 
@@ -34,15 +35,37 @@
 }
 
 .navLink {
-    font-size: 0.875rem;
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
     font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: var(--muted-foreground);
     transition: color 0.2s;
     white-space: nowrap;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--primary);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.25s ease;
 }
 
 .navLink:hover {
     color: var(--foreground);
+}
+
+.navLink:hover::after {
+    transform: scaleX(1);
 }
 
 .iconBtn {
