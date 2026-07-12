@@ -1,0 +1,324 @@
+/* ── Header ── */
+.header {
+    padding: 3rem 0 2.5rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2.5rem;
+}
+
+.eyebrow {
+    display: block;
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+    margin-bottom: 0.75rem;
+}
+
+.headline {
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    max-width: 720px;
+}
+
+/* ── Numbered index ── */
+.index {
+    margin-bottom: 4rem;
+}
+
+.index ol {
+    list-style: none;
+    border-top: 1px solid var(--border);
+}
+
+.index li {
+    border-bottom: 1px solid var(--border);
+}
+
+.index a {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 1.1rem 0.25rem;
+    transition: color 0.2s ease, padding-inline-start 0.2s ease;
+}
+
+.index a:hover {
+    color: var(--primary);
+    padding-inline-start: 0.5rem;
+}
+
+.index .num {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--muted-foreground);
+    flex-shrink: 0;
+}
+
+.indexTitle {
+    flex: 1;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.indexArrow {
+    color: var(--muted-foreground);
+    font-size: 0.9rem;
+}
+
+/* ── Inline case study sections ── */
+.caseSection {
+    scroll-margin-top: 96px;
+    padding: 3.5rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.caseSection:last-of-type {
+    border-bottom: none;
+}
+
+.caseTop {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.caseTop .num {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--primary);
+}
+
+.tags {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+}
+
+.caseTitle {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.75rem;
+    max-width: 780px;
+}
+
+.metaRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.metaBlock p {
+    font-size: 0.95rem;
+    color: var(--foreground);
+    max-width: 480px;
+    line-height: 1.55;
+}
+
+.metaLabel {
+    display: block;
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted-foreground);
+    margin-bottom: 0.3rem;
+}
+
+/* ── Gallery ── */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.shotWrap {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--card);
+}
+
+.shot {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* ── Intro ── */
+.intro {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 720px;
+    margin-bottom: 2.5rem;
+    color: var(--foreground);
+}
+
+/* ── Subheads and body copy ── */
+.subhead {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary);
+    margin: 2rem 0 0.75rem;
+}
+
+.caseSection p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--foreground);
+    max-width: 720px;
+}
+
+/* ── Impact grid ── */
+.impactGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.impactItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.impactValue {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 1.65rem;
+    font-weight: 500;
+    color: var(--success);
+}
+
+.impactLabel {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted-foreground);
+}
+
+/* ── Responsibilities ── */
+.respList {
+    list-style: none;
+    max-width: 720px;
+}
+
+.respList li {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    padding: 0.4rem 0;
+    border-bottom: 1px dashed var(--border);
+}
+
+.respList li:last-child {
+    border-bottom: none;
+}
+
+/* ── Read more link ── */
+.readMore {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 2rem;
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.readMore:hover {
+    color: var(--foreground);
+}
+
+/* ── Experiments ── */
+.experiments {
+    padding: 3.5rem 0 5rem;
+}
+
+.expList {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.expItem {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.1rem 1.2rem;
+    background: var(--card);
+}
+
+.expHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.4rem;
+}
+
+.expTitle {
+    font-weight: 500;
+    font-size: 0.98rem;
+}
+
+.expYear {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted-foreground);
+}
+
+.expBlurb {
+    font-size: 0.85rem;
+    color: var(--muted-foreground);
+    line-height: 1.5;
+    margin-bottom: 0.6rem;
+}
+
+.expTech {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--muted-foreground);
+    margin-bottom: 0.6rem;
+}
+
+.expLinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.expLinks a {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+    .metaRow {
+        gap: 1.5rem;
+    }
+
+    .impactGrid {
+        gap: 1.5rem;
+    }
+}

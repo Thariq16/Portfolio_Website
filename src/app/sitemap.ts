@@ -8,6 +8,7 @@ const DATES: Record<string, string> = {
     '':          '2025-06-01',
     '/about':    '2025-06-01',
     '/projects': '2025-06-01',
+    '/projects-preview': '2026-07-09',
     '/career':   '2025-06-01',
     '/design':   '2025-05-01',
     '/cv':       '2025-06-01',
@@ -23,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '',
         '/about',
         '/projects',
+        '/projects-preview',
         '/career',
         '/design',
         '/cv',
@@ -32,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${baseUrl}${route}`,
         lastModified: DATES[route] ?? '2025-06-01',
         changeFrequency: route === '' || route === '/projects' ? 'weekly' as const : 'monthly' as const,
-        priority: route === '' ? 1.0 : route === '/projects' ? 0.9 : 0.8,
+        priority: route === '' ? 1.0 : route === '/projects' ? 0.9 : route === '/projects-preview' ? 0.7 : 0.8,
     }));
 
     // Dynamic case studies
