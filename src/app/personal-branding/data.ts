@@ -359,4 +359,38 @@ Credentialing myself on the coaching side of the game has mattered more to how I
         hashtags: '#PerformanceAnalysis #SportsTech #BarcaInnovationHub',
         note: 'NOT CLEARED — same caveat as Post 21. Canonical draft: analyst-thariq/linkedin-crossover-posts.md Draft 3. PBOS fix 2026-07-06 (wording only, clearance unchanged): removed an advice-shaped closer, reworded as first-person reflection.',
     },
+    {
+        num: 24,
+        date: 'Sun, Jul 12, 2026',
+        time: '8:00–10:00 AM AST',
+        track: 'Analyst',
+        pillar: 'Crossover — Credibility & Process',
+        title: 'First season at Glacis United FC — recap and the platform I built',
+        status: 'Ready',
+        format: 'Text-only',
+        image: false,
+        score: 8.8,
+        why: 'Extremely specific numbers, honest trade-off reasoning (budget and facility constraints named together, not oversimplified to one cause), and a concrete build log (MVP through V0.3). Written by Thariq himself, not a Claude draft; this pass fixed em dashes, three stated-conclusion lines, and a factual correction on Gibraltar\'s ground count.',
+        body: `I joined midway through the 25/26 season at Glacis United FC as their part-time First Team Performance Analyst. After 10 matches, 4,437 match events, 10 opposition team analyses, and countless player feedback sessions, the season came to an end a few months back.
+
+Implementing the data gathering process and translating that data into something meaningful for coaches and players, many of whom were seeing visualisations of their own match performance for the first time in their playing careers.
+
+I had to rely on my own football knowledge and spend time with the coaches to understand their game model and the functional responsibilities of each player. As analysts, we see data and plan our reports and recommendations. But the moment you truly understand the coach's game model and what each player is responsible for on match day, the data starts to make far more sense. That realisation made the platform I built significantly better and more meaningful.
+
+Capturing the data was a tedious process, entirely manual, but detailed. I know that in today's AI-driven world I could have explored computer vision solutions. But when a club is going through challenging times, it's difficult to ask them to invest. On top of that, Gibraltar only has two grounds, and both have similar setups, so getting usable tactical camera footage is genuinely difficult no matter which one you're working from.
+
+In an environment where a club can't afford a proper setup, I needed a different approach to solving problems. My background in tech and product management pushed me to build this platform instead.
+
+MVP — Excel Workbook
+V0.1 — Lovable web app for data visualisation
+V0.2 — Lovable for data entry and visualisation
+V0.3 — Migrated away from Lovable, running directly on my own Supabase project instead
+Next — Automate what can be automated
+
+Building this while keeping the analysis work on track meant most of it happened late at night, around matchday deadlines.
+
+First season done. A lot learned. Nowhere near finished.`,
+        hashtags: '#PerformanceAnalysis #SportsTech #GlacisUnitedFC',
+        note: "Written by Thariq, brought to Claude for a PBOS pass 2026-07-12. Data confirmed cleared to share by Thariq directly. Fixed: five prose em dashes removed per the standing no-em-dash rule; three stated-conclusion lines cut or replaced with concrete detail ('pushed me miles outside my comfort zone', 'gave me a real sense of achievement', 'one of the most rewarding things I've done') per Writing DNA's 'avoid advice, describe experience'; factual correction, Gibraltar has two grounds not one, both similarly limited for tactical camera access; V0.3 given its reason (migrated to a self-managed Supabase project) instead of stating the change with no explanation. Hashtags aligned to the established Analyst crossover signature (#PerformanceAnalysis #SportsTech + one topic tag), matching Posts 21-23, rather than the four ad hoc tags in Thariq's original draft. Also fixed, 2026-07-12: 'you need a different approach to solving problems' addressed the reader directly with generic advice; changed to 'I needed a different approach' to keep it in his own experience, per Thariq's confirmation. Score of 8.8 sits just below Post 1's 9.5 opener (that post has a sharper hook) but above most of the Builder batch's Authority/Experience posts (typically 8.0-8.7), reflecting the density of real, specific detail (4,437 events, the version history, the two named constraints) with very little left ungrounded."
+    }
 ];
