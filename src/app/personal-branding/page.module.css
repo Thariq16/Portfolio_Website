@@ -848,6 +848,136 @@
     border-radius: 3px;
 }
 
+/* ── Network Activation tab ── */
+.napCard {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 0.9rem;
+    padding: 1.1rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.napCardTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    margin: 0 0 0.35rem;
+    color: var(--foreground);
+}
+
+.napCardDesc {
+    font-size: 0.8rem;
+    color: var(--muted-foreground);
+    line-height: 1.55;
+    margin: 0 0 0.75rem;
+}
+
+.freqBadge {
+    font-size: 0.62rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    background: rgba(124, 58, 237, 0.1);
+    color: #7c3aed;
+    border-radius: 100px;
+    padding: 0.15rem 0.6rem;
+}
+
+[data-theme='dark'] .freqBadge {
+    background: rgba(167, 139, 250, 0.16);
+    color: #c4b5fd;
+}
+
+.checklist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.checkItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    padding: 0.55rem 0;
+    border-bottom: 1px dashed var(--border);
+    font-size: 0.8rem;
+    line-height: 1.55;
+    color: var(--foreground);
+}
+
+.checkItem:last-child {
+    border-bottom: none;
+}
+
+.checkItem label {
+    cursor: pointer;
+}
+
+.checkItemDone label {
+    color: var(--muted-foreground);
+    text-decoration: line-through;
+}
+
+.checkBox {
+    width: 17px;
+    height: 17px;
+    flex: 0 0 17px;
+    margin-top: 0.1rem;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+.progressWrap {
+    margin-top: 0.75rem;
+}
+
+.progressTrack {
+    background: var(--muted);
+    border-radius: 8px;
+    height: 8px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 8px;
+    transition: width 0.25s ease;
+}
+
+.progressLabel {
+    font-size: 0.7rem;
+    color: var(--muted-foreground);
+    margin-top: 0.4rem;
+}
+
+.napResetRow {
+    margin-top: 1.5rem;
+}
+
+.resetBtn {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary);
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    border-radius: 100px;
+    padding: 0.45rem 0.9rem;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.resetBtn:hover {
+    background: rgba(37, 99, 235, 0.15);
+}
+
+[data-theme='dark'] .resetBtn {
+    background: rgba(59, 130, 246, 0.12);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
 /* ── Responsive ── */
 @media (max-width: 640px) {
     .hero {

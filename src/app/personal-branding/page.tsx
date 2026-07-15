@@ -4,10 +4,11 @@ import React, { useMemo, useState } from 'react';
 import { Info } from 'lucide-react';
 import { posts, type Post } from './data';
 import PerformanceAnalysis from './PerformanceAnalysis';
+import NetworkActivation from './NetworkActivation';
 import styles from './page.module.css';
 
 type SortMode = 'order' | 'score-desc' | 'score-asc' | 'date';
-type MainTab = 'calendar' | 'performance';
+type MainTab = 'calendar' | 'performance' | 'network';
 
 function statusClass(s: Post['status']) {
     if (s === 'Ready') return styles.sReady;
@@ -121,13 +122,15 @@ export default function PersonalBrandingPage() {
                         <h1 className={styles.heroTitle}>
                             Personal Branding{' '}
                             <span className={styles.heroAccent}>
-                                {mainTab === 'calendar' ? 'Content Calendar' : 'Performance Analysis'}
+                                {mainTab === 'calendar' ? 'Content Calendar' : mainTab === 'performance' ? 'Performance Analysis' : 'Network Activation'}
                             </span>
                         </h1>
                         <p className={styles.heroSubtitle}>
                             {mainTab === 'calendar'
                                 ? `${posts.length} drafted posts (Jul 7 – Aug 27, 2026) · Builder Thariq & Analyst Thariq tracks`
-                                : '3 posts published so far · draft-vs-published diffs and LinkedIn analytics'}
+                                : mainTab === 'performance'
+                                ? '3 posts published so far · draft-vs-published diffs and LinkedIn analytics'
+                                : 'Daily, per-post, weekly, and monthly rhythm for warming up KSA/GCC reach'}
                         </p>
                     </div>
                 </div>
@@ -148,9 +151,16 @@ export default function PersonalBrandingPage() {
                     >
                         Performance Analysis
                     </button>
+                    <button
+                        className={`${styles.mainTabBtn} ${mainTab === 'network' ? styles.mainTabBtnActive : ''}`}
+                        onClick={() => setMainTab('network')}
+                    >
+                        Network Activation
+                    </button>
                 </div>
 
                 {mainTab === 'performance' && <PerformanceAnalysis />}
+                {mainTab === 'network' && <NetworkActivation />}
 
                 {mainTab === 'calendar' && (
                 <>
