@@ -3,9 +3,11 @@
 import React, { useMemo, useState } from 'react';
 import { Info } from 'lucide-react';
 import { posts, type Post } from './data';
+import PerformanceAnalysis from './PerformanceAnalysis';
 import styles from './page.module.css';
 
 type SortMode = 'order' | 'score-desc' | 'score-asc' | 'date';
+type MainTab = 'calendar' | 'performance';
 
 function statusClass(s: Post['status']) {
     if (s === 'Ready') return styles.sReady;
@@ -28,6 +30,7 @@ function paragraphs(body: string) {
 }
 
 export default function PersonalBrandingPage() {
+    const [mainTab, setMainTab] = useState<MainTab>('calendar');
     const [query, setQuery] = useState('');
     const [track, setTrack] = useState('');
     const [pillar, setPillar] = useState('');
@@ -116,16 +119,41 @@ export default function PersonalBrandingPage() {
                             <span>Private · Not Indexed</span>
                         </div>
                         <h1 className={styles.heroTitle}>
-                            Personal Branding <span className={styles.heroAccent}>Content Calendar</span>
+                            Personal Branding{' '}
+                            <span className={styles.heroAccent}>
+                                {mainTab === 'calendar' ? 'Content Calendar' : 'Performance Analysis'}
+                            </span>
                         </h1>
                         <p className={styles.heroSubtitle}>
-                            {posts.length} drafted posts (Jul 7 – Aug 27, 2026) · Builder Thariq &amp; Analyst Thariq tracks
+                            {mainTab === 'calendar'
+                                ? `${posts.length} drafted posts (Jul 7 – Aug 27, 2026) · Builder Thariq & Analyst Thariq tracks`
+                                : '3 posts published so far · draft-vs-published diffs and LinkedIn analytics'}
                         </p>
                     </div>
                 </div>
             </section>
 
             <div className="container">
+                {/* ── Main tabs ── */}
+                <div className={styles.mainTabs}>
+                    <button
+                        className={`${styles.mainTabBtn} ${mainTab === 'calendar' ? styles.mainTabBtnActive : ''}`}
+                        onClick={() => setMainTab('calendar')}
+                    >
+                        Content Calendar
+                    </button>
+                    <button
+                        className={`${styles.mainTabBtn} ${mainTab === 'performance' ? styles.mainTabBtnActive : ''}`}
+                        onClick={() => setMainTab('performance')}
+                    >
+                        Performance Analysis
+                    </button>
+                </div>
+
+                {mainTab === 'performance' && <PerformanceAnalysis />}
+
+                {mainTab === 'calendar' && (
+                <>
                 {/* ── Disclaimer ── */}
                 <div className={styles.note}>
                     Scores are a relative editorial read on hook strength, strategic fit, and real-world readiness across
@@ -283,6 +311,8 @@ export default function PersonalBrandingPage() {
                     Posting window: 8:00–10:00 AM AST (Riyadh) · Builder posts run Sun/Tue/Thu · Analyst crossover posts
                     (21–23) are logged here but marked Not Cleared — do not post without revisiting first.
                 </p>
+                </>
+                )}
             </div>
         </main>
     );
