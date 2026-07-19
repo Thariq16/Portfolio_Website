@@ -31,16 +31,16 @@ const POST_SUMMARIES: PostSummary[] = [
     },
     {
         num: '4', title: 'Post 4 — RAGAS/trust pivot', track: 'Builder',
-        meta: 'Published Wed Jul 15, 7:35 AM · checked same day',
-        impressions: 80, reached: 38, reactions: 4, comments: 0, reposts: 0,
-        engagementRate: '5.00%', length: '358 words', lengthVsDraft: '+56 words (+19%)',
+        meta: 'Published Wed Jul 15, 7:35 AM · checked 4 days later (updated 2026-07-19, first check was same-day)',
+        impressions: 174, reached: 77, reactions: 5, comments: 2, reposts: 0,
+        engagementRate: '4.02%', length: '358 words', lengthVsDraft: '+56 words (+19%)',
     },
 ];
 
 const BAR_DATA = [
-    { label: 'Post 1 (170 words)', widthPct: 18, value: '0.91%' },
-    { label: 'Post 24 (330 words)', widthPct: 45, value: '2.24%' },
-    { label: 'Post 4 (358 words)', widthPct: 100, value: '5.00%' },
+    { label: 'Post 1 (170 words)', widthPct: 23, value: '0.91%' },
+    { label: 'Post 24 (330 words)', widthPct: 56, value: '2.24%' },
+    { label: 'Post 4 (358 words)', widthPct: 100, value: '4.02%' },
 ];
 
 function trackClass(t: 'Builder' | 'Analyst') {
@@ -65,15 +65,15 @@ export default function PerformanceAnalysis() {
                     <div className={styles.kpiLabel}>Posts published</div>
                 </div>
                 <div className={styles.kpi}>
-                    <div className={styles.kpiNum}>1,230</div>
+                    <div className={styles.kpiNum}>1,324</div>
                     <div className={styles.kpiLabel}>Total impressions</div>
                 </div>
                 <div className={styles.kpi}>
-                    <div className={styles.kpiNum}>21</div>
+                    <div className={styles.kpiNum}>22</div>
                     <div className={styles.kpiLabel}>Total reactions</div>
                 </div>
                 <div className={styles.kpi}>
-                    <div className={styles.kpiNum}>0</div>
+                    <div className={styles.kpiNum}>2</div>
                     <div className={styles.kpiLabel}>Total comments</div>
                 </div>
             </div>
@@ -141,9 +141,10 @@ export default function PerformanceAnalysis() {
             {/* Bar chart */}
             <h2 className={styles.sectionTitle}>Length vs. engagement rate</h2>
             <p className={styles.sectionSub}>
-                Engagement rate = (reactions + comments + reposts) ÷ impressions. Post 4 shows the highest rate, but
-                that&apos;s 4 reactions on 80 impressions — a single extra reaction would swing it by more than a full
-                point. Not a reliable read yet with only three data points.
+                Engagement rate = (reactions + comments + reposts) ÷ impressions. Post 4&apos;s number below is now from
+                a 4-day-later check (updated 2026-07-19) — its first check was same-day and read 5.00% off just 4
+                reactions, a reminder of how noisy this metric is at low volumes. Still not a reliable read with only
+                three data points.
             </p>
             <div className={styles.barBox}>
                 {BAR_DATA.map(b => (
@@ -157,8 +158,8 @@ export default function PerformanceAnalysis() {
                 ))}
                 <p className={styles.barCaveat}>
                     No consistent length-to-engagement pattern yet: the shortest post (Post 1) has the lowest rate, but
-                    the two longer posts don&apos;t move in a clean line either, and Post 4&apos;s rate is built on only 4
-                    reactions. Worth re-plotting once 8-10 posts are logged before treating length as a real driver either way.
+                    the two longer posts don&apos;t move in a clean line either. Worth re-plotting once 8-10 posts are
+                    logged before treating length as a real driver either way.
                 </p>
             </div>
 
@@ -269,10 +270,13 @@ export default function PerformanceAnalysis() {
             <div className={styles.infoBox}>
                 <h4>Consistent across all three posts, regardless of track or format</h4>
                 <p>
-                    <strong>Zero comments on every post</strong>, including Post 1, which closed on a genuine question
-                    specifically to invite one. One data point isn&apos;t enough to call the &quot;invite comments
-                    organically&quot; rule ineffective — it may be a reach problem rather than a content problem, worth
-                    tracking over the next few posts.
+                    <strong>Comments take longer to show up than the same-day check suggests.</strong> Post 4 read zero
+                    comments same-day, but a follow-up check 4 days later (2026-07-19) found 2, plus a new follower and a
+                    profile view that also weren&apos;t there on day one. Post 1 and Post 24 haven&apos;t been re-checked
+                    since their original pulls, so it&apos;s possible they&apos;ve picked up comments too. This is a
+                    useful correction to the standing rule: don&apos;t judge a post&apos;s comment count from a same-day
+                    or even 3-day check — re-check again after 4-5 days before concluding anything about whether the
+                    &quot;invite comments organically&quot; closer is working.
                 </p>
                 <p>
                     <strong>Viewer base is Sri Lanka-dominant on every post</strong>, 25%, 34%, and 21% Colombo respectively,
