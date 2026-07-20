@@ -3480,6 +3480,209 @@ export const applications: Application[] = [
     "role": "Senior Product Manager - Equity",
     "channel": "Company Site/ATS (Ashby)",
     "status": "Rejected"
+  },
+  {
+    "date": "2026-07-06",
+    "company": "MBC Shahid",
+    "role": "Associate Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-06",
+    "company": "Tarmeez",
+    "role": "Product Manager",
+    "channel": "Direct Email + Company Site/ATS (Teamtailor)",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-06",
+    "company": "The Flex & Base360",
+    "role": "Entrepreneur in Residence (EIR)",
+    "channel": "Direct Email + Company Site/ATS (Ashby)",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-07",
+    "company": "DirectFN",
+    "role": "Product Specialist Lead",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-09",
+    "company": "Binalyze",
+    "role": "Product Manager",
+    "channel": "Company Site/ATS (Ashby)",
+    "status": "Rejected"
+  },
+  {
+    "date": "2026-07-10",
+    "company": "Whitecollars",
+    "role": "Business Development Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "Rejected"
+  },
+  {
+    "date": "2026-07-10",
+    "company": "Qashio",
+    "role": "Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-10",
+    "company": "AIQU",
+    "role": "Product Manager (fintech - Digital wallet)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-11",
+    "company": "Jobgether",
+    "role": "Sr. Product Manager - Emerging Mobile Apps (Remote)",
+    "channel": "AI Screening Platform",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-11",
+    "company": "Enterprise64",
+    "role": "Senior Product Manager",
+    "channel": "Company Site/ATS (applytojob.com)",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-11",
+    "company": "AVTECH Sweden",
+    "role": "Product Manager / Project Manager - Aviation & International Collaboration",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-12",
+    "company": "King Salman International Airport",
+    "role": "Manager - Emerging Technologies",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-12",
+    "company": "Salt",
+    "role": "Technical Project Manager - Technology",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-13",
+    "company": "Node Technologies",
+    "role": "Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-13",
+    "company": "Recruited",
+    "role": "Head of Product",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-13",
+    "company": "Aanaab",
+    "role": "Project Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-13",
+    "company": "(Indeed listing)",
+    "role": "Product Operations Manager",
+    "channel": "Indeed",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-13",
+    "company": "(Indeed listing)",
+    "role": "UI/UX Tech Lead",
+    "channel": "Indeed",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-13",
+    "company": "(Indeed listing)",
+    "role": "Project Manager",
+    "channel": "Indeed",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-15",
+    "company": "Lucidya",
+    "role": "Principal Product Manager - Customer Service Suite",
+    "channel": "LinkedIn Easy Apply + Company Site/ATS (Workable)",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-15",
+    "company": "Precision Football",
+    "role": "Performance Analyst Programme Internship (Video Analyst)",
+    "channel": "Direct Email",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-16",
+    "company": "SILQFi",
+    "role": "Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-16",
+    "company": "Al-Qadsiah Saudi Club",
+    "role": "Performance Analyst (Women's First Team)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-16",
+    "company": "Etihad Airways",
+    "role": "Product Manager - Mobile App",
+    "channel": "LinkedIn Easy Apply + Company Site/ATS",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-16",
+    "company": "AP Moller-Maersk",
+    "role": "Project Logistics - Senior Business Development Manager",
+    "channel": "Company Site/ATS (Workday)",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-19",
+    "company": "SITA",
+    "role": "Product Manager",
+    "channel": "Company Site/ATS (iCIMS)",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-19",
+    "company": "Harvey",
+    "role": "Staff Product Manager, New Products",
+    "channel": "Company Site/ATS (Ashby)",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-19",
+    "company": "Elm Company",
+    "role": "Senior Product Manager (application date not independently confirmed - logged via rejection email)",
+    "channel": "Company Site/ATS (SuccessFactors)",
+    "status": "Rejected"
+  },
+  {
+    "date": "2026-07-20",
+    "company": "Riyadh Air",
+    "role": "Product Manager, MarTech (application date not independently confirmed - logged via rejection email)",
+    "channel": "Company Site/ATS",
+    "status": "Rejected"
   }
 ];
 
@@ -3519,6 +3722,18 @@ export const recruiterOutreach: RecruiterOutreach[] = [
     "company": "N/A",
     "context": "LinkedIn Premium welcome / general",
     "channel": "LinkedIn"
+  },
+  {
+    "date": "2026-07-14",
+    "company": "Jibin Raj - Linnk Group",
+    "context": "Reached out re: Project Manager (Banking & AI), Riyadh - Thariq responded interested",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-07-08",
+    "company": "Surjith C.M. - Linnk Group",
+    "context": "Reached out re: Insights & Analytics Product Lead, Qatar - Thariq responded with CV",
+    "channel": "Email"
   }
 ];
 
