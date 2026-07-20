@@ -3549,7 +3549,7 @@ export const applications: Application[] = [
     "company": "Enterprise64",
     "role": "Senior Product Manager",
     "channel": "Company Site/ATS (applytojob.com)",
-    "status": "No Response"
+    "status": "In Progress"
   },
   {
     "date": "2026-07-11",
@@ -3626,7 +3626,7 @@ export const applications: Application[] = [
     "company": "Precision Football",
     "role": "Performance Analyst Programme Internship (Video Analyst)",
     "channel": "Direct Email",
-    "status": "No Response"
+    "status": "In Progress"
   },
   {
     "date": "2026-07-16",

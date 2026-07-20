@@ -9,9 +9,11 @@ import styles from './page.module.css';
 const DATE_START_OVERALL = '2025-12-15';
 const DATE_CUTOFF        = '2026-04-02'; // New CV date
 const DATE_END           = '2026-07-01';
+const DATE_JUL1          = '2026-07-01'; // Rolling "since Jul 1" window, open-ended
 
-const PRE_CV_LABEL  = 'Dec 15 – Apr 1';
-const POST_CV_LABEL = 'Apr 2 – Jul 1';
+const PRE_CV_LABEL   = 'Dec 15 – Apr 1';
+const POST_CV_LABEL  = 'Apr 2 – Jul 1';
+const JUL1_CV_LABEL  = 'Jul 1 – present';
 
 /* ─── Monthly chart config ─── */
 const MONTHS       = ['2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07'];
@@ -19,19 +21,21 @@ const MONTH_LABELS = ['Dec 25', 'Jan 26', 'Feb 26', 'Mar 26', 'Apr 26', 'May 26'
 const MONTH_IS_POST = MONTHS.map(m => m >= '2026-04');
 
 /* ─── Timeline toggle ─── */
-type Timeline = 'overall' | 'pre' | 'post';
+type Timeline = 'overall' | 'pre' | 'post' | 'jul1';
 const TIMELINES: { id: Timeline; label: string; sub: string }[] = [
-    { id: 'overall', label: 'Overall',      sub: 'Dec 15, 2025 – Jul 1, 2026' },
-    { id: 'pre',     label: 'Pre-New CV',   sub: PRE_CV_LABEL  },
-    { id: 'post',    label: 'Post-New CV',  sub: POST_CV_LABEL },
+    { id: 'overall', label: 'Overall',        sub: 'Dec 15, 2025 – present' },
+    { id: 'pre',     label: 'Pre-New CV',     sub: PRE_CV_LABEL  },
+    { id: 'post',    label: 'Post-New CV',    sub: POST_CV_LABEL },
+    { id: 'jul1',    label: 'Jul 1 – Present', sub: JUL1_CV_LABEL },
 ];
 
 /* ─── Table tab config ─── */
-type TabId = 'all' | 'pre' | 'post' | 'recruiters' | 'linkedin' | 'messages';
+type TabId = 'all' | 'pre' | 'post' | 'jul1' | 'recruiters' | 'linkedin' | 'messages';
 const TABS: { id: TabId; label: string }[] = [
     { id: 'all',        label: 'All Applications' },
     { id: 'pre',        label: `Pre-New CV (${PRE_CV_LABEL})` },
     { id: 'post',       label: `Post-New CV (${POST_CV_LABEL})` },
+    { id: 'jul1',       label: `Since Jul 1 (${JUL1_CV_LABEL})` },
     { id: 'recruiters', label: 'Recruiter Outreach' },
     { id: 'linkedin',   label: 'LinkedIn Recruiter Contacts' },
     { id: 'messages',   label: 'Recruiter Messages' },
@@ -101,14 +105,17 @@ interface KpiTile {
     tooltip?: string;
 }
 
-function buildKpis(stats: PeriodStats, timeline: Timeline, preStats: PeriodStats, postStats: PeriodStats): KpiTile[] {
+function buildKpis(stats: PeriodStats, timeline: Timeline, preStats: PeriodStats, postStats: PeriodStats, jul1Stats: PeriodStats): KpiTile[] {
     const preRatePct  = parseInt(preStats.responseRate)  || 0;
     const postRatePct = parseInt(postStats.responseRate) || 0;
+    const jul1RatePct = parseInt(jul1Stats.responseRate) || 0;
     const delta       = postRatePct - preRatePct;
+    const jul1Delta    = jul1RatePct - postRatePct;
     const deltaStr    = delta >= 0 ? `+${delta}pp vs pre-CV` : `${delta}pp vs pre-CV`;
+    const jul1DeltaStr = jul1Delta >= 0 ? `+${jul1Delta}pp vs post-CV` : `${jul1Delta}pp vs post-CV`;
 
     if (timeline === 'overall') return [
-        { label: 'Total Applications',          value: stats.total,       sub: 'Dec 2025 – Jul 2026',         variant: 'info' },
+        { label: 'Total Applications',          value: stats.total,       sub: 'Dec 2025 – present',         variant: 'info' },
         { label: 'Companies Targeted',           value: stats.companies,   sub: 'Distinct employers',           variant: 'info' },
         { label: 'Feedback Received',            value: stats.rejected,    sub: `${stats.responseRate} response rate`, variant: 'neutral',
           tooltip: 'Any reply (rejection / screening) = feedback; application was reviewed' },
@@ -118,6 +125,8 @@ function buildKpis(stats: PeriodStats, timeline: Timeline, preStats: PeriodStats
           tooltip: 'Dec 15 – Apr 1 (original CV)' },
         { label: 'Post-New CV Response Rate',    value: postStats.responseRate, sub: deltaStr, variant: delta >= 0 ? 'positive' : 'negative',
           tooltip: 'Apr 2 – Jul 1 (revamped CV from Professional Pyramid)' },
+        { label: 'Since Jul 1 Response Rate',    value: jul1Stats.responseRate, sub: jul1DeltaStr, variant: jul1Delta >= 0 ? 'positive' : 'negative',
+          tooltip: 'Jul 1, 2026 – present (rolling window)' },
         { label: 'Recruiter Outreach Received',  value: recruiterOutreach.length, sub: 'Inbound recruiter contacts', variant: 'info' },
         { label: 'LinkedIn Recruiter Contacts',  value: linkedinContacts.length,  sub: 'Direct recruiter messages',  variant: 'info' },
     ];
@@ -136,8 +145,7 @@ function buildKpis(stats: PeriodStats, timeline: Timeline, preStats: PeriodStats
           tooltip: 'After new CV: did response rate improve?' },
     ];
 
-    // post
-    return [
+    if (timeline === 'post') return [
         { label: 'Applications Sent',    value: stats.total,       sub: POST_CV_LABEL,                   variant: 'info' },
         { label: 'Companies Reached',    value: stats.companies,   sub: 'Distinct employers',             variant: 'info' },
         { label: 'Feedback Received',    value: stats.rejected,    sub: 'Applications with any company reply', variant: 'neutral',
@@ -150,6 +158,22 @@ function buildKpis(stats: PeriodStats, timeline: Timeline, preStats: PeriodStats
         { label: 'Avg Apps / Week',      value: Math.round(stats.total / 13), sub: '~13 weeks (Apr–Jul)', variant: 'info' },
         { label: 'CV Impact',            value: delta >= 0 ? `↑ ${delta}pp` : `↓ ${Math.abs(delta)}pp`, sub: 'Change in response rate after new CV', variant: delta >= 0 ? 'positive' : 'negative',
           tooltip: `Pre-CV: ${preStats.responseRate} → Post-CV: ${stats.responseRate}` },
+    ];
+
+    // jul1 — rolling "since Jul 1" window
+    return [
+        { label: 'Applications Sent',    value: stats.total,       sub: JUL1_CV_LABEL,                   variant: 'info' },
+        { label: 'Companies Reached',    value: stats.companies,   sub: 'Distinct employers',             variant: 'info' },
+        { label: 'Feedback Received',    value: stats.rejected,    sub: 'Applications with any company reply', variant: 'neutral',
+          tooltip: 'Response = rejection email, screening call, interview invite, etc.' },
+        { label: 'Response Rate',        value: stats.responseRate,sub: jul1DeltaStr, variant: jul1Delta >= 0 ? 'positive' : 'negative',
+          tooltip: 'Response rate = replies ÷ total apps, since Jul 1.' },
+        { label: 'Ghost Rate',           value: stats.ghostRate,   sub: `${stats.noResponse} apps with no reply yet`, variant: parseInt(stats.ghostRate) < parseInt(postStats.ghostRate) ? 'positive' : 'negative',
+          tooltip: 'Ghost rate = % of applications with zero company response' },
+        { label: 'No Response Count',    value: stats.noResponse,  sub: 'Still potentially active',       variant: 'neutral' },
+        { label: 'Companies This Window', value: stats.companies,  sub: 'Since Jul 1, 2026',              variant: 'info' },
+        { label: 'CV Impact vs Post-CV', value: jul1Delta >= 0 ? `↑ ${jul1Delta}pp` : `↓ ${Math.abs(jul1Delta)}pp`, sub: 'Change in response rate vs Apr–Jul window', variant: jul1Delta >= 0 ? 'positive' : 'negative',
+          tooltip: `Post-CV: ${postStats.responseRate} → Since Jul 1: ${stats.responseRate}` },
     ];
 }
 
@@ -222,13 +246,15 @@ export default function JobApplicationPage() {
 
     const preApps  = useMemo(() => applications.filter(a => a.date >= DATE_START_OVERALL && a.date < DATE_CUTOFF), []);
     const postApps = useMemo(() => applications.filter(a => a.date >= DATE_CUTOFF && a.date <= DATE_END), []);
+    const jul1Apps = useMemo(() => applications.filter(a => a.date >= DATE_JUL1), []);
 
     const preStats  = useMemo(() => computeStats(preApps),     [preApps]);
     const postStats = useMemo(() => computeStats(postApps),    [postApps]);
+    const jul1Stats = useMemo(() => computeStats(jul1Apps),    [jul1Apps]);
     const allStats  = useMemo(() => computeStats(applications), []);
 
-    const activeStats = timeline === 'pre' ? preStats : timeline === 'post' ? postStats : allStats;
-    const kpis = useMemo(() => buildKpis(activeStats, timeline, preStats, postStats), [activeStats, timeline, preStats, postStats]);
+    const activeStats = timeline === 'pre' ? preStats : timeline === 'post' ? postStats : timeline === 'jul1' ? jul1Stats : allStats;
+    const kpis = useMemo(() => buildKpis(activeStats, timeline, preStats, postStats, jul1Stats), [activeStats, timeline, preStats, postStats, jul1Stats]);
 
     const monthCounts = useMemo(() => MONTHS.map(m => applications.filter(a => a.date.startsWith(m)).length), []);
     const maxMonth    = Math.max(...monthCounts, 1);
@@ -244,9 +270,10 @@ export default function JobApplicationPage() {
     const maxChannel = Math.max(...channelCounts.map(([, v]) => v), 1);
 
     const comparisonBars = [
-        { label: 'Overall',     rate: parseInt(allStats.responseRate)  || 0, count: allStats.rejected,  total: allStats.total,  color: '#6366f1' },
-        { label: 'Pre-New CV',  rate: parseInt(preStats.responseRate)  || 0, count: preStats.rejected,  total: preStats.total,  color: '#94a3b8' },
-        { label: 'Post-New CV', rate: parseInt(postStats.responseRate) || 0, count: postStats.rejected, total: postStats.total, color: '#22c55e' },
+        { label: 'Overall',        rate: parseInt(allStats.responseRate)  || 0, count: allStats.rejected,  total: allStats.total,  color: '#6366f1' },
+        { label: 'Pre-New CV',     rate: parseInt(preStats.responseRate)  || 0, count: preStats.rejected,  total: preStats.total,  color: '#94a3b8' },
+        { label: 'Post-New CV',    rate: parseInt(postStats.responseRate) || 0, count: postStats.rejected, total: postStats.total, color: '#22c55e' },
+        { label: 'Jul 1 – Present', rate: parseInt(jul1Stats.responseRate) || 0, count: jul1Stats.rejected, total: jul1Stats.total, color: '#f59e0b' },
     ];
     const maxRate = Math.max(...comparisonBars.map(b => b.rate), 1);
 
@@ -273,7 +300,7 @@ export default function JobApplicationPage() {
                             Job Search <span className={styles.heroAccent}>Dashboard</span>
                         </h1>
                         <p className={styles.heroSubtitle}>
-                            Coverage: Dec 15, 2025 – Jul 1, 2026 · Source: Gmail (thariqhamad6@gmail.com)
+                            Coverage: Dec 15, 2025 – present · Source: Gmail (thariqhamad6@gmail.com)
                         </p>
                     </div>
                 </div>
@@ -392,9 +419,10 @@ export default function JobApplicationPage() {
                 {/* ── Rate cards ── */}
                 <div className={styles.rateGrid}>
                     {[
-                        { label: 'Overall',     stats: allStats,  color: '#6366f1' },
-                        { label: 'Pre-New CV',  stats: preStats,  color: '#94a3b8' },
-                        { label: 'Post-New CV', stats: postStats, color: '#22c55e' },
+                        { label: 'Overall',        stats: allStats,  color: '#6366f1' },
+                        { label: 'Pre-New CV',     stats: preStats,  color: '#94a3b8' },
+                        { label: 'Post-New CV',    stats: postStats, color: '#22c55e' },
+                        { label: 'Jul 1 – Present', stats: jul1Stats, color: '#f59e0b' },
                     ].map(({ label, stats, color }) => (
                         <div key={label} className={styles.rateCard}>
                             <div className={styles.rateCardTitle} style={{ color }}>{label}</div>
@@ -444,6 +472,7 @@ export default function JobApplicationPage() {
                 {tab === 'all'  && <ApplicationsTable rows={applications} />}
                 {tab === 'pre'  && <ApplicationsTable rows={preApps}      />}
                 {tab === 'post' && <ApplicationsTable rows={postApps}     />}
+                {tab === 'jul1' && <ApplicationsTable rows={jul1Apps}     />}
 
                 {tab === 'recruiters' && (
                     <div className={styles.tableScroll}>
