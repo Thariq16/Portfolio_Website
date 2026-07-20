@@ -691,8 +691,9 @@
 .bAi        { background: #dc2626; }
 .bOther     { background: #64748b; }
 
-.sRejected   { background: #dc2626; }
-.sNoresponse { background: #94a3b8; }
+.sRejected    { background: #dc2626; }
+.sNoresponse  { background: #94a3b8; }
+.sInprogress  { background: #2563eb; }
 
 /* ── Footer note ── */
 .footerNote {

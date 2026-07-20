@@ -55,6 +55,13 @@ function badgeVariant(channel: string) {
     if (/company site|ats/i.test(channel)) return styles.bAts;
     return styles.bOther;
 }
+function statusClass(status: string | undefined) {
+    const s = status || 'No Response';
+    if (s === 'Rejected') return styles.sRejected;
+    if (s === 'No Response') return styles.sNoresponse;
+    if (s === 'In Progress') return styles.sInprogress;
+    return styles.sNoresponse;
+}
 function compareRows(a: Application, b: Application) {
     if (a.date !== b.date) return a.date < b.date ? 1 : -1;
     const chA = shortChannel(a.channel);
@@ -82,8 +89,10 @@ interface PeriodStats {
     apps:         Application[];
 }
 function computeStats(apps: Application[]): PeriodStats {
-    const total      = apps.length;
-    const rejected   = apps.filter(a => a.status === 'Rejected').length;
+    const total = apps.length;
+    // "Feedback received" = any status that reflects an actual reply (Rejected, In Progress, etc.) —
+    // anything other than the no-status/"No Response" default.
+    const rejected   = apps.filter(a => a.status && a.status !== 'No Response').length;
     const noResponse = total - rejected;
     return {
         total,
@@ -187,6 +196,10 @@ function ApplicationsTable({ rows }: { rows: Application[] }) {
         () => Array.from(new Set(rows.map(r => shortChannel(r.channel)))).sort(),
         [rows]
     );
+    const statuses = useMemo(
+        () => Array.from(new Set(rows.map(r => r.status || 'No Response'))).sort(),
+        [rows]
+    );
     const filtered = useMemo(() => {
         const q = query.toLowerCase();
         return rows.filter(r => {
@@ -208,8 +221,7 @@ function ApplicationsTable({ rows }: { rows: Application[] }) {
                 </select>
                 <select className={styles.select} value={status} onChange={e => setStatus(e.target.value)}>
                     <option value="">All statuses</option>
-                    <option value="Rejected">Rejected</option>
-                    <option value="No Response">No Response</option>
+                    {statuses.map(s => <option key={s} value={s}>{s}</option>)}
                 </select>
                 <span className={styles.pillCount}>{filtered.length} of {rows.length}</span>
             </div>
@@ -229,7 +241,7 @@ function ApplicationsTable({ rows }: { rows: Application[] }) {
                                 <td>{r.company}</td>
                                 <td>{r.role}</td>
                                 <td><span className={`${styles.badge} ${badgeVariant(r.channel)}`}>{shortChannel(r.channel)}</span></td>
-                                <td><span className={`${styles.badge} ${r.status === 'Rejected' ? styles.sRejected : styles.sNoresponse}`}>{r.status || 'No Response'}</span></td>
+                                <td><span className={`${styles.badge} ${statusClass(r.status)}`}>{r.status || 'No Response'}</span></td>
                             </tr>
                         ))}
                     </tbody>
