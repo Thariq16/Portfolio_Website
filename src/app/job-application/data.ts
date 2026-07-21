@@ -4010,7 +4010,7 @@ export const applications: Application[] = [
   {
     "date": "2026-07-09",
     "company": "Binalyze",
-    "role": "Product Manager",
+    "role": "AI Fullstack Product Manager",
     "channel": "Company Site/ATS (Ashby)",
     "status": "Rejected",
     "location": ""
@@ -4181,7 +4181,7 @@ export const applications: Application[] = [
     "role": "Product Manager",
     "channel": "Company Site/ATS (iCIMS)",
     "status": "No Response",
-    "location": ""
+    "location": "Multiple Locations"
   },
   {
     "date": "2026-07-19",
@@ -4204,6 +4204,38 @@ export const applications: Application[] = [
     "company": "Riyadh Air",
     "role": "Product Manager, MarTech (application date not independently confirmed - logged via rejection email)",
     "channel": "Company Site/ATS",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-07-10",
+    "company": "TeamFeePay",
+    "role": "Product Marketing Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-07-06",
+    "company": "Devoteam",
+    "role": "Business Data Analyst",
+    "channel": "LinkedIn Easy Apply or Direct Email (unconfirmed)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-07-21",
+    "company": "SumerSports",
+    "role": "Sr. Product Manager",
+    "channel": "Company Site/ATS (Rippling)",
+    "status": "No Response",
+    "location": "Remote (United States)"
+  },
+  {
+    "date": "2026-07-07",
+    "company": "Mrsool",
+    "role": "Performance Analyst",
+    "channel": "LinkedIn Message (Direct)",
     "status": "Rejected",
     "location": ""
   }
@@ -4281,6 +4313,12 @@ export const recruiterOutreach: RecruiterOutreach[] = [
     "company": "Wipro Limited",
     "context": "Recruiter invited via Naukrigulf re: Product Owner, Riyadh - Thariq responded interested with resume; followed up 2026-07-20",
     "channel": "Naukrigulf"
+  },
+  {
+    "date": "2026-07-06",
+    "company": "Lorelis Olivera Díaz - Devoteam",
+    "context": "Thariq messaged re: Business Data Analyst, Riyadh - Lorelis redirected to Joud Mesmar (and two other contacts: Laila Al Hourani, Sewar Abu Hejleh)",
+    "channel": "LinkedIn InMail"
   }
 ];
 
@@ -4347,5 +4385,101 @@ export const recruiterMessages: RecruiterMessage[] = [
     "company": "Takamul Technologies",
     "recruiter": "Maria Yana Palambiano",
     "message": "Hi Maria, I saw you were hiring a project manager, I understand it must be difficult to find a candidate who has the experience of leading, building, and delivering outcomes as a project manager who also knows Arabic and English. I have done this for 8 years as a Project Manager. I applied through the LinkedIn job post as well but If you haven't shortlisted any candidates yet, will it save you time if I share my CV here? I have transferable Iqama and currently located in Riyadh."
+  },
+  {
+    "date": "2026-07-19",
+    "company": "SITA",
+    "recruiter": "Igor Oliveira",
+    "message": "Hi Igor, I noticed you are looking for a product manager. I'm a founding PM in two startups Sling Mobility and FieldR, and scaled them from 0 to 1. I have experience in managing AI SaaS, Sports Tech, fintech, and mobility tech products. I would like to explore this opportunity that you have shared. Would it make hiring for this role any easier if I sent my CV here with you? I'm currently located in Riyadh, KSA and open to relocate as well. [Igor: please apply directly via the link and send CV here, will share w/ hiring manager] [Thariq: applied via the portal as well, shared CV PDF] [Igor: Thanks]"
+  },
+  {
+    "date": "2026-07-16",
+    "company": "SILQFi",
+    "recruiter": "Yasmen Baraja",
+    "message": "Hi Yasmen, I saw the Product Manager position has been shared and already you have got 161 applicants. I added myself to that pile, when I went through the JD I can see that you are looking for someone with who has managed merchant facing SaaS for retail and e-commerce products. To be frank, this aligns exactly with my current consultation role with an upcoming startup in Qatar, where I am managing the merchant portal and customer app which is in quick commerce. I manage the engineering team, design team, as well as the GTM strategy. Apart from this I have managed B2B AI SaaS, and EV mobility products that were scaled from 0 to 1. I'm currently located in Riyadh, KSA with a transferable iqama and available immediately. I'm open to relocate to Dammam as well. Would it make hiring for this role any easier if I sent my CV across here instead?"
+  },
+  {
+    "date": "2026-07-15",
+    "company": "Lucidya",
+    "recruiter": "Amal Yaghi",
+    "message": "Hi Amal, I noticed you are looking for a principal product manager. I'm have 8 years of experience in built and scaled customer facing and B2B SaaS products for Fortude, Sling Mobility, and FieldR. I'm currently located in Madinah, Saudi Arabia with a transferable iqama. I'm open to relocate as well. Would it make hiring for this role any easier if I sent my CV across here? [Amal: please feel free to send your CV here] [Thariq: sent CV PDF]"
+  },
+  {
+    "date": "2026-07-13",
+    "company": "Node Technologies",
+    "recruiter": "Ahmed Alanazi (HR Manager)",
+    "message": "Assalamu Alaikum Ahmed, I saw you are hiring for Product Manager to manage & scale platforms. I have hands on experience in building and managing multi sided platforms (Mobile Apps + Web App + API) in fintech, mobility tech, sportstech. As a founding PM, I end up doing research, user evaluation, marketing opportunities, GTM strategies, as well as trade offs. I'm currently in Riyadh, Saudi Arabia with a transferable iqama and available immediately. Would it make the hiring process any easier if I sent my CV here for you?"
+  },
+  {
+    "date": "2026-07-13",
+    "company": "Recruited",
+    "recruiter": "Alex Elliott (Founder)",
+    "message": "Hi Alex, I saw you are looking for a Head of Product and already you have got 800+ CVs via linkedin. I'm an founding PM in multiple startups and have held similar responsibilities as a head of product. I have hands on experience in handling product surprises. I have handled fintech, mobility tech, AI SaaS, and Sportstech products in the last 8 years scaling and fulfilling stakeholder requirements. I'm currently in Riyadh KSA, and open to relocate. Would it make hiring for this role any easier if I sent my CV across here instead?"
+  },
+  {
+    "date": "2026-07-12",
+    "company": "King Salman International Airport",
+    "recruiter": "Faisal Alahmari (Senior Specialist - Talent Attraction)",
+    "message": "Assalamu Alaikum Faisal, I noticed you are hiring for the position of Manager - Emerging Technologies. I read the JD and applied for it on linkedin. I understand the struggle to find the right candidate for this role, I have been a product manager with 8+ years experience managing and implementing different technologies in particularly in GCC. As I come from both software development and marketing I understand what technology to be used where and how it can become an attraction. I'm currently in Riyadh with a transferable iqama. Will it help your hiring team if I share my CV here with you?"
+  },
+  {
+    "date": "2026-07-10",
+    "company": "TeamFeePay",
+    "recruiter": "James McGrath (Chief Product Officer)",
+    "message": "Hi James, I noticed you are looking for a product marketer. I read the JD and I noticed you are looking for someone who has experience in growing the product from 0-1 with growth marketing efforts. I did this for an AI SaaS product as well as a sportstech product. Will it make the hiring journey easier if I sent my CV here for your review?"
+  },
+  {
+    "date": "2026-07-06",
+    "company": "Devoteam",
+    "recruiter": "Joud Mesmar (Talent Acquisition Consultant)",
+    "message": "Hi Joud, I dropped a message to Lorelis from DevoTeam she suggested that I drop you a message regarding the Business Data Analyst role which you all are hiring at Riyadh, KSA. I'm a product manager with 8+ years of experience. I currently built my own data analysis platform for a football club and working on data analysis for them. I think I can bring the same skills to the particular role you are looking to fulfil, I am good at Excel, SQL, Python, Tableau, PowerBi, and I can use AI tools to process the work as well by building automations and pipelines. I have implemented data tracking and recommendation solutions for an EV mobility company as well. I have transferable Iqama and currently located at Riyadh. If you haven't shortlisted anyone for the position, can I share with you my CV? [Joud, Jul 9: will review CV and share with team] [Thariq sent CV: Thariq_Hamad - Senior_PM_AI.pdf, asked her to share with team]"
+  },
+  {
+    "date": "2026-07-06",
+    "company": "Devoteam",
+    "recruiter": "Sewar Abu Hejleh (Head Hunter/Recruiter)",
+    "message": "Hi Sewar, I reached out to Lorelis and she recommended me to reach out to you. I noticed you are hiring for a Business Data Analyst at DevoTeam, Riyadh, KSA. I'm a product manager with 8+ years of experience. I currently built my own data analysis platform for a football club and working on data analysis for them. I think I can bring the same skills to the particular role you are looking to fulfil, I good at Excel, SQL, Python, Tableau, PowerBi, and I can use AI tools to quickly process the work as well. I have implemented data tracking and recommendation solution for an EV mobility company as well. I have transferable Iqama and currently located at Riyadh. If you haven't shortlisted anyone for the position, can I share you my CV? [No reply from Sewar]"
+  },
+  {
+    "date": "2026-07-06",
+    "company": "MBC Shahid",
+    "recruiter": "Abdullah Bustami (Product Manager)",
+    "message": "HI Abdullah, I noticed you are hiring for an Associate Product Manager. If the opportunity is still open, can I share my CV with you here? I have 8+ years as a product manager and I have managed AI products, fintech product, and sportstech product all are heavily involved in Data analysis. Currently I'm living in Riyadh, Saudi Arabia and available immediately. Moreover, if this role require me to relocated, I'm open for it as well."
+  },
+  {
+    "date": "2026-07-06",
+    "company": "Tarmeez",
+    "recruiter": "Deema AlDkhilallah (HR Officer - Talent Acquisition)",
+    "message": "Hi Deema, I noticed you are looking for a product manager with experience in scaling products from 0 to 1. I have done that multiple times in the past 8 years in companies like Fortude, Sling Mobility, and FieldR. I have hands on experience in working in startup environments. Currently I'm located in Riyadh, KSA with a Transferable Iqama and available immediately to join. Would it make finding the right person for this any easier if I share my CV here?"
+  },
+  {
+    "date": "2026-07-06",
+    "company": "Tarmeez",
+    "recruiter": "Munthir Alhijji (Head of Products)",
+    "message": "Hi Munthir, I noticed you are looking for a product manager with experience in scaling products from 0 to 1. I have done that multiple times in the past 8 years in companies like Fortude, Sling Mobility, and FieldR. I have hands on experience in working in startup environments. Currently I'm located in Riyadh, KSA with a Transferable Iqama and available immediately to join. Would it make finding the right person for this any easier if I share my CV here?"
+  },
+  {
+    "date": "2026-07-08",
+    "company": "SumerSports",
+    "recruiter": "Oliver Hypolite-Bishop (Product)",
+    "message": "Hi Oliver, I saw you are looking for a PM to manage the cross functional teams as well as looking into product growth. I have done the same exact thing for a sportstech product called FieldR. Managing cross functional teams and working on product growth is my bread and butter. I'm currently in Riyadh, KSA with work permit. If you haven't shortlisted candidates for this role yet, shall I send my CV for your review?"
+  },
+  {
+    "date": "2026-07-09",
+    "company": "Binalyze",
+    "recruiter": "Fulya Ataman (Regional People Lead)",
+    "message": "Hi Fulya, I came across the the job post where you are looking for AI fullstack product manager with experienced in fully remote working environments. I have been working in remote environment for closer to 4 years and I have 8 years of experience in Product Management. Recently I have been shopping and testing MVPs through AI tools. I have both tech and business know how. I applied for the job in your job site. I'm currently based in Riyadh, KSA with a transferable iqama. Would it make hiring for this role any easier if I sent my CV across here?"
+  },
+  {
+    "date": "2026-07-09",
+    "company": "Binalyze",
+    "recruiter": "Elif Kurt (Principal Product Manager)",
+    "message": "Hi Elif, I came across the the job post where you are looking for AI fullstack product manager with experienced in fully remote working environments. I have been working in remote environment for closer to 4 years and I have 8 years of experience in Product Management. Recently I have been shopping and testing MVPs through AI tools. I have both tech and business know how. I applied for the job in your job site. I'm currently based in Riyadh, KSA with a transferable iqama. Would it make hiring for this role any easier if I sent my CV across here?"
+  },
+  {
+    "date": "2026-07-07",
+    "company": "Mrsool",
+    "recruiter": "Amgad Mansour (Principal Product Manager)",
+    "message": "Hi Amgad, I noticed you are looking for a performance analyst. I'm currently located in KSA with a transferable iqama. I have been a 1st team analyst for a football club and I believe I can transform that skills and knowledge to any other domains. Moreover. I'm a product manager with 8 years of experience in building and scaling products. If you haven't shortlisted anyone yet, shall I share my CV with you here? [Amgad, Jul 8: impressive profile, but this role is remote-based, no sponsorship offered] [Thariq: that's okay, I'm open to it] [Outcome: applied via LinkedIn message, rejected outright]"
   }
 ];
