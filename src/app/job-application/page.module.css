@@ -857,3 +857,58 @@
     background: rgba(59, 130, 246, 0.1);
     border-color: rgba(59, 130, 246, 0.22);
 }
+
+/* ── Outreach Review (article content) ── */
+.articleWrap {
+    max-width: 820px;
+}
+
+.articleMeta {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--muted-foreground);
+    margin-bottom: 1.5rem;
+}
+
+.articleH2 {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--foreground);
+    margin: 2rem 0 0.75rem;
+}
+
+.articleH2:first-of-type {
+    margin-top: 0;
+}
+
+.articleP {
+    font-size: 0.88rem;
+    line-height: 1.65;
+    color: var(--foreground);
+    margin-bottom: 1rem;
+}
+
+.articleList {
+    margin: 0 0 1rem;
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.articleList li {
+    font-size: 0.88rem;
+    line-height: 1.65;
+    color: var(--foreground);
+}
+
+.articleQuote {
+    margin: 0.6rem 0;
+    padding: 0.7rem 1rem;
+    border-left: 3px solid var(--primary);
+    background: var(--muted);
+    border-radius: 0.4rem;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--muted-foreground);
+}

@@ -3,6 +3,7 @@
 import React, { useMemo, useState } from 'react';
 import { Info } from 'lucide-react';
 import { applications, recruiterOutreach, linkedinContacts, recruiterMessages, type Application } from './data';
+import OutreachReview from './OutreachReview';
 import styles from './page.module.css';
 
 /* ─── Date boundaries ─── */
@@ -30,7 +31,7 @@ const TIMELINES: { id: Timeline; label: string; sub: string }[] = [
 ];
 
 /* ─── Table tab config ─── */
-type TabId = 'all' | 'pre' | 'post' | 'jul1' | 'recruiters' | 'linkedin' | 'messages';
+type TabId = 'all' | 'pre' | 'post' | 'jul1' | 'recruiters' | 'linkedin' | 'messages' | 'outreachReview';
 const TABS: { id: TabId; label: string }[] = [
     { id: 'all',        label: 'All Applications' },
     { id: 'pre',        label: `Pre-New CV (${PRE_CV_LABEL})` },
@@ -39,6 +40,7 @@ const TABS: { id: TabId; label: string }[] = [
     { id: 'recruiters', label: 'Recruiter Outreach' },
     { id: 'linkedin',   label: 'LinkedIn Recruiter Contacts' },
     { id: 'messages',   label: 'Recruiter Messages' },
+    { id: 'outreachReview', label: 'Outreach Review' },
 ];
 
 /* ─── Helpers ─── */
@@ -579,6 +581,8 @@ export default function JobApplicationPage() {
                         </table>
                     </div>
                 )}
+
+                {tab === 'outreachReview' && <OutreachReview />}
 
                 <p className={styles.footerNote}>Generated from Gmail search results · Not a substitute for your own records</p>
             </div>
