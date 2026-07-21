@@ -432,20 +432,35 @@ export default function JobApplicationPage() {
                 </div>
 
                 {/* ── Rate cards ── */}
+                <p className={styles.rateGridHint}>
+                    Card colors mark the period, not performance — compare each Response rate against the
+                    Overall baseline ({allStats.responseRate}) using the ▲/▼ indicator: higher is better.
+                </p>
                 <div className={styles.rateGrid}>
                     {[
-                        { label: 'Overall',        stats: allStats,  color: '#6366f1' },
-                        { label: 'Pre-New CV',     stats: preStats,  color: '#94a3b8' },
-                        { label: 'Post-New CV',    stats: postStats, color: '#22c55e' },
-                        { label: 'Jul 1 – Present', stats: jul1Stats, color: '#f59e0b' },
-                    ].map(({ label, stats, color }) => (
+                        { label: 'Overall',        stats: allStats,  color: '#6366f1', isBaseline: true },
+                        { label: 'Pre-New CV',     stats: preStats,  color: '#94a3b8', isBaseline: false },
+                        { label: 'Post-New CV',    stats: postStats, color: '#22c55e', isBaseline: false },
+                        { label: 'Jul 1 – Present', stats: jul1Stats, color: '#f59e0b', isBaseline: false },
+                    ].map(({ label, stats, color, isBaseline }) => {
+                        const rateNum   = parseInt(stats.responseRate) || 0;
+                        const baseline  = parseInt(allStats.responseRate) || 0;
+                        const vsOverall = rateNum - baseline;
+                        return (
                         <div key={label} className={styles.rateCard}>
                             <div className={styles.rateCardTitle} style={{ color }}>{label}</div>
                             <div className={styles.rateCardTotal}>{stats.total} applications</div>
                             <div className={styles.rateRow}>
                                 <span className={styles.rateDot} style={{ background: color }} />
                                 <span className={styles.rateRowLabel}>Response rate</span>
-                                <span className={styles.rateRowVal} style={{ color }}>{stats.responseRate}</span>
+                                <span className={styles.rateRowVal} style={{ color }}>
+                                    {stats.responseRate}
+                                    {!isBaseline && (
+                                        <span className={vsOverall >= 0 ? styles.rateTrendUp : styles.rateTrendDown}>
+                                            {vsOverall >= 0 ? ` ▲${vsOverall}pp` : ` ▼${Math.abs(vsOverall)}pp`}
+                                        </span>
+                                    )}
+                                </span>
                             </div>
                             <div className={styles.rateRow}>
                                 <span className={styles.rateDot} style={{ background: '#e2e8f0' }} />
@@ -462,7 +477,8 @@ export default function JobApplicationPage() {
                                     style={{ width: stats.responseRate, background: color }} />
                             </div>
                         </div>
-                    ))}
+                        );
+                    })}
                 </div>
 
                 {/* ── CV Impact note ── */}

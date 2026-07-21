@@ -484,6 +484,24 @@
 }
 
 /* ── Rate Cards ── */
+.rateGridHint {
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+    margin: 0.75rem 0 0.5rem;
+}
+
+.rateTrendUp {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #16a34a;
+}
+
+.rateTrendDown {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #dc2626;
+}
+
 .rateGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
