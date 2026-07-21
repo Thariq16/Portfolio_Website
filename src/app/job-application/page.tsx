@@ -284,12 +284,17 @@ export default function JobApplicationPage() {
     }, [activeStats]);
     const maxChannel = Math.max(...channelCounts.map(([, v]) => v), 1);
 
+    const overallRateNum = parseInt(allStats.responseRate) || 0;
+    function rateColor(rate: number, isBaseline: boolean) {
+        if (isBaseline) return '#6366f1'; // Overall = neutral baseline marker
+        return rate >= overallRateNum ? '#22c55e' : '#dc2626'; // above/at average = green, below = red
+    }
     const comparisonBars = [
-        { label: 'Overall',        rate: parseInt(allStats.responseRate)  || 0, count: allStats.rejected,  total: allStats.total,  color: '#6366f1' },
-        { label: 'Pre-New CV',     rate: parseInt(preStats.responseRate)  || 0, count: preStats.rejected,  total: preStats.total,  color: '#94a3b8' },
-        { label: 'Post-New CV',    rate: parseInt(postStats.responseRate) || 0, count: postStats.rejected, total: postStats.total, color: '#22c55e' },
-        { label: 'Jul 1 – Present', rate: parseInt(jul1Stats.responseRate) || 0, count: jul1Stats.rejected, total: jul1Stats.total, color: '#f59e0b' },
-    ];
+        { label: 'Overall',        rate: overallRateNum,                              count: allStats.rejected,  total: allStats.total,  isBaseline: true },
+        { label: 'Pre-New CV',     rate: parseInt(preStats.responseRate)  || 0, count: preStats.rejected,  total: preStats.total,  isBaseline: false },
+        { label: 'Post-New CV',    rate: parseInt(postStats.responseRate) || 0, count: postStats.rejected, total: postStats.total, isBaseline: false },
+        { label: 'Jul 1 – Present', rate: parseInt(jul1Stats.responseRate) || 0, count: jul1Stats.rejected, total: jul1Stats.total, isBaseline: false },
+    ].map(b => ({ ...b, color: rateColor(b.rate, b.isBaseline) }));
     const maxRate = Math.max(...comparisonBars.map(b => b.rate), 1);
 
     const sortedRecruiterOutreach = useMemo(() => [...recruiterOutreach].sort((a, b) => {
@@ -371,7 +376,8 @@ export default function JobApplicationPage() {
                 <div className={styles.comparisonBanner}>
                     <div className={styles.comparisonTitle}>Response Rate by Period</div>
                     <div className={styles.comparisonSubtitle}>
-                        Any company reply (rejection / screening / invite) ÷ applications sent
+                        Any company reply (rejection / screening / invite) ÷ applications sent. Green = at or above
+                        the Overall average ({allStats.responseRate}), red = below.
                     </div>
                     <div className={styles.compBars}>
                         {comparisonBars.map(b => (
