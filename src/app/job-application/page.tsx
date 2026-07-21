@@ -238,7 +238,10 @@ function ApplicationsTable({ rows }: { rows: Application[] }) {
                         {filtered.map((r, i) => (
                             <tr key={i}>
                                 <td>{formatDate(r.date)}</td>
-                                <td>{r.company}</td>
+                                <td>
+                                    {r.company}
+                                    {r.location && <div className={styles.locationSub}>{r.location}</div>}
+                                </td>
                                 <td>{r.role}</td>
                                 <td><span className={`${styles.badge} ${badgeVariant(r.channel)}`}>{shortChannel(r.channel)}</span></td>
                                 <td><span className={`${styles.badge} ${statusClass(r.status)}`}>{r.status || 'No Response'}</span></td>

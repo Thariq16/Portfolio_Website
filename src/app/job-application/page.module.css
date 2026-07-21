@@ -658,6 +658,12 @@
     white-space: nowrap;
 }
 
+.locationSub {
+    font-size: 0.7rem;
+    color: var(--muted-foreground);
+    margin-top: 0.15rem;
+}
+
 .table tbody tr:nth-child(even) {
     background: var(--muted);
 }
