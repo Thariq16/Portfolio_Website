@@ -4238,6 +4238,94 @@ export const applications: Application[] = [
     "channel": "LinkedIn Message (Direct)",
     "status": "Rejected",
     "location": ""
+  },
+  {
+    "date": "2026-07-20",
+    "company": "Dautom",
+    "role": "Project Management Officer",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-07-20",
+    "company": "Bosta",
+    "role": "Head of Product Led Growth",
+    "channel": "Company Site/ATS (Lever)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-07-21",
+    "company": "Rize",
+    "role": "Product Manager",
+    "channel": "Company Site/ATS (Teamtailor)",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-07-21",
+    "company": "Soar Software Development Company",
+    "role": "Senior Product Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-07-23",
+    "company": "nineDots.io",
+    "role": "Product Lead",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-07-23",
+    "company": "Tharwah Group",
+    "role": "Digital Product Growth Lead",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-07-24",
+    "company": "Master-Works",
+    "role": "Product, Senior Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-07-24",
+    "company": "Lucidya",
+    "role": "Senior Product Manager - AI Agent Platform",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-07-25",
+    "company": "Systems Arabia",
+    "role": "Senior Project Manager – Business Applications (CRM/ERP)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-07-27",
+    "company": "Salt",
+    "role": "Senior Product Manager (Fintech)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-07-27",
+    "company": "MBC Shahid",
+    "role": "Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Amman, Jordan"
   }
 ];
 
