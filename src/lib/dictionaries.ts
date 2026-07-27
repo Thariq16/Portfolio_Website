@@ -88,7 +88,7 @@ export const dictionary = {
         },
         hero: {
             headline: 'Senior Product Manager\nZero-to-One Specialist',
-            subheadline: 'From Employee #1 on a 34-person EV team to a SAR 7.5M SaaS pipeline — built products from zero and measured every outcome in revenue.',
+            subheadline: 'From Employee #1 on a 34-person EV team to a SAR 7.5M SaaS pipeline. Built products from zero and measured every outcome in revenue.',
             ctaPrimary: 'Book a Call',
             ctaSecondary: 'View Case Studies',
             location: 'Based in Riyadh, Saudi Arabia (Iqama Transferable)',
@@ -207,7 +207,7 @@ export const dictionary = {
                         details: '**Legacy data architecture** with limited real-time capabilities. Operational teams already **stretched with reactive workloads**. Need to **demonstrate impact quickly** to justify further investment. This required incremental but high-leverage product decisions, rather than a full platform rebuild.',
                     },
                     discovery: {
-                        details: 'Analysis of churn data and operational logs revealed a clear pattern: Most customer churn was preceded by **repeatable warning signals** that were visible in the data but not surfaced in time. The issue wasn’t lack of data — it was **lack of productised insight**.',
+                        details: 'Analysis of churn data and operational logs revealed a clear pattern: Most customer churn was preceded by **repeatable warning signals** that were visible in the data but not surfaced in time. The issue wasn’t lack of data: it was **lack of productised insight**.',
                     },
                     decisions: {
                         details: 'Focused on **early-warning indicators** instead of broad dashboards. **Closed the loop between data and action** by designing alerts to trigger operational workflows. Measured success via **retention and revenue**, ensuring vanity metrics like system usage did not drive prioritisation.',
@@ -277,7 +277,7 @@ export const dictionary = {
                     featured: {
                         headline: '0-1 Product Scale & Acquisition Strategy',
                         tag: 'Founder-Led Growth',
-                        outcome: "Designed, built, and launched Sri Lanka's first cricket analytics platform — achieving 75% free-to-paid conversion through disciplined, habit-first monetization.",
+                        outcome: "Designed, built, and launched Sri Lanka's first cricket analytics platform, achieving 75% free-to-paid conversion through disciplined, habit-first monetization.",
                         badges: [
                             { value: '75% Conversion', label: 'Free-to-Paid Conversion', description: 'Converted 75% of active users to paid subscriptions through disciplined, habit-first monetization.' },
                             { value: 'SAR 20K Pre-Seed', label: 'Seed Funding Raised', description: 'Secured pre-seed funding and expanded to international markets including Australia.' }
@@ -286,7 +286,7 @@ export const dictionary = {
                 },
                 {
                     slug: 'chonk-cookies-d2c',
-                    title: 'Chonk Cookies — Launching a D2C Brand from Zero-to-One',
+                    title: 'Chonk Cookies: Launching a D2C Brand from Zero-to-One',
                     company: 'Chonk Cookies',
                     logo: '',
                     website: 'https://www.chonk.lk',
@@ -301,7 +301,7 @@ export const dictionary = {
                         { label: 'Model', value: 'Zero Ad Spend' },
                     ],
                     context: {
-                        goal: 'Validate whether a zero-budget D2C brand could compete on social commerce alone — and prove that premium positioning could convert casual browsers into repeat customers.',
+                        goal: 'Validate whether a zero-budget D2C brand could compete on social commerce alone, and prove that premium positioning could convert casual browsers into repeat customers.',
                         details: 'I wanted to build a premium Direct-to-Consumer (D2C) brand using only social commerce and data-driven optimization. The challenge was to **create market demand** and **build a loyal customer base** without any traditional advertising spend.',
                     },
                     role: {
@@ -320,7 +320,7 @@ export const dictionary = {
                         details: '**Performance Marketing:** Executed targeted Instagram ad campaigns through Meta Business Suite for pop-up events and product drops.\n\n**Conversion Optimization:** Used Microsoft Clarity and Google Analytics to map user flows, identifying and fixing friction points in mobile checkout.\n\n**Digital Operations:** Built end-to-end digital ecosystem from e-commerce storefront to automated customer communications.',
                     },
                     outcomes: {
-                        details: 'Selected as a **[Top 28 finalist](https://ventureengine.lk)** at [Lanka Angel Network](https://www.lankaaangelnetwork.com)\'s Venture Engine pitch competition — externally validating the business model against 300+ startups. Built a loyal community with a **strong repeat-customer rate** through direct community engagement and consistent content. Successfully transitioned digital interest into **physical sales at high-traffic pop-up stalls** across Colombo. Achieved **SAR 60K in revenue** within the first year — entirely through social commerce, pop-up events, and word-of-mouth, with zero traditional advertising spend.',
+                        details: 'Selected as a **[Top 28 finalist](https://ventureengine.lk)** at [Lanka Angel Network](https://www.lankaaangelnetwork.com)\'s Venture Engine pitch competition, externally validating the business model against 300+ startups. Built a loyal community with a **strong repeat-customer rate** through direct community engagement and consistent content. Successfully transitioned digital interest into **physical sales at high-traffic pop-up stalls** across Colombo. Achieved **SAR 60K in revenue** within the first year, entirely through social commerce, pop-up events, and word-of-mouth, with zero traditional advertising spend.',
                     },
                     learnings: {
                         repeat: '**Community-first approach** created sustainable organic growth without paid advertising dependency.',
@@ -361,19 +361,19 @@ export const dictionary = {
                     ],
                     context: {
                         goal: "Design and build the infrastructure, software, and hardware for Sri Lanka's first EV battery swapping network.",
-                        details: 'When [Sling Mobility](https://www.slingmobility.com) set out to create a last-mile EV delivery network in Sri Lanka, there was **no battery swapping infrastructure in the country**. Riders would run out of charge mid-route, battery degradation was rapid, and there was no data-driven visibility into vehicle or battery health. The product challenge was to design an **end-to-end hardware-software ecosystem** — cabinets, apps, sensors, and a command centre — entirely from scratch.',
+                        details: 'When [Sling Mobility](https://www.slingmobility.com) set out to create a last-mile EV delivery network in Sri Lanka, there was **no battery swapping infrastructure in the country**. Riders would run out of charge mid-route, battery degradation was rapid, and there was no data-driven visibility into vehicle or battery health. The product challenge was to design an **end-to-end hardware-software ecosystem** (cabinets, apps, sensors, and a command centre) entirely from scratch.',
                     },
                     role: {
-                        details: "As the **first employee and sole Product Lead**, I owned every layer: hardware design spec, software architecture, mobile app, command centre, and operational SOPs. I liaised with the country's largest electrical product producer for cabinet manufacturing, coordinated with an Indian sister company for battery production, and led a **34-person team** spanning software developers, mechanics, and riders. **This model maps directly to GCC last-mile logistics and Vision 2030 mobility targets** — Saudi Arabia's 30% EV adoption goal by 2030 makes fleet electrification a national priority.",
+                        details: "As the **first employee and sole Product Lead**, I owned every layer: hardware design spec, software architecture, mobile app, command centre, and operational SOPs. I liaised with the country's largest electrical product producer for cabinet manufacturing, coordinated with an Indian sister company for battery production, and led a **34-person team** spanning software developers, mechanics, and riders. **This model maps directly to GCC last-mile logistics and Vision 2030 mobility targets**: Saudi Arabia's 30% EV adoption goal by 2030 makes fleet electrification a national priority.",
                     },
                     constraints: {
-                        details: '**No existing reference architecture** — battery swapping at this scale had never been attempted in Sri Lanka. **Severe terrain variability** across the island required custom battery and motor configurations. **Limited engineering budget** demanded that every hardware investment be validated with data before scaling. Rider behaviour was unpredictable, making software design for real-world conditions especially difficult.',
+                        details: '**No existing reference architecture**: battery swapping at this scale had never been attempted in Sri Lanka. **Severe terrain variability** across the island required custom battery and motor configurations. **Limited engineering budget** demanded that every hardware investment be validated with data before scaling. Rider behaviour was unpredictable, making software design for real-world conditions especially difficult.',
                     },
                     discovery: {
                         details: 'I conducted deep research into electricity consumption patterns, fuel economics, bike wear and tear, terrain elevation challenges, and electronic component failure modes. Rider interviews revealed that **range anxiety** and **unplanned downtime** were the two biggest trust-killers. Data from early deployments showed that most battery degradation was caused by **irregular charging cycles**, not battery age.',
                     },
                     decisions: {
-                        details: 'Built an **automated lock/unlock cabinet system** that identifies the rider, the discharged battery, and the nearest fully-charged battery — completing a swap in **15 seconds**. Designed a **command centre** to monitor vehicle movements, battery voltage, motor health, and ride routes in real time. Created a **revenue-share cabinet model** for roadside garages to expand the network without capital spend. Launched **battery tokens** enabling the public to fund new-gen batteries and receive revenue shares — funding 100 batteries through community capital.',
+                        details: 'Built an **automated lock/unlock cabinet system** that identifies the rider, the discharged battery, and the nearest fully-charged battery, completing a swap in **15 seconds**. Designed a **command centre** to monitor vehicle movements, battery voltage, motor health, and ride routes in real time. Created a **revenue-share cabinet model** for roadside garages to expand the network without capital spend. Launched **battery tokens** enabling the public to fund new-gen batteries and receive revenue shares, funding 100 batteries through community capital.',
                     },
                     execution: {
                         details: "Designed Sri Lanka's first battery swapping cabinet in partnership with the country's largest electrical product manufacturer. Implemented a **digital tracking infrastructure** for every bike and hardware component, with routine service alerts. Built a **rider-facing navigation feature** that tracked battery voltage and directed riders to the nearest swap station before power cut-out. Rolled out an **anti-theft battery system** with remote subscription-based shutoff. Deployed a **rider incentive scheme** tied to ride streaks and performance data.",
@@ -382,13 +382,13 @@ export const dictionary = {
                         details: 'Extended battery range from **60KM to 100KM** per charge through command-centre optimization of charging cycles. Doubled battery lifetime from **2 to 4 years**, dramatically reducing hardware replacement costs. Grew daily ride counts from **25 to 62 per rider per day**. Reduced roadside assistance requests by **75%**. Launched **3 battery swapping stations** with a revenue-share model that grew network revenue by **30%**. The battery token programme funded **100 new-generation batteries** through community investment.',
                     },
                     learnings: {
-                        repeat: 'Starting with a **data-first command centre** before scaling hardware was the right call — it allowed us to optimize before committing capital.',
+                        repeat: 'Starting with a **data-first command centre** before scaling hardware was the right call: it allowed us to optimize before committing capital.',
                         change: 'I would invest earlier in **predictive battery failure models** to reduce the reactive maintenance burden on the operations team.',
                     },
                     featured: {
                         headline: "Sri Lanka's First EV Battery Swapping Network",
                         tag: 'Hardware-Software Co-Creation',
-                        outcome: 'Designed and built an end-to-end EV battery swapping ecosystem — from cabinet hardware to command-centre software — doubling battery life and tripling daily ride counts.',
+                        outcome: 'Designed and built an end-to-end EV battery swapping ecosystem (from cabinet hardware to command-centre software), doubling battery life and tripling daily ride counts.',
                         badges: [
                             { value: '60→100KM Range', label: 'Battery Range Extended', description: 'Achieved via command-centre data optimization of charging cycles across the fleet.' },
                             { value: '+30% Revenue', label: 'Network Revenue Growth', description: 'Driven by revenue-share battery swap cabinets placed in 10 garages and validated low-income households.' }
@@ -413,29 +413,29 @@ export const dictionary = {
                     ],
                     context: {
                         goal: "Solve the adoption failure of an AI Answer Assistant by shifting the product strategy from technical accuracy to user-perceived trustworthiness.",
-                        details: "[Fortude](https://www.fortude.co)'s Charlie AI Answer Assistant was designed to help Infor M3 ERP users query complex data through natural language. The product was technically functional, but **early adoption was stagnant**. Users were not abandoning it because it lacked features — they were abandoning it because they **didn't trust its responses**. When an AI assistant confidently delivers a wrong answer in an enterprise context, it doesn't get a second chance.",
+                        details: "[Fortude](https://www.fortude.co)'s Charlie AI Answer Assistant was designed to help Infor M3 ERP users query complex data through natural language. The product was technically functional, but **early adoption was stagnant**. Users were not abandoning it because it lacked features: they were abandoning it because they **didn't trust its responses**. When an AI assistant confidently delivers a wrong answer in an enterprise context, it doesn't get a second chance.",
                     },
                     role: {
                         details: "I **owned the product strategy for Charlie AI**, working directly with the engineering team to redefine what 'good' looked like for the product. I facilitated discovery sessions with early adopters, defined the new validation architecture, and drove the roadmap from the strategy pivot through to a standalone Insight Assistant built on Charlie's architecture.",
                     },
                     constraints: {
-                        details: '**No ability to retrain the underlying model** — the pivot had to be achievable through product-layer changes, not ML infrastructure work. Enterprise customers have **zero tolerance for hallucinations**, meaning even a small error rate was catastrophic for trust. We had **limited early adopters** for testing, requiring every iteration to be deliberate and well-measured.',
+                        details: '**No ability to retrain the underlying model**: the pivot had to be achievable through product-layer changes, not ML infrastructure work. Enterprise customers have **zero tolerance for hallucinations**, meaning even a small error rate was catastrophic for trust. We had **limited early adopters** for testing, requiring every iteration to be deliberate and well-measured.',
                     },
                     discovery: {
-                        details: "User interviews with early adopters revealed a clear pattern: it wasn't that Charlie was frequently wrong — it was that users **couldn't tell when to trust it**. An answer delivered with identical confidence regardless of data quality created anxiety. The insight: **trust is a product feature**, not an engineering metric. Users needed clarity about *why* a response was given, not just *what* the response was.",
+                        details: "User interviews with early adopters revealed a clear pattern: it wasn't that Charlie was frequently wrong. It was that users **couldn't tell when to trust it**. An answer delivered with identical confidence regardless of data quality created anxiety. The insight: **trust is a product feature**, not an engineering metric. Users needed clarity about *why* a response was given, not just *what* the response was.",
                     },
                     decisions: {
-                        details: 'Shifted the product strategy from **"maximize accuracy"** to **"maximize response clarity"**. The core decision was to implement a **validation agent** that checks data credibility before any response is delivered to the end user. Responses are only surfaced when the agent can confirm the supporting data is reliable — if not, the system explicitly flags the uncertainty rather than guessing. This was a deliberate trade-off: **slightly fewer answers, but dramatically higher trust**.',
+                        details: 'Shifted the product strategy from **"maximize accuracy"** to **"maximize response clarity"**. The core decision was to implement a **validation agent** that checks data credibility before any response is delivered to the end user. Responses are only surfaced when the agent can confirm the supporting data is reliable. If not, the system explicitly flags the uncertainty rather than guessing. This was a deliberate trade-off: **slightly fewer answers, but dramatically higher trust**.',
                     },
                     execution: {
-                        details: "Worked with engineering to design and deploy the **credibility validation agent** as a pre-response layer in Charlie's architecture. Redesigned the **response format** to surface source context alongside answers, giving users auditability. Iterated the feature with the early adopter cohort using usage frequency and session depth as trust proxies. Once adoption stabilized, ideated and structured a roadmap to launch a **standalone Insight Assistant** tool leveraging Charlie's architecture — positioning it as a general-purpose enterprise knowledge layer.",
+                        details: "Worked with engineering to design and deploy the **credibility validation agent** as a pre-response layer in Charlie's architecture. Redesigned the **response format** to surface source context alongside answers, giving users auditability. Iterated the feature with the early adopter cohort using usage frequency and session depth as trust proxies. Once adoption stabilized, ideated and structured a roadmap to launch a **standalone Insight Assistant** tool leveraging Charlie's architecture, positioning it as a general-purpose enterprise knowledge layer.",
                     },
                     outcomes: {
                         details: 'Achieved a **75% increase in usage** among early adopters following the strategy pivot and agent deployment. Signed up **Toyota Sri Lanka** to evaluate the standalone Insight Assistant for automating their manual service job tracking processes. Created a clear pathway to extend Charlie\'s architecture into new verticals beyond Infor M3, establishing a **platform strategy** rather than a single-product roadmap.',
                     },
                     learnings: {
-                        repeat: 'The decision to **slow down responses** in exchange for higher confidence was initially controversial internally — but it was exactly the right call. Enterprise users would rather wait for a trustworthy answer than get an instant uncertain one.',
-                        change: 'I would involve **customer success teams earlier** in the discovery process — they had the most direct signal on where user trust was breaking down.',
+                        repeat: 'The decision to **slow down responses** in exchange for higher confidence was initially controversial internally, but it was exactly the right call. Enterprise users would rather wait for a trustworthy answer than get an instant uncertain one.',
+                        change: 'I would involve **customer success teams earlier** in the discovery process: they had the most direct signal on where user trust was breaking down.',
                     },
                     featured: {
                         headline: 'AI Trust as a Product Strategy',
@@ -465,19 +465,19 @@ export const dictionary = {
                     ],
                     context: {
                         goal: 'Transform delivery visibility and revenue capture across a multi-vertical creative studio simultaneously managing game publishing and a FinTech product launch.',
-                        details: '[Motion Miracles](https://www.motionmiracles.com) operated across animation, game development, and digital services. When I joined as Project Manager, the studio had **strong creative output but weak delivery governance** — projects slipped, resource allocation was opaque, and there was no unified view of financial performance across teams. At the same time, the organization was being asked to consult on the launch of a **BNPL FinTech product**, an entirely new domain requiring user research, KYC process design, and structured project management.',
+                        details: '[Motion Miracles](https://www.motionmiracles.com) operated across animation, game development, and digital services. When I joined as Project Manager, the studio had **strong creative output but weak delivery governance**: projects slipped, resource allocation was opaque, and there was no unified view of financial performance across teams. At the same time, the organization was being asked to consult on the launch of a **BNPL FinTech product**, an entirely new domain requiring user research, KYC process design, and structured project management.',
                     },
                     role: {
-                        details: 'I started as Project Manager but quickly took on the **Operations Manager** responsibilities for the entire organization. I owned resource planning, financial tracking, KPI design for creative teams, and managed cross-team delivery. Simultaneously, I led the project management for the FinTech product consultation — including the KYC process design and user research oversight.',
+                        details: 'I started as Project Manager but quickly took on the **Operations Manager** responsibilities for the entire organization. I owned resource planning, financial tracking, KPI design for creative teams, and managed cross-team delivery. Simultaneously, I led the project management for the FinTech product consultation, including the KYC process design and user research oversight.',
                     },
                     constraints: {
-                        details: '**Highly varied workstreams** — animation, game development, and services teams operate on fundamentally different timelines and success metrics. The FinTech consultation was a **new domain with no internal precedent**. Resource contention between the studio\'s own projects and the external consultation required careful prioritization. The entire tenure lasted **5 months**, demanding rapid impact.',
+                        details: '**Highly varied workstreams**: animation, game development, and services teams operate on fundamentally different timelines and success metrics. The FinTech consultation was a **new domain with no internal precedent**. Resource contention between the studio\'s own projects and the external consultation required careful prioritization. The entire tenure lasted **5 months**, demanding rapid impact.',
                     },
                     discovery: {
-                        details: 'A quick audit of delivery processes revealed that **games were being completed but not strategically published** — they were shipped to whichever publisher was available, rather than matched to publishers with the best fit for each game\'s genre and audience. Revenue leakage was significant. For the FinTech product, user research revealed that the target demographic had **significant trust concerns** about BNPL products, making KYC UX design critical to conversion.',
+                        details: 'A quick audit of delivery processes revealed that **games were being completed but not strategically published**: they were shipped to whichever publisher was available, rather than matched to publishers with the best fit for each game\'s genre and audience. Revenue leakage was significant. For the FinTech product, user research revealed that the target demographic had **significant trust concerns** about BNPL products, making KYC UX design critical to conversion.',
                     },
                     decisions: {
-                        details: 'Built a **financial tracking tool** to give leadership real-time visibility into revenue, cost allocation, and project margins across all three departments. Implemented **KPI frameworks tailored to each creative team** — avoiding the mistake of applying the same metrics to animation, game dev, and services. For the FinTech product, structured a **KYC process** that balanced regulatory compliance with minimal user friction, informed by direct user research.',
+                        details: 'Built a **financial tracking tool** to give leadership real-time visibility into revenue, cost allocation, and project margins across all three departments. Implemented **KPI frameworks tailored to each creative team**, avoiding the mistake of applying the same metrics to animation, game dev, and services. For the FinTech product, structured a **KYC process** that balanced regulatory compliance with minimal user friction, informed by direct user research.',
                     },
                     execution: {
                         details: 'Managed the **publisher selection and submission pipeline** for 23 hyper-casual games, matching each title to the most appropriate publisher based on genre, audience, and commercial terms. Built out **delivery dashboards** that gave leadership a clear view of project risks, timelines, and resource utilization. For the FinTech product: created the full project plan, tracked milestones, designed the KYC process flow, and coordinated the user research sessions to validate feature decisions.',
@@ -487,7 +487,7 @@ export const dictionary = {
                     },
                     learnings: {
                         repeat: 'Treating **game publishing as a distribution strategy** (matching title to publisher) rather than a submission process was the key to unlocking the revenue uplift.',
-                        change: 'I would push for a **longer engagement** — 5 months was enough to build the foundation, but not enough to see the full impact of the systems I put in place.',
+                        change: 'I would push for a **longer engagement**: 5 months was enough to build the foundation, but not enough to see the full impact of the systems I put in place.',
                     },
                     featured: {
                         headline: 'SAR 200K in 5 Months: Games & FinTech',
@@ -516,20 +516,20 @@ export const dictionary = {
                         { label: 'Revenue Streams', value: '2 Launched' },
                     ],
                     context: {
-                        goal: "Validate, launch, and expand Sri Lanka's first cricket analytics platform — starting from a university research project with no budget, no team, and no existing market.",
+                        goal: "Validate, launch, and expand Sri Lanka's first cricket analytics platform, starting from a university research project with no budget, no team, and no existing market.",
                         details: "[FieldR](https://www.fieldr.lk) began as a final year research project exploring cricket performance data. When several cricket coaches from clubs registered under Sri Lanka Cricket reviewed the project, they provided **Letters of Intent** committing to use the application and urged commercialization. In 2021, the project secured **SAR 20K in pre-seed funding**. The challenge then became: how do you build a product business in a market that has never used data analytics before, with a small team, limited budget, and no clear GTM playbook?",
                     },
                     role: {
                         details: 'As **Co-Founder and Product Lead**, I owned everything: product vision, UI design, user research, GTM strategy, monetization, and international expansion. I led a team of 12 across development, marketing, and operations. I also served as the primary commercial relationship holder with Sri Lanka Cricket coaches, scorers, and club administrators.',
                     },
                     constraints: {
-                        details: '**Zero precedent** — no cricket analytics product existed in Sri Lanka, meaning there was no market education to build on and no comparable pricing to reference. **Coaches and scorers were non-technical users**, so UX had to be exceptionally intuitive. **Budget constraints** meant every GTM experiment had to be low-cost and high-feedback. The risk of over-building was real — adding features before validating usage patterns would have killed the product.',
+                        details: '**Zero precedent**: no cricket analytics product existed in Sri Lanka, meaning there was no market education to build on and no comparable pricing to reference. **Coaches and scorers were non-technical users**, so UX had to be exceptionally intuitive. **Budget constraints** meant every GTM experiment had to be low-cost and high-feedback. The risk of over-building was real: adding features before validating usage patterns would have killed the product.',
                     },
                     discovery: {
-                        details: 'Conducted direct user interviews and **A/B testing sessions** with coaches and scorers registered under Sri Lanka Cricket. Identified **30+ specific data points** that coaches cared about — not generic statistics, but performance indicators tied to real coaching decisions (e.g. fielding position heat maps, scoring rate by over range). Discovery also revealed that **grassroots club and school cricket** was far more underserved than national-level cricket, making it the right beachhead market.',
+                        details: 'Conducted direct user interviews and **A/B testing sessions** with coaches and scorers registered under Sri Lanka Cricket. Identified **30+ specific data points** that coaches cared about, not generic statistics, but performance indicators tied to real coaching decisions (e.g. fielding position heat maps, scoring rate by over range). Discovery also revealed that **grassroots club and school cricket** was far more underserved than national-level cricket, making it the right beachhead market.',
                     },
                     decisions: {
-                        details: 'Adopted a **schools and grassroots GTM** — going bottom-up rather than top-down through national boards. This built a larger, more loyal user base before approaching professional clubs. Introduced a **digital scoresheet** as a second, standalone revenue stream — giving everyday club players a reason to engage with FieldR even if they were not interested in advanced analytics. Expanded to **Australia** in 2021, signing two clubs from the Sri Lankan diaspora community as the first international users.',
+                        details: 'Adopted a **schools and grassroots GTM**, going bottom-up rather than top-down through national boards. This built a larger, more loyal user base before approaching professional clubs. Introduced a **digital scoresheet** as a second, standalone revenue stream, giving everyday club players a reason to engage with FieldR even if they were not interested in advanced analytics. Expanded to **Australia** in 2021, signing two clubs from the Sri Lankan diaspora community as the first international users.',
                     },
                     execution: {
                         details: 'Designed all UIs based on coach and scorer feedback, validated through **A/B testing** before final implementation. Built the **scoring and analytics data architecture** to capture 30+ performance metrics per game. Launched the **digital scoresheet** feature as a low-friction entry point for casual players. Executed the Australia expansion through community outreach to diaspora cricket clubs, securing two club sign-ups for the fielding performance analysis module.',
@@ -539,7 +539,7 @@ export const dictionary = {
                     },
                     learnings: {
                         repeat: 'Starting at the **grassroots level** built a far more loyal and vocal user base than a top-down institutional approach would have. Coaches became advocates who recruited other coaches.',
-                        change: 'I would invest earlier in **B2B partnerships with cricket academies** — they had the scale and budget to accelerate paid adoption much faster than individual coaches.',
+                        change: 'I would invest earlier in **B2B partnerships with cricket academies**: they had the scale and budget to accelerate paid adoption much faster than individual coaches.',
                     },
                     featured: {
                         headline: 'Grassroots-to-International Cricket Analytics',
@@ -570,8 +570,8 @@ export const dictionary = {
                     website: 'https://www.fortude.co',
                     location: 'Colombo, Sri Lanka · Hybrid',
                     dateRange: 'October 2024 – January 2026',
-                    summary: 'Owned product strategy and GTM for AI products — built a SAR 7.5M pipeline and SAR 750K in net-new revenue.',
-                    description: `At Fortude I owned end-to-end product strategy for two AI products — Charlie (AI Answer Assistant) and Fortest.io (testing tool) — leading a ~30-person cross-functional team across product, engineering, sales, and marketing. Reported directly to the CSO and board on pipeline and adoption targets.
+                    summary: 'Owned product strategy and GTM for AI products, building a SAR 7.5M pipeline and SAR 750K in net-new revenue.',
+                    description: `At Fortude I owned end-to-end product strategy for two AI products, Charlie (AI Answer Assistant) and Fortest.io (testing tool), leading a ~30-person cross-functional team across product, engineering, sales, and marketing. Reported directly to the CSO and board on pipeline and adoption targets.
 
 **Key Outcomes:**
 • Built a **SAR 7.5M annual revenue pipeline** from scratch by activating the European enterprise market
@@ -589,7 +589,7 @@ export const dictionary = {
                     location: 'Colombo · Remote',
                     dateRange: 'June 2019 – May 2025',
                     summary: "Sri Lanka's first cricket analytics platform. My 'Founder's MBA' in building products from zero.",
-                    description: `As a co-founder, I took FieldR from a blank page to Sri Lanka's first cricket analytics platform. This was my "Founder's MBA"—it taught me that an imperfect product in the hands of users is better than a perfect one that never ships.
+                    description: `As a co-founder, I took FieldR from a blank page to Sri Lanka's first cricket analytics platform. This was my "Founder's MBA." It taught me that an imperfect product in the hands of users is better than a perfect one that never ships.
 
 **Key Outcomes:**
 • Achieved **75% free-to-paid conversion** by ruthlessly prioritizing features that coaches actually asked for in discovery sessions
@@ -627,10 +627,10 @@ export const dictionary = {
                     location: 'Colombo, Sri Lanka · Hybrid',
                     dateRange: 'December 2020 – June 2021',
                     summary: 'Launched a FinTech BNPL product and drove SAR 200K revenue across 23 game launches in 5 months.',
-                    description: `In this role, I managed delivery across animation, game development, and service teams — and simultaneously led project management for a BNPL FinTech product launch, including KYC process design and user research.
+                    description: `In this role, I managed delivery across animation, game development, and service teams, and simultaneously led project management for a BNPL FinTech product launch, including KYC process design and user research.
 
 **Key Outcomes:**
-• Led publisher strategy for **23 hyper-casual games**, matching titles to publishers by genre and audience — generating **SAR 200K in new revenue**
+• Led publisher strategy for **23 hyper-casual games**, matching titles to publishers by genre and audience, generating **SAR 200K in new revenue**
 • Delivered a **FinTech BNPL MVP** with a structured KYC process informed by direct user research on trust and conversion friction
 • Built the organization's first unified **financial tracking and KPI dashboard** across all departments`,
                     skills: ['Operational Planning', 'Delivery Management', 'Cross-functional Coordination', 'Budget Management', 'KPI Tracking'],
@@ -645,7 +645,7 @@ export const dictionary = {
                     location: 'Colombo, Sri Lanka · Remote',
                     dateRange: 'August 2020 – December 2020',
                     summary: 'Coached early-stage founders on traction, pitching, and hitting weekly growth KPIs.',
-                    description: `Sat on the other side of the table — helping early-stage founders navigate incubation, sharpen their value propositions for investors, and stay accountable to weekly growth milestones.
+                    description: `Sat on the other side of the table, helping early-stage founders navigate incubation, sharpen their value propositions for investors, and stay accountable to weekly growth milestones.
 
 **Key Focus Areas:**
 • **Founder Coaching:** Worked 1:1 with founders on pitch decks and investor presentations, stripping complexity to expose the core value proposition
@@ -876,7 +876,7 @@ export const dictionary = {
                 },
                 {
                     slug: 'chonk-cookies-d2c',
-                    title: 'Chonk Cookies — إطلاق علامة D2C من الصفر',
+                    title: 'Chonk Cookies: إطلاق علامة D2C من الصفر',
                     company: 'Chonk Cookies',
                     logo: '',
                     website: 'https://www.chonk.lk',

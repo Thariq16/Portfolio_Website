@@ -1,5 +1,5 @@
 /* =========================================
-   Design Portfolio Page — Scoped Styles
+   Design Portfolio Page - Scoped Styles
    ========================================= */
 
 /* ── Main Layout ── */
@@ -349,7 +349,7 @@
     z-index: 1;
 }
 
-/* Expand overlay — shows on non-expanded cards */
+/* Expand overlay: shows on non-expanded cards */
 .expandOverlay {
     position: absolute;
     inset: 0;

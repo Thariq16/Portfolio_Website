@@ -1,5 +1,5 @@
 :root {
-  /* Light Mode — Editorial Ledger */
+  /* Light Mode - Editorial Ledger */
   --background: #f6f2e8;
   /* Warm paper */
   --foreground: #1d1a13;
@@ -10,7 +10,7 @@
   --popover: #f6f2e8;
   --popover-foreground: #1d1a13;
   --primary: #1e5a43;
-  /* Ledger green — the single accent */
+  /* Ledger green: the single accent */
   --primary-foreground: #f6f2e8;
   --secondary: #ece6d6;
   --secondary-foreground: #1d1a13;
@@ -23,7 +23,7 @@
   /* Ledger red */
   --destructive-foreground: #f6f2e8;
   --success: #1e5a43;
-  /* Same as primary — one accent, used sparingly */
+  /* Same as primary: one accent, used sparingly */
   --success-foreground: #f6f2e8;
   --border: rgba(80, 66, 40, 0.25);
   /* Hairline rule */
@@ -34,7 +34,7 @@
 }
 
 [data-theme='dark'] {
-  /* Dark Mode — warm near-black, ivory ink */
+  /* Dark Mode - warm near-black, ivory ink */
   --background: #14110b;
   --foreground: #ece5d3;
   --card: #1a1610;
@@ -86,7 +86,7 @@ h1, h2, h3 {
   letter-spacing: -0.01em;
 }
 
-/* Editorial micro-typography — labels, dates, figures */
+/* Editorial micro-typography: labels, dates, figures */
 .mono,
 code, kbd {
   font-family: var(--font-mono), 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
@@ -135,7 +135,7 @@ code, kbd {
   justify-content: center;
 }
 
-/* Scroll reveal — initial state */
+/* Scroll reveal: initial state */
 .reveal {
   opacity: 0;
   transform: translateY(24px);

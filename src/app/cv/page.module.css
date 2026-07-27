@@ -1,5 +1,5 @@
 /* =========================================
-   CV Download Page — Scoped Styles
+   CV Download Page - Scoped Styles
    ========================================= */
 
 .main {
@@ -258,7 +258,7 @@
 }
 
 /* ── Colour Accents per category ── */
-/* Fintech — blue */
+/* Fintech: blue */
 .accentFintech {
     background: var(--border);
     color: var(--primary);
@@ -270,7 +270,7 @@
     border-color: var(--border);
 }
 
-/* Business Analyst — violet */
+/* Business Analyst: violet */
 .accentBA {
     background: transparent;
     color: var(--primary);
@@ -282,7 +282,7 @@
     border-color: var(--border);
 }
 
-/* Digital Transformation — cyan */
+/* Digital Transformation: cyan */
 .accentDT {
     background: transparent;
     color: var(--primary);
@@ -294,7 +294,7 @@
     border-color: var(--border);
 }
 
-/* Startup — emerald */
+/* Startup: emerald */
 .accentStartup {
     background: transparent;
     color: var(--primary);
@@ -306,7 +306,7 @@
     border-color: var(--border);
 }
 
-/* Strategy — amber */
+/* Strategy: amber */
 .accentStrategy {
     background: transparent;
     color: var(--primary);
@@ -318,7 +318,7 @@
     border-color: var(--border);
 }
 
-/* Football — green */
+/* Football: green */
 .accentFootball {
     background: transparent;
     color: var(--primary);
