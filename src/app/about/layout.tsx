@@ -3,7 +3,7 @@ import { BreadcrumbSchema } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
     title: 'About',
-    description: 'The story behind Thariq Hamad — Senior PM, football performance analyst at Glacis United FC, and former Rotaract Club President. Builder of SaaS products, custom analysis platforms, and community programmes across Sri Lanka & the GCC.',
+    description: 'The story behind Thariq Hamad: Senior PM, football performance analyst at Glacis United FC, and former Rotaract Club President. Builder of SaaS products, custom analysis platforms, and community programmes across Sri Lanka & the GCC.',
     keywords: ['Thariq Hamad', 'Senior Product Manager', 'About', 'Product Manager Sri Lanka', 'GCC Product Manager', 'Rotaract President', 'Football Performance Analyst', 'Zero-to-One', 'SaaS', 'AI Products'],
     alternates: {
         canonical: '/about',

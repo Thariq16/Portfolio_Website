@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'UI/UX Design Portfolio',
-    description: 'Selected UI/UX design work by Thariq Hamad — mobile apps, tablet experiences, and product interfaces built for FieldR, Sling Mobility, ConnMe, and Allo Qatar.',
+    description: 'Selected UI/UX design work by Thariq Hamad: mobile apps, tablet experiences, and product interfaces built for FieldR, Sling Mobility, ConnMe, and Allo Qatar.',
     openGraph: {
         title: 'UI/UX Design Portfolio | Thariq Hamad',
         description: 'Selected mobile and product UI/UX designs from real-world projects across Sri Lanka, Maldives, and Qatar.',

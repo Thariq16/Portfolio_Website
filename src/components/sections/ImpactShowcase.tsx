@@ -27,7 +27,7 @@ export default function ImpactShowcase() {
                         <h2 className={styles.title}>Selected Work</h2>
                     </div>
                     <p className={styles.subtitle}>
-                        Four case studies — each with a real business outcome and a number to back it up
+                        Four case studies, each with a real business outcome and a number to back it up
                     </p>
                 </header>
 

@@ -18,19 +18,19 @@ interface PostSummary {
 
 const POST_SUMMARIES: PostSummary[] = [
     {
-        num: '1', title: 'Post 1 — Failed product story', track: 'Builder',
+        num: '1', title: 'Post 1: Failed product story', track: 'Builder',
         meta: 'Published Thu Jul 9, 7:14 AM · checked 6 days later',
         impressions: 658, reached: 405, reactions: 6, comments: 0, reposts: 0,
         engagementRate: '0.91%', length: '170 words', lengthVsDraft: '-8 words (-4%)',
     },
     {
-        num: '24', title: 'Post 24 — Glacis United FC recap', track: 'Analyst',
+        num: '24', title: 'Post 24: Glacis United FC recap', track: 'Analyst',
         meta: 'Published Sun Jul 12, 10:05 AM · checked 3 days later',
         impressions: 492, reached: 262, reactions: 11, comments: 0, reposts: 0,
-        engagementRate: '2.24%', length: '330 words', lengthVsDraft: 'n/a — self-written, no draft',
+        engagementRate: '2.24%', length: '330 words', lengthVsDraft: 'n/a (self-written, no draft)',
     },
     {
-        num: '4', title: 'Post 4 — RAGAS/trust pivot', track: 'Builder',
+        num: '4', title: 'Post 4: RAGAS/trust pivot', track: 'Builder',
         meta: 'Published Wed Jul 15, 7:35 AM · checked 4 days later (updated 2026-07-19, first check was same-day)',
         impressions: 174, reached: 77, reactions: 5, comments: 2, reposts: 0,
         engagementRate: '4.02%', length: '358 words', lengthVsDraft: '+56 words (+19%)',
@@ -54,7 +54,7 @@ export default function PerformanceAnalysis() {
             <p className={styles.perfIntro}>
                 A working analysis of the three posts published so far, matching them against the drafts originally
                 provided, tracking what changed before posting, how long each post is, and what the real LinkedIn data
-                shows. This page isn&apos;t connected to LinkedIn — it&apos;s updated by hand each time a new
+                shows. This page isn&apos;t connected to LinkedIn: it&apos;s updated by hand each time a new
                 post-performance-log.xlsx analytics export comes in.
             </p>
 
@@ -79,7 +79,7 @@ export default function PerformanceAnalysis() {
             </div>
 
             {/* Profile overview */}
-            <h2 className={styles.sectionTitle}>Profile overview — the account, not just these 3 posts</h2>
+            <h2 className={styles.sectionTitle}>Profile overview: the account, not just these 3 posts</h2>
             <p className={styles.sectionSub}>
                 Pulled 2026-07-15 from LinkedIn&apos;s whole-account Content and Audience analytics exports, not the
                 per-post ones. This is the context the per-post numbers above sit inside.
@@ -118,7 +118,7 @@ export default function PerformanceAnalysis() {
             {/* Three posts at a glance */}
             <h2 className={styles.sectionTitle}>The three posts, at a glance</h2>
             <p className={styles.sectionSub}>
-                Checked at very different post-ages (6 days, 3 days, same-day) — don&apos;t read the impression gap between
+                Checked at very different post-ages (6 days, 3 days, same-day): don&apos;t read the impression gap between
                 them as a verdict on which post performed better. See the caveat under the chart below.
             </p>
             <div className={styles.pGrid}>
@@ -142,7 +142,7 @@ export default function PerformanceAnalysis() {
             <h2 className={styles.sectionTitle}>Length vs. engagement rate</h2>
             <p className={styles.sectionSub}>
                 Engagement rate = (reactions + comments + reposts) ÷ impressions. Post 4&apos;s number below is now from
-                a 4-day-later check (updated 2026-07-19) — its first check was same-day and read 5.00% off just 4
+                a 4-day-later check (updated 2026-07-19); its first check was same-day and read 5.00% off just 4
                 reactions, a reminder of how noisy this metric is at low volumes. Still not a reliable read with only
                 three data points.
             </p>
@@ -171,14 +171,14 @@ export default function PerformanceAnalysis() {
             </p>
 
             <div className={styles.diffCard}>
-                <h3 className={styles.diffCardTitle}>Post 1 — Failed product story</h3>
+                <h3 className={styles.diffCardTitle}>Post 1: Failed product story</h3>
                 <div className={styles.diffCardMeta}>178 words (draft) → 170 words (published). Two small cuts, nothing added, nothing reworded.</div>
                 <ul className={styles.diffList}>
                     <li className={styles.diffCut}>
                         <span className={`${styles.diffTag} ${styles.tagCut}`}>Cut</span>
                         <del>&quot;There&apos;s no tidy resolution here:&quot;</del> removed from the opening of paragraph 2. The
                         sentence now goes straight from &quot;The specifics aren&apos;t the point&quot; to &quot;The product is on
-                        hibernation now&quot; — tighter, loses a slightly writerly transition phrase.
+                        hibernation now&quot;, tighter, loses a slightly writerly transition phrase.
                     </li>
                     <li className={styles.diffCut}>
                         <span className={`${styles.diffTag} ${styles.tagCut}`}>Cut</span>
@@ -189,12 +189,12 @@ export default function PerformanceAnalysis() {
             </div>
 
             <div className={styles.diffCard}>
-                <h3 className={styles.diffCardTitle}>Post 4 — RAGAS/trust pivot</h3>
+                <h3 className={styles.diffCardTitle}>Post 4: RAGAS/trust pivot</h3>
                 <div className={styles.diffCardMeta}>302 words (draft) → 358 words (published), +56 words. Substantially rewritten, not just trimmed, more added than cut.</div>
                 <ul className={styles.diffList}>
                     <li className={styles.diffReword}>
                         <span className={`${styles.diffTag} ${styles.tagReword}`}>Reworded</span>
-                        &quot;I sat down with <del>one colleague</del> <ins>a few colleagues</ins>&quot; — draft matched the
+                        &quot;I sat down with <del>one colleague</del> <ins>a few colleagues</ins>&quot;, draft matched the
                         sourced fact (facts-source.md says &quot;a colleague,&quot; singular); published broadens it. Minor
                         drift from the source, worth knowing if this detail ever needs to line up with other posts about the
                         same story.
@@ -202,12 +202,12 @@ export default function PerformanceAnalysis() {
                     <li className={styles.diffReword}>
                         <span className={`${styles.diffTag} ${styles.tagReword}`}>Restructured</span>
                         The two-reason paragraph was split into three short paragraphs (setup, &quot;First:&quot;,
-                        &quot;Second:&quot;) instead of one dense block — better rhythm, easier to scan.
+                        &quot;Second:&quot;) instead of one dense block: better rhythm, easier to scan.
                     </li>
                     <li className={styles.diffReword}>
                         <span className={`${styles.diffTag} ${styles.tagReword}`}>Style</span>
-                        Em dashes removed in two places (&quot;a rollout problem — how&quot; → &quot;a rollout problem. How&quot;,
-                        &quot;turned it around — once&quot; → &quot;turned it around. Once&quot;), consistent with the standing
+                        Em dashes removed in two places (&quot;a rollout problem, how&quot; changed to &quot;a rollout problem. How&quot;,
+                        &quot;turned it around, once&quot; changed to &quot;turned it around. Once&quot;), consistent with the standing
                         no-em-dash rule. Note the draft itself still had these dashes; the rule wasn&apos;t swept across this
                         post before it was edited.
                     </li>
@@ -216,7 +216,7 @@ export default function PerformanceAnalysis() {
                         The single &quot;validation layer / trust score per answer&quot; paragraph was split into &quot;So we
                         made two changes&quot; followed by two clearly separated paragraphs (&quot;Behind the scenes&quot; /
                         &quot;For users&quot;). The &quot;trust score per answer&quot; framing was dropped in favor of
-                        &quot;surfaced supporting sources&quot; — a real framing change, not just a style edit.
+                        &quot;surfaced supporting sources&quot;: a real framing change, not just a style edit.
                     </li>
                     <li className={styles.diffAdd}>
                         <span className={`${styles.diffTag} ${styles.tagAdd}`}>Added</span>
@@ -224,28 +224,28 @@ export default function PerformanceAnalysis() {
                         with a feature alone. It took open conversations, setting the right expectations, and positioning the
                         assistant as a tool to support people&apos;s work rather than replace it. The product could earn
                         trust, but the rollout had to earn buy-in.&quot; The draft raised the &quot;fear of replacement&quot;
-                        concern early on but never came back to resolve it — this closes that open loop. A real improvement
+                        concern early on but never came back to resolve it: this closes that open loop. A real improvement
                         in completeness.
                     </li>
                     <li className={styles.diffFact}>
                         <span className={`${styles.diffTag} ${styles.tagFact}`}>Fact changed</span>
                         &quot;Usage among early adopters grew <del>75%</del> <ins>70%</ins>.&quot; <code>facts-source.md</code>&apos;s
-                        sourced figure for this story is 75%. The published post says 70% — worth checking whether this was an
+                        sourced figure for this story is 75%. The published post says 70%, worth checking whether this was an
                         intentional correction or a slip while editing, since the two numbers can&apos;t both be the sourced fact.
                     </li>
                     <li className={styles.diffReword}>
                         <span className={`${styles.diffTag} ${styles.tagReword}`}>Quote replaced</span>
                         The closing line <del>&quot;Trust is a product feature, not an engineering metric&quot;</del> (a
                         verbatim, sourced quote flagged as protected in earlier passes) was replaced with <ins>&quot;Trust
-                        isn&apos;t something users assume, it&apos;s something products have to earn&quot;</ins> — a new line,
+                        isn&apos;t something users assume, it&apos;s something products have to earn&quot;</ins>, a new line,
                         not sourced from facts-source.md. Worth knowing this quote no longer appears anywhere in what&apos;s
                         actually live.
                     </li>
                     <li className={styles.diffAdd}>
                         <span className={`${styles.diffTag} ${styles.tagAdd}`}>Added</span>
                         A closing question, &quot;We spend a lot of time improving AI models. But are we spending enough time
-                        designing for trust?&quot; — the draft had no closer at all. This follows the &quot;invite comments
-                        organically&quot; rule, though this specific post got zero comments despite it — a real test case, not
+                        designing for trust?&quot;, the draft had no closer at all. This follows the &quot;invite comments
+                        organically&quot; rule, though this specific post got zero comments despite it: a real test case, not
                         yet a conclusive one.
                     </li>
                     <li className={styles.diffCut}>
@@ -260,7 +260,7 @@ export default function PerformanceAnalysis() {
                 <h4>Worth a direct check</h4>
                 <ul>
                     <li>The 75%→70% usage-growth figure: <code>facts-source.md</code> says 75%. If 70% is actually correct, the source file needs updating so future drafts don&apos;t drift back to 75%.</li>
-                    <li>The protected verbatim quote (&quot;Trust is a product feature, not an engineering metric&quot;) isn&apos;t in the live post anymore — if that line still matters as a signature line for future content, it may be worth reserving it for a different post rather than treating it as used up.</li>
+                    <li>The protected verbatim quote (&quot;Trust is a product feature, not an engineering metric&quot;) isn&apos;t in the live post anymore: if that line still matters as a signature line for future content, it may be worth reserving it for a different post rather than treating it as used up.</li>
                 </ul>
             </div>
 
@@ -275,7 +275,7 @@ export default function PerformanceAnalysis() {
                     profile view that also weren&apos;t there on day one. Post 1 and Post 24 haven&apos;t been re-checked
                     since their original pulls, so it&apos;s possible they&apos;ve picked up comments too. This is a
                     useful correction to the standing rule: don&apos;t judge a post&apos;s comment count from a same-day
-                    or even 3-day check — re-check again after 4-5 days before concluding anything about whether the
+                    or even 3-day check, re-check again after 4-5 days before concluding anything about whether the
                     &quot;invite comments organically&quot; closer is working.
                 </p>
                 <p>
@@ -286,7 +286,7 @@ export default function PerformanceAnalysis() {
                 <p>
                     <strong>Impression counts aren&apos;t comparable across these three</strong> since they were checked at
                     very different post-ages (6 days, 3 days, same-day). Don&apos;t read Post 4&apos;s low number as a verdict
-                    yet — LinkedIn keeps distributing a post for 24-48 hours after publish.
+                    yet, LinkedIn keeps distributing a post for 24-48 hours after publish.
                 </p>
             </div>
 

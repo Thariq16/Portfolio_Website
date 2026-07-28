@@ -3,7 +3,7 @@ import { BreadcrumbSchema } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
     title: 'Football Performance Analysis',
-    description: 'Thariq Hamad — Performance Analyst at Glacis United FC (Gibraltar). Built a bespoke analysis platform, delivering match and opposition reports to first-team coaching staff. Currently completing a Professional Diploma at Barca Innovation Hub.',
+    description: 'Thariq Hamad: Performance Analyst at Glacis United FC (Gibraltar). Built a bespoke analysis platform, delivering match and opposition reports to first-team coaching staff. Currently completing a Professional Diploma at Barca Innovation Hub.',
     keywords: ['Football Performance Analyst', 'Glacis United FC', 'Match Analysis', 'Opposition Reports', 'Barca Innovation Hub', 'GCC Football', 'Performance Analyst'],
     alternates: {
         canonical: '/football',

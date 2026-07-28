@@ -1,4 +1,4 @@
-// Auto-generated from Job_Search_Dashboard.html — do not hand-edit, regenerate instead.
+// Auto-generated from Job_Search_Dashboard.html: do not hand-edit, regenerate instead.
 
 export interface Application {
   date: string;
@@ -4180,7 +4180,7 @@ export const applications: Application[] = [
     "company": "SITA",
     "role": "Product Manager",
     "channel": "Company Site/ATS (iCIMS)",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Multiple Locations"
   },
   {
@@ -4244,88 +4244,120 @@ export const applications: Application[] = [
     "company": "Dautom",
     "role": "Project Management Officer",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
-    "location": "Riyadh, Saudi Arabia"
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
   },
   {
     "date": "2026-07-20",
     "company": "Bosta",
     "role": "Head of Product Led Growth",
     "channel": "Company Site/ATS (Lever)",
-    "status": "No Response",
-    "location": ""
+    "location": "",
+    "status": "No Response"
   },
   {
     "date": "2026-07-21",
     "company": "Rize",
     "role": "Product Manager",
     "channel": "Company Site/ATS (Teamtailor)",
-    "status": "No Response",
-    "location": "Riyadh, Saudi Arabia"
-  },
-  {
-    "date": "2026-07-21",
-    "company": "Soar Software Development Company",
-    "role": "Senior Product Manager",
-    "channel": "Company Site/ATS (Workable)",
-    "status": "No Response",
-    "location": "Riyadh, Saudi Arabia"
-  },
-  {
-    "date": "2026-07-23",
-    "company": "nineDots.io",
-    "role": "Product Lead",
-    "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
-    "location": "Riyadh, Saudi Arabia"
+    "location": "",
+    "status": "Rejected"
   },
   {
     "date": "2026-07-23",
     "company": "Tharwah Group",
     "role": "Digital Product Growth Lead",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
-    "location": "Riyadh, Saudi Arabia"
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-23",
+    "company": "nineDots.io",
+    "role": "Product Lead",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-23",
+    "company": "emagine",
+    "role": "Business Analyst (Product Management)",
+    "channel": "Company Site/ATS",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-23",
+    "company": "T2 (BetterVue)",
+    "role": "Product Marketing Manager (Remote)",
+    "channel": "Company Site/ATS (BetterVue)",
+    "location": "",
+    "status": "In Progress"
+  },
+  {
+    "date": "2026-07-24",
+    "company": "Lucidya | لوسيديا",
+    "role": "Senior Product Manager - AI Agent Platform",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-24",
+    "company": "Master Works",
+    "role": "Product, Senior Manager",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh",
+    "status": "No Response"
   },
   {
     "date": "2026-07-24",
     "company": "Master-Works",
     "role": "Product, Senior Manager",
     "channel": "Company Site/ATS (Workable)",
-    "status": "No Response",
-    "location": "Riyadh"
-  },
-  {
-    "date": "2026-07-24",
-    "company": "Lucidya",
-    "role": "Senior Product Manager - AI Agent Platform",
-    "channel": "Company Site/ATS (Workable)",
-    "status": "No Response",
-    "location": "Riyadh"
+    "location": "",
+    "status": "No Response"
   },
   {
     "date": "2026-07-25",
     "company": "Systems Arabia",
     "role": "Senior Project Manager – Business Applications (CRM/ERP)",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
-    "location": "Riyadh, Saudi Arabia"
-  },
-  {
-    "date": "2026-07-27",
-    "company": "Salt",
-    "role": "Senior Product Manager (Fintech)",
-    "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
-    "location": "Riyadh, Saudi Arabia"
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
   },
   {
     "date": "2026-07-27",
     "company": "MBC Shahid",
     "role": "Product Manager",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
-    "location": "Amman, Jordan"
+    "location": "Amman, Jordan",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-27",
+    "company": "Salt",
+    "role": "Senior Product Manager (Fintech)",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-28",
+    "company": "Takamol",
+    "role": "Product Consultant",
+    "channel": "Company Site/ATS",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-28",
+    "company": "Takamol",
+    "role": "Senior Product Manager",
+    "channel": "Company Site/ATS",
+    "location": "",
+    "status": "No Response"
   }
 ];
 
@@ -4407,6 +4439,12 @@ export const recruiterOutreach: RecruiterOutreach[] = [
     "company": "Lorelis Olivera Díaz - Devoteam",
     "context": "Thariq messaged re: Business Data Analyst, Riyadh - Lorelis redirected to Joud Mesmar (and two other contacts: Laila Al Hourani, Sewar Abu Hejleh)",
     "channel": "LinkedIn InMail"
+  },
+  {
+    "date": "2026-07-21",
+    "company": "IDC ABA Employment Services",
+    "context": "Recruiter Shweta Kasgar invited via Naukrigulf re: Project Manager – Banking, Dubai (Notice Period: 0-15 days max) - Thariq declined, not interested in working for a non-Islamic bank",
+    "channel": "Naukrigulf"
   }
 ];
 

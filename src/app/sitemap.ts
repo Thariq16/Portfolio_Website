@@ -3,7 +3,7 @@ import { dictionary } from '@/lib/dictionaries';
 
 export const dynamic = 'force-static';
 
-// Fixed dates — update when page content meaningfully changes
+// Fixed dates: update when page content meaningfully changes
 const DATES: Record<string, string> = {
     '':          '2025-06-01',
     '/about':    '2025-06-01',
@@ -19,7 +19,7 @@ const DATES: Record<string, string> = {
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://thariqhamad.com';
 
-    // Base routes — /intro is intentionally excluded (noindex)
+    // Base routes: /intro is intentionally excluded (noindex)
     const routes = [
         '',
         '/about',

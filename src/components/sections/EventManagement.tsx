@@ -16,7 +16,7 @@ const journey = [
         role: 'Community Service Joint Director',
         org: 'Rotaract Club of IIT',
         period: 'May 2016 – Jun 2017',
-        highlight: 'Entry into Rotaract leadership — managing community service delivery and cross-club coordination.',
+        highlight: 'Entry into Rotaract leadership: managing community service delivery and cross-club coordination.',
         isTop: false,
     },
     {
@@ -28,9 +28,9 @@ const journey = [
     },
     {
         role: 'Coordinator, Digital Communication Services',
-        org: 'Rotaract District 3220 — Sri Lanka & Maldives',
+        org: 'Rotaract District 3220: Sri Lanka & Maldives',
         period: 'May 2018 – Jun 2019',
-        highlight: 'Elevated to District level — architected a centralized, multi-user digital platform to streamline the reporting and management of District-wide projects. Engineered using PHP, Laravel, and MySQL.',
+        highlight: 'Elevated to District level: architected a centralized, multi-user digital platform to streamline the reporting and management of District-wide projects. Engineered using PHP, Laravel, and MySQL.',
         isTop: false,
     },
     {
@@ -44,7 +44,7 @@ const journey = [
         role: 'President',
         org: 'Rotaract Club of PanColombo',
         period: 'Sep 2020 – Aug 2021',
-        highlight: 'Led the club through a full presidential term — completed 30 projects and raised SAR 1,500 for the club\'s future.',
+        highlight: 'Led the club through a full presidential term: completed 30 projects and raised SAR 1,500 for the club\'s future.',
         isTop: true,
     },
 ];
@@ -61,7 +61,7 @@ export default function EventManagement() {
                     </div>
                     <h2 className={styles.title}>Leading Beyond Product</h2>
                     <p className={styles.subtitle}>
-                        Five years of progressive leadership within Rotaract — from Joint Director to Club President — 
+                        Five years of progressive leadership within Rotaract, from Joint Director to Club President, 
                         building skills in event management, stakeholder coordination, community mobilisation, and executive operations long before the corporate world.
                     </p>
                 </div>

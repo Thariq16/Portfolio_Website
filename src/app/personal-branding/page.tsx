@@ -105,7 +105,7 @@ export default function PersonalBrandingPage() {
             setCopiedNum(p.num);
             setTimeout(() => setCopiedNum(n => (n === p.num ? null : n)), 2000);
         } catch {
-            // clipboard API unavailable — ignore
+            // clipboard API unavailable, ignore
         }
     }
 
@@ -167,10 +167,10 @@ export default function PersonalBrandingPage() {
                 {/* ── Disclaimer ── */}
                 <div className={styles.note}>
                     Scores are a relative editorial read on hook strength, strategic fit, and real-world readiness across
-                    this batch — not an engagement prediction. <strong>Status:</strong> Ready = drafted and cleared ·
+                    this batch, not an engagement prediction. <strong>Status:</strong> Ready = drafted and cleared ·
                     Skeleton = needs input before it&apos;s real · Not Cleared = drafted but flagged as needing more time.
                     <strong> 📷 icon</strong> = this post got an image/carousel recommendation.
-                    Use <strong>✎ Edit</strong> to tweak a draft in-browser, then <strong>Copy for LinkedIn</strong> —
+                    Use <strong>✎ Edit</strong> to tweak a draft in-browser, then <strong>Copy for LinkedIn</strong>:
                     edits only live in this browser tab and reset on refresh, so update the source markdown files
                     yourself once you&apos;re happy with a version.
                 </div>
@@ -319,7 +319,7 @@ export default function PersonalBrandingPage() {
 
                 <p className={styles.footerNote}>
                     Posting window: 8:00–10:00 AM AST (Riyadh) · Builder posts run Sun/Tue/Thu · Analyst crossover posts
-                    (21–23) are logged here but marked Not Cleared — do not post without revisiting first.
+                    (21–23) are logged here but marked Not Cleared: do not post without revisiting first.
                 </p>
                 </>
                 )}

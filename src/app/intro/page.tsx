@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-    title: 'Thariq Hamad — Quick Introduction',
+    title: 'Thariq Hamad: Quick Introduction',
     description: 'Senior PM with 8+ years building SaaS, EV, and D2C products across KSA and the GCC. SAR 7.5M pipeline, 34-person team, available now.',
     robots: { index: false, follow: false },
 };
@@ -61,7 +61,7 @@ export default function IntroPage() {
                     <p>
                         I build products from zero and measure every outcome in revenue.
                         Employee #1 on a 34-person EV team. SAR 7.5M SaaS pipeline. Venture Engine Top 28.
-                        Eight years across SaaS, EV, D2C, and enterprise platforms — always as the person who owns the number.
+                        Eight years across SaaS, EV, D2C, and enterprise platforms, always as the person who owns the number.
                     </p>
                 </section>
 

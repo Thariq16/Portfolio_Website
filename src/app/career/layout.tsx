@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     },
     openGraph: {
         title: 'Career | Thariq Hamad',
-        description: '8+ years of product management experience across SaaS, mobility, AI, and fintech — from co-founding startups to managing enterprise revenue pipelines.',
+        description: '8+ years of product management experience across SaaS, mobility, AI, and fintech: from co-founding startups to managing enterprise revenue pipelines.',
         url: 'https://thariqhamad.com/career',
         images: [
             {

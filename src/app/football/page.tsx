@@ -28,7 +28,7 @@ const capabilities = [
         title: 'Python & Data Science',
         badge: 'Data-Driven',
         description:
-            'Apply Python to process match data, identify player combinations, and surface tactical patterns to supplement video-based observation — translating raw data into structured, actionable coaching insights.',
+            'Apply Python to process match data, identify player combinations, and surface tactical patterns to supplement video-based observation, translating raw data into structured, actionable coaching insights.',
         tags: ['Pattern Recognition', 'Player Combinations', 'Tactical Modelling', 'Data Processing'],
     },
     {

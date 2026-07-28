@@ -26,7 +26,7 @@ const capabilities = [
         title: 'Python Data Science',
         badge: 'Data-Driven',
         description:
-            'Apply Python to process match data, identify player combinations, and surface tactical patterns to supplement video-based observation — translating raw data into structured coaching insights.',
+            'Apply Python to process match data, identify player combinations, and surface tactical patterns to supplement video-based observation, translating raw data into structured coaching insights.',
         tags: ['Pattern Recognition', 'Player Combinations', 'Tactical Modelling'],
     },
     {
@@ -64,7 +64,7 @@ export default function FootballAnalysis() {
                     </div>
                     <h2 className={styles.title}>The Analytical Edge</h2>
                     <p className={styles.subtitle}>
-                        Applying the same rigour used to run product teams to competitive club football — building systems, 
+                        Applying the same rigour used to run product teams to competitive club football, building systems, 
                         extracting patterns, and communicating insights that drive decisions on the pitch.
                     </p>
                 </div>

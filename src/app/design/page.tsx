@@ -26,7 +26,7 @@ const designProjects: DesignProject[] = [
         company: 'FieldR',
         filter: 'fieldr',
         deviceType: 'mobile',
-        description: 'End-to-end indoor cricket analytics flow — session tracking, player insights, and performance dashboards designed for grassroots coaches.',
+        description: 'End-to-end indoor cricket analytics flow: session tracking, player insights, and performance dashboards designed for grassroots coaches.',
         figmaEmbedSrc: 'https://embed.figma.com/design/bgmEUTAM2BP8x8lkVzoH3w/FieldR---Indoor---Flow?node-id=738-10826&embed-host=share',
         figmaViewSrc: 'https://www.figma.com/design/bgmEUTAM2BP8x8lkVzoH3w/FieldR---Indoor---Flow?node-id=738-10826',
         year: '2022',
@@ -86,7 +86,7 @@ const designProjects: DesignProject[] = [
         company: 'Allo Qatar',
         filter: 'freelance',
         deviceType: 'mobile',
-        description: 'Consumer super-app UI for the Qatari market — combining delivery, services, and local commerce into a unified, bilingual interface.',
+        description: 'Consumer super-app UI for the Qatari market: combining delivery, services, and local commerce into a unified, bilingual interface.',
         figmaEmbedSrc: 'https://embed.figma.com/design/bq01R7Vyi08j7M3RQ2L1Su/Allo-UI---Qatar?node-id=4213-3496&embed-host=share',
         figmaViewSrc: 'https://www.figma.com/design/bq01R7Vyi08j7M3RQ2L1Su/Allo-UI---Qatar?node-id=4213-3496',
         year: '2024',
@@ -130,7 +130,7 @@ export default function DesignPage() {
                             not just aesthetics
                         </h1>
                         <p className={styles.heroSubtitle}>
-                            Selected product design work from real-world projects — mobile apps, tablet
+                            Selected product design work from real-world projects: mobile apps, tablet
                             experiences, and consumer platforms across Sri Lanka, Maldives, Qatar, and Czech Republic.
                             Each design was built alongside the product I shipped.
                         </p>
@@ -266,7 +266,7 @@ export default function DesignPage() {
                     <div className={styles.ctaCard}>
                         <h2 className={styles.ctaTitle}>Want to collaborate on a design?</h2>
                         <p className={styles.ctaBody}>
-                            I approach design as a product tool — every screen is a decision rooted in
+                            I approach design as a product tool: every screen is a decision rooted in
                             user behaviour and business outcomes, not just aesthetics.
                         </p>
                         <a

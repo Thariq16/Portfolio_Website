@@ -96,7 +96,7 @@ export default function NetworkActivation() {
             <div className={styles.updatedBadge}>Added 2026-07-15, by Claude</div>
             <p className={styles.perfIntro}>
                 The execution half of the content strategy that&apos;s been missing. The whole-account analytics
-                confirmed the KSA-reach problem is structural — 29% of all 3,138 followers are Colombo-based, only 2%
+                confirmed the KSA-reach problem is structural: 29% of all 3,138 followers are Colombo-based, only 2%
                 Riyadh region, and the account was largely dormant before this month. No amount of editing post content
                 fixes that. This is real, not fake, activity: commenting genuinely on content you&apos;d read anyway, and
                 reaching out to people you actually know. No engagement pods, no mass-connecting. Checkboxes below save
@@ -124,7 +124,7 @@ export default function NetworkActivation() {
                     Comment genuinely on 1 KSA/GCC post <span className={styles.freqBadge}>Every day</span>
                 </h3>
                 <p className={styles.napCardDesc}>
-                    Find a product leader, founder, or tech account post worth a real reaction — something with an actual
+                    Find a product leader, founder, or tech account post worth a real reaction, something with an actual
                     point, not &quot;Great post!&quot; 10-15 minutes.
                 </p>
                 <ul className={styles.checklist}>
@@ -148,18 +148,18 @@ export default function NetworkActivation() {
                 <ul className={styles.checklist}>
                     <ChecklistItem id="p1" checked={!!state.p1} onToggle={toggle}>
                         <strong>Reach out first.</strong> The evening before or morning of, message 3-5 of the 501 Saudi
-                        Arabia-based connections you actually know — colleagues, ex-clients, people you&apos;ve worked
+                        Arabia-based connections you actually know: colleagues, ex-clients, people you&apos;ve worked
                         with. Rotate who, not the same 5 people every time. Short and real: &quot;Posting something about
                         [topic] tomorrow morning, would genuinely value your take.&quot;
                     </ChecklistItem>
                     <ChecklistItem id="p2" checked={!!state.p2} onToggle={toggle}>
                         <strong>Publish in the window.</strong> 8:00-10:00 AM AST, Sun/Tue/Thu. Both real posts checked so
-                        far slipped their planned date by a day or two — tightening this back up matters more now that
+                        far slipped their planned date by a day or two, tightening this back up matters more now that
                         early velocity decides most of total reach.
                     </ChecklistItem>
                     <ChecklistItem id="p3" checked={!!state.p3} onToggle={toggle}>
                         <strong>Stay active for the first 60-90 minutes.</strong> Reply to every comment immediately.
-                        Comment on 1-2 other people&apos;s posts in that same window instead of closing the tab — this is
+                        Comment on 1-2 other people&apos;s posts in that same window instead of closing the tab, this is
                         the highest-leverage 90 minutes of the whole cycle.
                     </ChecklistItem>
                 </ul>
@@ -175,7 +175,7 @@ export default function NetworkActivation() {
                 <ul className={styles.checklist}>
                     <ChecklistItem id="w1" checked={!!state.w1} onToggle={toggle}>
                         Find and follow or genuinely engage with 1-2 new Saudi-based product/tech/founder accounts whose
-                        content is actually relevant — not a mass-follow exercise. This nudges what topic cluster the
+                        content is actually relevant, not a mass-follow exercise. This nudges what topic cluster the
                         algorithm associates the account with, and slowly turns cold 1st-degree connections into people
                         who&apos;ve seen your name in their feed before.
                     </ChecklistItem>
@@ -192,10 +192,10 @@ export default function NetworkActivation() {
                     <ChecklistItem id="m1" checked={!!state.m1} onToggle={toggle}>
                         Skim the Saudi Arabia-based connections list and note which are real relationships (worked
                         together, met at an event, mutual connections in common) vs. old adds with no context. Prioritize
-                        outreach toward the former — they&apos;re far more likely to give a genuine first-hour comment.
+                        outreach toward the former: they&apos;re far more likely to give a genuine first-hour comment.
                     </ChecklistItem>
                     <ChecklistItem id="m2" checked={!!state.m2} onToggle={toggle}>
-                        Don&apos;t chase new connection requests as the fix — a large but disengaged network actively
+                        Don&apos;t chase new connection requests as the fix: a large but disengaged network actively
                         suppresses reach. Depth with the 501 matters more than growing to 600 or 700.
                     </ChecklistItem>
                 </ul>
@@ -206,7 +206,7 @@ export default function NetworkActivation() {
                 <ul>
                     <li>No engagement pods, no reciprocal like-for-like arrangements, no fake comments.</li>
                     <li>No mass-connecting with strangers to inflate the Saudi Arabia connection count.</li>
-                    <li>No change to post content or length based on this — that&apos;s tracked separately in the Performance Analysis tab.</li>
+                    <li>No change to post content or length based on this: that&apos;s tracked separately in the Performance Analysis tab.</li>
                 </ul>
             </div>
 
@@ -227,7 +227,7 @@ export default function NetworkActivation() {
 
             <p className={styles.footerNote}>
                 Companion to the Performance Analysis tab (the content-and-data side of the strategy). Checkbox state
-                saves locally in this browser only — it won&apos;t sync across devices.
+                saves locally in this browser only, it won&apos;t sync across devices.
             </p>
         </>
     );

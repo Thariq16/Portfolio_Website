@@ -76,7 +76,7 @@ function formatDate(iso: string) {
     return new Date(y, m - 1, d).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 }
 function pct(num: number, den: number): string {
-    if (den === 0) return '—';
+    if (den === 0) return '-';
     return Math.round((num / den) * 100) + '%';
 }
 
@@ -92,7 +92,7 @@ interface PeriodStats {
 }
 function computeStats(apps: Application[]): PeriodStats {
     const total = apps.length;
-    // "Feedback received" = any status that reflects an actual reply (Rejected, In Progress, etc.) —
+    // "Feedback received" = any status that reflects an actual reply (Rejected, In Progress, etc.):
     // anything other than the no-status/"No Response" default.
     const rejected   = apps.filter(a => a.status && a.status !== 'No Response').length;
     const noResponse = total - rejected;
@@ -131,7 +131,7 @@ function buildKpis(stats: PeriodStats, timeline: Timeline, preStats: PeriodStats
         { label: 'Feedback Received',            value: stats.rejected,    sub: `${stats.responseRate} response rate`, variant: 'neutral',
           tooltip: 'Any reply (rejection / screening) = feedback; application was reviewed' },
         { label: 'No Response Yet',              value: stats.noResponse,  sub: `${stats.ghostRate} ghost rate`, variant: 'neutral',
-          tooltip: 'Applications with zero reply — may still be under review' },
+          tooltip: 'Applications with zero reply: may still be under review' },
         { label: 'Pre-New CV Response Rate',     value: preStats.responseRate,  sub: `${preStats.rejected} replies / ${preStats.total} apps`, variant: 'neutral',
           tooltip: 'Dec 15 – Apr 1 (original CV)' },
         { label: 'Post-New CV Response Rate',    value: postStats.responseRate, sub: deltaStr, variant: delta >= 0 ? 'positive' : 'negative',
@@ -171,7 +171,7 @@ function buildKpis(stats: PeriodStats, timeline: Timeline, preStats: PeriodStats
           tooltip: `Pre-CV: ${preStats.responseRate} → Post-CV: ${stats.responseRate}` },
     ];
 
-    // jul1 — rolling "since Jul 1" window
+    // jul1: rolling "since Jul 1" window
     return [
         { label: 'Applications Sent',    value: stats.total,       sub: JUL1_CV_LABEL,                   variant: 'info' },
         { label: 'Companies Reached',    value: stats.companies,   sub: 'Distinct employers',             variant: 'info' },
@@ -333,7 +333,7 @@ export default function JobApplicationPage() {
                 <div className={styles.note}>
                     Figures are counts of distinct application / outreach emails found via Gmail search. Routine
                     LinkedIn job-alert and newsletter emails were excluded. &quot;Rejected&quot; means a
-                    rejection/decline email was found — this counts as <strong>feedback received</strong> (the
+                    rejection/decline email was found: this counts as <strong>feedback received</strong> (the
                     application was reviewed). &quot;No Response&quot; means no reply was found and the
                     application may still be under consideration.
                 </div>
@@ -423,7 +423,7 @@ export default function JobApplicationPage() {
                     </div>
                     <div className={styles.card}>
                         <h3 className={styles.cardHeading}>
-                            Applications by Channel{timeline !== 'overall' ? ` — ${activeTimeline.label}` : ''}
+                            Applications by Channel{timeline !== 'overall' ? `: ${activeTimeline.label}` : ''}
                         </h3>
                         <div className={styles.hbarchart}>
                             {channelCounts.map(([label, val]) => (
@@ -441,7 +441,7 @@ export default function JobApplicationPage() {
 
                 {/* ── Rate cards ── */}
                 <p className={styles.rateGridHint}>
-                    Card colors mark the period, not performance — compare each Response rate against the
+                    Card colors mark the period, not performance: compare each Response rate against the
                     Overall baseline ({allStats.responseRate}) using the ▲/▼ indicator: higher is better.
                 </p>
                 <div className={styles.rateGrid}>

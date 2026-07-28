@@ -105,7 +105,7 @@ export default function SkillConstellation() {
             <div className="container">
                 <p className={styles.eyebrow}>The Map</p>
                 <h2 className={styles.title}>Where the work connects</h2>
-                <p className={styles.hint}>Each point is a practice — with the number that proves it. Click to explore.</p>
+                <p className={styles.hint}>Each point is a practice, with the number that proves it. Click to explore.</p>
             </div>
             <div className={styles.canvas}>
                 <svg
@@ -138,7 +138,7 @@ export default function SkillConstellation() {
                             onClick={() => router.push(n.href)}
                             tabIndex={0}
                             role="link"
-                            aria-label={`${n.label} — ${n.sub}`}
+                            aria-label={`${n.label}: ${n.sub}`}
                             onKeyDown={(e) => { if (e.key === 'Enter') router.push(n.href); }}
                         >
                             <circle cx={n.x} cy={n.y} r={26} className={styles.hitArea} />

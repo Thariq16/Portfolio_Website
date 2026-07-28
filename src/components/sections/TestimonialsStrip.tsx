@@ -34,7 +34,7 @@ const testimonials: Testimonial[] = [
         relationship: "Client · June 2024",
     },
     {
-        quote: "We started working as cross-functional teams and ended up building synergies and delivering as one team. Over the year long experience working with Thariq, I admired his patience, his perseverance, his team spirit and commitment for his work — and I'm glad to recommend him to those who like to get work done.",
+        quote: "We started working as cross-functional teams and ended up building synergies and delivering as one team. Over the year long experience working with Thariq, I admired his patience, his perseverance, his team spirit and commitment for his work, and I'm glad to recommend him to those who like to get work done.",
         name: "Geetha Gopal",
         title: "PMI Future 50 Awardee · Digital Transformation Leader",
         company: "Client Collaboration",

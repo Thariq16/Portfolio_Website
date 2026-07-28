@@ -11,7 +11,7 @@ export function useScrollReveal<T extends HTMLElement>(
         const el = ref.current;
         if (!el) return;
 
-        // Respect user preference — skip animation entirely
+        // Respect user preference: skip animation entirely
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
             el.style.opacity = '1';
             el.style.transform = 'none';

@@ -66,7 +66,7 @@ export default function AboutPage() {
                             <h2 className={styles.sectionLabel}>The Story</h2>
                             <p className={styles.paragraph}>
                                 I'm Thariq, a Product Manager and Zero-to-One specialist based in KSA.
-                                My career hasn't been a straight line—it's been a continuous loop of
+                                My career hasn't been a straight line: it's been a continuous loop of
                                 building, measuring, and scaling.
                             </p>
                             <p className={styles.paragraph}>
@@ -90,7 +90,7 @@ export default function AboutPage() {
                         <div className={styles.storyBlock}>
                             <h2 className={styles.sectionLabel}>Currently</h2>
                             <p className={styles.paragraph}>
-                                Actively building new product concepts using AI-native tools — rapidly prototyping,
+                                Actively building new product concepts using AI-native tools, rapidly prototyping,
                                 validating, and iterating without waiting for a full engineering team.
                                 Open to Senior PM and Head of Product roles in KSA and the wider GCC,
                                 available immediately.
@@ -162,7 +162,7 @@ export default function AboutPage() {
                         <p className={styles.rotaractEyebrow}>Rotaract International · 2016–2021</p>
                         <h2 className={styles.rotaractTitle}>Leading Beyond Product</h2>
                         <p className={styles.rotaractSubtitle}>
-                            Five years of progressive leadership across three Rotaract clubs and District 3220 (Sri Lanka &amp; Maldives) —
+                            Five years of progressive leadership across three Rotaract clubs and District 3220 (Sri Lanka &amp; Maldives):
                             building skills in event management, stakeholder coordination, community mobilisation, and executive
                             operations long before the corporate world.
                         </p>
@@ -195,11 +195,11 @@ export default function AboutPage() {
 
                         <div className={styles.timelineItems}>
                             {[
-                                { role: 'Community Service Joint Director', org: 'Rotaract Club of IIT', period: 'May 2016–Jun 2017', highlight: 'Entry into Rotaract leadership — managing community service delivery and cross-club coordination.', isTop: false },
+                                { role: 'Community Service Joint Director', org: 'Rotaract Club of IIT', period: 'May 2016–Jun 2017', highlight: 'Entry into Rotaract leadership: managing community service delivery and cross-club coordination.', isTop: false },
                                 { role: 'Secretary', org: 'Rotaract Club of IIT', period: 'Mar 2017–Jun 2018', highlight: 'Owned club operations, correspondence, records, and internal reporting for a full club year.', isTop: false },
-                                { role: 'Coordinator, Digital Communication Services', org: 'Rotaract District 3220 — Sri Lanka & Maldives', period: 'May 2018–Jun 2019', highlight: 'Elevated to District level — architected a centralized, multi-user digital platform to streamline the reporting and management of District-wide projects. Engineered using PHP, Laravel, and MySQL.', isTop: false },
+                                { role: 'Coordinator, Digital Communication Services', org: 'Rotaract District 3220: Sri Lanka & Maldives', period: 'May 2018–Jun 2019', highlight: 'Elevated to District level: architected a centralized, multi-user digital platform to streamline the reporting and management of District-wide projects. Engineered using PHP, Laravel, and MySQL.', isTop: false },
                                 { role: 'Vice President', org: 'Rotaract Club of Colombo North', period: 'May 2019–May 2020', highlight: 'Stepped into executive leadership, supporting the President and driving programme delivery.', isTop: false },
-                                { role: 'President', org: 'Rotaract Club of PanColombo', period: 'Sep 2020–Aug 2021', highlight: "Led the club through a full presidential term — completed 30 projects and raised SAR 1.875M across various community and national-level initiatives.", isTop: true },
+                                { role: 'President', org: 'Rotaract Club of PanColombo', period: 'Sep 2020–Aug 2021', highlight: "Led the club through a full presidential term: completed 30 projects and raised SAR 1.875M across various community and national-level initiatives.", isTop: true },
                             ].map((step, i, arr) => (
                                 <div key={i} className={`${styles.timelineItem} ${step.isTop ? styles.topRole : ''}`}>
                                     <div className={styles.timelinePeriod}>{step.period}</div>
