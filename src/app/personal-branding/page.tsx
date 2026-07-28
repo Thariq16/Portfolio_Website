@@ -244,6 +244,7 @@ export default function PersonalBrandingPage() {
                                     <span className={`${styles.badge} ${trackClass(p.track)}`}>{p.track}</span>
                                     <span className={`${styles.badge} ${styles.bPillar}`}>{p.pillar}</span>
                                     <span className={`${styles.badge} ${statusClass(p.status)}`}>{p.status}</span>
+                                    {p.posted && <span className={`${styles.badge} ${styles.bPosted}`}>✓ Posted</span>}
                                     <span className={`${styles.badge} ${styles.bFormat}`}>{p.format}</span>
                                     <span className={`${styles.badge} ${styles.bFormat}`}>{p.image ? '📷 Image recommended' : '✎ Text-only'}</span>
                                     {isEdited && <span className={`${styles.badge} ${styles.bEdited}`}>Edited (unsaved)</span>}

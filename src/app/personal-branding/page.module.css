@@ -324,6 +324,18 @@
 }
 [data-theme='dark'] .sNotcleared { color: #f87171; }
 
+.bPosted {
+    background: #16a34a;
+    border-color: #16a34a;
+    color: #fff;
+    font-weight: 700;
+}
+[data-theme='dark'] .bPosted {
+    background: #22c55e;
+    border-color: #22c55e;
+    color: #052e16;
+}
+
 .scoreWrap {
     margin-left: auto;
     display: flex;

@@ -17,6 +17,7 @@ export interface Post {
     hashtags: string;
     links?: [string, string][];
     note: string;
+    posted: boolean;
 }
 
 export const posts: Post[] = [
@@ -35,6 +36,7 @@ Being the Head of Product on a failed product is a blessing you can have in your
 If you're early in product and most of what you've shipped has gone fine so far, that's not a bad thing, but there's a category of lesson you just haven't hit yet. I'd rather tell you what it cost me than have you find out the same way I did.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         note: "Moved to Post 1/opener 2026-07-05, no anonymization gymnastics needed, strongest opener in the set. Correction 2026-07-06: an earlier pass today wrongly flattened this into generic paraphrase, misreading Thariq's own verbatim quote as a Generic Language Filter violation. Restored his real words, verbatim, from facts-source.md's CLEARED section. Second correction, same day: rewrote the surrounding paragraphs to break the 'every paragraph ends on a crafted rhetorical button' pattern a human reviewer flagged as AI-polished: looser run-ons, split off a short stand-alone line, cut a tidy superlative. Date confirmed 2026-07-06 (second adjustment); now Tue, Jul 7.",
+        posted: true,
     },
     {
         num: 2, date: 'Thu, Jul 9, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'KSA Product Reviews',
@@ -54,6 +56,7 @@ None of this is a small-team-can't-do-it problem. It's a "which metric are we ac
             ['Jeeny (Google Play)', 'https://play.google.com/store/apps/details?id=com.jeeny.rider'],
         ],
         note: "Research note: built from Jeeny's own Google Play/App Store listings, Arab News' coverage of Jeeny's Vision 2030 positioning, and complaint patterns on Jeeny's Google Play review section. Rider feedback here is a paraphrased pattern, not a verbatim quote, flagged deliberately, not put in quotation marks. Sources: Jeeny (Google Play); Saudi ride-hailing app Jeeny goes the distance to meet Vision 2030 goals (Arab News). Second pass 2026-07-06: loosened sentence rhythm per the batch-wide 'sounds like AI' fix.",
+        posted: false,
     },
     {
         num: 3, date: 'Sun, Jul 12, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Growing Technology',
@@ -68,6 +71,7 @@ The GCC advantage here, if I were building for it deliberately: this region is m
 If it were my roadmap, trust and auditability would be built in from day one, not bolted on after a launch built for somewhere else. That's a product strategy call before it's ever an engineering one.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         note: "PBOS fix 2026-07-06: softened two unqualified universal claims that failed Devil's Advocate's Generalisation Test. Second pass, same day: loosened sentence rhythm per the batch-wide 'sounds like AI' fix. Third pass 2026-07-08: rewritten for narrative stance per PBOS/EDITORIAL/02_Content_Guardrails.md's new 'candidate, not consultant' rule: was giving the market advice, now frames the same claims as what Thariq himself would build/insist on if he had the seat.",
+        posted: false,
     },
     {
         num: 4, date: 'Tue, Jul 14, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -88,6 +92,7 @@ Usage among early adopters grew 75%.
 The model never actually got smarter through any of this. What changed was what the user could see. Trust is a product feature, not an engineering metric.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         note: 'Rewritten 2026-07-04 from your own raw account in "Fortude Story.docx." Company, product names, and the Toyota Sri Lanka detail stay fully out per the anonymization rule. Moved from opener to Post 4 on 2026-07-05. PBOS fix 2026-07-06: cut an antithesis tic and an advice-shaped closer. Correction same day: swapped in Thariq\'s own verbatim quotable line for this story, which hadn\'t been used before. Second pass, same day: loosened sentence rhythm per the batch-wide \'sounds like AI\' fix; his verbatim quote kept untouched.',
+        posted: true,
     },
     {
         num: 5, date: 'Thu, Jul 16, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'AI & Product Development',
@@ -108,6 +113,7 @@ Question 3 is the one most roadmaps skip entirely. It's also the one that determ
 It's the one I end up spending as much design time on as the model itself, if I'm honest.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         note: "PBOS fix 2026-07-06: closing line was a direct command to the reader, reworded as a first-person statement of practice. Second pass, same day: loosened closing rhythm per the batch-wide 'sounds like AI' fix.",
+        posted: false,
     },
     {
         num: 6, date: 'Sun, Jul 19, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Potential in the Market',
@@ -128,6 +134,7 @@ The part I don't see many companies treating as a product problem yet: who owns 
             ['ABB supplies EV chargers for residential compound in Saudi Arabia (ABB official news center)', 'https://new.abb.com/news/detail/67379/abb-supplies-ev-chargers-for-residential-compound-in-saudi-arabia'],
         ],
         note: 'Post links as the first comment, not inline, per LinkedIn\'s algorithm. Both sources checked directly. A widely-repeated "1,500 solar-powered two-wheeler stations" stat was deliberately skipped: no reputable primary source found. Pairs naturally with Post 13\'s Energy-as-a-Service post. Second pass 2026-07-06: loosened closing rhythm per the batch-wide \'sounds like AI\' fix. Third pass 2026-07-08: reworded closer for narrative stance: was framed as a gap \'companies\' should notice, now framed as what Thariq would build if it were his roadmap. Fourth pass, same day (see pbos-audit-2026-07-08.md): hedged an unsourced claim and added a one-clause trade-off acknowledgment per the Devil\'s Advocate Simplicity Test.',
+        posted: false,
     },
     {
         num: 7, date: 'Tue, Jul 21, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -142,6 +149,7 @@ By the time the bikes actually arrived, I wasn't the same product lead who'd joi
 A blocker I couldn't control turned out to still be time I controlled, and what I did inside it was really the only part that was ever up to me.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         note: "Source: Sling Mobility Story.docx, read in full 2026-07-05. Real, specific, dated. No invented figures. PBOS fix 2026-07-06: removed \"The lesson I keep coming back to:\" label, reworded as first-person reflection. Second pass, same day: loosened closing rhythm per the batch-wide 'sounds like AI' fix.",
+        posted: false,
     },
     {
         num: 8, date: 'Thu, Jul 23, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'KSA Product Reviews',
@@ -150,6 +158,7 @@ A blocker I couldn't control turned out to still be time I controlled, and what 
         body: `Same reason as Post 2: not fabricating specifics about a real, named product. Structure this one around a different category if you want variety (e.g. fintech/BNPL, delivery/super-app, booking/travel), send me the product and the specific detail, and I'll write it the same way as Post 2's structure.`,
         hashtags: '',
         note: '',
+        posted: false,
     },
     {
         num: 9, date: 'Sun, Jul 26, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Growing Technology',
@@ -164,6 +173,7 @@ If I were the one deciding, I wouldn't pick an infrastructure model because it's
 Vehicle class first, infrastructure model second: that's the order I'd insist on, because getting it backwards is an expensive mistake once the hardware's already in the ground.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         note: "NIO figures verified via web search 2026-07-02 (sources: cnevpost.com, nio.com official release). PBOS fix 2026-07-06: reworded a prescriptive closer into an observed pattern. Second pass, same day: loosened sentence rhythm throughout per the batch-wide 'sounds like AI' fix. Third pass 2026-07-08: reworded for narrative stance: was commenting on others' mistakes, now framed as what Thariq would decide himself.",
+        posted: false,
     },
     {
         num: 10, date: 'Tue, Jul 28, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -182,6 +192,7 @@ What I'd do differently: we spent too long chasing analytical depth before we'd 
 Six years, one research project, two countries: still the clearest example I've got of what "founder-level ownership" actually means, day to day.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         note: "Second pass 2026-07-06: loosened closing rhythm per the batch-wide 'sounds like AI' fix. Housekeeping, 2026-07-08 (see pbos-audit-2026-07-08.md): this post was missing its sourcing note during earlier passes; content was already clean. Source: facts-source.md Case Studies 5 and 6 (FieldR). 75% conversion, 2,823 paid users of 3,568 registrations, 30+ tracked data points, Spiralation Seed Funding selection, and the Australia expansion are all real per CV/Investor Deck. Nasif Nuha and Azhar Anees named as co-founders per Thariq's own account.",
+        posted: false,
     },
     {
         num: 11, date: 'Thu, Jul 30, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'AI & Product Development',
@@ -196,6 +207,7 @@ The instant a tool can answer "what has this person been working on and how are 
 A capability being technically real never meant it was ready to ship: the harder, less glamorous work was always figuring out who got to ask the question in the first place. That's not a problem you solve once, either: every new use case for the same underlying tool reopens it.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         note: "Source: Fortude Story.docx, HR/insights pivot detail. PII/department-access-control detail is real, not generalized: no employee, client, or company detail is identifying. PBOS fix 2026-07-06: removed \"The lesson:\" label, reworded as first-person reflection. Second pass, same day: loosened closing rhythm per the batch-wide 'sounds like AI' fix. Fourth pass, 2026-07-08 (see pbos-audit-2026-07-08.md): Insight Generation's chain wants an outcome step before Reflection; no clean postable outcome exists in facts-source.md for this pivot (the only downstream result is NDA-covered), so added an honest acknowledgment that the governance question reopens each time, rather than inventing a resolution.",
+        posted: false,
     },
     {
         num: 12, date: 'Sun, Aug 2, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -212,6 +224,7 @@ None of that shows up on a product roadmap slide, but it's the actual work of ta
 Unglamorous, physical, get-your-hands-on-the-hardware decisions are usually the ones that end up deciding whether a product ships at the quality it actually needs. That's been true on pretty much everything I've built since.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         note: "Second pass 2026-07-06: loosened closing rhythm per the batch-wide 'sounds like AI' fix. Housekeeping, 2026-07-08 (see pbos-audit-2026-07-08.md): this post was missing its sourcing note during earlier passes; content was already clean. Source: facts-source.md Case Study 4 (Sling Mobility), cabinet-engineering and geofencing detail from Sling Mobility Story.docx: the 4.5-foot pigeonhole height, 5-meter geofence radius, and CCTV/voice-command detail are all real, specific figures.",
+        posted: false,
     },
     {
         num: 13, date: 'Tue, Aug 4, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Potential in the Market',
@@ -226,6 +239,7 @@ That's a genuinely different business once you make that shift, and a harder one
 Most EV infrastructure conversations stop at charging versus swapping, but the question I'd keep asking on any team building this is who owns the asset once you've built the network, and whether the business is actually designed to answer that.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         note: "Source: Sling Mobility Story.docx (\"Battery as a Service / Energy as a Service\" is Thariq's own term). Pairs naturally with Post 6's KSA EV market research. Second pass 2026-07-06: loosened closing rhythm per the batch-wide 'sounds like AI' fix. Third pass 2026-07-08: closer reworded for narrative stance: 'the bigger question is' read as neutral analysis, now framed as the question Thariq himself would keep asking on a team. Fourth pass, same day (see pbos-audit-2026-07-08.md): the post named the tokenization pivot's upside but never its cost, per Content Guardrails' 'trade-offs beat frameworks': added a general, logically-entailed acknowledgment of added accountability rather than an unsourced specific.",
+        posted: false,
     },
     {
         num: 14, date: 'Thu, Aug 6, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -240,6 +254,7 @@ We found roadblocks. None of them were showstoppers, but we only knew that becau
 Testing only with people who already get the pitch isn't really testing the UX, if I'm honest. It's testing the pitch, and those two things get confused more often than they should.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         note: "Source: Sling Mobility Story.docx, UX-validation-process detail. PBOS fix 2026-07-06: removed an advice-shaped closer addressed directly at the reader. Second pass, same day: loosened closer rhythm further per the batch-wide 'sounds like AI' fix.",
+        posted: false,
     },
     {
         num: 15, date: 'Sun, Aug 9, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Growing Technology',
@@ -252,6 +267,7 @@ This single constraint reshaped everything downstream: separate environments per
 This is the part of enterprise AI adoption in this region I'd want any product I led to get right early: not the only blocker, but one I'd never leave unanswered. In my experience, buyers here often aren't asking "can the model do this" first: they're asking "who else can see my data if I say yes to this," and if I couldn't answer that cleanly, with real architecture behind the answer rather than a compliance slide, I'd expect the deal to stall no matter how good the model actually was.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         note: "Source: Fortude Story.docx, on-prem/per-client-instance deployment detail. The GCC-data-sovereignty framing is Thariq's own market read, not a direct source quote. Second pass 2026-07-06: loosened sentence rhythm per the batch-wide 'sounds like AI' fix. Third pass 2026-07-08: closer reworded for narrative stance: was general market observation ('any product that can't...'), now framed as Thariq's own standard for anything he'd lead. Fourth pass, same day (see pbos-audit-2026-07-08.md): fixed single-cause framing (data isolation presented as *the* blocker, not *a* blocker) and hedged an unqualified 'serious buyers' claim per the Devil's Advocate Generalisation Test.",
+        posted: false,
     },
     {
         num: 16, date: 'Tue, Aug 11, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -264,6 +280,7 @@ The product was a test-automation tool I ran GTM for. The discount wasn't really
 The discount got us in the room, but the 90% number is what actually kept the deal there once we were in it.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         note: "Source: Fortude Story.docx (Case Study 1, ForTest). Company/product name withheld per the anonymization rule. PBOS fix 2026-07-06: reworded an antithesis tic and cut a generic tacked-on closing paragraph. Second pass, same day: loosened closer rhythm per the batch-wide 'sounds like AI' fix.",
+        posted: false,
     },
     {
         num: 17, date: 'Thu, Aug 13, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'AI & Product Development',
@@ -278,6 +295,7 @@ We never fully solved this while I was there. What I'd try differently now: stop
 A sales motion that depends on data compounding over time has to prove the curve, not just the starting point, and that's the part I never actually solved.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         note: 'Source: Fortude Story.docx. Genuinely unresolved in the source material: framed as an honest open problem, not a tidy win. PBOS fix 2026-07-06: reworded a closer that addressed the reader directly with a directive.',
+        posted: false,
     },
     {
         num: 18, date: 'Sun, Aug 16, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Personal Experiences',
@@ -292,6 +310,7 @@ We fixed it properly in the next version, once we'd built the IoT layer that let
 Knowing the right answer was only part of it. The rest was knowing exactly which assumption I was making, shipping it anyway because it was still the right call, and fixing it the moment I could do better.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         note: 'Source: Sling Mobility Story.docx ("not foolproof" is Thariq\'s own phrase, not a paraphrase). PBOS fix 2026-07-06: reworded a recurring antithesis tic into a grounded first-person reflection.',
+        posted: false,
     },
     {
         num: 19, date: 'Tue, Aug 18, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'AI & Product Development',
@@ -306,6 +325,7 @@ That's made me suspicious of any product review that only reports accuracy, prec
 I don't have a clean metric for this yet. What I've started watching instead: does the user check the answer before acting on it, does usage repeat without someone pulling them back in to verify, does asking "why did it say that" get a real answer or a shrug. None of that is as tidy as an accuracy score. It's closer to what actually predicts adoption.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         note: 'PBOS fix 2026-07-06: substantially rewritten, not a line edit. Original had no experiential anchor (failed Content Guardrails\' "write from experience"), skipped straight from claim to lesson (failed Insight Generation), made an unqualified "most AI product teams" claim (failed Devil\'s Advocate), and closed with a literal command ("Ship the trust metric..."). Now explicitly draws its insight from Posts 4, 11, and 17 instead of asserting a bare truism, turning the pre-existing thematic overlap into an intentional synthesis.',
+        posted: false,
     },
     {
         num: 20, date: 'Thu, Aug 20, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'Potential in the Market',
@@ -320,6 +340,7 @@ That's a specific kind of product leader to look for: less "give me the requirem
 If that's the gap on your team, that's the work I keep ending up doing, on purpose.`,
         hashtags: '#ProductManagement #ProductLeadership #Vision2030 #SaudiArabia',
         note: 'Judgment call flag: the closing line is the softest edge of the "no direct CTA" rule: it implies availability without stating it. Cut it if it reads too close to a pitch.',
+        posted: false,
     },
     {
         num: 21, date: 'Sun, Aug 23, 2026', time: '8:00–10:00 AM AST', track: 'Analyst', pillar: 'Crossover: Credibility & Process',
@@ -334,6 +355,7 @@ Building this forced me to ask the same question I ask in product work, more tha
 Sports analytics and enterprise product work share more of a spine than people expect, I've found: both come down to building something that earns trust fast enough to actually get used before the moment it mattered has already passed.`,
         hashtags: '#PerformanceAnalysis #SportsTech #ProductManagement',
         note: "NOT CLEARED: you said 2026-07-05 these three need more time before use. Canonical draft: analyst-thariq/linkedin-crossover-posts.md Draft 1. Also flagged: posting Posts 21-23 back-to-back conflicts with the \"occasional, ~monthly\" crossover cadence in platform-rules.md. PBOS fix 2026-07-06 (wording only, clearance unchanged): reworded an antithesis tic. Second pass, same day (wording only): loosened closing rhythm per the batch-wide 'sounds like AI' fix.",
+        posted: false,
     },
     {
         num: 22, date: 'Tue, Aug 25, 2026', time: '8:00–10:00 AM AST', track: 'Analyst', pillar: 'Crossover: Tactical Opinion',
@@ -346,6 +368,7 @@ Most club-level analytics conversations are still built entirely around what hap
 That's the layer of performance analysis I actually want to spend a career on: less what won the match, more what kept the team available to compete in the next one.`,
         hashtags: '#PerformanceAnalysis #SportsTech #InjuryPrevention',
         note: "NOT CLEARED: same caveat as Post 21. Canonical draft: analyst-thariq/linkedin-crossover-posts.md Draft 2. Second pass 2026-07-06 (wording only, clearance unchanged): loosened closing rhythm per the batch-wide 'sounds like AI' fix.",
+        posted: false,
     },
     {
         num: 23, date: 'Thu, Aug 27, 2026', time: '8:00–10:00 AM AST', track: 'Analyst', pillar: 'Crossover: Credibility & Process',
@@ -358,6 +381,7 @@ Neither is required for the seat I already have. I'm doing them anyway because t
 Credentialing myself on the coaching side of the game has mattered more to how I read the data than getting better at the tools ever did.`,
         hashtags: '#PerformanceAnalysis #SportsTech #BarcaInnovationHub',
         note: 'NOT CLEARED: same caveat as Post 21. Canonical draft: analyst-thariq/linkedin-crossover-posts.md Draft 3. PBOS fix 2026-07-06 (wording only, clearance unchanged): removed an advice-shaped closer, reworded as first-person reflection.',
+        posted: false,
     },
     {
         num: 24,
@@ -391,6 +415,7 @@ Building this while keeping the analysis work on track meant most of it happened
 
 First season done. A lot learned. Nowhere near finished.`,
         hashtags: '#PerformanceAnalysis #SportsTech #GlacisUnitedFC',
-        note: "Written by Thariq, brought to Claude for a PBOS pass 2026-07-12. Data confirmed cleared to share by Thariq directly. Fixed: five prose em dashes removed per the standing no-em-dash rule; three stated-conclusion lines cut or replaced with concrete detail ('pushed me miles outside my comfort zone', 'gave me a real sense of achievement', 'one of the most rewarding things I've done') per Writing DNA's 'avoid advice, describe experience'; factual correction, Gibraltar has two grounds not one, both similarly limited for tactical camera access; V0.3 given its reason (migrated to a self-managed Supabase project) instead of stating the change with no explanation. Hashtags aligned to the established Analyst crossover signature (#PerformanceAnalysis #SportsTech + one topic tag), matching Posts 21-23, rather than the four ad hoc tags in Thariq's original draft. Also fixed, 2026-07-12: 'you need a different approach to solving problems' addressed the reader directly with generic advice; changed to 'I needed a different approach' to keep it in his own experience, per Thariq's confirmation. Score of 8.8 sits just below Post 1's 9.5 opener (that post has a sharper hook) but above most of the Builder batch's Authority/Experience posts (typically 8.0-8.7), reflecting the density of real, specific detail (4,437 events, the version history, the two named constraints) with very little left ungrounded."
+        note: "Written by Thariq, brought to Claude for a PBOS pass 2026-07-12. Data confirmed cleared to share by Thariq directly. Fixed: five prose em dashes removed per the standing no-em-dash rule; three stated-conclusion lines cut or replaced with concrete detail ('pushed me miles outside my comfort zone', 'gave me a real sense of achievement', 'one of the most rewarding things I've done') per Writing DNA's 'avoid advice, describe experience'; factual correction, Gibraltar has two grounds not one, both similarly limited for tactical camera access; V0.3 given its reason (migrated to a self-managed Supabase project) instead of stating the change with no explanation. Hashtags aligned to the established Analyst crossover signature (#PerformanceAnalysis #SportsTech + one topic tag), matching Posts 21-23, rather than the four ad hoc tags in Thariq's original draft. Also fixed, 2026-07-12: 'you need a different approach to solving problems' addressed the reader directly with generic advice; changed to 'I needed a different approach' to keep it in his own experience, per Thariq's confirmation. Score of 8.8 sits just below Post 1's 9.5 opener (that post has a sharper hook) but above most of the Builder batch's Authority/Experience posts (typically 8.0-8.7), reflecting the density of real, specific detail (4,437 events, the version history, the two named constraints) with very little left ungrounded.",
+        posted: true,
     }
 ];
