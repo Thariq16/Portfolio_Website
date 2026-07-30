@@ -4414,14 +4414,6 @@ export const applications: Application[] = [
     "channel": "Company Site/ATS (Workable)",
     "location": "Riyadh, Saudi Arabia",
     "status": "No Response"
-  },
-  {
-    "date": "2026-07-30",
-    "company": "Qiddiya Investment Company",
-    "role": "Senior Manager - Product Owner",
-    "channel": "Indeed",
-    "location": "Riyadh, Saudi Arabia",
-    "status": "No Response"
   }
 ];
 
