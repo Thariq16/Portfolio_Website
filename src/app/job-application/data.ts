@@ -1637,14 +1637,6 @@ export const applications: Application[] = [
     "role": "Manager - Products Management",
     "channel": "Company Site/ATS (Workable)",
     "status": "Rejected",
-    "location": ""
-  },
-  {
-    "date": "2026-02-08",
-    "company": "Qiddiya Investment Company",
-    "role": "Manager - Products Management",
-    "channel": "Indeed",
-    "status": "No Response",
     "location": "Riyadh, Riyadh Province, Saudi Arabia"
   },
   {
@@ -2669,14 +2661,6 @@ export const applications: Application[] = [
     "role": "Senior Manager - Digital Platform",
     "channel": "Company Site/ATS (Workable)",
     "status": "No Response",
-    "location": ""
-  },
-  {
-    "date": "2026-04-22",
-    "company": "Qiddiya Investment Company",
-    "role": "Senior Manager - Digital Platform",
-    "channel": "Indeed",
-    "status": "No Response",
     "location": "Riyadh, Riyadh Province"
   },
   {
@@ -3073,9 +3057,9 @@ export const applications: Application[] = [
   },
   {
     "date": "2026-05-14",
-    "company": "Bayt - Confidential Company",
+    "company": "Confidential Company",
     "role": "Senior Product Development Manager",
-    "channel": "Recruiter/Agency (Bayt)",
+    "channel": "Bayt",
     "status": "No Response",
     "location": ""
   },
