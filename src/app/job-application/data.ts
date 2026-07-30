@@ -4358,6 +4358,70 @@ export const applications: Application[] = [
     "channel": "Company Site/ATS",
     "location": "",
     "status": "No Response"
+  },
+  {
+    "date": "2026-07-29",
+    "company": "CareerFirst Company",
+    "role": "Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-29",
+    "company": "Beanz",
+    "role": "Lead Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Abu Dhabi Emirate, United Arab Emirates",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-30",
+    "company": "Visa",
+    "role": "Manager Saudi Arabia",
+    "channel": "Company Site/ATS (Workday)",
+    "location": "Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-30",
+    "company": "MCG Asia",
+    "role": "Senior Manager",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-30",
+    "company": "Dar Al Riyadh",
+    "role": "Head of Project Management",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-30",
+    "company": "HungerStation",
+    "role": "Fintech Associate",
+    "channel": "Company Site/ATS",
+    "location": "Riyadh",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-30",
+    "company": "Qiddiya Investment Company",
+    "role": "Senior Manager - Product Owner",
+    "channel": "Company Site/ATS (Workable)",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-07-30",
+    "company": "Qiddiya Investment Company",
+    "role": "Senior Manager - Product Owner",
+    "channel": "Indeed",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
   }
 ];
 
