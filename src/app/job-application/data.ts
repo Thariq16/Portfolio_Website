@@ -4414,6 +4414,14 @@ export const applications: Application[] = [
     "channel": "Company Site/ATS (Workable)",
     "location": "Riyadh, Saudi Arabia",
     "status": "No Response"
+  },
+  {
+    "date": "2026-07-28",
+    "company": "Confidential Company",
+    "role": "Product Manager - Fintech",
+    "channel": "Bayt",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
   }
 ];
 
