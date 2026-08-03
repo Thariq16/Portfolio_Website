@@ -4381,7 +4381,7 @@ export const applications: Application[] = [
     "role": "Head of Project Management",
     "channel": "LinkedIn Easy Apply",
     "location": "Riyadh, Saudi Arabia",
-    "status": "No Response"
+    "status": "Rejected"
   },
   {
     "date": "2026-07-30",
@@ -4404,6 +4404,30 @@ export const applications: Application[] = [
     "company": "Confidential Company",
     "role": "Product Manager - Fintech",
     "channel": "Bayt",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-01",
+    "company": "Holool Aloula (NCBS National Company for Business Solutions)",
+    "role": "Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-03",
+    "company": "Aktham",
+    "role": "Senior Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-03",
+    "company": "Vrinda Global",
+    "role": "Product Manager – AI",
+    "channel": "LinkedIn Easy Apply",
     "location": "Riyadh, Saudi Arabia",
     "status": "No Response"
   }
