@@ -42,6 +42,7 @@ export default function PersonalBrandingPage() {
     const [editing, setEditing] = useState<Set<number>>(new Set());
     const [edits, setEdits] = useState<Record<number, string>>({});
     const [copiedNum, setCopiedNum] = useState<number | null>(null);
+    const [openGroups, setOpenGroups] = useState<{ published: boolean; unpublished: boolean }>({ published: true, unpublished: true });
 
     const tracks = useMemo(() => Array.from(new Set(posts.map(p => p.track))).sort(), []);
     const pillars = useMemo(() => Array.from(new Set(posts.map(p => p.pillar))).sort(), []);
@@ -68,8 +69,16 @@ export default function PersonalBrandingPage() {
         const total = posts.length;
         const ready = posts.filter(p => p.status === 'Ready').length;
         const avg = (posts.reduce((a, p) => a + p.score, 0) / total).toFixed(1);
-        return { total, ready, avg };
+        const publishedCount = posts.filter(p => p.posted).length;
+        return { total, ready, avg, publishedCount };
     }, []);
+
+    const publishedPosts = useMemo(() => filtered.filter(p => p.posted), [filtered]);
+    const unpublishedPosts = useMemo(() => filtered.filter(p => !p.posted), [filtered]);
+
+    function toggleGroup(group: 'published' | 'unpublished') {
+        setOpenGroups(prev => ({ ...prev, [group]: !prev[group] }));
+    }
 
     function toggle(num: number) {
         setExpanded(prev => {
@@ -109,6 +118,93 @@ export default function PersonalBrandingPage() {
         }
     }
 
+    function renderCard(p: Post) {
+        const isOpen = expanded.has(p.num);
+        const isEditing = editing.has(p.num);
+        const isEdited = edits[p.num] !== undefined && edits[p.num] !== p.body;
+        const currentBody = edits[p.num] ?? p.body;
+        return (
+            <div key={p.num} className={styles.card}>
+                <div className={styles.cardTop}>
+                    <span className={styles.postNum}>POST {p.num}</span>
+                    <div className={styles.datetime}>
+                        <div className={styles.datetimeD}>{p.date}</div>
+                        <div>{p.time}</div>
+                    </div>
+                </div>
+                <div className={styles.badges}>
+                    <span className={`${styles.badge} ${trackClass(p.track)}`}>{p.track}</span>
+                    <span className={`${styles.badge} ${styles.bPillar}`}>{p.pillar}</span>
+                    <span className={`${styles.badge} ${statusClass(p.status)}`}>{p.status}</span>
+                    {p.posted && <span className={`${styles.badge} ${styles.bPosted}`}>✓ Posted</span>}
+                    <span className={`${styles.badge} ${styles.bFormat}`}>{p.format}</span>
+                    <span className={`${styles.badge} ${styles.bFormat}`}>{p.image ? '📷 Image recommended' : '✎ Text-only'}</span>
+                    {isEdited && <span className={`${styles.badge} ${styles.bEdited}`}>Edited (unsaved)</span>}
+                    <span className={styles.scoreWrap}>
+                        <span className={`${styles.scoreCircle} ${scoreClass(p.score)}`}>{p.score}</span>
+                    </span>
+                </div>
+                <h3 className={styles.cardTitle}>{p.title}</h3>
+                <div className={styles.scoreWhy}>{p.why}</div>
+                {!isOpen && <div className={styles.preview}>{firstParagraph(currentBody)}</div>}
+                {isOpen && !isEditing && (
+                    <div className={styles.fullBody}>
+                        {paragraphs(currentBody).map((para, i) => <p key={i}>{para}</p>)}
+                        {p.links && (
+                            <div className={styles.links}>
+                                <strong>First comment:</strong><br />
+                                {p.links.map(([label, href], i) => (
+                                    <React.Fragment key={href}>
+                                        <a href={href} target="_blank" rel="noopener noreferrer">{label}</a>
+                                        {i < p.links!.length - 1 && <br />}
+                                    </React.Fragment>
+                                ))}
+                            </div>
+                        )}
+                        {p.hashtags && <div className={styles.hashtags}>{p.hashtags}</div>}
+                        {p.note && <div className={styles.cardNote}>{p.note}</div>}
+                    </div>
+                )}
+                {isEditing && (
+                    <div className={styles.editBox}>
+                        <textarea
+                            className={styles.editTextarea}
+                            value={currentBody}
+                            onChange={e => setEdits(prev => ({ ...prev, [p.num]: e.target.value }))}
+                            rows={12}
+                        />
+                        {p.hashtags && <div className={styles.hashtags}>{p.hashtags}</div>}
+                    </div>
+                )}
+                <div className={styles.cardActions}>
+                    <button className={styles.toggleBtn} onClick={() => toggle(p.num)}>
+                        {isOpen ? 'Show less ▲' : 'Read full draft ▼'}
+                    </button>
+                    {!isEditing && (
+                        <button className={styles.toggleBtn} onClick={() => startEdit(p)}>
+                            ✎ Edit
+                        </button>
+                    )}
+                    {isEditing && (
+                        <>
+                            <button className={styles.toggleBtn} onClick={() => stopEdit(p.num)}>
+                                Done editing
+                            </button>
+                            {isEdited && (
+                                <button className={styles.toggleBtnMuted} onClick={() => resetEdit(p)}>
+                                    Reset to original
+                                </button>
+                            )}
+                        </>
+                    )}
+                    <button className={styles.copyBtn} onClick={() => copyForLinkedIn(p)}>
+                        {copiedNum === p.num ? 'Copied ✓' : '📋 Copy for LinkedIn'}
+                    </button>
+                </div>
+            </div>
+        );
+    }
+
     return (
         <main className={styles.main}>
             {/* ── Hero ── */}
@@ -127,9 +223,9 @@ export default function PersonalBrandingPage() {
                         </h1>
                         <p className={styles.heroSubtitle}>
                             {mainTab === 'calendar'
-                                ? `${posts.length} drafted posts (Jul 7 – Aug 27, 2026) · Builder Thariq & Analyst Thariq tracks`
+                                ? `${posts.length} drafted posts (Jul 9 – Aug 27, 2026) · ${stats.publishedCount} published so far`
                                 : mainTab === 'performance'
-                                ? '3 posts published so far · draft-vs-published diffs and LinkedIn analytics'
+                                ? `${stats.publishedCount} posts published so far · draft-vs-published diffs and LinkedIn analytics`
                                 : 'Daily, per-post, weekly, and monthly rhythm for warming up KSA/GCC reach'}
                         </p>
                     </div>
@@ -185,12 +281,16 @@ export default function PersonalBrandingPage() {
                         <div className={styles.kpiNum}>{stats.ready}</div>
                         <div className={styles.kpiLabel}>Ready</div>
                     </div>
+                    <div className={`${styles.kpi} ${styles.kpiPositive}`}>
+                        <div className={styles.kpiNum}>{stats.publishedCount}</div>
+                        <div className={styles.kpiLabel}>Published</div>
+                    </div>
                     <div className={styles.kpi}>
                         <div className={styles.kpiNum}>{stats.avg}</div>
                         <div className={styles.kpiLabel}>Avg score</div>
                     </div>
                     <div className={styles.kpi}>
-                        <div className={styles.kpiNum}>Jul 7 – Aug 27</div>
+                        <div className={styles.kpiNum}>Jul 9 – Aug 27</div>
                         <div className={styles.kpiLabel}>Date range</div>
                     </div>
                 </div>
@@ -224,99 +324,44 @@ export default function PersonalBrandingPage() {
                     <span className={styles.pillCount}>{filtered.length} of {posts.length}</span>
                 </div>
 
-                {/* ── Card Grid ── */}
-                <div className={styles.grid}>
-                    {filtered.map(p => {
-                        const isOpen = expanded.has(p.num);
-                        const isEditing = editing.has(p.num);
-                        const isEdited = edits[p.num] !== undefined && edits[p.num] !== p.body;
-                        const currentBody = edits[p.num] ?? p.body;
-                        return (
-                            <div key={p.num} className={styles.card}>
-                                <div className={styles.cardTop}>
-                                    <span className={styles.postNum}>POST {p.num}</span>
-                                    <div className={styles.datetime}>
-                                        <div className={styles.datetimeD}>{p.date}</div>
-                                        <div>{p.time}</div>
-                                    </div>
+                {/* ── Published / Unpublished Accordion ── */}
+                <div className={styles.accordionSection}>
+                    <button className={styles.accordionHeader} onClick={() => toggleGroup('published')}>
+                        <span className={styles.accordionTitle}>✓ Published</span>
+                        <span className={styles.accordionCount}>{publishedPosts.length}</span>
+                        <span className={`${styles.accordionChevron} ${openGroups.published ? styles.accordionChevronOpen : ''}`}>▾</span>
+                    </button>
+                    {openGroups.published && (
+                        <div className={styles.accordionBody}>
+                            {publishedPosts.length > 0 ? (
+                                <div className={styles.grid}>
+                                    {publishedPosts.map(p => renderCard(p))}
                                 </div>
-                                <div className={styles.badges}>
-                                    <span className={`${styles.badge} ${trackClass(p.track)}`}>{p.track}</span>
-                                    <span className={`${styles.badge} ${styles.bPillar}`}>{p.pillar}</span>
-                                    <span className={`${styles.badge} ${statusClass(p.status)}`}>{p.status}</span>
-                                    {p.posted && <span className={`${styles.badge} ${styles.bPosted}`}>✓ Posted</span>}
-                                    <span className={`${styles.badge} ${styles.bFormat}`}>{p.format}</span>
-                                    <span className={`${styles.badge} ${styles.bFormat}`}>{p.image ? '📷 Image recommended' : '✎ Text-only'}</span>
-                                    {isEdited && <span className={`${styles.badge} ${styles.bEdited}`}>Edited (unsaved)</span>}
-                                    <span className={styles.scoreWrap}>
-                                        <span className={`${styles.scoreCircle} ${scoreClass(p.score)}`}>{p.score}</span>
-                                    </span>
-                                </div>
-                                <h3 className={styles.cardTitle}>{p.title}</h3>
-                                <div className={styles.scoreWhy}>{p.why}</div>
-                                {!isOpen && <div className={styles.preview}>{firstParagraph(currentBody)}</div>}
-                                {isOpen && !isEditing && (
-                                    <div className={styles.fullBody}>
-                                        {paragraphs(currentBody).map((para, i) => <p key={i}>{para}</p>)}
-                                        {p.links && (
-                                            <div className={styles.links}>
-                                                <strong>First comment:</strong><br />
-                                                {p.links.map(([label, href], i) => (
-                                                    <React.Fragment key={href}>
-                                                        <a href={href} target="_blank" rel="noopener noreferrer">{label}</a>
-                                                        {i < p.links!.length - 1 && <br />}
-                                                    </React.Fragment>
-                                                ))}
-                                            </div>
-                                        )}
-                                        {p.hashtags && <div className={styles.hashtags}>{p.hashtags}</div>}
-                                        {p.note && <div className={styles.cardNote}>{p.note}</div>}
-                                    </div>
-                                )}
-                                {isEditing && (
-                                    <div className={styles.editBox}>
-                                        <textarea
-                                            className={styles.editTextarea}
-                                            value={currentBody}
-                                            onChange={e => setEdits(prev => ({ ...prev, [p.num]: e.target.value }))}
-                                            rows={12}
-                                        />
-                                        {p.hashtags && <div className={styles.hashtags}>{p.hashtags}</div>}
-                                    </div>
-                                )}
-                                <div className={styles.cardActions}>
-                                    <button className={styles.toggleBtn} onClick={() => toggle(p.num)}>
-                                        {isOpen ? 'Show less ▲' : 'Read full draft ▼'}
-                                    </button>
-                                    {!isEditing && (
-                                        <button className={styles.toggleBtn} onClick={() => startEdit(p)}>
-                                            ✎ Edit
-                                        </button>
-                                    )}
-                                    {isEditing && (
-                                        <>
-                                            <button className={styles.toggleBtn} onClick={() => stopEdit(p.num)}>
-                                                Done editing
-                                            </button>
-                                            {isEdited && (
-                                                <button className={styles.toggleBtnMuted} onClick={() => resetEdit(p)}>
-                                                    Reset to original
-                                                </button>
-                                            )}
-                                        </>
-                                    )}
-                                    <button className={styles.copyBtn} onClick={() => copyForLinkedIn(p)}>
-                                        {copiedNum === p.num ? 'Copied ✓' : '📋 Copy for LinkedIn'}
-                                    </button>
-                                </div>
-                            </div>
-                        );
-                    })}
+                            ) : (
+                                <div className={styles.emptyState}>No published posts match these filters.</div>
+                            )}
+                        </div>
+                    )}
                 </div>
 
-                {filtered.length === 0 && (
-                    <div className={styles.emptyState}>No posts match these filters.</div>
-                )}
+                <div className={styles.accordionSection}>
+                    <button className={styles.accordionHeader} onClick={() => toggleGroup('unpublished')}>
+                        <span className={styles.accordionTitle}>Unpublished / Drafts</span>
+                        <span className={styles.accordionCount}>{unpublishedPosts.length}</span>
+                        <span className={`${styles.accordionChevron} ${openGroups.unpublished ? styles.accordionChevronOpen : ''}`}>▾</span>
+                    </button>
+                    {openGroups.unpublished && (
+                        <div className={styles.accordionBody}>
+                            {unpublishedPosts.length > 0 ? (
+                                <div className={styles.grid}>
+                                    {unpublishedPosts.map(p => renderCard(p))}
+                                </div>
+                            ) : (
+                                <div className={styles.emptyState}>No unpublished posts match these filters.</div>
+                            )}
+                        </div>
+                    )}
+                </div>
 
                 <p className={styles.footerNote}>
                     Posting window: 8:00–10:00 AM AST (Riyadh) · Builder posts run Sun/Tue/Thu · Analyst crossover posts

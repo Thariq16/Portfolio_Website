@@ -35,12 +35,19 @@ const POST_SUMMARIES: PostSummary[] = [
         impressions: 174, reached: 77, reactions: 5, comments: 2, reposts: 0,
         engagementRate: '4.02%', length: '358 words', lengthVsDraft: '+56 words (+19%)',
     },
+    {
+        num: '25', title: 'Post 25: "Seems like AI slop" flag opinion', track: 'Builder',
+        meta: 'Published Fri Jul 31, 11:28 AM · checked 3 days later',
+        impressions: 299, reached: 163, reactions: 3, comments: 0, reposts: 0,
+        engagementRate: '1.00%', length: '185 words', lengthVsDraft: 'n/a (self-written, no draft)',
+    },
 ];
 
 const BAR_DATA = [
     { label: 'Post 1 (170 words)', widthPct: 23, value: '0.91%' },
     { label: 'Post 24 (330 words)', widthPct: 56, value: '2.24%' },
     { label: 'Post 4 (358 words)', widthPct: 100, value: '4.02%' },
+    { label: 'Post 25 (185 words)', widthPct: 25, value: '1.00%' },
 ];
 
 function trackClass(t: 'Builder' | 'Analyst') {
@@ -50,26 +57,26 @@ function trackClass(t: 'Builder' | 'Analyst') {
 export default function PerformanceAnalysis() {
     return (
         <>
-            <div className={styles.updatedBadge}>Last updated 2026-07-15 (profile-level data added), by Claude</div>
+            <div className={styles.updatedBadge}>Last updated 2026-08-03 (Post 25 analytics added), by Claude</div>
             <p className={styles.perfIntro}>
-                A working analysis of the three posts published so far, matching them against the drafts originally
-                provided, tracking what changed before posting, how long each post is, and what the real LinkedIn data
-                shows. This page isn&apos;t connected to LinkedIn: it&apos;s updated by hand each time a new
-                post-performance-log.xlsx analytics export comes in.
+                A working analysis of the four posts published so far, matching them against the drafts originally
+                provided (where a draft exists), tracking what changed before posting, how long each post is, and
+                what the real LinkedIn data shows. This page isn&apos;t connected to LinkedIn: it&apos;s updated by
+                hand each time a new post-performance-log.xlsx analytics export comes in.
             </p>
 
             {/* KPI Grid */}
             <div className={styles.kpiGrid}>
                 <div className={`${styles.kpi} ${styles.kpiInfo}`}>
-                    <div className={styles.kpiNum}>3</div>
+                    <div className={styles.kpiNum}>4</div>
                     <div className={styles.kpiLabel}>Posts published</div>
                 </div>
                 <div className={styles.kpi}>
-                    <div className={styles.kpiNum}>1,324</div>
+                    <div className={styles.kpiNum}>1,623</div>
                     <div className={styles.kpiLabel}>Total impressions</div>
                 </div>
                 <div className={styles.kpi}>
-                    <div className={styles.kpiNum}>22</div>
+                    <div className={styles.kpiNum}>25</div>
                     <div className={styles.kpiLabel}>Total reactions</div>
                 </div>
                 <div className={styles.kpi}>
@@ -79,10 +86,10 @@ export default function PerformanceAnalysis() {
             </div>
 
             {/* Profile overview */}
-            <h2 className={styles.sectionTitle}>Profile overview: the account, not just these 3 posts</h2>
+            <h2 className={styles.sectionTitle}>Profile overview: the account, not just these 4 posts</h2>
             <p className={styles.sectionSub}>
                 Pulled 2026-07-15 from LinkedIn&apos;s whole-account Content and Audience analytics exports, not the
-                per-post ones. This is the context the per-post numbers above sit inside.
+                per-post ones (predates Post 25). This is the context the per-post numbers above sit inside.
             </p>
             <div className={styles.infoBox}>
                 <h4>The account was dormant, this week is close to its real start</h4>
@@ -115,11 +122,14 @@ export default function PerformanceAnalysis() {
                 </p>
             </div>
 
-            {/* Three posts at a glance */}
-            <h2 className={styles.sectionTitle}>The three posts, at a glance</h2>
+            {/* Four posts at a glance */}
+            <h2 className={styles.sectionTitle}>The four posts, at a glance</h2>
             <p className={styles.sectionSub}>
-                Checked at very different post-ages (6 days, 3 days, same-day): don&apos;t read the impression gap between
-                them as a verdict on which post performed better. See the caveat under the chart below.
+                Checked at very different post-ages (6 days, 3 days, same-day, 3 days): don&apos;t read the impression
+                gap between them as a verdict on which post performed better. See the caveat under the chart below.
+                Post 25 also has the best KSA representation of any post tracked so far: 5% Riyadh region, versus
+                2%, 0%, and 0% on the other three, likely because it&apos;s Authority-type commentary with zero Sri
+                Lanka framing, unlike most of the batch.
             </p>
             <div className={styles.pGrid}>
                 {POST_SUMMARIES.map(p => (
@@ -166,8 +176,8 @@ export default function PerformanceAnalysis() {
             {/* Draft vs published */}
             <h2 className={styles.sectionTitle}>Draft vs. published: what actually changed</h2>
             <p className={styles.sectionSub}>
-                Post 24 was self-written, no draft to compare. Posts 1 and 4 were drafts edited before publishing.
-                Here&apos;s exactly what moved.
+                Posts 24 and 25 were self-written, no draft to compare. Posts 1 and 4 were drafts edited before
+                publishing. Here&apos;s exactly what moved.
             </p>
 
             <div className={styles.diffCard}>
@@ -268,25 +278,27 @@ export default function PerformanceAnalysis() {
             <h2 className={styles.sectionTitle}>What the data is showing so far</h2>
             <p className={styles.sectionSub}>Same analysis logged in <code>PBOS/EXECUTION/03_Knowledge_Evolution.md</code>, kept in sync here.</p>
             <div className={styles.infoBox}>
-                <h4>Consistent across all three posts, regardless of track or format</h4>
+                <h4>Consistent across most posts, regardless of track or format</h4>
                 <p>
                     <strong>Comments take longer to show up than the same-day check suggests.</strong> Post 4 read zero
                     comments same-day, but a follow-up check 4 days later (2026-07-19) found 2, plus a new follower and a
-                    profile view that also weren&apos;t there on day one. Post 1 and Post 24 haven&apos;t been re-checked
-                    since their original pulls, so it&apos;s possible they&apos;ve picked up comments too. This is a
-                    useful correction to the standing rule: don&apos;t judge a post&apos;s comment count from a same-day
-                    or even 3-day check, re-check again after 4-5 days before concluding anything about whether the
-                    &quot;invite comments organically&quot; closer is working.
+                    profile view that also weren&apos;t there on day one. Post 1, Post 24, and Post 25 haven&apos;t been
+                    re-checked since their original pulls, so it&apos;s possible they&apos;ve picked up comments too.
+                    This is a useful correction to the standing rule: don&apos;t judge a post&apos;s comment count from
+                    a same-day or even 3-day check, re-check again after 4-5 days before concluding anything about
+                    whether the &quot;invite comments organically&quot; closer is working.
                 </p>
                 <p>
-                    <strong>Viewer base is Sri Lanka-dominant on every post</strong>, 25%, 34%, and 21% Colombo respectively,
-                    against 2% or 0% Riyadh region each time. This points at the account&apos;s underlying network as the
-                    binding constraint on KSA reach, not any individual post&apos;s content or length.
+                    <strong>Viewer base is Sri Lanka-dominant on most posts, except Post 25</strong>, which is the first
+                    to break the pattern: 25%, 34%, and 21% Colombo on Posts 1/24/4 respectively, against 2%, 0%, and
+                    0% Riyadh region each time, versus Post 25&apos;s 5% Riyadh with zero Sri Lanka framing in the copy.
+                    This points at the account&apos;s underlying network as the binding constraint on KSA reach, and
+                    at topic framing as a lever that can partially offset it.
                 </p>
                 <p>
-                    <strong>Impression counts aren&apos;t comparable across these three</strong> since they were checked at
-                    very different post-ages (6 days, 3 days, same-day). Don&apos;t read Post 4&apos;s low number as a verdict
-                    yet, LinkedIn keeps distributing a post for 24-48 hours after publish.
+                    <strong>Impression counts aren&apos;t comparable across these four</strong> since they were checked at
+                    very different post-ages (6 days, 3 days, same-day, 3 days). Don&apos;t read Post 4&apos;s low number
+                    as a verdict yet, LinkedIn keeps distributing a post for 24-48 hours after publish.
                 </p>
             </div>
 

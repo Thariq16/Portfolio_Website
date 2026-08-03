@@ -193,11 +193,70 @@
     white-space: nowrap;
 }
 
+/* ── Published / Unpublished Accordion ── */
+.accordionSection {
+    margin-top: 1.4rem;
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    overflow: hidden;
+    background: var(--card);
+}
+
+.accordionHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1.1rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: inherit;
+}
+
+.accordionHeader:hover {
+    background: var(--muted);
+}
+
+.accordionTitle {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--foreground);
+}
+
+.accordionCount {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--muted-foreground);
+    background: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 0.1rem 0.55rem;
+}
+
+.accordionChevron {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+    transition: transform 0.2s ease;
+}
+
+.accordionChevronOpen {
+    transform: rotate(180deg);
+}
+
+.accordionBody {
+    padding: 0 1.1rem 1.1rem;
+    border-top: 1px solid var(--border);
+}
+
 /* ── Card Grid ── */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 1.1rem;
+    padding-top: 1.1rem;
 }
 
 .card {
