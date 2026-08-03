@@ -17,8 +17,8 @@ const POST_CV_LABEL  = 'Apr 2 – Jul 1';
 const JUL1_CV_LABEL  = 'Jul 1 – present';
 
 /* ─── Monthly chart config ─── */
-const MONTHS       = ['2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07'];
-const MONTH_LABELS = ['Dec 25', 'Jan 26', 'Feb 26', 'Mar 26', 'Apr 26', 'May 26', 'Jun 26', 'Jul 26'];
+const MONTHS       = ['2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07', '2026-08'];
+const MONTH_LABELS = ['Dec 25', 'Jan 26', 'Feb 26', 'Mar 26', 'Apr 26', 'May 26', 'Jun 26', 'Jul 26', 'Aug 26'];
 const MONTH_IS_POST = MONTHS.map(m => m >= '2026-04');
 
 /* ─── Timeline toggle ─── */
