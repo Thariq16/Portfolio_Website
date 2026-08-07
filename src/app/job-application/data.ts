@@ -4437,7 +4437,7 @@ export const applications: Application[] = [
     "role": "Product Manager",
     "channel": "Company Site/ATS (Ashby)",
     "location": "",
-    "status": "No Response"
+    "status": "Rejected"
   },
   {
     "date": "2026-08-04",
@@ -4573,6 +4573,22 @@ export const applications: Application[] = [
     "role": "Product Owner",
     "channel": "LinkedIn Easy Apply",
     "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "Bureaux.ai",
+    "role": "Digital Product Manager - Balady Project",
+    "channel": "Direct Email + Company Site/ATS",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-07",
+    "company": "Al Mudabir",
+    "role": "Product/Project Manager",
+    "channel": "Direct Email",
+    "location": "",
     "status": "No Response"
   }
 ];
