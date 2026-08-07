@@ -80,6 +80,54 @@ function pct(num: number, den: number): string {
     return Math.round((num / den) * 100) + '%';
 }
 
+/* ─── Country / job-title normalization ─── */
+const COUNTRY_RULES: [RegExp, string][] = [
+    [/saudi arabia|\bksa\b/i, 'Saudi Arabia'],
+    [/united arab emirates|\buae\b/i, 'United Arab Emirates'],
+    [/\bqatar\b|\bdoha\b/i, 'Qatar'],
+    [/\bjordan\b|\bamman\b/i, 'Jordan'],
+    [/sri lanka|colombo|nugegoda/i, 'Sri Lanka'],
+    [/united kingdom|\buk\b|\blondon\b/i, 'United Kingdom'],
+    [/united states|\busa\b/i, 'United States'],
+    [/\bcanada\b/i, 'Canada'],
+    [/\bturkey\b|sisli/i, 'Turkey'],
+    [/sweden|stockholm/i, 'Sweden'],
+    [/european union/i, 'EU (Unspecified)'],
+    [/\bemea\b/i, 'EMEA (Region)'],
+    [/multiple location/i, 'Multiple/Remote'],
+    [/riyadh|jeddah|jiddah|dammam|khobar|madinah|medina|mecca|thuwal|eastern region|king khalid international airport/i, 'Saudi Arabia'],
+    [/dubai|abu dhabi/i, 'United Arab Emirates'],
+];
+function countryFromLocation(location: string | undefined): string {
+    const l = (location || '').trim();
+    if (!l || /^n\/a\b/i.test(l)) return 'Not Specified';
+    for (const [re, country] of COUNTRY_RULES) {
+        if (re.test(l)) return country;
+    }
+    return l;
+}
+
+function roleFamily(role: string | undefined): string {
+    const r = (role || '').toLowerCase();
+    if (!r || /n\/a/.test(r)) return 'Not Specified';
+    if (/product owner/.test(r))                                    return 'Product Owner';
+    if (/product manager|product management/.test(r))               return 'Product Manager';
+    if (/\bproduct\b/.test(r))                                       return 'Product (Other)';
+    if (/program(me)? manager/.test(r))                              return 'Program/Programme Manager';
+    if (/project manager/.test(r))                                   return 'Project Manager';
+    if (/business analyst/.test(r))                                  return 'Business Analyst';
+    if (/business develop/.test(r) || /\bbdm\b/.test(r))             return 'Business Development';
+    if (/performance analyst|video analyst|data analyst|sports analyst|\banalyst\b/.test(r)) return 'Analyst (Other)';
+    if (/\bmanager\b/.test(r))                                       return 'Manager (Other)';
+    if (/sport/.test(r))                                             return 'Sports (Non-PM)';
+    if (/market/.test(r))                                            return 'Marketing';
+    if (/\bsales\b/.test(r))                                         return 'Sales';
+    if (/designer|\bux\b/.test(r))                                   return 'Design/UX';
+    if (/engineer|developer/.test(r))                                return 'Engineering';
+    if (/consultant/.test(r))                                        return 'Consultant';
+    return 'Other';
+}
+
 /* ─── Stats per period ─── */
 interface PeriodStats {
     total:        number;
@@ -286,6 +334,26 @@ export default function JobApplicationPage() {
     }, [activeStats]);
     const maxChannel = Math.max(...channelCounts.map(([, v]) => v), 1);
 
+    const countryCounts = useMemo(() => {
+        const groups: Record<string, number> = {};
+        activeStats.apps.forEach(a => {
+            const c = countryFromLocation(a.location);
+            groups[c] = (groups[c] || 0) + 1;
+        });
+        return Object.entries(groups).sort((a, b) => b[1] - a[1]);
+    }, [activeStats]);
+    const maxCountry = Math.max(...countryCounts.map(([, v]) => v), 1);
+
+    const roleCounts = useMemo(() => {
+        const groups: Record<string, number> = {};
+        activeStats.apps.forEach(a => {
+            const f = roleFamily(a.role);
+            groups[f] = (groups[f] || 0) + 1;
+        });
+        return Object.entries(groups).sort((a, b) => b[1] - a[1]);
+    }, [activeStats]);
+    const maxRole = Math.max(...roleCounts.map(([, v]) => v), 1);
+
     const overallRateNum = parseInt(allStats.responseRate) || 0;
     function rateColor(rate: number, isBaseline: boolean) {
         if (isBaseline) return '#6366f1'; // Overall = neutral baseline marker
@@ -431,6 +499,42 @@ export default function JobApplicationPage() {
                                     <div className={styles.hbarLabel}>{label}</div>
                                     <div className={styles.hbarTrack}>
                                         <div className={styles.hbarFill} style={{ width: `${(val / maxChannel) * 100}%` }} />
+                                    </div>
+                                    <div className={styles.hbarVal}>{val}</div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                {/* ── Country / Job Title breakdown ── */}
+                <div className={styles.chartsGridPair}>
+                    <div className={styles.card}>
+                        <h3 className={styles.cardHeading}>
+                            Applications by Country{timeline !== 'overall' ? `: ${activeTimeline.label}` : ''}
+                        </h3>
+                        <div className={styles.hbarchart}>
+                            {countryCounts.map(([label, val]) => (
+                                <div key={label} className={styles.hbarRow}>
+                                    <div className={styles.hbarLabel}>{label}</div>
+                                    <div className={styles.hbarTrack}>
+                                        <div className={styles.hbarFill} style={{ width: `${(val / maxCountry) * 100}%` }} />
+                                    </div>
+                                    <div className={styles.hbarVal}>{val}</div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <div className={styles.card}>
+                        <h3 className={styles.cardHeading}>
+                            Applications by Job Title{timeline !== 'overall' ? `: ${activeTimeline.label}` : ''}
+                        </h3>
+                        <div className={styles.hbarchart}>
+                            {roleCounts.map(([label, val]) => (
+                                <div key={label} className={styles.hbarRow}>
+                                    <div className={styles.hbarLabel}>{label}</div>
+                                    <div className={styles.hbarTrack}>
+                                        <div className={styles.hbarFill} style={{ width: `${(val / maxRole) * 100}%` }} />
                                     </div>
                                     <div className={styles.hbarVal}>{val}</div>
                                 </div>

@@ -375,6 +375,19 @@
     }
 }
 
+.chartsGridPair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+}
+
+@media (max-width: 800px) {
+    .chartsGridPair {
+        grid-template-columns: 1fr;
+    }
+}
+
 .card {
     background: var(--card);
     border: 1px solid var(--border);
