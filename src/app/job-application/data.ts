@@ -4430,6 +4430,150 @@ export const applications: Application[] = [
     "channel": "LinkedIn Easy Apply",
     "location": "Riyadh, Saudi Arabia",
     "status": "No Response"
+  },
+  {
+    "date": "2026-08-03",
+    "company": "Carwow",
+    "role": "Product Manager",
+    "channel": "Company Site/ATS (Ashby)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-04",
+    "company": "Ansen Technology",
+    "role": "Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Abu Dhabi",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-04",
+    "company": "Calo",
+    "role": "Senior Product Manager",
+    "channel": "Company Site/ATS (Teamtailor)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-05",
+    "company": "Zero to Team",
+    "role": "Please Read Before Applying- Product Builder",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "TRX",
+    "role": "Product Manager – Thermal Generation",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "Tharwah Group",
+    "role": "Digital Product Growth Lead",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "iPay Sri Lanka",
+    "role": "Lead – Banking Products",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Colombo",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "RUMEX",
+    "role": "Associate Business Analyst",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Colombo",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "OSOS",
+    "role": "Product Owner - Platform",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Colombo District",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "Qiddiya Investment Company",
+    "role": "Senior Manager - Product Owner",
+    "channel": "Company Site/ATS (Workable)",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "Enactor LTD",
+    "role": "Product/Programme Manager (Inventory/OMS)",
+    "channel": "Company Site/ATS (Rooster)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "Kainovation Technologies (PVT) Ltd.",
+    "role": "Senior Business Analyst, Product Development",
+    "channel": "Company Site/ATS (Rooster)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "Eurus Technologies",
+    "role": "Product Manager",
+    "channel": "Company Site/ATS (Rooster)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "stc",
+    "role": "Lead Business Development Analyst",
+    "channel": "Company Site/ATS (SuccessFactors)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "ADNOC",
+    "role": "Manager, Innovation & Partnerships",
+    "channel": "Company Site/ATS (SuccessFactors)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "Chalhoub Group",
+    "role": "Store Manager - Chanel Beauty",
+    "channel": "Company Site/ATS (Teamtailor)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "Accenture",
+    "role": "Product Management Manager",
+    "channel": "Company Site/ATS (Workday)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-07",
+    "company": "Xebia",
+    "role": "Product Owner",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
   }
 ];
 
