@@ -4590,6 +4590,14 @@ export const applications: Application[] = [
     "channel": "Direct Email",
     "location": "",
     "status": "No Response"
+  },
+  {
+    "date": "2026-04-13",
+    "company": "Ohod Sports Club",
+    "role": "Performance Analyst",
+    "channel": "Direct Email",
+    "location": "",
+    "status": "No Response"
   }
 ];
 
@@ -4677,6 +4685,18 @@ export const recruiterOutreach: RecruiterOutreach[] = [
     "company": "IDC ABA Employment Services",
     "context": "Recruiter Shweta Kasgar invited via Naukrigulf re: Project Manager – Banking, Dubai (Notice Period: 0-15 days max) - Thariq declined, not interested in working for a non-Islamic bank",
     "channel": "Naukrigulf"
+  },
+  {
+    "date": "2026-08-04",
+    "company": "Sajad Ali B - Linnk Group",
+    "context": "Reached out re: Senior Product Manager - User Acceptance Testing (UAT), Riyadh - Thariq responded with CV",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "Harry Wareham - Linnk Arabia",
+    "context": "Contract Product Manager role, Riyadh - discussed on a phone call (no inbound email found); Thariq followed up by email pushing back on the GCC client-facing experience concern",
+    "channel": "Phone Call"
   }
 ];
 
