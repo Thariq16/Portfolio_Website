@@ -4689,13 +4689,13 @@ export const recruiterOutreach: RecruiterOutreach[] = [
   {
     "date": "2026-08-04",
     "company": "Sajad Ali B - Linnk Group",
-    "context": "Reached out re: Senior Product Manager - User Acceptance Testing (UAT), Riyadh - Thariq responded with CV",
+    "context": "Reached out re: Senior Product Manager - User Acceptance Testing (UAT), Riyadh - Thariq responded with CV. Same recruiting team as Harry Wareham.",
     "channel": "Email"
   },
   {
     "date": "2026-08-06",
     "company": "Harry Wareham - Linnk Arabia",
-    "context": "Contract Product Manager role, Riyadh - discussed on a phone call (no inbound email found); Thariq followed up by email pushing back on the GCC client-facing experience concern",
+    "context": "Contract Product Manager role, Riyadh - discussed on a phone call (no inbound email found); Thariq followed up by email pushing back on the GCC client-facing experience concern. Same recruiting team as Sajad Ali B.",
     "channel": "Phone Call"
   }
 ];
