@@ -41,6 +41,12 @@ const POST_SUMMARIES: PostSummary[] = [
         impressions: 299, reached: 163, reactions: 3, comments: 0, reposts: 0,
         engagementRate: '1.00%', length: '185 words', lengthVsDraft: 'n/a (self-written, no draft)',
     },
+    {
+        num: '8', title: 'Post 8: HudHud Maps review', track: 'Builder',
+        meta: 'Published Wed Aug 5, 8:15 AM · checked 3 days later (updated 2026-08-08, first check was 1 day)',
+        impressions: 9621, reached: 6906, reactions: 30, comments: 6, reposts: 0,
+        engagementRate: '0.37%', length: '327 words', lengthVsDraft: 'Published as the fixed draft, word for word, only hyperlinks and a single image added',
+    },
 ];
 
 const BAR_DATA = [
@@ -48,6 +54,7 @@ const BAR_DATA = [
     { label: 'Post 24 (330 words)', widthPct: 56, value: '2.24%' },
     { label: 'Post 4 (358 words)', widthPct: 100, value: '4.02%' },
     { label: 'Post 25 (185 words)', widthPct: 25, value: '1.00%' },
+    { label: 'Post 8 (327 words)', widthPct: 9, value: '0.37%' },
 ];
 
 function trackClass(t: 'Builder' | 'Analyst') {
@@ -57,9 +64,9 @@ function trackClass(t: 'Builder' | 'Analyst') {
 export default function PerformanceAnalysis() {
     return (
         <>
-            <div className={styles.updatedBadge}>Last updated 2026-08-03 (Post 25 analytics added), by Claude</div>
+            <div className={styles.updatedBadge}>Last updated 2026-08-08 (Post 8 re-checked), by Claude</div>
             <p className={styles.perfIntro}>
-                A working analysis of the four posts published so far, matching them against the drafts originally
+                A working analysis of the five posts published so far, matching them against the drafts originally
                 provided (where a draft exists), tracking what changed before posting, how long each post is, and
                 what the real LinkedIn data shows. This page isn&apos;t connected to LinkedIn: it&apos;s updated by
                 hand each time a new post-performance-log.xlsx analytics export comes in.
@@ -68,28 +75,28 @@ export default function PerformanceAnalysis() {
             {/* KPI Grid */}
             <div className={styles.kpiGrid}>
                 <div className={`${styles.kpi} ${styles.kpiInfo}`}>
-                    <div className={styles.kpiNum}>4</div>
+                    <div className={styles.kpiNum}>5</div>
                     <div className={styles.kpiLabel}>Posts published</div>
                 </div>
                 <div className={styles.kpi}>
-                    <div className={styles.kpiNum}>1,623</div>
+                    <div className={styles.kpiNum}>11,244</div>
                     <div className={styles.kpiLabel}>Total impressions</div>
                 </div>
                 <div className={styles.kpi}>
-                    <div className={styles.kpiNum}>25</div>
+                    <div className={styles.kpiNum}>55</div>
                     <div className={styles.kpiLabel}>Total reactions</div>
                 </div>
                 <div className={styles.kpi}>
-                    <div className={styles.kpiNum}>2</div>
+                    <div className={styles.kpiNum}>8</div>
                     <div className={styles.kpiLabel}>Total comments</div>
                 </div>
             </div>
 
             {/* Profile overview */}
-            <h2 className={styles.sectionTitle}>Profile overview: the account, not just these 4 posts</h2>
+            <h2 className={styles.sectionTitle}>Profile overview: the account, not just these 5 posts</h2>
             <p className={styles.sectionSub}>
                 Pulled 2026-07-15 from LinkedIn&apos;s whole-account Content and Audience analytics exports, not the
-                per-post ones (predates Post 25). This is the context the per-post numbers above sit inside.
+                per-post ones (predates Posts 25 and 8). This is the context the per-post numbers above sit inside.
             </p>
             <div className={styles.infoBox}>
                 <h4>The account was dormant, this week is close to its real start</h4>
@@ -122,14 +129,12 @@ export default function PerformanceAnalysis() {
                 </p>
             </div>
 
-            {/* Four posts at a glance */}
-            <h2 className={styles.sectionTitle}>The four posts, at a glance</h2>
+            {/* Five posts at a glance */}
+            <h2 className={styles.sectionTitle}>The five posts, at a glance</h2>
             <p className={styles.sectionSub}>
-                Checked at very different post-ages (6 days, 3 days, same-day, 3 days): don&apos;t read the impression
-                gap between them as a verdict on which post performed better. See the caveat under the chart below.
-                Post 25 also has the best KSA representation of any post tracked so far: 5% Riyadh region, versus
-                2%, 0%, and 0% on the other three, likely because it&apos;s Authority-type commentary with zero Sri
-                Lanka framing, unlike most of the batch.
+                Checked at different post-ages (6, 4, 3, 3, and 3 days, Post 8 re-checked 2026-08-08): don&apos;t
+                read the impression gap between them as a verdict on which post performed better. See the caveat
+                under the chart below.
             </p>
             <div className={styles.pGrid}>
                 {POST_SUMMARIES.map(p => (
@@ -151,10 +156,11 @@ export default function PerformanceAnalysis() {
             {/* Bar chart */}
             <h2 className={styles.sectionTitle}>Length vs. engagement rate</h2>
             <p className={styles.sectionSub}>
-                Engagement rate = (reactions + comments + reposts) ÷ impressions. Post 4&apos;s number below is now from
+                Engagement rate = (reactions + comments + reposts) ÷ impressions. Post 4&apos;s number below is from
                 a 4-day-later check (updated 2026-07-19); its first check was same-day and read 5.00% off just 4
                 reactions, a reminder of how noisy this metric is at low volumes. Still not a reliable read with only
-                three data points.
+                five data points, and Post 8 below is the clearest example why: huge reach, lowest engagement rate
+                of any post so far, see the caveat below the chart.
             </p>
             <div className={styles.barBox}>
                 {BAR_DATA.map(b => (
@@ -167,9 +173,14 @@ export default function PerformanceAnalysis() {
                     </div>
                 ))}
                 <p className={styles.barCaveat}>
-                    No consistent length-to-engagement pattern yet: the shortest post (Post 1) has the lowest rate, but
-                    the two longer posts don&apos;t move in a clean line either. Worth re-plotting once 8-10 posts are
-                    logged before treating length as a real driver either way.
+                    No consistent length-to-engagement pattern yet: the shortest post (Post 1, 170 words) and the
+                    second-shortest (Post 25, 185 words) sit near the bottom, but Post 24 (330 words) and Post 4
+                    (358 words) don&apos;t move together either, one&apos;s mid-pack, one&apos;s the highest. Post 8
+                    (327 words, almost the same length as Post 24) has the lowest rate of any post despite having by
+                    far the largest audience, which is the clearest evidence yet that engagement rate and reach are
+                    measuring different things: a post can win decisively on distribution while still converting a
+                    smaller share of viewers into a reaction. Worth re-plotting once 8-10 posts are logged before
+                    treating length as a real driver either way.
                 </p>
             </div>
 
@@ -278,27 +289,60 @@ export default function PerformanceAnalysis() {
             <h2 className={styles.sectionTitle}>What the data is showing so far</h2>
             <p className={styles.sectionSub}>Same analysis logged in <code>PBOS/EXECUTION/03_Knowledge_Evolution.md</code>, kept in sync here.</p>
             <div className={styles.infoBox}>
-                <h4>Consistent across most posts, regardless of track or format</h4>
+                <h4>Post 8 (HudHud Maps review) is the first real break in the pattern, updated 2026-08-08</h4>
                 <p>
-                    <strong>Comments take longer to show up than the same-day check suggests.</strong> Post 4 read zero
-                    comments same-day, but a follow-up check 4 days later (2026-07-19) found 2, plus a new follower and a
-                    profile view that also weren&apos;t there on day one. Post 1, Post 24, and Post 25 haven&apos;t been
-                    re-checked since their original pulls, so it&apos;s possible they&apos;ve picked up comments too.
-                    This is a useful correction to the standing rule: don&apos;t judge a post&apos;s comment count from
-                    a same-day or even 3-day check, re-check again after 4-5 days before concluding anything about
-                    whether the &quot;invite comments organically&quot; closer is working.
+                    <strong>Reach jumped by an order of magnitude, and it&apos;s the first post with real KSA volume, not
+                    just KSA percentage.</strong> Re-checked 3 days after publish (was 1 day): 9,621 impressions, more
+                    than 14x Post 1&apos;s previous-best 658, 30 reactions, and 6 comments, up from 2 at the 1-day check,
+                    the biggest comment count of any tracked post by a wide margin. Viewer demographics now show 8%
+                    Riyadh Region plus 6% Makkah Region, 14% combined KSA representation (up slightly from 13% at the
+                    first check), the best of any post tracked. The company list now also includes NEOM, alongside
+                    HudHud Maps itself, Careem, PIF, stc, and Elm, real relevant KSA tech/enterprise/giga-project names,
+                    not just geography. This is the first post that suggests content and format, not just the
+                    underlying network, can move the needle: it&apos;s the second Authority-type, non-Sri-Lanka post in
+                    a row to outperform on KSA reach (after Post 25&apos;s 5% Riyadh), and it&apos;s real hands-on
+                    product commentary rather than a personal story, which may be resonating with the same PM/tech
+                    audience the account&apos;s follower base already skews toward.
                 </p>
                 <p>
-                    <strong>Viewer base is Sri Lanka-dominant on most posts, except Post 25</strong>, which is the first
-                    to break the pattern: 25%, 34%, and 21% Colombo on Posts 1/24/4 respectively, against 2%, 0%, and
-                    0% Riyadh region each time, versus Post 25&apos;s 5% Riyadh with zero Sri Lanka framing in the copy.
-                    This points at the account&apos;s underlying network as the binding constraint on KSA reach, and
-                    at topic framing as a lever that can partially offset it.
+                    <strong>But reach and engagement rate are not the same thing, and this post is the clearest proof
+                    yet.</strong> Despite the huge and growing audience, Post 8&apos;s engagement rate is still just
+                    0.37% at the 3-day check (was 0.38% at 1 day), the lowest of any tracked post, well below Post
+                    1&apos;s 0.91% on a fraction of the reach. It published with a single image, not the full
+                    carousel/document treatment the review recommended, so this isn&apos;t a clean
+                    text-only-versus-carousel comparison, worth watching whether the full carousel format would move
+                    the rate further, or whether reach and rate genuinely trade off independent of format. One notable
+                    oddity: saves dropped from 2 to 0 between the two checks, possibly an export quirk rather than a
+                    real un-save, worth watching if it recurs on future re-checks.
+                </p>
+
+                <h4>Consistent across all five posts, regardless of track or format</h4>
+                <p>
+                    <strong>Comments take longer to show up than the same-day check suggests, and Post 8&apos;s
+                    re-check is the strongest evidence yet.</strong> Post 4 read zero comments same-day, but a
+                    follow-up check 4 days later (2026-07-19) found 2. Post 25, checked 3 days after publish, still
+                    read zero. Post 8 read 2 comments at just 1 day, already the fastest of any post, then grew to 6
+                    by day 3, a 3x increase in comments alone over 2 more days. Post 1 and Post 24 still haven&apos;t
+                    been re-checked since their original pulls. Standing rule unchanged and now better evidenced:
+                    don&apos;t judge a post&apos;s comment count from a same-day or even 1-day check, re-check again
+                    after a few more days, especially on a high-reach post.
                 </p>
                 <p>
-                    <strong>Impression counts aren&apos;t comparable across these four</strong> since they were checked at
-                    very different post-ages (6 days, 3 days, same-day, 3 days). Don&apos;t read Post 4&apos;s low number
-                    as a verdict yet, LinkedIn keeps distributing a post for 24-48 hours after publish.
+                    <strong>Viewer base is still Sri Lanka-dominant on four of five posts</strong>, 25%, 34%, 21%, and
+                    24% Colombo respectively, against 2%, 0%, 0%, and 5% Riyadh region on Post 25. Post 8 breaks this
+                    too, just 1% Colombo against 14% combined KSA regions at the latest check, the first post where the
+                    Sri Lanka signal essentially disappears. Two data points now (Posts 25 and 8) both non-Sri-Lanka,
+                    Authority-type content with meaningfully better KSA representation than the Experience-type batch.
+                    Still not proof the underlying network constraint is gone, most of the account&apos;s followers are
+                    still Colombo-based, but it&apos;s a repeating pattern now, not a one-off.
+                </p>
+                <p>
+                    <strong>Impression counts aren&apos;t comparable across these five</strong> since they were checked
+                    at very different post-ages (6, 3, 4, 3, and 3 days, Post 8&apos;s earlier 1-day check has now been
+                    superseded by the 3-day re-check above). Don&apos;t read a low number as a verdict yet, LinkedIn
+                    keeps distributing a post well past the first 24-48 hours, and Post 8&apos;s own growth between its
+                    two checks (impressions, reactions, and especially comments all up) is direct proof of that inside
+                    a single post, not just across different posts.
                 </p>
             </div>
 

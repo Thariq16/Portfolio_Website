@@ -157,13 +157,34 @@ A capability being technically real never meant it was ready to ship: the harder
     },
 
     {
-        num: 8, date: 'Thu, Jul 23, 2026', time: '8:00–10:00 AM AST', track: 'Builder', pillar: 'KSA Product Reviews',
-        title: 'KSA Product Review #2: SKELETON, needs your input', status: 'Skeleton', format: 'Carousel (pending)', image: true, score: 2,
-        why: 'Not a real draft yet: waiting on your choice of product before this can be written.',
-        body: `Same reason as Post 2, not fabricating specifics about a real, named product. Structure this one around a different category if you want variety (e.g. fintech/BNPL, delivery/super-app, booking/travel): send me the product and the specific detail, and I'll write it the same way as Post 2's structure.`,
-        hashtags: '',
-        note: '',
-        posted: false,
+        num: 8, date: 'Wed, Aug 5, 2026', time: '8:15 AM AST', track: 'Builder', pillar: 'KSA Product Reviews',
+        title: 'HudHud Maps review: AlUla to Madinah road test', status: 'Ready', format: 'Single image', image: true, score: 8.9,
+        why: "Real hands-on testing, not desk research like Post 2's Jeeny review, arguably stronger evidence for the same pillar. Specific, observable UX detail throughout (camera-type split, the correction feature, the exact confirmation text). Fills the KSA Product Reviews skeleton that sat open since 2026-07-08. Original draft had a real candidate-not-consultant violation (a numbered feature list addressed straight at HudHud) and the same antithesis-epigram tic already cut from five other posts, both fixed 2026-08-05, see diff below. Published Aug 5 8:15 AM with a single image, not the full carousel/document treatment the review recommended, but not pure text-only either. Best-performing post on the account by a wide margin, and still climbing at the 3-day re-check (2026-08-08): 9,621 impressions, 6,906 reached, 30 reactions, 6 comments (up from 2 at the 1-day check, the biggest comment count of any tracked post), 8 new followers. Also the best KSA regional split of any tracked post: 8% Riyadh Region + 6% Makkah Region, 14% combined, versus 2-5% on every prior post.",
+        body: `I drove from AlUla to Madinah last week, 336 km, and decided to test HudHud Maps instead of Google Maps.
+
+What stood out immediately: live alerts for upcoming traffic cameras, split by type. Overhead cameras for seatbelt and mobile phone violations, roadside cameras for speed. For anyone driving into Saudi Arabia for the first time, that alone is worth the download.
+
+It's exactly the kind of hyperlocal detail where a Saudi-built map has a real advantage over a global competitor.
+
+I also liked that HudHud lets you correct the posted speed limit on any road segment when the app's default doesn't match reality. That's the right instinct: a local team can pull in corrections faster than a global one ever will. The open question is what happens when a correction is wrong or submitted in bad faith. I don't know yet how HudHud catches that, and a feature like this only holds up if they do.
+
+When I submitted one, the confirmation simply said "Submitted, thanks for helping others." A small UX detail, but closing the feedback loop would make contributors feel their input matters.
+
+As a Product Manager, here's what impressed me most: HudHud already clears the bar for everyday use, and it's clearly iterating from real driving conditions instead of waiting for perfection.
+
+If I were the PM on this, four gaps I'd prioritize next:
+
+1. Flag network dead zones before you lose signal, not after.
+2. Animal crossing alerts. The road signs already exist.
+3. Flag roads without street lighting, the same way speed cameras already are.
+4. Cleaner English transliteration of Arabic place names outside the main cities, where the data is still catching up rather than the design being wrong.
+
+If even a couple of these are already on the roadmap, I'm genuinely excited to see where this goes.
+
+What's one hyperlocal detail you wish global map apps got right in your country?`,
+        hashtags: '#ProductLeadership #SaudiArabia #Vision2030 #ProductManagement #UserFeedback',
+        note: "Real drive, real self-tested UX detail, no fabrication or secondary sourcing needed, unlike Post 2 and 6 which required citations. Fixed 2026-08-05, three issues caught on review against PBOS/EDITORIAL/02_Content_Guardrails.md and PBOS/EDITORIAL/03_Generic_Language_Filter.md: (1) narrative-stance violation, the numbered feature list originally read as unsolicited advice handed to HudHud's team, reframed as 'if I were the PM on this' per the established candidate-not-consultant fix pattern (see Pillars 2 and 4). (2) An ungrounded universal formula ('crowdsourced knowledge is how you outpace a competitor') was regrounded with an acknowledged trade-off, per Devil's Advocate's Simplicity Test, since crowdsourced correction systems have an obvious failure mode, bad-faith or wrong edits, that the original draft didn't address. (3) 'That's exactly how local-first products should be built' and the closing 'The best local products don't beat global competitors by copying them, they win by solving problems only locals notice' were both cut, the same antithesis-epigram tic already removed from Posts 1, 4, 16, 18, and 21. Separately flagged, not yet fixed: Post 2's Jeeny review still has the same wrong-stance phrasing ('Two fixes I'd want to test if I were on this') that Content_Guardrails.md uses as its own example of the violation, worth revisiting. Published 2026-08-05, 8:15 AM, as the exact fixed text approved 2026-08-05, LinkedIn hyperlinks added to the company mention and hashtags, plus a single image attached, otherwise unchanged word for word. Real analytics logged 2026-08-06 (1 day after publish): 7,816 impressions, 5,577 members reached, 28 reactions, 2 comments, 2 saves, 0 reposts, 43 profile views, 8 new followers. Re-checked 2026-08-08 (3 days after publish): 9,621 impressions, 6,906 reached, 30 reactions, 6 comments (tripled from the 1-day check, the biggest comment count of any tracked post), 0 saves (down from 2, possibly an export quirk), 50 profile views, 10 new followers, by a wide margin the best-performing post on the account so far, more than 14x the previous best (Post 1's 658 impressions). Viewer demographics now show 8% Riyadh Region and 6% Makkah Region, 14% combined, the best and first double-digit KSA regional showing of any tracked post, and the company list now also includes NEOM alongside HudHud Maps itself, Careem, PIF, stc, and Elm. Published with a single image, not the full carousel/document treatment the score/why field originally recommended, worth noting since it still outperformed every carousel/document post already tracked despite the lighter format.",
+        posted: true,
     },
 
     {
