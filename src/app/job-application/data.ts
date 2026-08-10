@@ -4598,6 +4598,46 @@ export const applications: Application[] = [
     "channel": "Direct Email",
     "location": "",
     "status": "No Response"
+  },
+  {
+    "date": "2026-08-07",
+    "company": "Copeland",
+    "role": "Product cum Portfolio Marketer",
+    "channel": "Company Site/ATS (Workday)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-07",
+    "company": "Zopa",
+    "role": "Senior Product Manager - B2B",
+    "channel": "Company Site/ATS (Lever)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-10",
+    "company": "Adree",
+    "role": "Business Analyst, Senior",
+    "channel": "Company Site/ATS (Workable)",
+    "location": "Riyadh",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-10",
+    "company": "InnovationTeam",
+    "role": "Senior Business Analyst",
+    "channel": "Company Site/ATS (Workable)",
+    "location": "Riyadh",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-10",
+    "company": "CREALOGIX",
+    "role": "Business Expert",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh",
+    "status": "No Response"
   }
 ];
 
