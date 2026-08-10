@@ -3524,7 +3524,7 @@ export const applications: Application[] = [
     "company": "Optasia",
     "role": "Senior Product Manager, Fintech",
     "channel": "Company Site/ATS (Workable)",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -3532,7 +3532,7 @@ export const applications: Application[] = [
     "company": "Optasia",
     "role": "Senior Product Manager, Fintech",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Dubai"
   },
   {
@@ -4637,6 +4637,22 @@ export const applications: Application[] = [
     "role": "Business Expert",
     "channel": "LinkedIn Easy Apply",
     "location": "Riyadh",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "Qiddiya Investment Company",
+    "role": "Manager - Product Owner",
+    "channel": "Company Site/ATS (Workable)",
+    "location": "",
+    "status": "Rejected"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "CSC",
+    "role": "Senior Business Development Manager",
+    "channel": "Company Site/ATS (Oracle)",
+    "location": "",
     "status": "No Response"
   }
 ];
