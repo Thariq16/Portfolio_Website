@@ -4044,7 +4044,7 @@ export const applications: Application[] = [
     "company": "AVTECH Sweden",
     "role": "Product Manager / Project Manager - Aviation & International Collaboration",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Stockholm"
   },
   {
@@ -4325,7 +4325,7 @@ export const applications: Application[] = [
     "role": "Senior Product Manager (Fintech)",
     "channel": "LinkedIn Easy Apply",
     "location": "Riyadh, Saudi Arabia",
-    "status": "No Response"
+    "status": "Rejected"
   },
   {
     "date": "2026-07-28",
@@ -4485,7 +4485,7 @@ export const applications: Application[] = [
     "role": "Lead – Banking Products",
     "channel": "LinkedIn Easy Apply",
     "location": "Colombo",
-    "status": "No Response"
+    "status": "Rejected"
   },
   {
     "date": "2026-08-06",
@@ -4501,7 +4501,7 @@ export const applications: Application[] = [
     "role": "Product Owner - Platform",
     "channel": "LinkedIn Easy Apply",
     "location": "Colombo District",
-    "status": "No Response"
+    "status": "Rejected"
   },
   {
     "date": "2026-08-06",
