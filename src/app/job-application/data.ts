@@ -1052,7 +1052,7 @@ export const applications: Application[] = [
     "company": "Salla",
     "role": "Associate Product Manager (Tamheer)",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Jiddah"
   },
   {
@@ -1340,7 +1340,7 @@ export const applications: Application[] = [
     "company": "Salla",
     "role": "Senior Product Designer Web & Mobile",
     "channel": "Indeed",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Jeddah, Makkah Province, Saudi Arabia"
   },
   {
@@ -4373,7 +4373,7 @@ export const applications: Application[] = [
     "role": "Senior Manager",
     "channel": "LinkedIn Easy Apply",
     "location": "Riyadh, Saudi Arabia",
-    "status": "No Response"
+    "status": "Rejected"
   },
   {
     "date": "2026-07-30",
@@ -4613,7 +4613,7 @@ export const applications: Application[] = [
     "role": "Senior Product Manager - B2B",
     "channel": "Company Site/ATS (Lever)",
     "location": "",
-    "status": "No Response"
+    "status": "Rejected"
   },
   {
     "date": "2026-08-10",
@@ -4652,6 +4652,286 @@ export const applications: Application[] = [
     "company": "CSC",
     "role": "Senior Business Development Manager",
     "channel": "Company Site/ATS (Oracle)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-06",
+    "company": "Undisclosed Company (via Manatal)",
+    "role": "Product Manager - Delivery & Platform",
+    "channel": "Company Site/ATS",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-10",
+    "company": "Adree",
+    "role": "Delivery Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-10",
+    "company": "Derayah Financial",
+    "role": "Data Privacy Manager",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-10",
+    "company": "Müller's Solutions",
+    "role": "Business and Digital Solutions Expert",
+    "channel": "Company Site/ATS (Workable)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-11",
+    "company": "Halian",
+    "role": "Product Owner (m/f/d)",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Abu Dhabi Emirate, United Arab Emirates",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-11",
+    "company": "Halian",
+    "role": "AI Product Manager (m/f/d)",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Abu Dhabi Emirate, United Arab Emirates",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-11",
+    "company": "Meituan",
+    "role": "Private Label Expert",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-11",
+    "company": "Kinetic Business Solutions",
+    "role": "Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-11",
+    "company": "Systems Arabia",
+    "role": "Digital Portfolio Lead",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-11",
+    "company": "Astek",
+    "role": "Senior product and implementation consultant",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Jeddah",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-11",
+    "company": "NeoStats",
+    "role": "Cards Consulting Program Lead",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-11",
+    "company": "National Initiative Human Resource Company",
+    "role": "Product Development Manager",
+    "channel": "LinkedIn Easy Apply",
+    "location": "King Abdullah Economic City",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-11",
+    "company": "PSD Group",
+    "role": "Senior Product Analyst",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Jeddah",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-11",
+    "company": "Zad Holding",
+    "role": "F&B Creative & Innovation Specialist",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Jeddah",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-11",
+    "company": "CHAMP Cargosystems",
+    "role": "Senior Product Analyst",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Jeddah",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-11",
+    "company": "SiFi",
+    "role": "Growth Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-11",
+    "company": "Axis",
+    "role": "Senior Product Manager - B2C",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Cairo",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-11",
+    "company": "Salt",
+    "role": "IT Project Manager",
+    "channel": "Company Site/ATS (Broadbean)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-11",
+    "company": "Aldar Education",
+    "role": "Teacher - Computer Science/ICT",
+    "channel": "Company Site/ATS",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-11",
+    "company": "Mashreq",
+    "role": "Customer Acquisition Manager NEO.Injaz - RBG - Neo Unit.41.Retail Banking Group",
+    "channel": "Company Site/ATS (Oracle)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-11",
+    "company": "Takamol",
+    "role": "Business Analysis Manager",
+    "channel": "Company Site/ATS",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "TAWANTECH",
+    "role": "Payment Solutions & Cash Management",
+    "channel": "Company Site/ATS (Workable)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "Mira",
+    "role": "Senior Product Manager",
+    "channel": "Company Site/ATS (Top.co)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "Rimthan",
+    "role": "Senior Product Manager - AI-Enabled Ventures",
+    "channel": "Company Site/ATS",
+    "location": "Remote",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "Eva Pharma",
+    "role": "Senior Product Manager - Limitless Naturals",
+    "channel": "Company Site/ATS (Workable)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "Toters",
+    "role": "Senior Product Manager",
+    "channel": "Company Site/ATS (BambooHR)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "Raffles The Red Sea",
+    "role": "Assistant IT Manager",
+    "channel": "Company Site/ATS (SmartRecruiters)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "Fairmont",
+    "role": "IT Coordinator",
+    "channel": "Company Site/ATS (SmartRecruiters)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "Schneider Electric",
+    "role": "Project Manager",
+    "channel": "Company Site/ATS (iCIMS)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "Ooredoo Qatar",
+    "role": "Manager AI Products",
+    "channel": "Company Site/ATS (SniperHire)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "Imploy",
+    "role": "Operation & Project Manager",
+    "channel": "Company Site/ATS (Imploy)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "Imploy",
+    "role": "Technical & Delivery Manager",
+    "channel": "Company Site/ATS (Imploy)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "Imploy",
+    "role": "Technical Project Manager",
+    "channel": "Company Site/ATS (Imploy)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "Imploy",
+    "role": "Product Manager",
+    "channel": "Company Site/ATS (Imploy)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "Najla",
+    "role": "Product Manager",
+    "channel": "Company Site/ATS (Imploy)",
     "location": "",
     "status": "No Response"
   }
