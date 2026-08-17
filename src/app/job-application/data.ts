@@ -4677,7 +4677,7 @@ export const applications: Application[] = [
     "role": "Data Privacy Manager",
     "channel": "LinkedIn Easy Apply",
     "location": "Riyadh, Saudi Arabia",
-    "status": "No Response"
+    "status": "Rejected"
   },
   {
     "date": "2026-08-10",
@@ -4933,6 +4933,190 @@ export const applications: Application[] = [
     "role": "Product Manager",
     "channel": "Company Site/ATS (Imploy)",
     "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "InnovationTeam",
+    "role": "Senior Product Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "location": "Riyadh",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "Delnord Trading LLC",
+    "role": "Product Manager",
+    "channel": "Bayt.com",
+    "location": "Dubai, UAE",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "Career Maker Bahrain",
+    "role": "Prepaid Card Product Manager",
+    "channel": "Bayt.com",
+    "location": "Bahrain",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-12",
+    "company": "Easa Husain Al-Yousifi & Sons co.",
+    "role": "Product Manager",
+    "channel": "Bayt.com",
+    "location": "Kuwait",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-13",
+    "company": "HungerStation",
+    "role": "Senior Product Manager-New Initiatives",
+    "channel": "Company Site/ATS (Delivery Hero)",
+    "location": "Riyadh",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-13",
+    "company": "CareerFirst Company",
+    "role": "Product Owner Lead",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-14",
+    "company": "ABIS",
+    "role": "Associate Business System Analyst",
+    "channel": "Company Site/ATS (Workable)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-14",
+    "company": "Innomotics",
+    "role": "Project Manager",
+    "channel": "Company Site/ATS",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-14",
+    "company": "JODAYN",
+    "role": "Business Innovation Analyst",
+    "channel": "Company Site/ATS (Workable)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-14",
+    "company": "Rawaj - Human Capital Management",
+    "role": "Product Manager - Travel Solutions",
+    "channel": "Company Site/ATS (TalentLyft)",
+    "location": "Riyadh, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-14",
+    "company": "Master-Works",
+    "role": "Product, Senior Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-14",
+    "company": "Hire Fellows",
+    "role": "Customer Experience Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-14",
+    "company": "Stripe",
+    "role": "Product Manager, Global Expansion (MENA)",
+    "channel": "Company Site/ATS (Greenhouse)",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-14",
+    "company": "Confidential",
+    "role": "Coffee Quality Manager – Café Industry",
+    "channel": "Indeed",
+    "location": "Al Madinah",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-14",
+    "company": "AlUla Club",
+    "role": "Digital Marketing Lead",
+    "channel": "Indeed",
+    "location": "Madinah, Al Madinah Province",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-14",
+    "company": "Qiddiya Investment Company",
+    "role": "Senior Manager - Product Owner",
+    "channel": "Indeed",
+    "location": "Riyadh, Riyadh Province",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-16",
+    "company": "alfanar",
+    "role": "Business Analyst",
+    "channel": "Company Site/ATS",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-16",
+    "company": "ADCB",
+    "role": "Senior Specialist - Business Banking Analytics and MIS",
+    "channel": "Company Site/ATS",
+    "location": "",
+    "status": "Rejected"
+  },
+  {
+    "date": "2026-08-16",
+    "company": "Apex AI Arabia",
+    "role": "Account Manager",
+    "channel": "Company Site/ATS",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-16",
+    "company": "Apex AI Arabia",
+    "role": "Go-to-Market Manager",
+    "channel": "Company Site/ATS",
+    "location": "",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-16",
+    "company": "Darb station",
+    "role": "Information Technology Manager",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Makkah, Saudi Arabia",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-16",
+    "company": "Halian",
+    "role": "AI Product Manager (m/f/d)",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Abu Dhabi",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-17",
+    "company": "GO Telecom - قو للاتصالات",
+    "role": "Senior Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "location": "Riyadh, Saudi Arabia",
     "status": "No Response"
   }
 ];
