@@ -5037,7 +5037,7 @@ export const applications: Application[] = [
     "role": "Product Manager, Global Expansion (MENA)",
     "channel": "Company Site/ATS (Greenhouse)",
     "location": "",
-    "status": "No Response"
+    "status": "Rejected"
   },
   {
     "date": "2026-08-14",
@@ -5118,6 +5118,118 @@ export const applications: Application[] = [
     "channel": "LinkedIn Easy Apply",
     "location": "Riyadh, Saudi Arabia",
     "status": "No Response"
+  },
+  {
+    "date": "2026-05-14",
+    "company": "Bayt - Confidential Company",
+    "role": "Senior Product Development Manager",
+    "channel": "Recruiter/Agency (Bayt)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-08-10",
+    "company": "Streamax MENA",
+    "role": "Business Development Manager",
+    "channel": "Indeed",
+    "location": "Riyadh",
+    "status": "No Response"
+  },
+  {
+    "date": "2026-08-17",
+    "company": "Sahlpay",
+    "role": "Product Manager / Senior Product Manager",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-08-18",
+    "company": "Abu Dhabi Commercial Bank (ADCB)",
+    "role": "Product Owner - Generative AI",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-08-18",
+    "company": "Abu Dhabi Commercial Bank (ADCB)",
+    "role": "Senior Product Owner - AI Solutions",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-08-18",
+    "company": "Santechture",
+    "role": "Business Analyst KSA",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-08-18",
+    "company": "Payshia Financial Tech",
+    "role": "FinTech Product Manager",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Dammam, Saudi Arabia"
+  },
+  {
+    "date": "2026-08-21",
+    "company": "Weblife/allintalent",
+    "role": "Senior Product Manager – Digital Products",
+    "channel": "Company Site/ATS",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-08-21",
+    "company": "Linnk Group",
+    "role": "Product Manager/Product Owner",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-08-23",
+    "company": "ADNOC",
+    "role": "Specialist, Business Development (Origination)",
+    "channel": "Company Site/ATS (SuccessFactors)",
+    "status": "No Response",
+    "location": "Abu Dhabi, UAE"
+  },
+  {
+    "date": "2026-08-23",
+    "company": "Kinetic Business Solutions",
+    "role": "Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-08-23",
+    "company": "Vrinda Global",
+    "role": "AI Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-08-24",
+    "company": "Madar",
+    "role": "Product Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-08-24",
+    "company": "Confidential",
+    "role": "Data Analyst",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Al Madinah, Saudi Arabia"
   }
 ];
 
