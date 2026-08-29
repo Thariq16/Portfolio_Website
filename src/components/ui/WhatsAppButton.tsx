@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { usePathname } from 'next/navigation';
 import styles from './WhatsAppButton.module.css';
 import { trackOutboundLink } from '@/utils/analytics';
 
@@ -11,8 +12,16 @@ const WHATSAPP_MESSAGE = encodeURIComponent(
     "Hi Thariq, I came across your portfolio and I'd love to connect."
 );
 
+// Routes that render as standalone, chrome-free pages (e.g. the NFC/QR digital card)
+const CHROMELESS_ROUTES = ['/intro'];
+
 export default function WhatsAppButton() {
+    const pathname = usePathname();
     const href = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
+
+    if (CHROMELESS_ROUTES.some((route) => pathname?.startsWith(route))) {
+        return null;
+    }
 
     return (
         <a

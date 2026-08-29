@@ -91,7 +91,8 @@ export default function AboutPage() {
                             <h2 className={styles.sectionLabel}>Currently</h2>
                             <p className={styles.paragraph}>
                                 Actively building new product concepts using AI-native tools, rapidly prototyping,
-                                validating, and iterating without waiting for a full engineering team.
+                                validating, and iterating without waiting for a full engineering team. Sitting the
+                                Project Management Professional (PMP) exam in September 2026.
                                 Open to Senior PM and Head of Product roles in KSA and the wider GCC,
                                 available immediately.
                             </p>

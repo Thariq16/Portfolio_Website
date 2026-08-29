@@ -393,6 +393,6 @@
 @media (max-width: 640px) {
     .rotaractStats { grid-template-columns: repeat(2, 1fr); }
     .rotaractTimeline { padding: 1.5rem; }
-    .timelineItem { grid-template-columns: 0 24px 1fr; }
+    .timelineItem { grid-template-columns: 24px 1fr; }
     .timelinePeriod { display: none; }
 }

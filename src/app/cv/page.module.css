@@ -282,42 +282,6 @@
     border-color: var(--border);
 }
 
-/* Digital Transformation: cyan */
-.accentDT {
-    background: transparent;
-    color: var(--primary);
-    border: 1px solid var(--border);
-}
-[data-theme='dark'] .accentDT {
-    background: transparent;
-    color: var(--primary);
-    border-color: var(--border);
-}
-
-/* Startup: emerald */
-.accentStartup {
-    background: transparent;
-    color: var(--primary);
-    border: 1px solid var(--border);
-}
-[data-theme='dark'] .accentStartup {
-    background: transparent;
-    color: var(--primary);
-    border-color: var(--border);
-}
-
-/* Strategy: amber */
-.accentStrategy {
-    background: transparent;
-    color: var(--primary);
-    border: 1px solid var(--border);
-}
-[data-theme='dark'] .accentStrategy {
-    background: transparent;
-    color: var(--primary);
-    border-color: var(--border);
-}
-
 /* Football: green */
 .accentFootball {
     background: transparent;

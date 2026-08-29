@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/components/providers/LanguageProvider';
 import { useTheme } from '@/components/providers/ThemeProvider';
 import { Button } from '@/components/ui/Button';
@@ -9,10 +10,18 @@ import { Moon, Sun, Menu, X } from 'lucide-react';
 import styles from './Navbar.module.css';
 import clsx from 'clsx';
 
+// Routes that render as standalone, chrome-free pages (e.g. the NFC/QR digital card)
+const CHROMELESS_ROUTES = ['/intro'];
+
 export default function Navbar() {
     const { t } = useLanguage();
     const { theme, toggleTheme } = useTheme();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const pathname = usePathname();
+
+    if (CHROMELESS_ROUTES.some((route) => pathname?.startsWith(route))) {
+        return null;
+    }
 
     return (
         <header className={styles.header}>

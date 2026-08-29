@@ -2,25 +2,32 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useCookieConsent } from '@/components/providers/CookieConsentProvider';
 import { useLanguage } from '@/components/providers/LanguageProvider';
 import { ShieldCheck, X } from 'lucide-react';
 import styles from './CookieConsent.module.css';
 
+// Routes that render as standalone, chrome-free pages (e.g. the NFC/QR digital card) —
+// a consent banner would block the one-tap action the page exists for.
+const CHROMELESS_ROUTES = ['/intro'];
+
 export default function CookieBanner() {
     const { consent, accept, decline } = useCookieConsent();
     const { t, direction } = useLanguage();
     const [visible, setVisible] = useState(false);
+    const pathname = usePathname();
+    const isChromeless = CHROMELESS_ROUTES.some((route) => pathname?.startsWith(route));
 
     // Delay appearance slightly so it doesn't flash on hydration
     useEffect(() => {
-        if (consent === 'pending') {
+        if (consent === 'pending' && !isChromeless) {
             const timer = setTimeout(() => setVisible(true), 800);
             return () => clearTimeout(timer);
         } else {
             setVisible(false);
         }
-    }, [consent]);
+    }, [consent, isChromeless]);
 
     if (!visible) return null;
 

@@ -22,6 +22,7 @@ const capabilities = [
         description:
             'Designed and built a bespoke web-based performance analysis platform currently in active use with a first-team squad. Covers pass maps, possession loss hotspots, set-piece retention rates, attacking phase sequencing, and individual player tactical profiles.',
         tags: ['Pass Maps', 'Possession Analysis', 'Set-Piece Metrics', 'Player Profiling', 'Phase Breakdowns'],
+        link: { href: 'https://www.thesecondball.app', label: 'View Work Sample' },
     },
     {
         icon: Code2,
@@ -36,7 +37,7 @@ const capabilities = [
         title: 'Formal Credentials',
         badge: 'Certified',
         description:
-            'Currently completing a Professional Diploma in Football Tactical Analysis at Barca Innovation Hub (FC Barcelona) and an FA Introduction to Coaching Football certification. Studying Arabic with active interest in contributing to GCC football infrastructure.',
+            'Completed a Professional Diploma in Football Tactical Analysis at Barca Innovation Hub (FC Barcelona) and an FA Introduction to Coaching Football certification. Studying Arabic with active interest in contributing to GCC football infrastructure.',
         tags: ['Barca Innovation Hub', 'FA Coaching Certificate', 'GCC Football', 'Arabic Studies'],
     },
 ];
@@ -59,7 +60,7 @@ const experience = [
         role: 'Player Performance Analyst & Recruiter',
         org: 'MHFootballWorld',
         location: 'Colombo, Sri Lanka',
-        period: 'January 2024 – January 2026',
+        period: 'January 2024 – Present',
         bullets: [
             'Conducted match and session analysis to inform tactical decisions and individual player development plans for the coaching staff.',
             'Used video analysis tools to assess player performance, identifying technical strengths, tactical weaknesses, and development priorities.',
@@ -99,8 +100,8 @@ export default function FootballPage() {
                     <div className={styles.credBar}>
                         {[
                             { name: 'Glacis United FC', meta: 'Gibraltar · Nov 2025–Present' },
-                            { name: 'MHFootballWorld', meta: 'Colombo · 2024–2026' },
-                            { name: 'Barca Innovation Hub', meta: 'Diploma · 2026–Present' },
+                            { name: 'MHFootballWorld', meta: 'Colombo · 2024–Present' },
+                            { name: 'Barca Innovation Hub', meta: 'Diploma · Completed May 2026' },
                         ].map((c, i) => (
                             <div key={i} className={styles.credItem}>
                                 <span className={styles.credName}>{c.name}</span>
@@ -134,6 +135,16 @@ export default function FootballPage() {
                                             <span key={j} className={styles.tag}>{t}</span>
                                         ))}
                                     </div>
+                                    {cap.link && (
+                                        <a
+                                            href={cap.link.href}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={styles.capLink}
+                                        >
+                                            {cap.link.label} <ExternalLink size={12} />
+                                        </a>
+                                    )}
                                 </div>
                             );
                         })}

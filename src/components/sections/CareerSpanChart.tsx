@@ -7,6 +7,7 @@ import styles from './CareerSpanChart.module.css';
 interface JobLike {
     slug: string;
     company: string;
+    title: string;
     dateRange: string;
 }
 
@@ -14,6 +15,13 @@ const MONTHS: Record<string, number> = {
     january: 0, february: 1, march: 2, april: 3, may: 4, june: 5,
     july: 6, august: 7, september: 8, october: 9, november: 10, december: 11,
 };
+
+// Snapshot taken when the site is built — refreshed on every rebuild/redeploy.
+// Used so an ongoing ("Present") role renders through today rather than a 1-month sliver.
+const BUILD_MONTH_INDEX = (() => {
+    const d = new Date();
+    return d.getFullYear() * 12 + d.getMonth();
+})();
 
 /** "October 2024 – January 2026" -> months since Jan of chart start */
 function parseRange(range: string): [number, number] | null {
@@ -25,9 +33,11 @@ function parseRange(range: string): [number, number] | null {
         return parseInt(m[2], 10) * 12 + MONTHS[m[1]];
     };
     const start = parse(parts[0]);
-    const end = parts[1].toLowerCase().includes('present') ? null : parse(parts[1]);
+    const isPresent = parts[1].toLowerCase().includes('present');
+    const end = isPresent ? null : parse(parts[1]);
     if (start === null) return null;
-    return [start, end ?? start + 1];
+    const resolvedEnd = isPresent ? Math.max(BUILD_MONTH_INDEX, start + 1) : (end ?? start + 1);
+    return [start, resolvedEnd];
 }
 
 export default function CareerSpanChart({ jobs }: { jobs: JobLike[] }) {
@@ -41,7 +51,10 @@ export default function CareerSpanChart({ jobs }: { jobs: JobLike[] }) {
     const max = Math.max(...spans.map((s) => s.span[1]));
     const total = max - min;
     const startYear = Math.floor(min / 12);
-    const endYear = Math.ceil(max / 12);
+    // `max` is a month-index position on the axis (e.g. Aug 2026), not a duration count,
+    // so the calendar year it falls in is a floor, not a ceiling (ceil overshoots by a
+    // year for any end month after January).
+    const endYear = Math.floor(max / 12);
 
     const years: number[] = [];
     for (let y = startYear; y <= endYear; y++) years.push(y);
@@ -76,7 +89,10 @@ export default function CareerSpanChart({ jobs }: { jobs: JobLike[] }) {
                                     viewport={{ once: true, margin: '-60px' }}
                                     transition={{ delay: 0.08 * i, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
                                 >
-                                    <span className={styles.barLabel}>{j.company}</span>
+                                    <span className={styles.barLabel}>
+                                        <span className={styles.barLabelTitle}>{j.title}</span>
+                                        <span className={styles.barLabelCompany}>{j.company}</span>
+                                    </span>
                                 </motion.div>
                             </div>
                         );

@@ -569,7 +569,7 @@ export const dictionary = {
                     logo: getAssetPath('/logos/fortude.png'),
                     website: 'https://www.fortude.co',
                     location: 'Colombo, Sri Lanka · Hybrid',
-                    dateRange: 'October 2024 – January 2026',
+                    dateRange: 'October 2024 – Present',
                     summary: 'Owned product strategy and GTM for AI products, building a SAR 7.5M pipeline and SAR 750K in net-new revenue.',
                     description: `At Fortude I owned end-to-end product strategy for two AI products, Charlie (AI Answer Assistant) and Fortest.io (testing tool), leading a ~30-person cross-functional team across product, engineering, sales, and marketing. Reported directly to the CSO and board on pipeline and adoption targets.
 
@@ -582,31 +582,31 @@ export const dictionary = {
                 } as Job,
                 {
                     slug: 'fieldr-product-lead',
-                    title: 'Co-Founder & Product Lead',
+                    title: 'Head of Product',
                     company: 'FieldR',
                     logo: getAssetPath('/logos/fieldr.png'),
                     website: 'https://www.fieldr.lk',
                     location: 'Colombo · Remote',
-                    dateRange: 'June 2019 – May 2025',
-                    summary: "Sri Lanka's first cricket analytics platform. My 'Founder's MBA' in building products from zero.",
-                    description: `As a co-founder, I took FieldR from a blank page to Sri Lanka's first cricket analytics platform. This was my "Founder's MBA." It taught me that an imperfect product in the hands of users is better than a perfect one that never ships.
+                    dateRange: 'October 2023 – October 2024',
+                    summary: "Scaled Sri Lanka's first cricket analytics SaaS platform end-to-end: product, monetization, pricing, and GTM.",
+                    description: `As Head of Product at FieldR, I owned product vision, roadmap, monetization strategy, pricing, and GTM execution end-to-end for Sri Lanka's first cricket data analytics SaaS platform, managing a team of 12 across development, marketing, and operations.
 
 **Key Outcomes:**
 • Achieved **75% free-to-paid conversion** by ruthlessly prioritizing features that coaches actually asked for in discovery sessions
-• Secured **SAR 20K in seed funding** and managed the entire roadmap across web and mobile
-• Designed the **data architecture to capture 32+ performance metrics**, turning complex sports data into simple, actionable insights
-• Expanded internationally to **Australia** in 2021, signing up 2 clubs for the fielding performance analysis module`,
+• Secured **SAR 20K in seed funding** from a state entity by demonstrating product-market fit
+• Designed and shipped a **peer-to-peer split-payment feature**, owning the end-to-end payment gateway integration and reconciliation logic
+• Identified **30+ performance data points** by directly addressing the pain points of coaches and analysts, enabling role-based analytics`,
                     skills: ['Product Leadership', 'Product Strategy', 'Go-to-Market Strategy', 'Product-Led Growth', 'Monetization Strategy', 'Founder Mindset'],
                     caseStudyIds: ['foundership-product', 'fieldr-origin-to-international'],
                 } as Job,
                 {
                     slug: 'sling-mobility-product-lead',
-                    title: 'Product Lead - Software & Hardware',
+                    title: 'Product Manager (Head of Product Scope)',
                     company: 'Sling Mobility',
                     logo: getAssetPath('/logos/sling.svg'),
                     website: 'https://www.slingmobility.com',
                     location: 'Colombo, Sri Lanka · On-site',
-                    dateRange: 'June 2021 – October 2024',
+                    dateRange: 'June 2021 – October 2023',
                     summary: 'First employee. Built the product, team, and physical operations for EV mobility.',
                     description: `I was the first employee at Sling, which meant I had to build the product, the team, and the physical operations with no supervision. I managed a diverse team of 34, ranging from software developers to mechanics and a fleet of 20 riders.
 
@@ -656,7 +656,7 @@ export const dictionary = {
                 {
                     slug: 'win-authority-pm',
                     title: 'Project Manager',
-                    company: 'Win Authority Innovatives',
+                    company: 'Win Authority Innovative',
                     logo: '',
                     website: '',
                     location: 'Wyoming, USA · Remote',
@@ -935,7 +935,7 @@ export const dictionary = {
                     logo: getAssetPath('/logos/fortude.png'),
                     website: 'https://www.fortude.co',
                     location: 'كولومبو، سريلانكا',
-                    dateRange: 'أكتوبر 2024 – يناير 2026',
+                    dateRange: 'أكتوبر 2024 – حتى الآن',
                     summary: 'بناء جاذبية السوق لمنتجات الذكاء الاصطناعي.',
                     description: 'بناء خط مبيعات بقيمة 7.5 مليون ريال وتأمين 750 ألف ريال في الإيرادات الجديدة.',
                     skills: ['إدارة أصحاب المصلحة', 'استراتيجية المنتج', 'منتجات الذكاء الاصطناعي'],
@@ -943,12 +943,12 @@ export const dictionary = {
                 } as Job,
                 {
                     slug: 'fieldr-product-lead',
-                    title: 'قائد منتج (مؤسس مشارك)',
+                    title: 'رئيس المنتج',
                     company: 'FieldR',
                     logo: getAssetPath('/logos/fieldr.png'),
                     website: 'https://www.fieldr.lk',
                     location: 'كولومبو',
-                    dateRange: 'يونيو 2019 – مايو 2025',
+                    dateRange: 'أكتوبر 2023 – أكتوبر 2024',
                     summary: 'أول منصة تحليلات رياضية في سريلانكا.',
                     description: 'تحقيق نسبة تحويل 75% من المستخدمين المجانيين إلى المدفوعين.',
                     skills: ['قيادة المنتج', 'استراتيجية الانتقال للسوق', 'النمو'],
@@ -956,12 +956,12 @@ export const dictionary = {
                 } as Job,
                 {
                     slug: 'sling-mobility-product-lead',
-                    title: 'قائد منتج - البرمجيات والأجهزة',
+                    title: 'مدير منتج (بمهام رئيس المنتج)',
                     company: 'Sling Mobility',
                     logo: getAssetPath('/logos/sling.svg'),
                     website: 'https://www.slingmobility.com',
                     location: 'كولومبو، سريلانكا',
-                    dateRange: 'يونيو 2021 – مايو 2024',
+                    dateRange: 'يونيو 2021 – أكتوبر 2023',
                     summary: 'أول موظف. بناء المنتج والفريق.',
                     description: 'إطلاق أول بنية تبديل بطاريات في سريلانكا.',
                     skills: ['قيادة الفرق', 'إدارة المنتجات', 'التميز التشغيلي'],
@@ -974,7 +974,7 @@ export const dictionary = {
                     logo: getAssetPath('/logos/motion-miracles.png'),
                     website: 'https://www.motionmiracles.com',
                     location: 'كولومبو، سريلانكا',
-                    dateRange: 'يناير 2021 – مايو 2021',
+                    dateRange: 'ديسمبر 2020 – يونيو 2021',
                     summary: 'إدارة التسليم الإبداعي.',
                     description: 'بناء لوحات تتبع التسليم.',
                     skills: ['التخطيط التشغيلي', 'إدارة التسليم'],
@@ -996,11 +996,11 @@ export const dictionary = {
                 {
                     slug: 'win-authority-pm',
                     title: 'مدير مشروع',
-                    company: 'Win Authority Innovatives',
+                    company: 'Win Authority Innovative',
                     logo: '',
                     website: '',
                     location: 'وايومنغ، الولايات المتحدة · عن بُعد',
-                    dateRange: 'أغسطس 2018 – ديسمبر 2019',
+                    dateRange: 'يوليو 2018 – أغسطس 2020',
                     summary: 'إدارة مشاريع SaaS متعددة.',
                     description: 'تسليم 8 مشاريع منفصلة.',
                     skills: ['إدارة المشاريع', 'تخطيط الموارد'],

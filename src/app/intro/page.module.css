@@ -1,32 +1,31 @@
 .main {
     min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
-    padding: 4rem 0;
+    justify-content: center;
+    padding: 2.5rem 1.25rem;
+    background: var(--background);
 }
 
-.container {
+.card {
     width: 100%;
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+    max-width: 420px;
 }
 
 /* Header */
 .header {
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
-    margin-bottom: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.75rem;
 }
 
 .portraitWrap {
-    flex-shrink: 0;
-    width: 80px;
-    height: 80px;
+    width: 104px;
+    height: 104px;
+    margin: 0 auto 1.25rem;
     border-radius: 50%;
     overflow: hidden;
-    border: 2px solid color-mix(in srgb, var(--primary) 35%, transparent);
+    border: 1px solid var(--border);
 }
 
 .portrait {
@@ -37,162 +36,128 @@
 }
 
 .name {
-    font-size: 1.75rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
+    font-size: 1.625rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
     color: var(--foreground);
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.3rem;
 }
 
 .title {
     font-size: 0.9375rem;
     color: var(--muted-foreground);
     font-weight: 500;
+    margin-bottom: 0.4rem;
 }
 
 .availability {
-    font-size: 0.8125rem;
-    font-weight: 600;
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: var(--primary);
-    margin-top: 0.25rem;
 }
 
-/* Claim */
-.claim {
-    font-size: 1.1875rem;
-    line-height: 1.65;
-    color: var(--foreground);
-    margin-bottom: 3rem;
-    padding: 1.5rem;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--primary);
-    border-radius: 10px;
-}
-
-/* Proof grid */
-.proofGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 3rem;
-}
-
-.proofCard {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-    padding: 1.25rem 1.5rem;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    transition: border-color 0.2s ease;
-}
-
-.proofCard:hover {
-    border-color: color-mix(in srgb, var(--primary) 50%, transparent);
-}
-
-.proofValue {
-    font-size: 1.75rem;
-    font-weight: 800;
-    color: var(--success);
-    letter-spacing: -0.02em;
-    line-height: 1;
-    font-family: var(--font-display), Georgia, serif;
-}
-
-.proofLabel {
-    font-size: 0.9375rem;
-    font-weight: 600;
-    color: var(--foreground);
-    margin-top: 0.35rem;
-}
-
-.proofDetail {
-    font-size: 0.8125rem;
-    color: var(--muted-foreground);
-    line-height: 1.4;
-}
-
-/* CTAs */
-.ctas {
+/* Credibility strip */
+.strip {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.875rem;
-    margin-bottom: 2.5rem;
-    align-items: center;
-}
-
-.ctaPrimary {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.875rem 1.75rem;
-    background: var(--primary);
-    color: var(--primary-foreground);
-    font-size: 1rem;
-    font-weight: 700;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: opacity 0.2s ease;
-}
-
-.ctaPrimary:hover {
-    opacity: 0.88;
-}
-
-.ctaSecondary {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.875rem 1.75rem;
-    border: 2px solid var(--border);
-    color: var(--foreground);
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: border-color 0.2s ease;
-}
-
-.ctaSecondary:hover {
-    border-color: var(--primary);
-    color: var(--primary);
-}
-
-.ctaGhost {
-    font-size: 0.9375rem;
-    font-weight: 600;
-    color: var(--primary);
-    text-decoration: none;
-    padding: 0.5rem 0;
-}
-
-.ctaGhost:hover {
-    opacity: 0.75;
-}
-
-/* Footer */
-.footerNote {
-    font-size: 0.8125rem;
+    justify-content: center;
+    gap: 0.4rem;
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    letter-spacing: 0.04em;
     color: var(--muted-foreground);
     text-align: center;
-    padding-top: 1.5rem;
+    padding: 0.875rem 0;
+    margin-bottom: 1.75rem;
     border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
-.footerLink {
-    color: var(--primary);
+/* Link list */
+.linkList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.linkItem {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    padding: 0.875rem 1rem;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    min-height: 60px;
+}
+
+.linkItem:hover,
+.linkItem:active {
+    background: var(--card);
+    border-color: var(--primary);
+}
+
+.linkPrimary {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--primary-foreground);
+}
+
+.linkPrimary:hover,
+.linkPrimary:active {
+    opacity: 0.92;
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.linkIcon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--secondary);
+    color: var(--foreground);
+}
+
+.linkPrimary .linkIcon {
+    background: color-mix(in srgb, var(--primary-foreground) 18%, transparent);
+    color: var(--primary-foreground);
+}
+
+.linkText {
+    display: flex;
+    flex-direction: column;
+    gap: 0.05rem;
+    min-width: 0;
+}
+
+.linkLabel {
+    font-size: 0.9375rem;
     font-weight: 600;
 }
 
-/* Mobile */
-@media (max-width: 480px) {
-    .proofGrid {
-        grid-template-columns: 1fr;
-    }
+.linkDetail {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
-    .name {
-        font-size: 1.375rem;
-    }
+.footerNote {
+    text-align: center;
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    letter-spacing: 0.08em;
+    color: var(--muted-foreground);
+    margin-top: 2rem;
 }

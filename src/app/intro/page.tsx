@@ -1,105 +1,131 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import {
+    Contact, Calendar, MessageCircle, Mail, Linkedin, FileText, Briefcase,
+} from 'lucide-react';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-    title: 'Thariq Hamad: Quick Introduction',
-    description: 'Senior PM with 8+ years building SaaS, EV, and D2C products across KSA and the GCC. SAR 7.5M pipeline, 34-person team, available now.',
+    title: 'Thariq Hamad — Digital Card',
+    description: 'Save Thariq Hamad\'s contact, book a call, or view the full portfolio — tap any link below.',
     robots: { index: false, follow: false },
 };
 
-const proofPoints = [
+const WHATSAPP_NUMBER = '966565329004';
+const WHATSAPP_MESSAGE = encodeURIComponent("Hi Thariq, we just connected — great meeting you!");
+
+const links = [
     {
-        value: 'SAR 7.5M',
-        label: 'SaaS pipeline built at Fortude',
-        detail: '1,800% ROAS · SAR 750K net-new ARR closed',
+        href: '/thariq-hamad.vcf',
+        label: 'Save My Contact',
+        detail: 'Adds me straight to your phone',
+        icon: Contact,
+        primary: true,
     },
     {
-        value: '1 → 34',
-        label: 'Team built at Sling Mobility (EV)',
-        detail: 'Employee #1 · Vision 2030 KSA · Toyota SL pilot',
+        href: 'https://calendar.app.google/vDMbaPoDc2vYVQaK8',
+        label: 'Book a Call',
+        detail: '30 minutes, pick a slot',
+        icon: Calendar,
+        external: true,
     },
     {
-        value: 'Top 28',
-        label: 'Venture Engine (300+ startups)',
-        detail: 'Chonk Cookies · Zero ad spend · Validated D2C model',
+        href: `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`,
+        label: 'WhatsApp',
+        detail: '+966 56 532 9004',
+        icon: MessageCircle,
+        external: true,
     },
     {
-        value: '8+ Years',
-        label: 'Product across SaaS · EV · D2C · Events',
-        detail: 'Fortude · Sling · FieldR · MillenniumIT',
+        href: 'mailto:thariqhamad6@gmail.com',
+        label: 'Email',
+        detail: 'thariqhamad6@gmail.com',
+        icon: Mail,
+    },
+    {
+        href: 'https://www.linkedin.com/in/thariqhamad/',
+        label: 'LinkedIn',
+        detail: 'Connect with me',
+        icon: Linkedin,
+        external: true,
+    },
+    {
+        href: '/cv',
+        label: 'Download CV',
+        detail: 'Pick the version for your role',
+        icon: FileText,
+    },
+    {
+        href: '/',
+        label: 'Full Portfolio',
+        detail: 'Case studies, career, design work',
+        icon: Briefcase,
     },
 ];
 
 export default function IntroPage() {
     return (
         <main className={styles.main}>
-            <div className={styles.container}>
+            <div className={styles.card}>
 
-                {/* Header */}
                 <header className={styles.header}>
                     <div className={styles.portraitWrap}>
                         <Image
-                            src="/images/portrait.jpg"
+                            src="/images/portrait-card.jpg"
                             alt="Thariq Hamad"
-                            width={96}
-                            height={96}
+                            width={104}
+                            height={104}
                             className={styles.portrait}
                             priority
                         />
                     </div>
-                    <div>
-                        <h1 className={styles.name}>Thariq Hamad</h1>
-                        <p className={styles.title}>Senior Product Manager · KSA &amp; GCC</p>
-                        <p className={styles.availability}>Available now · Transferable Iqama</p>
-                    </div>
+                    <h1 className={styles.name}>Thariq Hamad</h1>
+                    <p className={styles.title}>Senior Product Manager · KSA &amp; GCC</p>
+                    <p className={styles.availability}>Open to Senior PM / Head of Product roles</p>
                 </header>
 
-                {/* Hero claim */}
-                <section className={styles.claim}>
-                    <p>
-                        I build products from zero and measure every outcome in revenue.
-                        Employee #1 on a 34-person EV team. SAR 7.5M SaaS pipeline. Venture Engine Top 28.
-                        Eight years across SaaS, EV, D2C, and enterprise platforms, always as the person who owns the number.
-                    </p>
-                </section>
-
-                {/* Proof points */}
-                <section className={styles.proofGrid}>
-                    {proofPoints.map((p, i) => (
-                        <div key={i} className={styles.proofCard}>
-                            <span className={styles.proofValue}>{p.value}</span>
-                            <span className={styles.proofLabel}>{p.label}</span>
-                            <span className={styles.proofDetail}>{p.detail}</span>
-                        </div>
-                    ))}
-                </section>
-
-                {/* CTAs */}
-                <section className={styles.ctas}>
-                    <Link href="/cv" className={styles.ctaPrimary}>
-                        Download CV
-                    </Link>
-                    <a
-                        href="https://calendar.app.google/vDMbaPoDc2vYVQaK8"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.ctaSecondary}
-                    >
-                        Book a 30-min Call
-                    </a>
-                    <Link href="/projects" className={styles.ctaGhost}>
-                        View Case Studies →
-                    </Link>
-                </section>
-
-                {/* Footer note */}
-                <p className={styles.footerNote}>
-                    Full portfolio at{' '}
-                    <Link href="/" className={styles.footerLink}>thariqhamad.com</Link>
+                <p className={styles.strip}>
+                    <span>SAR 7.5M pipeline</span>
+                    <span aria-hidden="true">·</span>
+                    <span>1 → 34 team scaled</span>
+                    <span aria-hidden="true">·</span>
+                    <span>2 companies founded</span>
                 </p>
 
+                <nav className={styles.linkList} aria-label="Contact and profile links">
+                    {links.map((l) => {
+                        const Icon = l.icon;
+                        const commonProps = {
+                            className: `${styles.linkItem} ${l.primary ? styles.linkPrimary : ''}`,
+                        };
+                        const content = (
+                            <>
+                                <span className={styles.linkIcon}><Icon size={18} /></span>
+                                <span className={styles.linkText}>
+                                    <span className={styles.linkLabel}>{l.label}</span>
+                                    <span className={styles.linkDetail}>{l.detail}</span>
+                                </span>
+                            </>
+                        );
+                        if (l.href.startsWith('/') && !l.external) {
+                            return <Link key={l.label} href={l.href} {...commonProps}>{content}</Link>;
+                        }
+                        return (
+                            <a
+                                key={l.label}
+                                href={l.href}
+                                target={l.external ? '_blank' : undefined}
+                                rel={l.external ? 'noopener noreferrer' : undefined}
+                                {...commonProps}
+                            >
+                                {content}
+                            </a>
+                        );
+                    })}
+                </nav>
+
+                <p className={styles.footerNote}>thariqhamad.com</p>
             </div>
         </main>
     );
