@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/components/providers/LanguageProvider';
 import { Linkedin, Mail } from 'lucide-react';
@@ -50,9 +51,23 @@ export default function Footer() {
                         </a>
                     </div>
                 </div>
-                <div className={styles.builtWith}>
-                    {t.footer.builtWith}
-                </div>
+                <a
+                    href="https://www.techtaswiq.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.builtWith}
+                >
+                    <span>{t.footer.builtWith}</span>
+                    <span className={styles.builtWithLogo}>
+                        <Image
+                            src="/images/techtaswiq-logo.png"
+                            alt="TechTaswiq"
+                            width={440}
+                            height={75}
+                            className={styles.builtWithLogoImg}
+                        />
+                    </span>
+                </a>
             </div>
         </footer>
     );

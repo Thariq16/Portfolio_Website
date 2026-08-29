@@ -55,12 +55,34 @@
 }
 
 .builtWith {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
     font-size: 0.75rem;
     color: var(--muted-foreground);
-    opacity: 0.7;
+    text-decoration: none;
     border-top: 1px solid var(--border);
     padding-top: 1.5rem;
+    transition: opacity 0.2s;
+}
+
+.builtWith:hover {
+    opacity: 0.85;
+}
+
+.builtWithLogo {
+    display: inline-flex;
+    align-items: center;
+    background: #f6f2e8;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+}
+
+.builtWithLogoImg {
+    display: block;
+    height: 14px;
+    width: auto;
 }
 
 @media (max-width: 640px) {

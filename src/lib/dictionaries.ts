@@ -116,7 +116,7 @@ export const dictionary = {
         },
         footer: {
             rights: 'All rights reserved.',
-            builtWith: 'Built by Thariq Hamad',
+            builtWith: 'Built with ❤️ by',
             privacy: 'Privacy Policy',
         },
         cookieBanner: {
@@ -730,7 +730,7 @@ export const dictionary = {
         },
         footer: {
             rights: 'جميع الحقوق محفوظة.',
-            builtWith: 'تم البناء بواسطة طارق حماد',
+            builtWith: 'صُنع بحب ❤️ بواسطة',
             privacy: 'سياسة الخصوصية',
         },
         cookieBanner: {

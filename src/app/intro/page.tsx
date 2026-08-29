@@ -7,7 +7,7 @@ import {
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-    title: 'Thariq Hamad — Digital Card',
+    title: 'Thariq Hamad – Digital Card',
     description: 'Save Thariq Hamad\'s contact, book a call, or view the full portfolio — tap any link below.',
     robots: { index: false, follow: false },
 };
