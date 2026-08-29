@@ -3,22 +3,13 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/components/providers/LanguageProvider';
 import { Linkedin, Mail } from 'lucide-react';
 import styles from './Footer.module.css';
 
-// Routes that render as standalone, chrome-free pages (e.g. the NFC/QR digital card)
-const CHROMELESS_ROUTES = ['/intro'];
-
 export default function Footer() {
     const { t } = useLanguage();
     const currentYear = new Date().getFullYear();
-    const pathname = usePathname();
-
-    if (CHROMELESS_ROUTES.some((route) => pathname?.startsWith(route))) {
-        return null;
-    }
 
     return (
         <footer className={styles.footer}>
