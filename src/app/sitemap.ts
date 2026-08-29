@@ -6,13 +6,13 @@ export const dynamic = 'force-static';
 // Fixed dates: update when page content meaningfully changes
 const DATES: Record<string, string> = {
     '':          '2025-06-01',
-    '/about':    '2025-06-01',
+    '/about':    '2026-08-30',
     '/projects': '2025-06-01',
     '/projects-preview': '2026-07-09',
-    '/career':   '2025-06-01',
+    '/career':   '2026-08-30',
     '/design':   '2025-05-01',
-    '/cv':       '2025-06-01',
-    '/football': '2025-05-01',
+    '/cv':       '2026-08-30',
+    '/football': '2026-08-30',
     '/privacy':  '2025-01-01',
 };
 
@@ -48,7 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Dynamic career jobs
     const careerRoutes = dictionary.en.career.jobs.map((job) => ({
         url: `${baseUrl}/career/${job.slug}`,
-        lastModified: '2025-06-01',
+        lastModified: '2026-08-30',
         changeFrequency: 'monthly' as const,
         priority: 0.6,
     }));
