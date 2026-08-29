@@ -125,6 +125,17 @@ export default function IntroPage() {
                     })}
                 </nav>
 
+                <div className={styles.qrBlock}>
+                    <Image
+                        src="/images/intro-qr.svg"
+                        alt="QR code linking to this page"
+                        width={132}
+                        height={132}
+                        className={styles.qrImage}
+                    />
+                    <p className={styles.qrCaption}>Scan to open this page on your phone</p>
+                </div>
+
                 <p className={styles.footerNote}>thariqhamad.com</p>
             </div>
         </main>
