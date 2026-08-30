@@ -2,10 +2,11 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
     Contact, Calendar, MessageCircle, Mail, Linkedin, FileText, Briefcase,
 } from 'lucide-react';
-import { trackButtonClick } from '@/utils/analytics';
+import { trackButtonClick, trackOutboundLink } from '@/utils/analytics';
 import styles from './page.module.css';
 
 const WHATSAPP_NUMBER = '966565329004';
@@ -60,6 +61,14 @@ const links = [
     },
 ];
 
+const techtaswiqCredit = {
+    href: 'https://www.techtaswiq.com',
+    label: 'Built by TechTaswiq',
+    detail: 'techtaswiq.com',
+    iconImage: '/images/techtaswiq-icon.png',
+    external: true,
+};
+
 export default function IntroLinks() {
     return (
         <nav className={styles.linkList} aria-label="Contact and profile links">
@@ -93,6 +102,22 @@ export default function IntroLinks() {
                     </a>
                 );
             })}
+
+            <a
+                href={techtaswiqCredit.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.linkItem}
+                onClick={() => trackOutboundLink(techtaswiqCredit.href, 'TechTaswiq Intro Card')}
+            >
+                <span className={styles.linkIcon}>
+                    <Image src={techtaswiqCredit.iconImage} alt="" width={20} height={20} />
+                </span>
+                <span className={styles.linkText}>
+                    <span className={styles.linkLabel}>{techtaswiqCredit.label}</span>
+                    <span className={styles.linkDetail}>{techtaswiqCredit.detail}</span>
+                </span>
+            </a>
         </nav>
     );
 }

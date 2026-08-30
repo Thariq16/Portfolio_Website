@@ -52,24 +52,26 @@ export default function Footer() {
                         </a>
                     </div>
                 </div>
-                <a
-                    href="https://www.techtaswiq.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.builtWith}
-                    onClick={() => trackOutboundLink('https://www.techtaswiq.com', 'TechTaswiq Footer Credit')}
-                >
-                    <span>{t.footer.builtWith}</span>
-                    <span className={styles.builtWithLogo}>
-                        <Image
-                            src="/images/techtaswiq-logo.png"
-                            alt="TechTaswiq"
-                            width={440}
-                            height={75}
-                            className={styles.builtWithLogoImg}
-                        />
-                    </span>
-                </a>
+                {!pathname?.startsWith('/intro') && (
+                    <a
+                        href="https://www.techtaswiq.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.builtWith}
+                        onClick={() => trackOutboundLink('https://www.techtaswiq.com', 'TechTaswiq Footer Credit')}
+                    >
+                        <span>{t.footer.builtWith}</span>
+                        <span className={styles.builtWithLogo}>
+                            <Image
+                                src="/images/techtaswiq-logo.png"
+                                alt="TechTaswiq"
+                                width={440}
+                                height={75}
+                                className={styles.builtWithLogoImg}
+                            />
+                        </span>
+                    </a>
+                )}
             </div>
         </footer>
     );
