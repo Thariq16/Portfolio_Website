@@ -1,0 +1,46 @@
+.main {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    background: var(--background);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    text-align: center;
+}
+
+.eyebrow {
+    font-family: var(--font-display), Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--foreground);
+}
+
+.qrImage {
+    width: min(280px, 70vw);
+    height: min(280px, 70vw);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.caption {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.url {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    letter-spacing: 0.06em;
+    color: var(--muted-foreground);
+}

@@ -10,7 +10,7 @@ import styles from './CookieConsent.module.css';
 
 // Routes that render as standalone, chrome-free pages (e.g. the NFC/QR digital card) —
 // a consent banner would block the one-tap action the page exists for.
-const CHROMELESS_ROUTES = ['/intro'];
+const CHROMELESS_ROUTES = ['/intro', '/qr'];
 
 export default function CookieBanner() {
     const { consent, accept, decline } = useCookieConsent();

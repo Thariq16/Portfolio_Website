@@ -13,7 +13,7 @@ const WHATSAPP_MESSAGE = encodeURIComponent(
 );
 
 // Routes that render as standalone, chrome-free pages (e.g. the NFC/QR digital card)
-const CHROMELESS_ROUTES = ['/intro'];
+const CHROMELESS_ROUTES = ['/intro', '/qr'];
 
 export default function WhatsAppButton() {
     const pathname = usePathname();
