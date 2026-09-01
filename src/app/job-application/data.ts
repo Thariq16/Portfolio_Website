@@ -5230,6 +5230,166 @@ export const applications: Application[] = [
     "channel": "Indeed",
     "status": "No Response",
     "location": "Al Madinah, Saudi Arabia"
+  },
+  {
+    "date": "2026-08-24",
+    "company": "GIB",
+    "role": "Business Analyst",
+    "channel": "Company Site/ATS (Talentera)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-08-24",
+    "company": "Confidential",
+    "role": "Product Manager",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-08-25",
+    "company": "Salt",
+    "role": "Product Owner",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-08-25",
+    "company": "BAE Systems Strategic Aerospace Services (BSL)",
+    "role": "Technical Project Manager (ICT Network)",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-08-26",
+    "company": "Essity",
+    "role": "Customer Marketing Manager",
+    "channel": "Company Site/ATS (Workday)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-08-27",
+    "company": "neoleap",
+    "role": "Product Owner Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-08-27",
+    "company": "neoleap",
+    "role": "Product Development Expert",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-08-28",
+    "company": "neoleap",
+    "role": "Senior Technical Lead",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-08-28",
+    "company": "Jobgether",
+    "role": "GTM Product Manager - Marketing Operations",
+    "channel": "Company Site/ATS (Jobgether)",
+    "status": "No Response",
+    "location": "Saudi Arabia"
+  },
+  {
+    "date": "2026-08-28",
+    "company": "TASC Outsourcing",
+    "role": "Project Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-08-28",
+    "company": "Egis",
+    "role": "Project Manager",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-08-28",
+    "company": "SAB",
+    "role": "Project Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-08-28",
+    "company": "Embelo",
+    "role": "AI Product Owner",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-08-28",
+    "company": "Hays",
+    "role": "Senior Program Manager - 12 Months Contract",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-08-28",
+    "company": "Zenjob",
+    "role": "Senior Product Manager (f/m/d)",
+    "channel": "Company Site/ATS (Ashby)",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-08-28",
+    "company": "Confidential",
+    "role": "Project Manager (Banking & Fintech Only)",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-08-28",
+    "company": "Confidential",
+    "role": "Business Analyst",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-08-29",
+    "company": "Confidential",
+    "role": "Project Manager",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-08-30",
+    "company": "REEF GROUP",
+    "role": "Information Technology Project Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-01",
+    "company": "Netflix",
+    "role": "Product Manager - Localization Innovation",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
   }
 ];
 
