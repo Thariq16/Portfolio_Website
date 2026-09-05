@@ -91,7 +91,7 @@ export const dictionary = {
             subheadline: 'From Employee #1 on a 34-person EV team to a SAR 7.5M SaaS pipeline. Built products from zero and measured every outcome in revenue.',
             ctaPrimary: 'Book a Call',
             ctaSecondary: 'View Case Studies',
-            location: 'Based in Riyadh, Saudi Arabia (Iqama Transferable)',
+            location: 'Based in Saudi Arabia (Iqama Transferable)',
         },
         trust: {
             title: "Where I've Built",
@@ -705,7 +705,7 @@ export const dictionary = {
             subheadline: 'أكثر من 8 سنوات في زيادة الإيرادات والنمو لفرق عالمية موزعة.',
             ctaPrimary: 'احجز مكالمة تعارف',
             ctaSecondary: 'عرض دراسات الحالة',
-            location: 'مقرها الرياض، المملكة العربية السعودية (إقامة قابلة للتحويل)',
+            location: 'مقرها المملكة العربية السعودية (إقامة قابلة للتحويل)',
         },
         trust: {
             title: 'موثوق به لدى شركات التكنولوجيا الرائدة',

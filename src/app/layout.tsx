@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     default: 'Thariq Hamad | Senior Product Manager',
     template: '%s | Thariq Hamad',
   },
-  description: 'Senior Product Manager with 8+ years driving revenue, monetization, and growth for SaaS & AI platforms. Based in Riyadh, Saudi Arabia. Expert in zero-to-one product development for GCC startups and enterprises.',
-  keywords: ['Product Manager', 'Senior PM', 'SaaS', 'AI Products', 'GCC', 'Saudi Arabia', 'Riyadh', 'Product Strategy', 'Revenue Growth', 'Startup', 'Enterprise'],
+  description: 'Senior Product Manager with 8+ years driving revenue, monetization, and growth for SaaS & AI platforms. Based in Saudi Arabia. Expert in zero-to-one product development for GCC startups and enterprises.',
+  keywords: ['Product Manager', 'Senior PM', 'SaaS', 'AI Products', 'GCC', 'Saudi Arabia', 'Product Strategy', 'Revenue Growth', 'Startup', 'Enterprise'],
   authors: [{ name: 'Thariq Hamad' }],
   creator: 'Thariq Hamad',
   metadataBase: new URL('https://thariqhamad.com'),
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     url: 'https://thariqhamad.com',
     siteName: 'Thariq Hamad - Product Manager Portfolio',
     title: 'Thariq Hamad | Senior Product Manager',
-    description: 'Senior Product Manager with 8+ years driving revenue, monetization, and growth for SaaS & AI platforms. Based in Riyadh, Saudi Arabia.',
+    description: 'Senior Product Manager with 8+ years driving revenue, monetization, and growth for SaaS & AI platforms. Based in Saudi Arabia.',
     images: [
       {
         url: '/images/og-image.png',
