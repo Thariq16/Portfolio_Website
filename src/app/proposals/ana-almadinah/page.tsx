@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import {
     MapPin, Clock, Briefcase, Camera, Youtube, MessageCircle,
-    Linkedin, Megaphone, Check,
+    Linkedin, Megaphone, Check, Layers, Users, Languages,
 } from 'lucide-react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import styles from './page.module.css';
@@ -111,6 +111,29 @@ const QUICK_WINS = [
 
 const GROWTH_CHECKLIST_KEY = 'ana-almadinah-proposal-quick-wins';
 
+const WHY_ME: { icon: React.ElementType; title: string; body: string }[] = [
+    {
+        icon: Layers,
+        title: 'One person, not a hand-off',
+        body: 'Most growth hires can’t touch the product, and most product hires can’t run the funnel. This proposal only works because one person can do both without a relay between teams.',
+    },
+    {
+        icon: Users,
+        title: 'Built teams from zero before',
+        body: 'Scaled Sling Mobility from Employee #1 to a 34-person team. Sourcing and managing the offshore Sri Lanka technical team is a repeat, not a first attempt.',
+    },
+    {
+        icon: Languages,
+        title: 'Already runs bilingual growth',
+        body: 'TechTaswiq is a live agency serving funded GCC startups in Arabic and English today – the exact operating model this proposal brings in-house.',
+    },
+    {
+        icon: Clock,
+        title: 'In Riyadh, available now',
+        body: 'Transferable Iqama, no relocation lead time. Whichever path fits, start date isn’t the bottleneck.',
+    },
+];
+
 export default function AnaAlmadinahProposalPage() {
     const [path, setPath] = useState<PathId>('provider');
     const scope = path === 'provider' ? PROVIDER_SCOPE : EMPLOYEE_SCOPE;
@@ -140,6 +163,7 @@ export default function AnaAlmadinahProposalPage() {
     };
     const doneCount = checked.filter(Boolean).length;
 
+    const whyRef = useScrollReveal<HTMLElement>();
     const pathsRef = useScrollReveal<HTMLElement>();
     const proofRef = useScrollReveal<HTMLElement>();
     const growthRef = useScrollReveal<HTMLElement>();
@@ -211,6 +235,29 @@ export default function AnaAlmadinahProposalPage() {
             </section>
 
             <div className="container">
+                {/* ── Why me ── */}
+                <section ref={whyRef} className={`${styles.section} reveal`} id="why">
+                    <div className={styles.sectionHead}>
+                        <span className="eyebrow">Why me</span>
+                        <p className={styles.sectionSub}>
+                            Not a generic growth-marketer pitch or a generic product-manager pitch – the
+                            specific overlap this expansion actually needs.
+                        </p>
+                    </div>
+
+                    <div className={styles.whyGrid}>
+                        {WHY_ME.map(({ icon: Icon, title, body }) => (
+                            <div className={styles.whyCard} key={title}>
+                                <div className={styles.whyIcon}>
+                                    <Icon size={18} />
+                                </div>
+                                <h4 className={styles.whyTitle}>{title}</h4>
+                                <p className={styles.whyBody}>{body}</p>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
                 {/* ── Engagement paths ── */}
                 <section ref={pathsRef} className={`${styles.section} reveal`} id="paths">
                     <div className={styles.sectionHead}>
