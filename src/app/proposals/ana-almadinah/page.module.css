@@ -17,20 +17,6 @@
     margin-bottom: 2rem;
 }
 
-.heroBadge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    width: fit-content;
-    padding: 0.3rem 0.7rem;
-    border-radius: 100px;
-    border: 1px solid var(--border);
-    background: var(--muted);
-    color: var(--muted-foreground);
-    font-size: 0.75rem;
-    font-weight: 500;
-}
-
 .kicker {
     font-family: var(--font-mono), monospace;
     font-size: 0.6875rem;
@@ -202,6 +188,11 @@
     padding: 1.25rem 0;
     border-bottom: 1px solid var(--border);
     align-items: flex-start;
+    transition: padding-left 0.2s ease;
+}
+
+.scopeItem:hover {
+    padding-left: 0.4rem;
 }
 
 .scopeItem:last-child {
@@ -279,6 +270,14 @@
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.proofCell:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px -16px rgba(0, 0, 0, 0.35);
+    position: relative;
+    z-index: 1;
 }
 
 .proofNum {
@@ -325,11 +324,13 @@
     padding: 1.6rem;
     border-radius: var(--radius);
     background: var(--card);
-    transition: border-color 0.2s ease;
+    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .evidenceCard:hover {
     border-color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px -16px rgba(0, 0, 0, 0.35);
 }
 
 .evidenceHead {
@@ -371,6 +372,193 @@
     color: var(--primary);
     border-bottom: 1px solid var(--primary);
     padding-bottom: 1px;
+}
+
+/* ── Growth snapshot ── */
+.growthGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.growthFunnel .toggleFrame {
+    margin-bottom: 1.25rem;
+}
+
+.growthGoal {
+    font-size: 0.9375rem;
+    font-style: italic;
+    color: var(--muted-foreground);
+    margin-bottom: 1rem;
+}
+
+.growthSteps {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    padding-left: 1.2rem;
+    font-size: 0.9rem;
+    color: var(--foreground);
+    line-height: 1.55;
+}
+
+.growthSteps li::marker {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.growthSide {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.channelStrip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.channelChip {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.45rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    font-size: 0.8125rem;
+    color: var(--foreground);
+    background: var(--card);
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.channelChip:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary);
+}
+
+.channelDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.channelDotA {
+    background: var(--primary);
+}
+
+.channelDotB {
+    background: var(--muted-foreground);
+}
+
+.budgetMini {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.budgetRow {
+    display: grid;
+    grid-template-columns: 130px 1fr 36px;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.budgetLabel {
+    font-size: 0.8125rem;
+    color: var(--foreground);
+}
+
+.budgetTrack {
+    display: block;
+    height: 8px;
+    background: var(--muted);
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.budgetFill {
+    display: block;
+    height: 100%;
+    background: var(--primary);
+    border-radius: 100px;
+    transition: width 1s cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+
+.quickWins {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.quickWinsHead {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+    background: var(--muted);
+    border-bottom: 1px solid var(--border);
+}
+
+.quickWinsCount {
+    font-family: var(--font-mono), monospace;
+    color: var(--primary);
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.quickWin {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    background: var(--card);
+    font-family: inherit;
+    font-size: 0.875rem;
+    color: var(--foreground);
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.quickWin:last-child {
+    border-bottom: none;
+}
+
+.quickWin:hover {
+    background: var(--muted);
+}
+
+.quickWinBox {
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid var(--border);
+    border-radius: 4px;
+    flex-shrink: 0;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-foreground);
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.quickWinDone .quickWinBox {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.quickWinDone span:last-child {
+    color: var(--muted-foreground);
+    text-decoration: line-through;
+    text-decoration-color: var(--border);
 }
 
 /* ── Close ── */

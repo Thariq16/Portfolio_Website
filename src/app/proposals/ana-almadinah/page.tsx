@@ -1,11 +1,16 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { Lock, MapPin, Clock, Briefcase } from 'lucide-react';
+import {
+    MapPin, Clock, Briefcase, Camera, Youtube, MessageCircle,
+    Linkedin, Megaphone, Check,
+} from 'lucide-react';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 import styles from './page.module.css';
 
 type PathId = 'provider' | 'employee';
+type GrowthTrack = 'visitors' | 'franchise';
 
 const PROVIDER_SCOPE = [
     {
@@ -64,9 +69,81 @@ const PROOF_RAIL = [
     { num: '23', label: 'Games launched across multiple publishers', source: 'Motion Miracles', logo: '/logos/motion-miracles.png' },
 ];
 
+const GROWTH_FUNNELS: Record<GrowthTrack, { goal: string; steps: string[] }> = {
+    visitors: {
+        goal: 'Fill the Madinah venue, build the proof-of-demand library',
+        steps: [
+            'Awareness — POV clips shot straight from the VR headset, Arabic voiceover with English subtitles',
+            'Consideration — Google Business Profile + Maps SEO, Umrah tour-operator itinerary listings',
+            'Conversion — WhatsApp Business booking and on-site NFC tap-to-reserve via Waseej',
+        ],
+    },
+    franchise: {
+        goal: 'Fill the pipeline for the next licensed territory',
+        steps: [
+            'Awareness — LinkedIn thought-leadership, this proposal page as the always-on anchor',
+            'Consideration — franchise info-pack with unit economics from the Madinah flagship',
+            'Conversion — LinkedIn + Google Search ads, direct outreach via the TechTaswiq growth engine',
+        ],
+    },
+};
+
+const CHANNEL_STRIP: { icon: React.ElementType; label: string; track: 'b2c' | 'b2b' }[] = [
+    { icon: Camera, label: 'Reels & TikTok', track: 'b2c' },
+    { icon: Youtube, label: 'YouTube', track: 'b2c' },
+    { icon: MapPin, label: 'Google & Maps', track: 'b2c' },
+    { icon: MessageCircle, label: 'WhatsApp + NFC', track: 'b2c' },
+    { icon: Linkedin, label: 'LinkedIn', track: 'b2b' },
+    { icon: Megaphone, label: 'Paid ads', track: 'b2b' },
+];
+
+const BUDGET_SPLIT = [
+    { label: 'Visitor content & paid', pct: 45 },
+    { label: 'Franchise lead gen', pct: 35 },
+    { label: 'Tooling & analytics', pct: 20 },
+];
+
+const QUICK_WINS = [
+    'Claim & fully optimize the Google Business Profile',
+    'Set up WhatsApp Business with a bookable slot catalog',
+    'Shoot the first 15 POV clips straight from the headset feed',
+];
+
+const GROWTH_CHECKLIST_KEY = 'ana-almadinah-proposal-quick-wins';
+
 export default function AnaAlmadinahProposalPage() {
     const [path, setPath] = useState<PathId>('provider');
     const scope = path === 'provider' ? PROVIDER_SCOPE : EMPLOYEE_SCOPE;
+
+    const [growthTrack, setGrowthTrack] = useState<GrowthTrack>('visitors');
+    const funnel = GROWTH_FUNNELS[growthTrack];
+
+    const [checked, setChecked] = useState<boolean[]>(() => QUICK_WINS.map(() => false));
+    useEffect(() => {
+        try {
+            const saved = JSON.parse(localStorage.getItem(GROWTH_CHECKLIST_KEY) || 'null');
+            if (Array.isArray(saved)) setChecked(saved);
+        } catch {
+            // ignore malformed storage
+        }
+    }, []);
+    const toggleCheck = (i: number) => {
+        setChecked((prev) => {
+            const next = prev.map((v, idx) => (idx === i ? !v : v));
+            try {
+                localStorage.setItem(GROWTH_CHECKLIST_KEY, JSON.stringify(next));
+            } catch {
+                // storage unavailable, skip persistence
+            }
+            return next;
+        });
+    };
+    const doneCount = checked.filter(Boolean).length;
+
+    const pathsRef = useScrollReveal<HTMLElement>();
+    const proofRef = useScrollReveal<HTMLElement>();
+    const growthRef = useScrollReveal<HTMLElement>();
+    const closeRef = useScrollReveal<HTMLElement>();
 
     return (
         <main className={styles.main}>
@@ -74,10 +151,6 @@ export default function AnaAlmadinahProposalPage() {
             <section className={styles.hero}>
                 <div className="container">
                     <div className={styles.heroTop}>
-                        <div className={styles.heroBadge}>
-                            <Lock size={13} />
-                            <span>Private · Not Indexed</span>
-                        </div>
                         <div className={styles.kicker}>Prepared for Ana Almadinah</div>
                     </div>
 
@@ -139,7 +212,7 @@ export default function AnaAlmadinahProposalPage() {
 
             <div className="container">
                 {/* ── Engagement paths ── */}
-                <section className={styles.section} id="paths">
+                <section ref={pathsRef} className={`${styles.section} reveal`} id="paths">
                     <div className={styles.sectionHead}>
                         <span className="eyebrow">Choose the shape of the engagement</span>
                         <p className={styles.sectionSub}>
@@ -229,7 +302,7 @@ export default function AnaAlmadinahProposalPage() {
                 </section>
 
                 {/* ── Proof ── */}
-                <section className={styles.section}>
+                <section ref={proofRef} className={`${styles.section} reveal`}>
                     <div className={styles.sectionHead}>
                         <span className="eyebrow">What the numbers say</span>
                         <p className={styles.sectionSub}>
@@ -330,8 +403,97 @@ export default function AnaAlmadinahProposalPage() {
                     </div>
                 </section>
 
+                {/* ── Growth Snapshot ── */}
+                <section ref={growthRef} className={`${styles.section} reveal`} id="growth">
+                    <div className={styles.sectionHead}>
+                        <span className="eyebrow">Growth snapshot</span>
+                        <p className={styles.sectionSub}>
+                            A condensed look at the digital marketing engine behind this proposal — the
+                            same dual-track plan (visitors, then franchise investors) laid out in full in a
+                            separate playbook, prepared to hand over on request.
+                        </p>
+                    </div>
+
+                    <div className={styles.growthGrid}>
+                        <div className={styles.growthFunnel}>
+                            <div className={styles.toggleFrame} role="tablist" aria-label="Growth track">
+                                <button
+                                    type="button"
+                                    role="tab"
+                                    aria-selected={growthTrack === 'visitors'}
+                                    className={`${styles.toggleBtn} ${growthTrack === 'visitors' ? styles.toggleBtnActive : ''}`}
+                                    onClick={() => setGrowthTrack('visitors')}
+                                >
+                                    Visitors
+                                </button>
+                                <button
+                                    type="button"
+                                    role="tab"
+                                    aria-selected={growthTrack === 'franchise'}
+                                    className={`${styles.toggleBtn} ${growthTrack === 'franchise' ? styles.toggleBtnActive : ''}`}
+                                    onClick={() => setGrowthTrack('franchise')}
+                                >
+                                    Franchise
+                                </button>
+                            </div>
+                            <p className={styles.growthGoal}>{funnel.goal}</p>
+                            <ol className={styles.growthSteps}>
+                                {funnel.steps.map((step) => (
+                                    <li key={step}>{step}</li>
+                                ))}
+                            </ol>
+                        </div>
+
+                        <div className={styles.growthSide}>
+                            <div className={styles.channelStrip}>
+                                {CHANNEL_STRIP.map(({ icon: Icon, label, track }) => (
+                                    <div key={label} className={styles.channelChip}>
+                                        <span className={`${styles.channelDot} ${track === 'b2c' ? styles.channelDotA : styles.channelDotB}`} />
+                                        <Icon size={14} />
+                                        <span>{label}</span>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div className={styles.budgetMini}>
+                                {BUDGET_SPLIT.map((row) => (
+                                    <div className={styles.budgetRow} key={row.label}>
+                                        <span className={styles.budgetLabel}>{row.label}</span>
+                                        <span className={styles.budgetTrack}>
+                                            <span
+                                                className={styles.budgetFill}
+                                                style={{ width: `${row.pct}%` }}
+                                            />
+                                        </span>
+                                        <span className={styles.budgetPct}>{row.pct}%</span>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div className={styles.quickWins}>
+                                <div className={styles.quickWinsHead}>
+                                    <span>First moves, before any budget is approved</span>
+                                    <span className={styles.quickWinsCount}>{doneCount} of {QUICK_WINS.length} done</span>
+                                </div>
+                                {QUICK_WINS.map((item, i) => (
+                                    <button
+                                        type="button"
+                                        key={item}
+                                        className={`${styles.quickWin} ${checked[i] ? styles.quickWinDone : ''}`}
+                                        onClick={() => toggleCheck(i)}
+                                        aria-pressed={checked[i]}
+                                    >
+                                        <span className={styles.quickWinBox}>{checked[i] && <Check size={11} />}</span>
+                                        <span>{item}</span>
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 {/* ── Close ── */}
-                <section className={styles.close}>
+                <section ref={closeRef} className={`${styles.close} reveal`}>
                     <h2 className={styles.closeTitle}>Let&apos;s talk about which path fits.</h2>
                     <p className={styles.closeBody}>
                         Both paths solve the same problem. The difference is how deeply you want this
