@@ -1,0 +1,281 @@
+/* ── Hero ── */
+.hero {
+    padding: 2.5rem 0 3rem;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, var(--card) 0%, var(--background) 100%);
+}
+
+.backLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--muted-foreground);
+    margin-bottom: 1.5rem;
+    transition: color 0.2s ease;
+}
+
+.backLink:hover {
+    color: var(--primary);
+}
+
+.kicker {
+    font-family: var(--font-mono), monospace;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.heroTitle {
+    font-size: clamp(1.75rem, 3.6vw, 2.5rem);
+    line-height: 1.16;
+    max-width: 760px;
+    color: var(--foreground);
+}
+
+.heroSub {
+    margin-top: 1.25rem;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    max-width: 620px;
+    color: var(--muted-foreground);
+}
+
+/* ── Audience track goal ── */
+.trackGoal {
+    font-size: 0.9375rem;
+    font-style: italic;
+    color: var(--muted-foreground);
+    margin: 1.5rem 0 0.5rem;
+}
+
+/* ── Channel list ── */
+.channelList {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.channelRow {
+    display: grid;
+    grid-template-columns: 24px 1fr auto auto;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.85rem 1.1rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--card);
+}
+
+.channelRow:last-child {
+    border-bottom: none;
+}
+
+.channelIcon {
+    display: flex;
+    color: var(--primary);
+}
+
+.channelLabel {
+    font-size: 0.9rem;
+    color: var(--foreground);
+}
+
+.trackPill {
+    font-family: var(--font-mono), monospace;
+    font-size: 0.6875rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+.trackPillA {
+    color: var(--primary);
+    background: var(--muted);
+}
+
+.trackPillB {
+    color: var(--muted-foreground);
+    background: var(--muted);
+}
+
+.channelCadence {
+    font-size: 0.8125rem;
+    color: var(--muted-foreground);
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* ── Pillars ── */
+.pillarGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.pillarCard {
+    background: var(--card);
+    padding: 1.35rem 1.15rem;
+}
+
+.pillarNum {
+    font-family: var(--font-display), serif;
+    font-size: 1.25rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.pillarTitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--foreground);
+    margin-bottom: 0.4rem;
+    line-height: 1.3;
+}
+
+.pillarBody {
+    font-size: 0.8125rem;
+    color: var(--muted-foreground);
+    line-height: 1.45;
+}
+
+/* ── Roadmap ── */
+.roadmap {
+    display: flex;
+    flex-direction: column;
+}
+
+.phase {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.phase:first-child {
+    border-top: none;
+}
+
+.phaseDays {
+    font-family: var(--font-mono), monospace;
+    font-size: 0.6875rem;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+}
+
+.phaseTitle {
+    font-size: 1.0625rem;
+    margin: 0;
+}
+
+.phaseTasks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1.5rem;
+}
+
+.task {
+    display: flex;
+    gap: 0.6rem;
+    font-size: 0.875rem;
+    color: var(--foreground);
+}
+
+.task::before {
+    content: "→";
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+/* ── KPI grid ── */
+.kpiGrid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.kpiCard {
+    background: var(--card);
+    padding: 1.35rem 1.15rem;
+}
+
+.kpiValue {
+    font-family: var(--font-display), serif;
+    font-size: 1.4rem;
+    color: var(--primary);
+    font-variant-numeric: tabular-nums;
+}
+
+.kpiLabel {
+    margin-top: 0.35rem;
+    font-size: 0.78125rem;
+    color: var(--muted-foreground);
+    line-height: 1.4;
+}
+
+/* ── Mobile ── */
+@media (max-width: 860px) {
+    .pillarGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .kpiGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .phase {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .phaseTasks {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .channelRow {
+        grid-template-columns: 20px 1fr;
+        grid-template-areas: "icon label" "pill cadence";
+        row-gap: 0.4rem;
+    }
+
+    .channelIcon {
+        grid-area: icon;
+    }
+
+    .channelLabel {
+        grid-area: label;
+    }
+
+    .trackPill {
+        grid-area: pill;
+        justify-self: start;
+    }
+
+    .channelCadence {
+        grid-area: cadence;
+        text-align: right;
+    }
+
+    .pillarGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .kpiGrid {
+        grid-template-columns: 1fr;
+    }
+}

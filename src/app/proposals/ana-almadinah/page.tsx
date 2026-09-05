@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import {
     MapPin, Clock, Briefcase, Camera, Youtube, MessageCircle,
     Linkedin, Megaphone, Check, Layers, Users, Languages,
@@ -456,8 +457,10 @@ export default function AnaAlmadinahProposalPage() {
                         <span className="eyebrow">Growth snapshot</span>
                         <p className={styles.sectionSub}>
                             A condensed look at the digital marketing engine behind this proposal – the
-                            same dual-track plan (visitors, then franchise investors) laid out in full in a
-                            separate playbook, prepared to hand over on request.
+                            same dual-track plan (visitors, then franchise investors) laid out in full in{' '}
+                            <Link href="/proposals/ana-almadinah/playbook" className={styles.evidenceLink}>
+                                the growth playbook
+                            </Link>.
                         </p>
                     </div>
 
