@@ -1,11 +1,11 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
     MapPin, Clock, Briefcase, Camera, Youtube, MessageCircle,
-    Linkedin, Megaphone, Check, Layers, Users, Languages,
+    Linkedin, Megaphone, Layers, Users, Languages,
 } from 'lucide-react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import styles from './page.module.css';
@@ -110,8 +110,6 @@ const QUICK_WINS = [
     'Shoot the first 15 POV clips straight from the headset feed',
 ];
 
-const GROWTH_CHECKLIST_KEY = 'ana-almadinah-proposal-quick-wins';
-
 const WHY_ME: { icon: React.ElementType; title: string; body: string }[] = [
     {
         icon: Layers,
@@ -141,28 +139,6 @@ export default function AnaAlmadinahProposalPage() {
 
     const [growthTrack, setGrowthTrack] = useState<GrowthTrack>('visitors');
     const funnel = GROWTH_FUNNELS[growthTrack];
-
-    const [checked, setChecked] = useState<boolean[]>(() => QUICK_WINS.map(() => false));
-    useEffect(() => {
-        try {
-            const saved = JSON.parse(localStorage.getItem(GROWTH_CHECKLIST_KEY) || 'null');
-            if (Array.isArray(saved)) setChecked(saved);
-        } catch {
-            // ignore malformed storage
-        }
-    }, []);
-    const toggleCheck = (i: number) => {
-        setChecked((prev) => {
-            const next = prev.map((v, idx) => (idx === i ? !v : v));
-            try {
-                localStorage.setItem(GROWTH_CHECKLIST_KEY, JSON.stringify(next));
-            } catch {
-                // storage unavailable, skip persistence
-            }
-            return next;
-        });
-    };
-    const doneCount = checked.filter(Boolean).length;
 
     const whyRef = useScrollReveal<HTMLElement>();
     const pathsRef = useScrollReveal<HTMLElement>();
@@ -520,23 +496,13 @@ export default function AnaAlmadinahProposalPage() {
                                 ))}
                             </div>
 
-                            <div className={styles.quickWins}>
-                                <div className={styles.quickWinsHead}>
-                                    <span>First moves, before any budget is approved</span>
-                                    <span className={styles.quickWinsCount}>{doneCount} of {QUICK_WINS.length} done</span>
-                                </div>
-                                {QUICK_WINS.map((item, i) => (
-                                    <button
-                                        type="button"
-                                        key={item}
-                                        className={`${styles.quickWin} ${checked[i] ? styles.quickWinDone : ''}`}
-                                        onClick={() => toggleCheck(i)}
-                                        aria-pressed={checked[i]}
-                                    >
-                                        <span className={styles.quickWinBox}>{checked[i] && <Check size={11} />}</span>
-                                        <span>{item}</span>
-                                    </button>
-                                ))}
+                            <div>
+                                <p className={styles.growthGoal}>First moves, before any budget is approved</p>
+                                <ol className={styles.growthSteps}>
+                                    {QUICK_WINS.map((item) => (
+                                        <li key={item}>{item}</li>
+                                    ))}
+                                </ol>
                             </div>
                         </div>
                     </div>

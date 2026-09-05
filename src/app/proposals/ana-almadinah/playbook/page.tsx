@@ -1,9 +1,9 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import {
-    ArrowLeft, Camera, Youtube, MapPin, MessageCircle, Linkedin, Megaphone, Check,
+    ArrowLeft, Camera, Youtube, MapPin, MessageCircle, Linkedin, Megaphone,
 } from 'lucide-react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import shared from '../page.module.css';
@@ -102,33 +102,9 @@ const CHECKLIST_ITEMS = [
     'Film the first 10–15 POV clips straight from the headset feed',
 ];
 
-const CHECKLIST_KEY = 'ana-almadinah-playbook-page-checklist';
-
 export default function AnaAlmadinahPlaybookPage() {
     const [track, setTrack] = useState<GrowthTrack>('visitors');
     const funnel = GROWTH_FUNNELS[track];
-
-    const [checked, setChecked] = useState<boolean[]>(() => CHECKLIST_ITEMS.map(() => false));
-    useEffect(() => {
-        try {
-            const saved = JSON.parse(localStorage.getItem(CHECKLIST_KEY) || 'null');
-            if (Array.isArray(saved)) setChecked(saved);
-        } catch {
-            // ignore malformed storage
-        }
-    }, []);
-    const toggleCheck = (i: number) => {
-        setChecked((prev) => {
-            const next = prev.map((v, idx) => (idx === i ? !v : v));
-            try {
-                localStorage.setItem(CHECKLIST_KEY, JSON.stringify(next));
-            } catch {
-                // storage unavailable, skip persistence
-            }
-            return next;
-        });
-    };
-    const doneCount = checked.filter(Boolean).length;
 
     const audienceRef = useScrollReveal<HTMLElement>();
     const channelsRef = useScrollReveal<HTMLElement>();
@@ -306,33 +282,20 @@ export default function AnaAlmadinahPlaybookPage() {
                     </div>
                 </section>
 
-                {/* ── Checklist ── */}
+                {/* ── First two weeks ── */}
                 <section ref={checklistRef} className={`${shared.section} reveal`} id="checklist" style={{ borderBottom: 'none' }}>
                     <div className={shared.sectionHead}>
                         <span className="eyebrow">06 · First two weeks</span>
                         <p className={shared.sectionSub}>
-                            What can start before any budget is approved. Checked items are saved on
-                            this device.
+                            What can start before any budget is approved.
                         </p>
                     </div>
 
-                    <div className={shared.quickWins}>
-                        <div className={shared.quickWinsHead}>
-                            <span>Quick wins</span>
-                            <span className={shared.quickWinsCount}>{doneCount} of {CHECKLIST_ITEMS.length} done</span>
-                        </div>
-                        {CHECKLIST_ITEMS.map((item, i) => (
-                            <button
-                                type="button" key={item}
-                                className={`${shared.quickWin} ${checked[i] ? shared.quickWinDone : ''}`}
-                                onClick={() => toggleCheck(i)}
-                                aria-pressed={checked[i]}
-                            >
-                                <span className={shared.quickWinBox}>{checked[i] && <Check size={11} />}</span>
-                                <span>{item}</span>
-                            </button>
+                    <ol className={shared.growthSteps}>
+                        {CHECKLIST_ITEMS.map((item) => (
+                            <li key={item}>{item}</li>
                         ))}
-                    </div>
+                    </ol>
                 </section>
 
                 <p className={shared.footerNote}>
