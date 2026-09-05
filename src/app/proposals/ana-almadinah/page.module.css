@@ -534,80 +534,6 @@
     transition: width 1s cubic-bezier(0.2, 0.7, 0.3, 1);
 }
 
-.quickWins {
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
-}
-
-.quickWinsHead {
-    display: flex;
-    justify-content: space-between;
-    gap: 0.75rem;
-    padding: 0.75rem 1rem;
-    font-size: 0.75rem;
-    color: var(--muted-foreground);
-    background: var(--muted);
-    border-bottom: 1px solid var(--border);
-}
-
-.quickWinsCount {
-    font-family: var(--font-mono), monospace;
-    color: var(--primary);
-    font-weight: 600;
-    flex-shrink: 0;
-}
-
-.quickWin {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    width: 100%;
-    padding: 0.85rem 1rem;
-    border: none;
-    border-bottom: 1px solid var(--border);
-    background: var(--card);
-    font-family: inherit;
-    font-size: 0.875rem;
-    color: var(--foreground);
-    text-align: left;
-    cursor: pointer;
-    transition: background 0.15s ease;
-}
-
-.quickWin:last-child {
-    border-bottom: none;
-}
-
-.quickWin:hover {
-    background: var(--muted);
-}
-
-.quickWinBox {
-    width: 16px;
-    height: 16px;
-    border: 1.5px solid var(--border);
-    border-radius: 4px;
-    flex-shrink: 0;
-    margin-top: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-foreground);
-    transition: background 0.15s ease, border-color 0.15s ease;
-}
-
-.quickWinDone .quickWinBox {
-    background: var(--primary);
-    border-color: var(--primary);
-}
-
-.quickWinDone span:last-child {
-    color: var(--muted-foreground);
-    text-decoration: line-through;
-    text-decoration-color: var(--border);
-}
-
 /* ── Close ── */
 .close {
     padding: 4rem 0 3rem;
@@ -708,11 +634,6 @@
 
     .budgetTrack {
         grid-area: track;
-    }
-
-    .quickWinsHead {
-        flex-direction: column;
-        gap: 0.25rem;
     }
 
     .channelStrip {
