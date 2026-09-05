@@ -129,8 +129,8 @@ const WHY_ME: { icon: React.ElementType; title: string; body: string }[] = [
     },
     {
         icon: Clock,
-        title: 'In Riyadh, available now',
-        body: 'Transferable Iqama, no relocation lead time. Whichever path fits, start date isn’t the bottleneck.',
+        title: 'Already in Madinah',
+        body: 'Based in Madinah today, transferable Iqama, zero relocation lead time. Whichever path fits, start date isn’t the bottleneck.',
     },
 ];
 
@@ -196,7 +196,7 @@ export default function AnaAlmadinahProposalPage() {
                                 <div className={styles.heroMetaItem}>
                                     <MapPin size={16} />
                                     <div>
-                                        <strong>Riyadh, KSA</strong>
+                                        <strong>Madinah, KSA</strong>
                                         <span>Transferable Iqama</span>
                                     </div>
                                 </div>
@@ -559,7 +559,7 @@ export default function AnaAlmadinahProposalPage() {
                 </section>
 
                 <p className={styles.footerNote}>
-                    Prepared by Thariq Hamad for Ana Almadinah · Riyadh, Saudi Arabia
+                    Prepared by Thariq Hamad for Ana Almadinah · Madinah, Saudi Arabia
                 </p>
             </div>
         </main>
