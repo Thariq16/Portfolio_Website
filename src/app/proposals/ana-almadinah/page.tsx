@@ -73,17 +73,17 @@ const GROWTH_FUNNELS: Record<GrowthTrack, { goal: string; steps: string[] }> = {
     visitors: {
         goal: 'Fill the Madinah venue, build the proof-of-demand library',
         steps: [
-            'Awareness — POV clips shot straight from the VR headset, Arabic voiceover with English subtitles',
-            'Consideration — Google Business Profile + Maps SEO, Umrah tour-operator itinerary listings',
-            'Conversion — WhatsApp Business booking and on-site NFC tap-to-reserve via Waseej',
+            'Awareness – POV clips shot straight from the VR headset, Arabic voiceover with English subtitles',
+            'Consideration – Google Business Profile + Maps SEO, Umrah tour-operator itinerary listings',
+            'Conversion – WhatsApp Business booking and on-site NFC tap-to-reserve via Waseej',
         ],
     },
     franchise: {
         goal: 'Fill the pipeline for the next licensed territory',
         steps: [
-            'Awareness — LinkedIn thought-leadership, this proposal page as the always-on anchor',
-            'Consideration — franchise info-pack with unit economics from the Madinah flagship',
-            'Conversion — LinkedIn + Google Search ads, direct outreach via the TechTaswiq growth engine',
+            'Awareness – LinkedIn thought-leadership, this proposal page as the always-on anchor',
+            'Consideration – franchise info-pack with unit economics from the Madinah flagship',
+            'Conversion – LinkedIn + Google Search ads, direct outreach via the TechTaswiq growth engine',
         ],
     },
 };
@@ -408,7 +408,7 @@ export default function AnaAlmadinahProposalPage() {
                     <div className={styles.sectionHead}>
                         <span className="eyebrow">Growth snapshot</span>
                         <p className={styles.sectionSub}>
-                            A condensed look at the digital marketing engine behind this proposal — the
+                            A condensed look at the digital marketing engine behind this proposal – the
                             same dual-track plan (visitors, then franchise investors) laid out in full in a
                             separate playbook, prepared to hand over on request.
                         </p>
