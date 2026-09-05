@@ -624,6 +624,11 @@
     .proofRail {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .growthGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 560px) {
@@ -634,5 +639,37 @@
     .termBox {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .budgetRow {
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "label pct" "track track";
+        row-gap: 0.35rem;
+    }
+
+    .budgetLabel {
+        grid-area: label;
+    }
+
+    .budgetPct {
+        grid-area: pct;
+    }
+
+    .budgetTrack {
+        grid-area: track;
+    }
+
+    .quickWinsHead {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .channelStrip {
+        gap: 0.5rem;
+    }
+
+    .channelChip {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.65rem;
     }
 }
