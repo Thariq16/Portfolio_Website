@@ -5390,6 +5390,270 @@ export const applications: Application[] = [
     "channel": "Company Site/ATS",
     "status": "No Response",
     "location": ""
+  },
+  {
+    "date": "2026-09-02",
+    "company": "Duncan & Ross",
+    "role": "PROJECT MANAGER - BANKING - DIGITAL TRANSFORMATION, DIGITAL, DATA, AI DELIVERY",
+    "channel": "Recruiter/Agency (Manatal)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-02",
+    "company": "BlueYonder",
+    "role": "Sr Project Manager",
+    "channel": "Company Site/ATS (Workday)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-02",
+    "company": "Apricot International",
+    "role": "Technical Lead - Business Automation & AI Development",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-02",
+    "company": "Systems Limited",
+    "role": "Agile Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Al Saudia"
+  },
+  {
+    "date": "2026-09-02",
+    "company": "DEKRA Arbeit Bulgaria",
+    "role": "Business Development Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Sofia"
+  },
+  {
+    "date": "2026-09-03",
+    "company": "Madar",
+    "role": "Product Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-03",
+    "company": "Nameless Ventures",
+    "role": "Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Dubai"
+  },
+  {
+    "date": "2026-09-03",
+    "company": "People In AI",
+    "role": "Director of Product, AI Transformation",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "California, United States"
+  },
+  {
+    "date": "2026-09-03",
+    "company": "InsuranceMarket.ae",
+    "role": "Business Analyst",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "India"
+  },
+  {
+    "date": "2026-09-03",
+    "company": "ThoughtLabs Belgium",
+    "role": "Business Analyst (Open Data)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Luxembourg, Luxembourg"
+  },
+  {
+    "date": "2026-09-03",
+    "company": "MKTG Sports",
+    "role": "Intern, DSI MENA",
+    "channel": "Company Site/ATS (Workday)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-03",
+    "company": "Fleetwood",
+    "role": "Business Analyst",
+    "channel": "Company Site/ATS (JobAdder)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-04",
+    "company": "Projactive",
+    "role": "Programme / PMO Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-09-04",
+    "company": "Management Solutions International (MSI)",
+    "role": "Business Analyst",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Doha, Qatar"
+  },
+  {
+    "date": "2026-09-04",
+    "company": "DXC Technology",
+    "role": "Senior Business Analyst",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Doha, Qatar"
+  },
+  {
+    "date": "2026-09-04",
+    "company": "DXC Technology",
+    "role": "Business Analyst",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Doha, Qatar"
+  },
+  {
+    "date": "2026-09-04",
+    "company": "EPAM",
+    "role": "Senior Product Manager",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": "Al Khobar"
+  },
+  {
+    "date": "2026-09-04",
+    "company": "CodeNinja",
+    "role": "Project Manager - IT Infrastructure Modernization Projects",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-04",
+    "company": "Thoughtworks",
+    "role": "Unspecified role (confirmation email did not name the position)",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-04",
+    "company": "Agoda",
+    "role": "Business Analyst (Supply Analytics)",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": "Bangkok, Thailand"
+  },
+  {
+    "date": "2026-09-05",
+    "company": "Qashio",
+    "role": "Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Dubai, United Arab Emirates"
+  },
+  {
+    "date": "2026-09-05",
+    "company": "aramco digital",
+    "role": "Digital Consulting Expert",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Dhahran"
+  },
+  {
+    "date": "2026-09-05",
+    "company": "Red Sea Global Hospitality",
+    "role": "Assistant IT Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Jeddah"
+  },
+  {
+    "date": "2026-09-05",
+    "company": "Deltek",
+    "role": "Senior AI Product Manager",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-06",
+    "company": "Confidential",
+    "role": "E-Commerce Product Lead",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-06",
+    "company": "Almarai",
+    "role": "Senior Marketing Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-06",
+    "company": "Get Started",
+    "role": "Vice President of Marketing - Founding Leadership Role",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-06",
+    "company": "Starways",
+    "role": "Senior Products Specialist",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-06",
+    "company": "AngelList",
+    "role": "Product Manager, Funds",
+    "channel": "Company Site/ATS (Lever)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-06",
+    "company": "Employ",
+    "role": "Unspecified role (confirmation email did not name the position)",
+    "channel": "Company Site/ATS (Lever)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-06",
+    "company": "Aquent",
+    "role": "Lead Product Manager",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-07",
+    "company": "Salt",
+    "role": "Senior Programme and Delivery Manager",
+    "channel": "Company Site/ATS (Broadbean)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-07",
+    "company": "Agoda",
+    "role": "Senior Product Manager",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": "Bangkok, Thailand"
   }
 ];
 
