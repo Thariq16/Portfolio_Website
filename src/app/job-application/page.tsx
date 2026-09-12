@@ -16,9 +16,13 @@ const PRE_CV_LABEL   = 'Dec 15 – Apr 1';
 const POST_CV_LABEL  = 'Apr 2 – Jul 1';
 const JUL1_CV_LABEL  = 'Jul 1 – present';
 
-/* ─── Monthly chart config ─── */
-const MONTHS       = ['2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07', '2026-08'];
-const MONTH_LABELS = ['Dec 25', 'Jan 26', 'Feb 26', 'Mar 26', 'Apr 26', 'May 26', 'Jun 26', 'Jul 26', 'Aug 26'];
+/* ─── Monthly chart config ───
+   Derived from the data itself so a new sync never needs a manual month added here. */
+const MONTHS = Array.from(new Set(applications.map(a => a.date.slice(0, 7)))).sort();
+const MONTH_LABELS = MONTHS.map(m => {
+    const [y, mo] = m.split('-').map(Number);
+    return new Date(y, mo - 1, 1).toLocaleDateString('en-US', { month: 'short', year: '2-digit' });
+});
 const MONTH_IS_POST = MONTHS.map(m => m >= '2026-04');
 
 /* ─── Timeline toggle ─── */
