@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft } from 'lucide-react';
 import { BLOG_POSTS } from '../posts';
+import Faq from './Faq';
 import styles from './page.module.css';
 
 const post = BLOG_POSTS.find((p) => p.slug === 'sabbaq-2026-madinah-sports-hackathon')!;
@@ -15,6 +16,21 @@ export const metadata: Metadata = {
         type: 'article',
         title: post.title,
         description: post.excerpt,
+        url: `/blog/${post.slug}`,
+        images: [
+            {
+                url: '/images/sabbaq-al-ansar-exterior.jpg',
+                width: 1600,
+                height: 900,
+                alt: "Al-Ansar Sports Club's illuminated entrance and signage in Madinah at night",
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: post.title,
+        description: post.excerpt,
+        images: ['/images/sabbaq-al-ansar-exterior.jpg'],
     },
 };
 
@@ -111,13 +127,13 @@ export default function SabbaqArticlePage() {
                             Madinah&apos;s sports-tech story may only be getting started.
                         </p>
 
-                        <figure className={styles.figure}>
+                        <figure className={styles.figureWide}>
                             <Image
                                 src="/images/sabbaq-al-ansar-exterior.jpg"
-                                alt="Al-Ansar Sports Club's headquarters in Madinah, lit up at night"
-                                width={1400}
-                                height={2489}
-                                className={styles.figureImage}
+                                alt="Al-Ansar Sports Club's illuminated entrance and signage in Madinah at night"
+                                width={1600}
+                                height={900}
+                                className={styles.figureWideImage}
                                 priority
                             />
                             <figcaption className={styles.figureCaption}>
@@ -134,29 +150,27 @@ export default function SabbaqArticlePage() {
                             <a href="https://alansar.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
                                 Al-Ansar
                             </a>{' '}
-                            is thinking about its future.
-                        </p>
-                        <p>
-                            The club&apos;s recent rebranding is not simply about changing its
-                            visual identity. There seems to be a broader ambition around what
-                            the club can become within Madinah&apos;s sports ecosystem.
+                            is thinking about its future. The club&apos;s recent rebranding is
+                            not simply about changing its visual identity. There seems to be a
+                            broader ambition around what the club can become within Madinah&apos;s
+                            sports ecosystem.
                         </p>
                         <p>
                             One part that particularly caught my attention was the focus on
-                            bringing the club closer to the families of Madinah.
+                            bringing the club closer to the families of Madinah. That changes
+                            the way you think about a football club. It isn&apos;t only about
+                            what happens on the pitch.
                         </p>
-                        <p>That changes the way you think about a football club.</p>
-                        <p>It isn&apos;t only about what happens on the pitch.</p>
                         <p>
                             A club can become a platform for community, participation, youth
                             development, technology, entertainment and new businesses around
-                            sport.
+                            sport. And that creates opportunities far beyond traditional
+                            football.
                         </p>
-                        <p>And that creates opportunities far beyond traditional football.</p>
 
                         <h2>A three-day event with a wide range of ideas</h2>
-                        <p>One thing that stood out to me was the scale of participation.</p>
                         <p>
+                            One thing that stood out to me was the scale of participation.
                             SABBAQ&apos;s journey went from more than 200 applications to 75
                             accepted participants, 10 finalists and three winners.
                         </p>
@@ -168,6 +182,7 @@ export default function SabbaqArticlePage() {
                                 width={1400}
                                 height={788}
                                 className={styles.figureWideImage}
+                                loading="eager"
                             />
                             <figcaption className={styles.figureCaption}>
                                 The SABBAQ journey, from more than 200 applications to 10
@@ -175,8 +190,8 @@ export default function SabbaqArticlePage() {
                             </figcaption>
                         </figure>
 
-                        <p>But the numbers were only part of what made the event interesting.</p>
                         <p>
+                            But the numbers were only part of what made the event interesting.
                             The ideas being explored covered a surprisingly broad range of
                             sports and technology problems.
                         </p>
@@ -198,6 +213,7 @@ export default function SabbaqArticlePage() {
                                 width={1400}
                                 height={788}
                                 className={styles.figureWideImage}
+                                loading="eager"
                             />
                             <figcaption className={styles.figureCaption}>
                                 Different problems, different technologies, but a common focus
@@ -209,14 +225,11 @@ export default function SabbaqArticlePage() {
                             One concept explored how visual technology could be used around
                             swimming pools to help identify people who may be drowning,
                             particularly in environments where children are learning to swim.
-                        </p>
-                        <p>
                             There were also ideas looking at player fatigue using IoT and data,
                             alongside research-backed approaches to understanding player quality
-                            and development.
+                            and development. Other teams were working on computer vision and
+                            sports analytics. These are very different problems.
                         </p>
-                        <p>Other teams were working on computer vision and sports analytics.</p>
-                        <p>These are very different problems.</p>
                         <p>But they all point towards the same thing:</p>
                         <p className={styles.pullquote}>
                             Technology is becoming increasingly embedded in sport.
@@ -232,6 +245,7 @@ export default function SabbaqArticlePage() {
                                 width={900}
                                 height={1600}
                                 className={styles.figureImage}
+                                loading="eager"
                             />
                             <figcaption className={styles.figureCaption}>
                                 My SABBAQ participant badge.
@@ -240,36 +254,30 @@ export default function SabbaqArticlePage() {
 
                         <p>
                             It may seem like a small thing, but this is what made the
-                            experience interesting for me.
-                        </p>
-                        <p>I wasn&apos;t looking at these ideas from a distance.</p>
-                        <p>
-                            I was sitting in the room, listening to people explain the problems
-                            they were trying to solve, seeing different approaches to sports
-                            technology and watching people test whether their ideas could
-                            become something real.
+                            experience interesting for me. I wasn&apos;t looking at these ideas
+                            from a distance. I was sitting in the room, listening to people
+                            explain the problems they were trying to solve, seeing different
+                            approaches to sports technology and watching people test whether
+                            their ideas could become something real.
                         </p>
                         <p>And after three days, I kept coming back to one question.</p>
 
                         <h2>What happens when we connect the data?</h2>
-                        <p>There were a lot of interesting pieces of the sports-tech puzzle at SABBAQ.</p>
-                        <div className={styles.staccato}>
-                            <p>Player data.</p>
-                            <p>Computer vision.</p>
-                            <p>IoT.</p>
-                            <p>Performance monitoring.</p>
-                            <p>Talent identification.</p>
-                            <p>Player development.</p>
-                            <p>Analytics.</p>
-                        </div>
-                        <p>But what happens when we connect them?</p>
-                        <p>This was probably my biggest takeaway from the event.</p>
+                        <p>
+                            There were a lot of interesting pieces of the sports-tech puzzle at
+                            SABBAQ. Player data. Computer vision. IoT. Performance monitoring.
+                            Talent identification. Player development. Analytics.
+                        </p>
+                        <p>
+                            But what happens when we connect them? This was probably my biggest
+                            takeaway from the event.
+                        </p>
                         <p>
                             During one of the discussions, the topic of player transfers came
                             up, including how data could potentially help predict and support
-                            transfers within the Saudi sports ecosystem.
+                            transfers within the Saudi sports ecosystem. That immediately got
+                            me thinking.
                         </p>
-                        <p>That immediately got me thinking.</p>
                         <p>Imagine being able to combine information about a player&apos;s:</p>
                         <ul>
                             <li>Performance</li>
@@ -282,21 +290,18 @@ export default function SabbaqArticlePage() {
                         </ul>
                         <p>
                             And then use that information to help clubs make better
-                            recruitment and transfer decisions.
+                            recruitment and transfer decisions. The interesting opportunity may
+                            not be another isolated analytics product.
                         </p>
-                        <p>The interesting opportunity may not be another isolated analytics product.</p>
                         <p className={styles.pullquote}>It may be the layer that connects the data.</p>
 
                         <h2>From individual products to an ecosystem</h2>
-                        <p>This is where I think Saudi Arabia has an interesting opportunity.</p>
-                        <p>We often talk about sports technology as individual products.</p>
-                        <div className={styles.staccato}>
-                            <p>An analytics platform.</p>
-                            <p>A computer vision system.</p>
-                            <p>An IoT device.</p>
-                            <p>A performance tool.</p>
-                            <p>A talent identification platform.</p>
-                        </div>
+                        <p>
+                            This is where I think Saudi Arabia has an interesting opportunity.
+                            We often talk about sports technology as individual products. An
+                            analytics platform. A computer vision system. An IoT device. A
+                            performance tool. A talent identification platform.
+                        </p>
                         <p>
                             But ecosystems become much more powerful when these systems start
                             working together.
@@ -305,72 +310,67 @@ export default function SabbaqArticlePage() {
                         <p className={styles.flowLine}>
                             Discovery → Development → Performance → Recruitment → Transfer → Continued Development
                         </p>
-                        <p>The more connected those stages become, the more useful the data becomes.</p>
                         <p>
-                            And the more useful the data becomes, the better decisions clubs,
-                            academies, athletes and other stakeholders can potentially make.
+                            The more connected those stages become, the more useful the data
+                            becomes. And the more useful the data becomes, the better decisions
+                            clubs, academies, athletes and other stakeholders can potentially
+                            make. That is a much bigger opportunity than simply building
+                            another dashboard.
                         </p>
-                        <p>That is a much bigger opportunity than simply building another dashboard.</p>
 
                         <h2>Why Madinah matters</h2>
-                        <p>What made SABBAQ particularly interesting to me was where it happened.</p>
-                        <p>This was happening in Madinah, Saudi Arabia.</p>
                         <p>
-                            And the room was full of people thinking about how technology could
-                            be applied to sport in ways that could work within Saudi Arabia.
+                            What made SABBAQ particularly interesting to me was where it
+                            happened. This was happening in Madinah, Saudi Arabia. And the room
+                            was full of people thinking about how technology could be applied
+                            to sport in ways that could work within Saudi Arabia.
                         </p>
-                        <p>That&apos;s important.</p>
                         <p>
-                            Technology doesn&apos;t always need to be copied from another market
-                            and simply dropped into Saudi Arabia.
+                            That&apos;s important. Technology doesn&apos;t always need to be
+                            copied from another market and simply dropped into Saudi Arabia.
                         </p>
                         <p>
                             There is an opportunity to build products specifically around the
                             Saudi sports ecosystem, its culture, its communities and the
-                            direction the country is heading.
+                            direction the country is heading. Madinah can be part of that
+                            story.
                         </p>
-                        <p>Madinah can be part of that story.</p>
 
                         <h2>The people were perhaps the most encouraging part</h2>
-                        <p>The products were interesting.</p>
-                        <p>The technology was interesting.</p>
-                        <p>But what I found most encouraging was the people.</p>
+                        <p>
+                            The products were interesting. The technology was interesting. But
+                            what I found most encouraging was the people.
+                        </p>
                         <p>
                             There was genuine excitement from people who wanted to understand
-                            how they could participate in the sports ecosystem.
+                            how they could participate in the sports ecosystem. Some were
+                            building. Some were pitching. Some were researching. Some were
+                            exploring completely new problems. Others were simply trying to
+                            understand where they could contribute.
                         </p>
-                        <div className={styles.staccato}>
-                            <p>Some were building.</p>
-                            <p>Some were pitching.</p>
-                            <p>Some were researching.</p>
-                            <p>Some were exploring completely new problems.</p>
-                            <p>Others were simply trying to understand where they could contribute.</p>
-                        </div>
-                        <p>That matters because ecosystems do not emerge from technology alone.</p>
                         <p>
-                            They emerge when enough people start believing there is an
+                            That matters because ecosystems do not emerge from technology
+                            alone. They emerge when enough people start believing there is an
                             opportunity worth building around.
                         </p>
 
                         <h2>My biggest takeaway from SABBAQ</h2>
-                        <p>I went to SABBAQ expecting a hackathon.</p>
-                        <p>What I saw was a glimpse of something potentially much bigger.</p>
+                        <p>
+                            I went to SABBAQ expecting a hackathon. What I saw was a glimpse of
+                            something potentially much bigger.
+                        </p>
                         <p className={styles.pullquote}>Madinah has people who want to build in sports.</p>
-                        <div className={styles.staccato}>
-                            <p>There are ideas.</p>
-                            <p>There is technology.</p>
-                            <p>There is talent.</p>
-                            <p>There is institutional interest.</p>
-                        </div>
-                        <p>And there is an increasingly ambitious sports ecosystem developing across Saudi Arabia.</p>
+                        <p>
+                            There are ideas. There is technology. There is talent. There is
+                            institutional interest. And there is an increasingly ambitious
+                            sports ecosystem developing across Saudi Arabia.
+                        </p>
                         <p>The next question is how we connect all of these pieces.</p>
                         <p>
                             SABBAQ made me think that the future of sports technology in
-                            Madinah may not be about one breakthrough product.
-                        </p>
-                        <p>
-                            It may be about building an ecosystem where many different ideas,
-                            technologies and people can work together.
+                            Madinah may not be about one breakthrough product. It may be about
+                            building an ecosystem where many different ideas, technologies and
+                            people can work together.
                         </p>
                         <p>And if this was the beginning, I am genuinely curious to see what comes next.</p>
                     </div>
@@ -398,15 +398,7 @@ export default function SabbaqArticlePage() {
                         </dl>
                     </div>
 
-                    <div className={styles.faq}>
-                        <h3 className={styles.faqTitle}>Frequently asked questions</h3>
-                        {FAQS.map((item) => (
-                            <div key={item.q} className={styles.faqItem}>
-                                <h4 className={styles.faqQ}>{item.q}</h4>
-                                <p className={styles.faqA}>{item.a}</p>
-                            </div>
-                        ))}
-                    </div>
+                    <Faq items={FAQS} />
 
                     <p className={styles.footerNote}>
                         Written by Thariq Hamad ·{' '}

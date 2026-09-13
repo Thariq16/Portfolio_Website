@@ -15,7 +15,7 @@ const DATES: Record<string, string> = {
     '/football': '2026-08-30',
     '/privacy':  '2025-01-01',
     '/blog':     '2026-09-13',
-    '/blog/sabbaq-2026-madinah-sports-hackathon': '2026-09-13',
+    '/blog/sabbaq-2026-madinah-sports-hackathon': '2026-08-25',
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
