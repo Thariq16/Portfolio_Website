@@ -38,6 +38,7 @@ export default function Navbar() {
                     <Link href="/design" className={styles.navLink}>{t.nav.design}</Link>
                     <Link href="/football" className={styles.navLink}>{t.nav.football}</Link>
                     <Link href="/about" className={styles.navLink}>{t.nav.about}</Link>
+                    <Link href="/blog" className={styles.navLink}>{t.nav.blog}</Link>
                     <Button variant="ghost" size="sm" onClick={toggleTheme} className={styles.iconBtn} aria-label={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}>
                         {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
                     </Button>
@@ -74,6 +75,7 @@ export default function Navbar() {
                     <Link href="/design" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.design}</Link>
                     <Link href="/football" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.football}</Link>
                     <Link href="/about" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.about}</Link>
+                    <Link href="/blog" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>{t.nav.blog}</Link>
                     <div className={styles.mobileActions}>
                         <Link href="/cv" onClick={() => setIsMenuOpen(false)}>
                             <Button variant="outline">

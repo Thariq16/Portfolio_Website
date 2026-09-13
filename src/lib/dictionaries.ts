@@ -84,6 +84,7 @@ export const dictionary = {
             design: 'Design',
             football: 'Football',
             about: 'About',
+            blog: 'Writing',
             contact: 'Book a Call',
         },
         hero: {
@@ -698,6 +699,7 @@ export const dictionary = {
             design: 'تصميم',
             football: 'كرة القدم',
             about: 'عني',
+            blog: 'مقالات',
             contact: 'احجز مكالمة',
         },
         hero: {

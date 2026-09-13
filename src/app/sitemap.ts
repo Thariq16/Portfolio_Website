@@ -14,6 +14,8 @@ const DATES: Record<string, string> = {
     '/cv':       '2026-08-30',
     '/football': '2026-08-30',
     '/privacy':  '2025-01-01',
+    '/blog':     '2026-09-13',
+    '/blog/sabbaq-2026-madinah-sports-hackathon': '2026-09-13',
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -30,6 +32,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/cv',
         '/football',
         '/privacy',
+        '/blog',
+        '/blog/sabbaq-2026-madinah-sports-hackathon',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: DATES[route] ?? '2025-06-01',
