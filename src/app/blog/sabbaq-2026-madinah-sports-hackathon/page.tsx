@@ -45,7 +45,7 @@ const FAQS = [
                 </a>{' '}
                 and{' '}
                 <a href="https://alansar.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
-                    Al-Ansar Football Club
+                    Al-Ansar Sports Club
                 </a>.
             </>
         ),
@@ -114,7 +114,7 @@ export default function SabbaqArticlePage() {
                         <figure className={styles.figure}>
                             <Image
                                 src="/images/sabbaq-al-ansar-exterior.jpg"
-                                alt="Al-Ansar Football Club's headquarters in Madinah, lit up at night"
+                                alt="Al-Ansar Sports Club's headquarters in Madinah, lit up at night"
                                 width={1400}
                                 height={2489}
                                 className={styles.figureImage}
@@ -122,7 +122,7 @@ export default function SabbaqArticlePage() {
                             />
                             <figcaption className={styles.figureCaption}>
                                 <a href="https://alansar.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
-                                    Al-Ansar Football Club
+                                    Al-Ansar Sports Club
                                 </a>{' '}
                                 in Madinah during SABBAQ 2026.
                             </figcaption>
@@ -391,7 +391,7 @@ export default function SabbaqArticlePage() {
                                 </a>{' '}
                                 and{' '}
                                 <a href="https://alansar.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
-                                    Al-Ansar Football Club
+                                    Al-Ansar Sports Club
                                 </a>
                             </dd>
                             <dt>Focus</dt><dd>Sports innovation, technology and solutions for the future of sport</dd>
