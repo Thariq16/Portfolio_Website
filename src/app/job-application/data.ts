@@ -5654,6 +5654,118 @@ export const applications: Application[] = [
     "channel": "Company Site/ATS",
     "status": "No Response",
     "location": "Bangkok, Thailand"
+  },
+  {
+    "date": "2026-09-09",
+    "company": "ALPHA PLUS",
+    "role": "Project Manager",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-09-09",
+    "company": "Worldwide Teaching",
+    "role": "English Teacher (Al Khobar, Saudi Arabia)",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Saudi Arabia"
+  },
+  {
+    "date": "2026-09-09",
+    "company": "TAWANTECH",
+    "role": "Project Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh, Riyadh Province"
+  },
+  {
+    "date": "2026-09-09",
+    "company": "Helian EG",
+    "role": "Systems Analyst",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-09-09",
+    "company": "Tibah Airports Operation Co.",
+    "role": "Operations Duty Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Madinah"
+  },
+  {
+    "date": "2026-09-09",
+    "company": "ABIS",
+    "role": "Project Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Al Khobar, Eastern Province"
+  },
+  {
+    "date": "2026-09-09",
+    "company": "Kinetic Business Solutions",
+    "role": "Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-09",
+    "company": "C3 AI",
+    "role": "Unspecified role (confirmation email did not name the position)",
+    "channel": "Company Site/ATS (Greenhouse)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-10",
+    "company": "Qiddiya Investment Company",
+    "role": "Senior Manager - Product Owner",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-09-11",
+    "company": "Bayut | dubizzle",
+    "role": "Senior Technical Office Engineer",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-13",
+    "company": "CHAMP Cargosystems",
+    "role": "Project Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Barcelona"
+  },
+  {
+    "date": "2026-09-13",
+    "company": "Foodics",
+    "role": "Sr. Product Manager - Foodics ERP",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-09-13",
+    "company": "Checkout.com",
+    "role": "Sales Manager - Saudi Arabia",
+    "channel": "Company Site/ATS (Ashby)",
+    "status": "No Response",
+    "location": "Saudi Arabia"
+  },
+  {
+    "date": "2026-09-13",
+    "company": "Watan First",
+    "role": "Software Architect",
+    "channel": "Company Site/ATS (Imploy)",
+    "status": "No Response",
+    "location": ""
   }
 ];
 
