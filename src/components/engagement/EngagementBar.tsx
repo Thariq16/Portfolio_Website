@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState, useRef } from 'react';
-import { Heart, Share2, Link2, Linkedin, Twitter, MessageCircle, Check } from 'lucide-react';
+import { Heart, Share2, Link2, Linkedin, Facebook, X as XIcon, MessageCircle, Check } from 'lucide-react';
 import { supabase, engagementId, type EngagementPageType } from '@/lib/supabase';
 import styles from './EngagementBar.module.css';
 
@@ -81,13 +81,14 @@ export default function EngagementBar({ pageType, slug, title }: EngagementBarPr
         if (row) setShares(row.shares);
     };
 
-    const shareTo = (platform: 'x' | 'linkedin' | 'whatsapp') => {
+    const shareTo = (platform: 'x' | 'linkedin' | 'whatsapp' | 'facebook') => {
         const url = encodeURIComponent(getShareUrl());
         const text = encodeURIComponent(title);
         const links: Record<typeof platform, string> = {
             x: `https://twitter.com/intent/tweet?url=${url}&text=${text}`,
             linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${url}`,
             whatsapp: `https://wa.me/?text=${text}%20${url}`,
+            facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}`,
         };
         window.open(links[platform], '_blank', 'noopener,noreferrer');
         trackShare();
@@ -133,10 +134,13 @@ export default function EngagementBar({ pageType, slug, title }: EngagementBarPr
                 {shareOpen && (
                     <div className={styles.menu} role="menu">
                         <button type="button" className={styles.menuItem} onClick={() => shareTo('x')}>
-                            <Twitter size={15} /> Share on X
+                            <XIcon size={15} /> Share on X
                         </button>
                         <button type="button" className={styles.menuItem} onClick={() => shareTo('linkedin')}>
                             <Linkedin size={15} /> Share on LinkedIn
+                        </button>
+                        <button type="button" className={styles.menuItem} onClick={() => shareTo('facebook')}>
+                            <Facebook size={15} /> Share on Facebook
                         </button>
                         <button type="button" className={styles.menuItem} onClick={() => shareTo('whatsapp')}>
                             <MessageCircle size={15} /> Share on WhatsApp
