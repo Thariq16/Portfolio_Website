@@ -7,7 +7,7 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
     title: 'Writing – Thariq Hamad',
     description: 'Notes on product management, sports tech, and building in the GCC – from Thariq Hamad.',
-    alternates: { canonical: '/blog' },
+    alternates: { canonical: '/blog/' },
 };
 
 export default function BlogIndexPage() {

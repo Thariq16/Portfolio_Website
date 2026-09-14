@@ -75,8 +75,8 @@ export default function CaseStudyContent() {
             <BreadcrumbSchema
                 items={[
                     { name: 'Home', url: 'https://thariqhamad.com' },
-                    { name: 'Case Studies', url: 'https://thariqhamad.com/projects' },
-                    { name: project.company, url: `https://thariqhamad.com/projects/${slug}` },
+                    { name: 'Case Studies', url: 'https://thariqhamad.com/projects/' },
+                    { name: project.company, url: `https://thariqhamad.com/projects/${slug}/` },
                 ]}
             />
 

@@ -6,12 +6,12 @@ export const metadata: Metadata = {
     description: 'Professional career history of Thariq Hamad: Product Manager at Fortude, Sling Mobility, MillenniumIT, and founder of FieldR and Chonk Cookies. 8+ years driving revenue growth across SaaS, mobility, and AI.',
     keywords: ['Thariq Hamad Career', 'Product Manager Fortude', 'Sling Mobility', 'MillenniumIT', 'FieldR Founder', 'Chonk Cookies', 'Product Management Career', 'SaaS PM', 'GCC Product Manager'],
     alternates: {
-        canonical: '/career',
+        canonical: '/career/',
     },
     openGraph: {
         title: 'Career | Thariq Hamad',
         description: '8+ years of product management experience across SaaS, mobility, AI, and fintech: from co-founding startups to managing enterprise revenue pipelines.',
-        url: 'https://thariqhamad.com/career',
+        url: 'https://thariqhamad.com/career/',
         images: [
             {
                 url: '/images/og-image.png',
@@ -38,7 +38,7 @@ export default function CareerLayout({
         <>
             <BreadcrumbSchema items={[
                 { name: 'Home', url: 'https://thariqhamad.com' },
-                { name: 'Career', url: 'https://thariqhamad.com/career' },
+                { name: 'Career', url: 'https://thariqhamad.com/career/' },
             ]} />
             {children}
         </>

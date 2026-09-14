@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Download CV | Thariq Hamad',
         description: 'Role-specific CVs for download: Fintech, Business Analysis, Digital Transformation, Strategy, Startup Product, and Football Analysis.',
-        url: 'https://thariqhamad.com/cv',
+        url: 'https://thariqhamad.com/cv/',
         type: 'website',
         images: [
             {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         images: ['/images/og-image.png'],
     },
     alternates: {
-        canonical: '/cv',
+        canonical: '/cv/',
     },
 };
 

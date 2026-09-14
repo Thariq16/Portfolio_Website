@@ -27,7 +27,7 @@ export async function generateMetadata(
         openGraph: {
             title: `${job.title} at ${job.company} | Thariq Hamad`,
             description,
-            url: `https://thariqhamad.com/career/${job.slug}`,
+            url: `https://thariqhamad.com/career/${job.slug}/`,
             images: [
                 {
                     url: '/images/og-image.png',
@@ -44,7 +44,7 @@ export async function generateMetadata(
             images: ['/images/og-image.png'],
         },
         alternates: {
-            canonical: `/career/${job.slug}`,
+            canonical: `/career/${job.slug}/`,
         },
     };
 }

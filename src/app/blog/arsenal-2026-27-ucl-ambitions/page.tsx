@@ -10,12 +10,12 @@ const post = BLOG_POSTS.find((p) => p.slug === 'arsenal-2026-27-ucl-ambitions')!
 export const metadata: Metadata = {
     title: `${post.title} – Thariq Hamad`,
     description: post.excerpt,
-    alternates: { canonical: `/blog/${post.slug}` },
+    alternates: { canonical: `/blog/${post.slug}/` },
     openGraph: {
         type: 'article',
         title: post.title,
         description: post.excerpt,
-        url: `/blog/${post.slug}`,
+        url: `/blog/${post.slug}/`,
         images: [
             {
                 url: '/images/arsenal-channel-map-og.png',

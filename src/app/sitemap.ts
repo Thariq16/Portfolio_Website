@@ -37,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/blog/sabbaq-2026-madinah-sports-hackathon',
         '/blog/arsenal-2026-27-ucl-ambitions',
     ].map((route) => ({
-        url: `${baseUrl}${route}`,
+        url: route === '' ? baseUrl : `${baseUrl}${route}/`,
         lastModified: DATES[route] ?? '2025-06-01',
         changeFrequency: route === '' || route === '/projects' ? 'weekly' as const : 'monthly' as const,
         priority: route === '' ? 1.0 : route === '/projects' ? 0.9 : route === '/projects-preview' ? 0.7 : 0.8,
@@ -45,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Dynamic case studies
     const projectRoutes = dictionary.en.projects.items.map((item) => ({
-        url: `${baseUrl}/projects/${item.slug}`,
+        url: `${baseUrl}/projects/${item.slug}/`,
         lastModified: '2025-06-01',
         changeFrequency: 'monthly' as const,
         priority: 0.8,
@@ -53,7 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Dynamic career jobs
     const careerRoutes = dictionary.en.career.jobs.map((job) => ({
-        url: `${baseUrl}/career/${job.slug}`,
+        url: `${baseUrl}/career/${job.slug}/`,
         lastModified: '2026-08-30',
         changeFrequency: 'monthly' as const,
         priority: 0.6,

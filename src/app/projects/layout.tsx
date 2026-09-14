@@ -6,12 +6,12 @@ export const metadata: Metadata = {
     description: 'Explore detailed case studies showcasing product management wins: SaaS monetization, retention engineering, founder-led growth. Real results from real projects.',
     keywords: ['Product Management Case Studies', 'SaaS Growth', 'Retention Engineering', 'GTM Strategy', 'AI Product Case Study'],
     alternates: {
-        canonical: '/projects',
+        canonical: '/projects/',
     },
     openGraph: {
         title: 'Case Studies | Thariq Hamad',
         description: 'Product management case studies: SAR 750K new revenue generated, 17% retention improvement, 75% free-to-paid conversion.',
-        url: 'https://thariqhamad.com/projects',
+        url: 'https://thariqhamad.com/projects/',
         images: [
             {
                 url: '/images/og-projects.png',
@@ -38,7 +38,7 @@ export default function ProjectsLayout({
         <>
             <BreadcrumbSchema items={[
                 { name: 'Home', url: 'https://thariqhamad.com' },
-                { name: 'Case Studies', url: 'https://thariqhamad.com/projects' },
+                { name: 'Case Studies', url: 'https://thariqhamad.com/projects/' },
             ]} />
             {children}
         </>

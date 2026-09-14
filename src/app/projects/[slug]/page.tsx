@@ -31,7 +31,7 @@ export async function generateMetadata(
         openGraph: {
             title: `${item.title} | Thariq Hamad`,
             description,
-            url: `https://thariqhamad.com/projects/${item.slug}`,
+            url: `https://thariqhamad.com/projects/${item.slug}/`,
             images: [
                 {
                     url: '/images/og-projects.png',
@@ -48,7 +48,7 @@ export async function generateMetadata(
             images: ['/images/og-projects.png'],
         },
         alternates: {
-            canonical: `/projects/${item.slug}`,
+            canonical: `/projects/${item.slug}/`,
         },
     };
 }

@@ -6,12 +6,12 @@ export const metadata: Metadata = {
     description: 'The story behind Thariq Hamad: Senior PM, football performance analyst at Glacis United FC, and former Rotaract Club President. Builder of SaaS products, custom analysis platforms, and community programmes across Sri Lanka & the GCC.',
     keywords: ['Thariq Hamad', 'Senior Product Manager', 'About', 'Product Manager Sri Lanka', 'GCC Product Manager', 'Rotaract President', 'Football Performance Analyst', 'Zero-to-One', 'SaaS', 'AI Products'],
     alternates: {
-        canonical: '/about',
+        canonical: '/about/',
     },
     openGraph: {
         title: 'About Thariq Hamad | Senior Product Manager',
         description: 'Senior PM. Football Performance Analyst. Rotaract Club President. 8+ years building products across SaaS, AI & the GCC.',
-        url: 'https://thariqhamad.com/about',
+        url: 'https://thariqhamad.com/about/',
         images: [
             {
                 url: '/images/og-image.png',
@@ -38,7 +38,7 @@ export default function AboutLayout({
         <>
             <BreadcrumbSchema items={[
                 { name: 'Home', url: 'https://thariqhamad.com' },
-                { name: 'About', url: 'https://thariqhamad.com/about' },
+                { name: 'About', url: 'https://thariqhamad.com/about/' },
             ]} />
             {children}
         </>

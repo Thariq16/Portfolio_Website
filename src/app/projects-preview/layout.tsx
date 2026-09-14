@@ -4,12 +4,12 @@ export const metadata: Metadata = {
     title: 'Case Studies: Full View',
     description: 'Every case study on one scrolling page: role, timeframe, impact metrics, and outcomes for each project Thariq Hamad has led.',
     alternates: {
-        canonical: '/projects-preview',
+        canonical: '/projects-preview/',
     },
     openGraph: {
         title: 'Case Studies: Full View | Thariq Hamad',
         description: 'Every case study on one scrolling page: role, timeframe, impact metrics, and outcomes for each project Thariq Hamad has led.',
-        url: 'https://thariqhamad.com/projects-preview',
+        url: 'https://thariqhamad.com/projects-preview/',
         images: [
             {
                 url: '/images/og-projects.png',

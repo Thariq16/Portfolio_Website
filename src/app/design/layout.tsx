@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'UI/UX Design Portfolio | Thariq Hamad',
         description: 'Selected mobile and product UI/UX designs from real-world projects across Sri Lanka, Maldives, and Qatar.',
-        url: 'https://thariqhamad.com/design',
+        url: 'https://thariqhamad.com/design/',
         type: 'website',
         images: [
             {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         images: ['/images/og-image.png'],
     },
     alternates: {
-        canonical: '/design',
+        canonical: '/design/',
     },
 };
 

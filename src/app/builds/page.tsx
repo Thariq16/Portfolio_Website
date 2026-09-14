@@ -8,11 +8,11 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
     title: 'Builds',
     description: 'Development projects and MVPs built by Thariq Hamad, with live links and source code.',
-    alternates: { canonical: '/builds' },
+    alternates: { canonical: '/builds/' },
     openGraph: {
         title: 'Builds | Thariq Hamad',
         description: 'Development projects and MVPs, with live links and source code.',
-        url: 'https://thariqhamad.com/builds',
+        url: 'https://thariqhamad.com/builds/',
     },
 };
 
