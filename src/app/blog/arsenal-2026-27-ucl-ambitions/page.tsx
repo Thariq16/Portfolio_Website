@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { BLOG_POSTS } from '../posts';
 import Faq from './Faq';
+import EngagementBar from '@/components/engagement/EngagementBar';
 import styles from './page.module.css';
 
 const post = BLOG_POSTS.find((p) => p.slug === 'arsenal-2026-27-ucl-ambitions')!;
@@ -71,6 +72,8 @@ export default function ArsenalUclArticlePage() {
                         <span aria-hidden="true">·</span>
                         <span>Season notes</span>
                     </div>
+
+                    <EngagementBar pageType="blog" slug={post.slug} title={post.title} />
 
                     <div className={styles.prose}>
                         <p className={styles.lede}>

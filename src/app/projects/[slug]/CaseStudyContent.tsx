@@ -9,6 +9,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './page.module.css';
 import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/JsonLd';
+import EngagementBar from '@/components/engagement/EngagementBar';
 
 export default function CaseStudyContent() {
     const { t, locale } = useLanguage();
@@ -142,6 +143,8 @@ export default function CaseStudyContent() {
                         ))}
                     </div>
                 </header>
+
+                <EngagementBar pageType="project" slug={slug} title={project.title} />
 
                 {/* TL;DR outcome card */}
                 {project.featured?.outcome && (

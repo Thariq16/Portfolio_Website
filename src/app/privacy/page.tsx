@@ -8,7 +8,7 @@ import styles from './page.module.css';
 const content = {
     en: {
         title: 'Privacy Policy',
-        lastUpdated: 'Last updated: May 2026',
+        lastUpdated: 'Last updated: September 2026',
         intro: 'This Privacy Policy explains how Thariq Hamad ("I", "me") collects, uses, and protects data when you visit thariqhamad.com (the "Site"). I am committed to transparency and to complying with applicable data protection laws, including the EU General Data Protection Regulation (GDPR) and the Kingdom of Saudi Arabia Personal Data Protection Law (PDPL).',
         sections: [
             {
@@ -17,11 +17,11 @@ const content = {
             },
             {
                 heading: '2. What Data Is Collected',
-                body: 'I do not collect personal data directly. However, this Site uses two third-party analytics services that may collect the following data automatically when you visit:\n\n• Pages visited and navigation paths\n• Time spent on pages\n• Scroll depth and click interactions\n• Approximate geographic location (country/city level)\n• Device type, browser, and operating system\n• Referring website or source\n• Anonymous session recordings and heatmaps (Clarity only)',
+                body: 'I do not collect personal data directly. However, this Site uses two third-party analytics services that may collect the following data automatically when you visit:\n\n• Pages visited and navigation paths\n• Time spent on pages\n• Scroll depth and click interactions\n• Approximate geographic location (country/city level)\n• Device type, browser, and operating system\n• Referring website or source\n• Anonymous session recordings and heatmaps (Clarity only)\n\nBlog posts and case studies also include a like/share feature. This stores only an anonymous, aggregate count of likes and shares per page (not linked to your identity) in a database. Whether you personally liked a page is remembered using your browser\'s local storage, not a cookie – see Section 5 for details.',
             },
             {
                 heading: '3. Third-Party Services',
-                body: 'Google Analytics 4 (Google LLC)\nPurpose: Understand aggregate site traffic and visitor behaviour.\nData retained: 14 months (Google default).\nOptout: https://tools.google.com/dlpage/gaoptout\nPrivacy policy: https://policies.google.com/privacy\n\nMicrosoft Clarity (Microsoft Corporation)\nPurpose: Session recordings and heatmaps to improve site usability.\nData retained: 90 days (Clarity default).\nOptout: https://clarity.microsoft.com/optout\nPrivacy policy: https://privacy.microsoft.com/privacystatement',
+                body: 'Google Analytics 4 (Google LLC)\nPurpose: Understand aggregate site traffic and visitor behaviour.\nData retained: 14 months (Google default).\nOptout: https://tools.google.com/dlpage/gaoptout\nPrivacy policy: https://policies.google.com/privacy\n\nMicrosoft Clarity (Microsoft Corporation)\nPurpose: Session recordings and heatmaps to improve site usability.\nData retained: 90 days (Clarity default).\nOptout: https://clarity.microsoft.com/optout\nPrivacy policy: https://privacy.microsoft.com/privacystatement\n\nSupabase (Supabase Inc.)\nPurpose: Stores the anonymous, per-page like and share counters shown on blog posts and case studies. No personal or visitor-level data is collected – only an aggregate count per page.\nData retained: Indefinitely, as an aggregate page-level count not linked to any visitor.\nPrivacy policy: https://supabase.com/privacy',
             },
             {
                 heading: '4. Legal Basis for Processing',
@@ -29,7 +29,7 @@ const content = {
             },
             {
                 heading: '5. Cookies',
-                body: 'Both Google Analytics and Microsoft Clarity use cookies and similar tracking technologies to identify returning visitors and maintain session continuity. No cookies are set until you explicitly accept via the consent banner.',
+                body: 'Both Google Analytics and Microsoft Clarity use cookies and similar tracking technologies to identify returning visitors and maintain session continuity. No cookies are set until you explicitly accept via the consent banner.\n\nSeparately, the like button on blog posts and case studies uses your browser\'s local storage – not a cookie – to remember only that you personally liked a given page, so the button doesn\'t reset on your next visit. This is strictly functional, contains no tracking or personal data, is never transmitted anywhere, and does not require consent via the banner above.',
             },
             {
                 heading: '6. Data Sharing',
@@ -59,7 +59,7 @@ const content = {
     },
     ar: {
         title: 'سياسة الخصوصية',
-        lastUpdated: 'آخر تحديث: مايو 2026',
+        lastUpdated: 'آخر تحديث: سبتمبر 2026',
         intro: 'توضح سياسة الخصوصية هذه كيفية جمع طارق حماد ("أنا") للبيانات واستخدامها وحمايتها عند زيارتك لموقع thariqhamad.com ("الموقع"). أنا ملتزم بالشفافية والامتثال لقوانين حماية البيانات المعمول بها، بما في ذلك اللائحة الأوروبية العامة لحماية البيانات (GDPR) ونظام حماية البيانات الشخصية في المملكة العربية السعودية.',
         sections: [
             {
@@ -68,11 +68,11 @@ const content = {
             },
             {
                 heading: '٢. البيانات التي يتم جمعها',
-                body: 'لا أجمع بيانات شخصية مباشرةً. غير أن هذا الموقع يستخدم خدمتي تحليلات خارجيتين قد تجمعان البيانات التالية تلقائياً عند زيارتك:\n\n• الصفحات التي تمت زيارتها ومسارات التصفح\n• الوقت المستغرق في الصفحات\n• عمق التمرير وتفاعلات النقر\n• الموقع الجغرافي التقريبي (على مستوى الدولة/المدينة)\n• نوع الجهاز والمتصفح ونظام التشغيل\n• الموقع أو المصدر المُحيل\n• تسجيلات الجلسات المجهولة وخرائط الحرارة (Clarity فقط)',
+                body: 'لا أجمع بيانات شخصية مباشرةً. غير أن هذا الموقع يستخدم خدمتي تحليلات خارجيتين قد تجمعان البيانات التالية تلقائياً عند زيارتك:\n\n• الصفحات التي تمت زيارتها ومسارات التصفح\n• الوقت المستغرق في الصفحات\n• عمق التمرير وتفاعلات النقر\n• الموقع الجغرافي التقريبي (على مستوى الدولة/المدينة)\n• نوع الجهاز والمتصفح ونظام التشغيل\n• الموقع أو المصدر المُحيل\n• تسجيلات الجلسات المجهولة وخرائط الحرارة (Clarity فقط)\n\nتتضمن مقالات المدونة ودراسات الحالة أيضاً ميزة إعجاب/مشاركة. تُخزِّن هذه الميزة فقط عدداً إجمالياً مجهول الهوية للإعجابات والمشاركات لكل صفحة (غير مرتبط بهويتك) في قاعدة بيانات. أما ما إذا كنت قد أعجبت بصفحة ما فيُحفظ عبر التخزين المحلي لمتصفحك، وليس عبر ملف تعريف ارتباط – راجع القسم 5 للتفاصيل.',
             },
             {
                 heading: '٣. الخدمات الخارجية',
-                body: 'Google Analytics 4 (شركة Google LLC)\nالغرض: فهم حركة الزوار الإجمالية وسلوكهم على الموقع.\nمدة الاحتفاظ بالبيانات: 14 شهراً (الإعداد الافتراضي لـ Google).\nإلغاء الاشتراك: https://tools.google.com/dlpage/gaoptout\nسياسة الخصوصية: https://policies.google.com/privacy\n\nMicrosoft Clarity (شركة Microsoft)\nالغرض: تسجيلات الجلسات وخرائط الحرارة لتحسين سهولة الاستخدام.\nمدة الاحتفاظ بالبيانات: 90 يوماً (الإعداد الافتراضي لـ Clarity).\nإلغاء الاشتراك: https://clarity.microsoft.com/optout\nسياسة الخصوصية: https://privacy.microsoft.com/privacystatement',
+                body: 'Google Analytics 4 (شركة Google LLC)\nالغرض: فهم حركة الزوار الإجمالية وسلوكهم على الموقع.\nمدة الاحتفاظ بالبيانات: 14 شهراً (الإعداد الافتراضي لـ Google).\nإلغاء الاشتراك: https://tools.google.com/dlpage/gaoptout\nسياسة الخصوصية: https://policies.google.com/privacy\n\nMicrosoft Clarity (شركة Microsoft)\nالغرض: تسجيلات الجلسات وخرائط الحرارة لتحسين سهولة الاستخدام.\nمدة الاحتفاظ بالبيانات: 90 يوماً (الإعداد الافتراضي لـ Clarity).\nإلغاء الاشتراك: https://clarity.microsoft.com/optout\nسياسة الخصوصية: https://privacy.microsoft.com/privacystatement\n\nSupabase (شركة Supabase Inc.)\nالغرض: تخزين عدادات الإعجاب والمشاركة المجهولة لكل صفحة، والظاهرة على مقالات المدونة ودراسات الحالة. لا تُجمَع أي بيانات شخصية أو خاصة بالزائر – فقط عدد إجمالي لكل صفحة.\nمدة الاحتفاظ بالبيانات: إلى أجل غير مسمى، كعدد إجمالي على مستوى الصفحة وغير مرتبط بأي زائر.\nسياسة الخصوصية: https://supabase.com/privacy',
             },
             {
                 heading: '٤. الأساس القانوني للمعالجة',
@@ -80,7 +80,7 @@ const content = {
             },
             {
                 heading: '٥. ملفات تعريف الارتباط',
-                body: 'يستخدم كل من Google Analytics وMicrosoft Clarity ملفات تعريف الارتباط وتقنيات التتبع المماثلة للتعرف على الزوار العائدين والحفاظ على استمرارية الجلسة. لا يتم تعيين أي ملفات تعريف ارتباط حتى تقبل صراحةً عبر لافتة الموافقة.',
+                body: 'يستخدم كل من Google Analytics وMicrosoft Clarity ملفات تعريف الارتباط وتقنيات التتبع المماثلة للتعرف على الزوار العائدين والحفاظ على استمرارية الجلسة. لا يتم تعيين أي ملفات تعريف ارتباط حتى تقبل صراحةً عبر لافتة الموافقة.\n\nبشكل منفصل، يستخدم زر الإعجاب في مقالات المدونة ودراسات الحالة التخزين المحلي لمتصفحك – وليس ملف تعريف ارتباط – لتذكر فقط أنك أعجبت بصفحة معينة، حتى لا تتم إعادة ضبط الزر عند زيارتك التالية. هذا الاستخدام وظيفي بحت، ولا يحتوي على أي تتبع أو بيانات شخصية، ولا يُنقل إلى أي مكان، ولا يتطلب موافقة عبر اللافتة أعلاه.',
             },
             {
                 heading: '٦. مشاركة البيانات',

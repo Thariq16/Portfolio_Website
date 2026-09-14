@@ -1,0 +1,83 @@
+.bar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 2rem 0;
+}
+
+.pill {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--muted-foreground);
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.5rem 0.875rem;
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    font-variant-numeric: tabular-nums;
+}
+
+.pill:hover {
+    color: var(--foreground);
+    border-color: var(--primary);
+}
+
+.pillActive {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.heartFilled {
+    fill: var(--primary);
+}
+
+.shareWrap {
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    min-width: 190px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.375rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    border-radius: calc(var(--radius) - 2px);
+    padding: 0.5rem 0.625rem;
+    font-family: var(--font-body, inherit), inherit;
+    font-size: 0.875rem;
+    color: var(--foreground);
+    cursor: pointer;
+}
+
+.menuItem:hover {
+    background: var(--border);
+}
+
+@media (max-width: 480px) {
+    .menu {
+        left: auto;
+        right: 0;
+    }
+}

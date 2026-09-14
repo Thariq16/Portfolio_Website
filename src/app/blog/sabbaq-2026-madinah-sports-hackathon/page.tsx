@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { ArrowLeft } from 'lucide-react';
 import { BLOG_POSTS } from '../posts';
 import Faq from './Faq';
+import EngagementBar from '@/components/engagement/EngagementBar';
 import styles from './page.module.css';
 
 const post = BLOG_POSTS.find((p) => p.slug === 'sabbaq-2026-madinah-sports-hackathon')!;
@@ -99,6 +100,8 @@ export default function SabbaqArticlePage() {
                         <span aria-hidden="true">·</span>
                         <span>Madinah, Saudi Arabia</span>
                     </div>
+
+                    <EngagementBar pageType="blog" slug={post.slug} title={post.title} />
 
                     <div className={styles.prose}>
                         <p className={styles.lede}>
