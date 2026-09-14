@@ -10,7 +10,7 @@ import { trackButtonClick, trackOutboundLink } from '@/utils/analytics';
 import styles from './page.module.css';
 
 const WHATSAPP_NUMBER = '966565329004';
-const WHATSAPP_MESSAGE = encodeURIComponent("Hi Thariq, we just connected — great meeting you!");
+const WHATSAPP_MESSAGE = encodeURIComponent("Hi Thariq, we just connected – great meeting you!");
 
 const links = [
     {

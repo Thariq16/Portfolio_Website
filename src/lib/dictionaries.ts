@@ -48,6 +48,9 @@ export interface CaseStudy {
     decisions: {
         details: string;
     };
+    tradeoff?: {
+        details: string;
+    };
     execution: {
         details: string;
     };
@@ -161,6 +164,9 @@ export const dictionary = {
                     decisions: {
                         details: 'Reframed pricing around **business outcomes** rather than features to avoid complexity. Focused GTM spend only on **high-intent segments**. Prioritized **ROAS and deal velocity** over raw lead volume.',
                     },
+                    tradeoff: {
+                        details: "I chose to fix monetization through **pricing and packaging** rather than new feature development – even though sales kept asking for competitive parity on the roadmap. That meant saying no to requests that would have looked good in a deck but wouldn't have moved revenue, accepting **slower visible differentiation** against competitors in the short term. I also prioritized **ROAS and deal velocity over raw lead volume**, deliberately shrinking the top of the funnel to protect sales' time for high-intent accounts – a call that looked risky on a pipeline report before the quality of those deals proved out.",
+                    },
                     execution: {
                         details: 'Partnered with sales to pilot **revised pricing narratives**. Collaborated with marketing on **targeted GTM experiments**. Enabled pricing changes with **minimal engineering effort** and iterated weekly based on deal feedback.',
                     },
@@ -212,6 +218,9 @@ export const dictionary = {
                     },
                     decisions: {
                         details: 'Focused on **early-warning indicators** instead of broad dashboards. **Closed the loop between data and action** by designing alerts to trigger operational workflows. Measured success via **retention and revenue**, ensuring vanity metrics like system usage did not drive prioritisation.',
+                    },
+                    tradeoff: {
+                        details: "I traded a comprehensive analytics rebuild for a **narrow, fast-to-ship alerting layer** – betting that a handful of high-confidence signals reaching operations in near-real time would move retention faster than a broader dashboard overhaul the team didn't have bandwidth to use anyway. That meant leaving known data-quality issues elsewhere in the platform unaddressed, and it meant the first version deliberately **under-served edge cases** to keep false positives low, even at the cost of missing some real warning signs early on.",
                     },
                     execution: {
                         details: 'Partnered with engineering to enable **near–real-time data processing**. Worked with operations to define **actionable thresholds**. Iterated alert logic based on false positives. Gradually expanded coverage once impact was proven.',
@@ -265,6 +274,9 @@ export const dictionary = {
                     decisions: {
                         details: 'Prioritized **clarity over analytical depth** by avoiding advanced metrics early. Introduced **monetization only after habit formation**, delaying paywalls until engagement stabilized. Tied paid features to **progression and performance improvement**.',
                     },
+                    tradeoff: {
+                        details: "I chose **simple, comparative insights over the advanced analytics** I originally believed the product needed, shipping less impressive-looking technology in exchange for something coaches and scorers could use without training. I also **delayed monetization** until habit formation was proven, leaving revenue on the table in the early months to protect long-term trust and retention over short-term cash flow.",
+                    },
                     execution: {
                         details: 'Released a **lean MVP** focused on core performance insights. **Iterated rapidly** based on community feedback. Introduced **tiered pricing** aligned with user maturity. Continuously tested onboarding and upgrade flows.',
                     },
@@ -316,6 +328,9 @@ export const dictionary = {
                     },
                     decisions: {
                         details: 'Positioned Chonk as a **high-end, "Instagrammable" experience**. Adopted a **100% digital-first approach** with Instagram as the primary sales engine. Developed keyword-based content strategy for algorithm visibility.',
+                    },
+                    tradeoff: {
+                        details: "I chose to build the brand entirely through **organic social and pop-up presence** rather than paid acquisition, even once budget would have allowed a small campaign – which meant slower, less predictable growth in the first months and put the full burden of customer acquisition on content quality rather than media spend. I also positioned Chonk as a **premium, \"Instagrammable\" product** rather than competing on price against established dessert brands, accepting a smaller addressable audience in exchange for higher margins and a more defensible identity.",
                     },
                     execution: {
                         details: '**Performance Marketing:** Executed targeted Instagram ad campaigns through Meta Business Suite for pop-up events and product drops.\n\n**Conversion Optimization:** Used Microsoft Clarity and Google Analytics to map user flows, identifying and fixing friction points in mobile checkout.\n\n**Digital Operations:** Built end-to-end digital ecosystem from e-commerce storefront to automated customer communications.',
@@ -376,6 +391,9 @@ export const dictionary = {
                     decisions: {
                         details: 'Built an **automated lock/unlock cabinet system** that identifies the rider, the discharged battery, and the nearest fully-charged battery, completing a swap in **15 seconds**. Designed a **command centre** to monitor vehicle movements, battery voltage, motor health, and ride routes in real time. Created a **revenue-share cabinet model** for roadside garages to expand the network without capital spend. Launched **battery tokens** enabling the public to fund new-gen batteries and receive revenue shares, funding 100 batteries through community capital.',
                     },
+                    tradeoff: {
+                        details: "I chose to build the **command centre and prove data-driven optimization first**, rather than deploying hardware broadly and iterating in the field – a slower, more constrained initial rollout that avoided sinking capital into cabinet and battery configurations we would have had to retrofit later. I also chose a **revenue-share model with third-party garages** over a fully company-owned network, trading direct operational control for faster geographic coverage on a limited engineering budget.",
+                    },
                     execution: {
                         details: "Designed Sri Lanka's first battery swapping cabinet in partnership with the country's largest electrical product manufacturer. Implemented a **digital tracking infrastructure** for every bike and hardware component, with routine service alerts. Built a **rider-facing navigation feature** that tracked battery voltage and directed riders to the nearest swap station before power cut-out. Rolled out an **anti-theft battery system** with remote subscription-based shutoff. Deployed a **rider incentive scheme** tied to ride streaks and performance data.",
                     },
@@ -427,6 +445,9 @@ export const dictionary = {
                     },
                     decisions: {
                         details: 'Shifted the product strategy from **"maximize accuracy"** to **"maximize response clarity"**. The core decision was to implement a **validation agent** that checks data credibility before any response is delivered to the end user. Responses are only surfaced when the agent can confirm the supporting data is reliable. If not, the system explicitly flags the uncertainty rather than guessing. This was a deliberate trade-off: **slightly fewer answers, but dramatically higher trust**.',
+                    },
+                    tradeoff: {
+                        details: "The core trade-off was **accuracy versus trust**: I chose to have Charlie answer less often, withholding a response whenever the validation agent couldn't confirm the underlying data, rather than maximizing how many questions it could answer. That meant a visibly **lower response-coverage rate** in the usage metrics, and defending an approach internally that looked, on paper, like a step backward for a product whose entire premise was answering questions.",
                     },
                     execution: {
                         details: "Worked with engineering to design and deploy the **credibility validation agent** as a pre-response layer in Charlie's architecture. Redesigned the **response format** to surface source context alongside answers, giving users auditability. Iterated the feature with the early adopter cohort using usage frequency and session depth as trust proxies. Once adoption stabilized, ideated and structured a roadmap to launch a **standalone Insight Assistant** tool leveraging Charlie's architecture, positioning it as a general-purpose enterprise knowledge layer.",
@@ -480,6 +501,9 @@ export const dictionary = {
                     decisions: {
                         details: 'Built a **financial tracking tool** to give leadership real-time visibility into revenue, cost allocation, and project margins across all three departments. Implemented **KPI frameworks tailored to each creative team**, avoiding the mistake of applying the same metrics to animation, game dev, and services. For the FinTech product, structured a **KYC process** that balanced regulatory compliance with minimal user friction, informed by direct user research.',
                     },
+                    tradeoff: {
+                        details: "With only five months in the role, I chose to spend early time building a **financial tracking and publisher-matching process** rather than pushing games out the door as fast as possible – a slower start on visible output in exchange for higher revenue per title once the system was running. I also matched each game to the **publisher with the best genre and audience fit** rather than whichever publisher was available soonest, which occasionally meant delaying a launch to place it with a better partner.",
+                    },
                     execution: {
                         details: 'Managed the **publisher selection and submission pipeline** for 23 hyper-casual games, matching each title to the most appropriate publisher based on genre, audience, and commercial terms. Built out **delivery dashboards** that gave leadership a clear view of project risks, timelines, and resource utilization. For the FinTech product: created the full project plan, tracked milestones, designed the KYC process flow, and coordinated the user research sessions to validate feature decisions.',
                     },
@@ -531,6 +555,9 @@ export const dictionary = {
                     },
                     decisions: {
                         details: 'Adopted a **schools and grassroots GTM**, going bottom-up rather than top-down through national boards. This built a larger, more loyal user base before approaching professional clubs. Introduced a **digital scoresheet** as a second, standalone revenue stream, giving everyday club players a reason to engage with FieldR even if they were not interested in advanced analytics. Expanded to **Australia** in 2021, signing two clubs from the Sri Lankan diaspora community as the first international users.',
+                    },
+                    tradeoff: {
+                        details: "I chose to build FieldR **bottom-up through grassroots and school cricket** rather than approaching Sri Lanka Cricket's national structures first – a smaller, less prestigious initial user base and slower access to elite-level data, in exchange for a loyal, vocal community that could prove the product before any institutional conversation happened. I also introduced the **digital scoresheet as a low-friction second product** rather than pushing every user toward the full analytics suite, accepting a lower price point from casual players to keep the addressable audience wide.",
                     },
                     execution: {
                         details: 'Designed all UIs based on coach and scorer feedback, validated through **A/B testing** before final implementation. Built the **scoring and analytics data architecture** to capture 30+ performance metrics per game. Launched the **digital scoresheet** feature as a low-friction entry point for casual players. Executed the Australia expansion through community outreach to diaspora cricket clubs, securing two club sign-ups for the fielding performance analysis module.',

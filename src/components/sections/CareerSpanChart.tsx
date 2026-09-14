@@ -16,7 +16,7 @@ const MONTHS: Record<string, number> = {
     july: 6, august: 7, september: 8, october: 9, november: 10, december: 11,
 };
 
-// Snapshot taken when the site is built — refreshed on every rebuild/redeploy.
+// Snapshot taken when the site is built – refreshed on every rebuild/redeploy.
 // Used so an ongoing ("Present") role renders through today rather than a 1-month sliver.
 const BUILD_MONTH_INDEX = (() => {
     const d = new Date();

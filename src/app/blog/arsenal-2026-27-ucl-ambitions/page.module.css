@@ -209,7 +209,7 @@
     text-underline-offset: 2px;
 }
 
-/* Channel map — inline pitch diagram, built from site tokens rather than an image asset */
+/* Channel map – inline pitch diagram, built from site tokens rather than an image asset */
 .pitchFigure {
     margin: 1.75rem 0 2rem;
     background: var(--card);

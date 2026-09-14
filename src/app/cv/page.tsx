@@ -21,7 +21,7 @@ const cvOptions: CVOption[] = [
         id: 'product-management',
         category: 'Product Management',
         label: 'Product Management',
-        description: 'Leads with head-of-product scope across Fortude, Sling Mobility, and FieldR — a SAR 7M+ revenue pipeline, teams scaled to 34, and direct board-level ownership. The broadest CV: best for Senior PM and Head of Product roles across SaaS, AI, and mobility.',
+        description: 'Leads with head-of-product scope across Fortude, Sling Mobility, and FieldR – a SAR 7M+ revenue pipeline, teams scaled to 34, and direct board-level ownership. The broadest CV: best for Senior PM and Head of Product roles across SaaS, AI, and mobility.',
         filename: 'Thariq_Hamad - Product Management.pdf',
         tags: ['Head of Product', 'SaaS & AI', 'GTM Strategy', 'Revenue Growth'],
         featured: true,

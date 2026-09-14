@@ -9,7 +9,7 @@ import { Linkedin, Mail } from 'lucide-react';
 import { trackOutboundLink } from '@/utils/analytics';
 import styles from './Footer.module.css';
 
-// The QR PWA page is a standalone, app-like screen — keep it footer-free too
+// The QR PWA page is a standalone, app-like screen – keep it footer-free too
 const CHROMELESS_ROUTES = ['/qr'];
 
 export default function Footer() {

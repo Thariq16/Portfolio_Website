@@ -69,7 +69,7 @@ export default function CaseStudyContent() {
             <ArticleSchema
                 title={project.title}
                 description={project.context?.goal || project.title}
-                url={`https://thariqhamad.com/projects/${slug}`}
+                url={`https://thariqhamad.com/projects/${slug}/`}
                 author="Thariq Hamad"
             />
             <BreadcrumbSchema
@@ -174,7 +174,7 @@ export default function CaseStudyContent() {
 
                     {/* 3. Constraints */}
                     <section className={styles.section}>
-                        <h2 className={styles.heading}>3. Constraints & Trade-offs</h2>
+                        <h2 className={styles.heading}>3. Constraints</h2>
                         <div className={styles.content}>
                             <p>{formatText(project.constraints.details)}</p>
                         </div>
@@ -196,25 +196,35 @@ export default function CaseStudyContent() {
                         </div>
                     </section>
 
-                    {/* 6. Execution */}
+                    {/* 6. Trade-off */}
+                    {project.tradeoff && (
+                        <section className={styles.section}>
+                            <h2 className={styles.heading}>6. The Trade-off</h2>
+                            <div className={styles.content}>
+                                <p>{formatText(project.tradeoff.details)}</p>
+                            </div>
+                        </section>
+                    )}
+
+                    {/* 7. Execution */}
                     <section className={styles.section}>
-                        <h2 className={styles.heading}>6. Execution Snapshot</h2>
+                        <h2 className={styles.heading}>7. Execution Snapshot</h2>
                         <div className={styles.content}>
                             <p>{formatText(project.execution.details)}</p>
                         </div>
                     </section>
 
-                    {/* 7. Outcomes */}
+                    {/* 8. Outcomes */}
                     <section className={styles.section}>
-                        <h2 className={styles.heading}>7. Outcomes & Impact</h2>
+                        <h2 className={styles.heading}>8. Outcomes & Impact</h2>
                         <div className={styles.content}>
                             <p>{formatText(project.outcomes.details)}</p>
                         </div>
                     </section>
 
-                    {/* 8. Learnings */}
+                    {/* 9. Learnings */}
                     <section className={styles.section}>
-                        <h2 className={styles.heading}>8. Learnings & What I'd Do Differently</h2>
+                        <h2 className={styles.heading}>9. Learnings & What I'd Do Differently</h2>
                         <div className={styles.content}>
                             <div className="mb-4">
                                 <strong className="block text-primary mb-1">Repeat</strong>
@@ -227,10 +237,10 @@ export default function CaseStudyContent() {
                         </div>
                     </section>
 
-                    {/* 9. Media & Links (if available) */}
+                    {/* 10. Media & Links (if available) */}
                     {project.media && (
                         <section className={styles.section}>
-                            <h2 className={styles.heading}>9. Media & Links</h2>
+                            <h2 className={styles.heading}>10. Media & Links</h2>
                             <div className={styles.mediaSection}>
                                 <div className={styles.mediaButtons}>
                                     {project.media.website && (
