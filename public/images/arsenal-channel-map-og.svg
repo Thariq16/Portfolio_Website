@@ -1,0 +1,73 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Football pitch divided into three horizontal channels: left side 35%, middle channel 33%, right side 32% of attacking build-up">
+  <defs>
+    <style>
+      .eyebrow { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; font-size: 20px; letter-spacing: 3px; fill: #1e5a43; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 42px; font-weight: 600; fill: #1d1a13; }
+      .sub { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; font-size: 16px; letter-spacing: 1px; fill: #6d6250; }
+      .pitchLine { fill: none; stroke: rgba(80,66,40,0.32); }
+      .lane-label { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; font-size: 10px; letter-spacing: 0.9px; fill: #6d6250; }
+      .lane-pct { font-family: Georgia, 'Times New Roman', serif; font-weight: 600; fill: #1d1a13; }
+      .lane-pct-primary { fill: #1e5a43; }
+      .lane-note { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; font-size: 9px; fill: #6d6250; }
+      .site { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; font-size: 16px; letter-spacing: 1px; fill: #6d6250; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="630" fill="#f6f2e8"/>
+
+  <text x="70" y="60" class="eyebrow">TACTICAL ANALYSIS · ARSENAL 2026/27</text>
+  <text x="70" y="108" class="title">Where the Attack Flows</text>
+  <text x="70" y="136" class="sub">Channel share, per match – attacking left to right</text>
+
+  <!-- pitch, ported from the article chart, scaled and centred to clear the header and footer -->
+  <g transform="translate(243 122) scale(1.05)">
+    <rect x="30" y="30" width="620" height="400" fill="#f1ecdf" class="pitchLine" stroke-width="1.5"/>
+
+    <line x1="30" y1="163.33" x2="650" y2="163.33" class="pitchLine" stroke-width="1"/>
+    <line x1="30" y1="296.67" x2="650" y2="296.67" class="pitchLine" stroke-width="1"/>
+
+    <line x1="340" y1="30" x2="340" y2="430" class="pitchLine" stroke-width="1"/>
+    <circle cx="340" cy="230" r="48" class="pitchLine" stroke-width="1"/>
+    <circle cx="340" cy="230" r="2" fill="rgba(80,66,40,0.35)"/>
+
+    <rect x="562" y="114" width="88" height="232" class="pitchLine" stroke-width="1.5"/>
+    <rect x="616" y="166" width="34" height="128" class="pitchLine" stroke-width="1.5"/>
+    <path d="M 562 188 A 42 42 0 0 1 562 272" class="pitchLine" stroke-width="1"/>
+
+    <rect x="30" y="114" width="88" height="232" class="pitchLine" stroke-width="1.2"/>
+    <rect x="30" y="166" width="34" height="128" class="pitchLine" stroke-width="1.2"/>
+
+    <path d="M 40 30 A 10 10 0 0 1 30 40" class="pitchLine" stroke-width="1"/>
+    <path d="M 650 40 A 10 10 0 0 1 640 30" class="pitchLine" stroke-width="1"/>
+    <path d="M 30 420 A 10 10 0 0 1 40 430" class="pitchLine" stroke-width="1"/>
+    <path d="M 640 430 A 10 10 0 0 1 650 420" class="pitchLine" stroke-width="1"/>
+
+    <!-- LEFT -->
+    <g transform="translate(470 96.67)">
+      <text x="0" y="-8" text-anchor="middle" class="lane-label">ON LEFT SIDE</text>
+      <text x="0" y="34" text-anchor="middle" class="lane-pct lane-pct-primary" font-size="36">35%</text>
+      <rect x="-30" y="44" width="60" height="4" fill="rgba(30,90,67,0.18)"/>
+      <rect x="-30" y="44" width="60" height="4" fill="#1e5a43"/>
+      <text x="0" y="62" text-anchor="middle" class="lane-note">TZOLIS · CALAFIORI INVERTING</text>
+    </g>
+
+    <!-- MIDDLE -->
+    <g transform="translate(470 230)">
+      <text x="0" y="-8" text-anchor="middle" class="lane-label">MIDDLE CHANNEL</text>
+      <text x="0" y="34" text-anchor="middle" class="lane-pct" font-size="36">33%</text>
+      <rect x="-28" y="44" width="56.6" height="4" fill="rgba(80,66,40,0.2)"/>
+      <text x="0" y="62" text-anchor="middle" class="lane-note">ØDEGAARD PROGRESSION</text>
+    </g>
+
+    <!-- RIGHT -->
+    <g transform="translate(470 363.33)">
+      <text x="0" y="-8" text-anchor="middle" class="lane-label">ON RIGHT SIDE</text>
+      <text x="0" y="34" text-anchor="middle" class="lane-pct" font-size="36">32%</text>
+      <rect x="-27" y="44" width="54.8" height="4" fill="rgba(80,66,40,0.2)"/>
+      <text x="0" y="62" text-anchor="middle" class="lane-note">SAKA · MADUEKE ROTATION</text>
+    </g>
+  </g>
+
+  <text x="70" y="602" class="site">thariqhamad.com/blog</text>
+  <text x="1130" y="602" text-anchor="end" class="site">BY THARIQ HAMAD</text>
+</svg>
