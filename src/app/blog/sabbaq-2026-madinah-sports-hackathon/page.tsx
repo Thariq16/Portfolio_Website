@@ -242,20 +242,6 @@ export default function SabbaqArticlePage() {
 
                         <h2>A small detail that made the experience personal</h2>
 
-                        <figure className={styles.figure}>
-                            <Image
-                                src="/images/sabbaq-participant-badge.jpg"
-                                alt="Thariq Hamad's SABBAQ 2026 participant badge"
-                                width={900}
-                                height={1600}
-                                className={styles.figureImage}
-                                loading="eager"
-                            />
-                            <figcaption className={styles.figureCaption}>
-                                My SABBAQ participant badge.
-                            </figcaption>
-                        </figure>
-
                         <div className={styles.statCard}>
                             <p className={`${styles.statCardTitle} eyebrow`}>SABBAQ 2026 · Final Numbers</p>
                             <div className={styles.statGrid}>

@@ -15,7 +15,7 @@ export const BLOG_POSTS: BlogPost[] = [
         excerpt: "Notes from a 72-hour sports innovation hackathon in Madinah – and why the real opportunity may not be another isolated product, but the layer that connects the data.",
         date: '2026-08-25',
         displayDate: 'August 25, 2026',
-        readTime: '6 min read',
+        readTime: '5 min read',
         category: 'Sports Tech',
     },
     {
@@ -24,7 +24,7 @@ export const BLOG_POSTS: BlogPost[] = [
         excerpt: "A tactical read on Arsenal's transfer window and attacking rhythm this season – and why the real Champions League case rests on the left channel finally exploding, not on outside solutions.",
         date: '2026-08-15',
         displayDate: 'August 15, 2026',
-        readTime: '5 min read',
+        readTime: '3 min read',
         category: 'Tactical Analysis',
     },
 ];

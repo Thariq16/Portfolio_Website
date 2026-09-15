@@ -75,20 +75,6 @@
     margin-bottom: 0.4rem;
 }
 
-.figure {
-    margin: 1.75rem 0 2rem;
-}
-
-.figureImage {
-    width: 100%;
-    max-width: 340px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
-}
-
 .figureWide {
     margin: 1.75rem 0 2rem;
 }
