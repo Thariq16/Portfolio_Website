@@ -119,7 +119,7 @@ export default function AboutPage() {
                     <div className={styles.portraitColumn}>
                         <div className={styles.portraitWrapper}>
                             <Image
-                                src={getAssetPath('/images/portrait.jpg')}
+                                src={getAssetPath('/images/headshot-navy.jpg')}
                                 alt="Thariq - Product Manager"
                                 width={400}
                                 height={500}

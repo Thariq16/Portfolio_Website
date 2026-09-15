@@ -73,7 +73,7 @@ export default function Hero() {
                     transition={{ delay: 0.3, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
                 >
                     <Image
-                        src="/images/portrait.jpg"
+                        src="/images/headshot-navy.jpg"
                         alt="Thariq Hamad, Senior Product Manager"
                         width={400}
                         height={400}

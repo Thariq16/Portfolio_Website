@@ -19,7 +19,7 @@ export default function IntroPage() {
                 <header className={styles.header}>
                     <div className={styles.portraitWrap}>
                         <Image
-                            src="/images/portrait-card.jpg"
+                            src="/images/headshot-white-square.jpg"
                             alt="Thariq Hamad"
                             width={104}
                             height={104}
