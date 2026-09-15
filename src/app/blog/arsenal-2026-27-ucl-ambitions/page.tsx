@@ -4,6 +4,7 @@ import { ArrowLeft } from 'lucide-react';
 import { BLOG_POSTS } from '../posts';
 import Faq from './Faq';
 import EngagementBar from '@/components/engagement/EngagementBar';
+import WritingCTA from '@/components/sections/WritingCTA';
 import styles from './page.module.css';
 
 const post = BLOG_POSTS.find((p) => p.slug === 'arsenal-2026-27-ucl-ambitions')!;
@@ -250,6 +251,8 @@ export default function ArsenalUclArticlePage() {
                     </div>
 
                     <Faq items={FAQS} />
+
+                    <WritingCTA />
 
                     <p className={styles.footerNote}>
                         Written by Thariq Hamad ·{' '}

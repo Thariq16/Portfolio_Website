@@ -196,7 +196,20 @@
 .ctaTitle {
     font-size: 1.5rem;
     font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.ctaSubline {
+    font-size: 0.9375rem;
+    color: var(--muted-foreground);
     margin-bottom: 1.5rem;
+}
+
+.ctaActions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
 }
 
 /* Media Section Styles */

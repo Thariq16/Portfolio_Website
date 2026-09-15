@@ -4,12 +4,13 @@ import React from 'react';
 import { useParams } from 'next/navigation';
 import { useLanguage } from '@/components/providers/LanguageProvider';
 import { Button } from '@/components/ui/Button';
-import { Calendar, ArrowLeft, Globe, Zap } from 'lucide-react';
+import { Calendar, Mail, ArrowLeft, Globe, Zap } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './page.module.css';
 import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/JsonLd';
 import EngagementBar from '@/components/engagement/EngagementBar';
+import { trackButtonClick } from '@/utils/analytics';
 
 export default function CaseStudyContent() {
     const { t, locale } = useLanguage();
@@ -305,13 +306,34 @@ export default function CaseStudyContent() {
                     <h3 className={styles.ctaTitle}>
                         {locale === 'ar' ? 'مهتم كيف أتعامل مع تحديات مماثلة؟' : 'Interested in how I approach similar product challenges?'}
                     </h3>
-                    <Button
-                        size="lg"
-                        onClick={() => window.open('https://calendar.app.google/vDMbaPoDc2vYVQaK8', '_blank')}
-                    >
-                        <Calendar size={18} />
-                        {t.hero.ctaPrimary}
-                    </Button>
+                    <p className={styles.ctaSubline}>
+                        {locale === 'ar'
+                            ? 'سواء كنت توظّف لدور دائم أو تبحث عن استشارة لمشروع محدد.'
+                            : 'Whether that means a full-time role or consulting on a specific project.'}
+                    </p>
+                    <div className={styles.ctaActions}>
+                        <Button
+                            size="lg"
+                            onClick={() => {
+                                trackButtonClick('Book a Call', 'case_study_cta');
+                                window.open('https://calendar.app.google/vDMbaPoDc2vYVQaK8', '_blank');
+                            }}
+                        >
+                            <Calendar size={18} />
+                            {t.hero.ctaPrimary}
+                        </Button>
+                        <Button
+                            variant="outline"
+                            size="lg"
+                            onClick={() => {
+                                trackButtonClick('Email', 'case_study_cta');
+                                window.location.href = 'mailto:thariqhamad6@gmail.com';
+                            }}
+                        >
+                            <Mail size={18} />
+                            {locale === 'ar' ? 'راسلني' : 'Email Me'}
+                        </Button>
+                    </div>
                 </div>
             </article>
         </main>

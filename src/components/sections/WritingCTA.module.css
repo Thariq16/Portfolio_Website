@@ -1,0 +1,27 @@
+.section {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    margin-bottom: 3rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.line {
+    font-family: var(--font-display), Georgia, serif;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: var(--foreground);
+}
+
+.line + .line {
+    margin-top: 0.15rem;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
