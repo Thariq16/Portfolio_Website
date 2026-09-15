@@ -174,23 +174,23 @@ export default function SabbaqArticlePage() {
 
                         <h2>A three-day event with a wide range of ideas</h2>
                         <p>
-                            What stood out most was the scale of participation.
-                            SABBAQ&apos;s journey went from more than 200 applications to 75
-                            accepted participants, 10 finalists and three winners.
+                            What stood out most was the scale of participation. Organizers
+                            later confirmed the final numbers: more than 400 registrations and
+                            200+ participants across 90-plus teams, narrowed down to 13
+                            qualified finalist projects and three winners.
                         </p>
 
                         <figure className={styles.figureWide}>
                             <Image
                                 src="/images/sabbaq-applicant-funnel.jpg"
-                                alt="SABBAQ 2026 application and finalist statistics showing 200+ applications, 75 accepted, 10 finalists and 3 winners"
+                                alt="A slide shown during SABBAQ 2026 tracking the shortlisting funnel: 200+ applications, 75 accepted, 10 finalists at that stage, 3 winners"
                                 width={1400}
                                 height={788}
                                 className={styles.figureWideImage}
                                 loading="eager"
                             />
                             <figcaption className={styles.figureCaption}>
-                                The SABBAQ journey, from more than 200 applications to 10
-                                finalists and three winners.
+                                The shortlisting funnel, as shared mid-event.
                             </figcaption>
                         </figure>
 
@@ -255,6 +255,47 @@ export default function SabbaqArticlePage() {
                                 My SABBAQ participant badge.
                             </figcaption>
                         </figure>
+
+                        <div className={styles.statCard}>
+                            <p className={`${styles.statCardTitle} eyebrow`}>SABBAQ 2026 · Final Numbers</p>
+                            <div className={styles.statGrid}>
+                                <div>
+                                    <div className={styles.statValue}>90+</div>
+                                    <div className={styles.statLabel}>Teams</div>
+                                </div>
+                                <div>
+                                    <div className={styles.statValue}>200+</div>
+                                    <div className={styles.statLabel}>Participants</div>
+                                </div>
+                                <div>
+                                    <div className={styles.statValue}>400+</div>
+                                    <div className={styles.statLabel}>Registered</div>
+                                </div>
+                                <div>
+                                    <div className={styles.statValue}>72</div>
+                                    <div className={styles.statLabel}>Hours</div>
+                                </div>
+                                <div>
+                                    <div className={styles.statValue}>13</div>
+                                    <div className={styles.statLabel}>Finalist Projects</div>
+                                </div>
+                                <div>
+                                    <div className={styles.statValue}>3</div>
+                                    <div className={styles.statLabel}>Winning Projects</div>
+                                </div>
+                            </div>
+                            <p className={styles.statSource}>
+                                As shared by{' '}
+                                <a href="https://alansar.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
+                                    Al-Ansar Sports Club
+                                </a>{' '}
+                                and{' '}
+                                <a href="https://www.businesshub.com.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
+                                    Business Hub Madinah
+                                </a>{' '}
+                                after the event.
+                            </p>
+                        </div>
 
                         <p>
                             It may seem like a small thing, but this is what made the

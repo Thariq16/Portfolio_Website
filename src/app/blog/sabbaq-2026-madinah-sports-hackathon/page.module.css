@@ -138,6 +138,56 @@
     line-height: 1.8 !important;
 }
 
+.statCard {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.75rem 2rem;
+    margin: 1.75rem 0 2rem;
+}
+
+.statCardTitle {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.statGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem 1rem;
+    text-align: center;
+}
+
+.statValue {
+    font-family: var(--font-display), Georgia, serif;
+    font-size: 1.75rem;
+    color: var(--primary);
+    line-height: 1.1;
+}
+
+.statLabel {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+    margin-top: 0.35rem;
+}
+
+.statSource {
+    text-align: center;
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+    margin-top: 1.25rem;
+}
+
+@media (max-width: 480px) {
+    .statGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .divider {
     border: 0;
     border-top: 1px solid var(--border);
