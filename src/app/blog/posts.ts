@@ -15,7 +15,7 @@ export const BLOG_POSTS: BlogPost[] = [
         excerpt: "Notes from a 72-hour sports innovation hackathon in Madinah – and why the real opportunity may not be another isolated product, but the layer that connects the data.",
         date: '2026-08-25',
         displayDate: 'August 25, 2026',
-        readTime: '5 min read',
+        readTime: '6 min read',
         category: 'Sports Tech',
     },
     {
