@@ -21,10 +21,10 @@ export const metadata: Metadata = {
         url: `/blog/${post.slug}/`,
         images: [
             {
-                url: '/images/sabbaq-al-ansar-exterior.jpg',
-                width: 1600,
-                height: 900,
-                alt: "Al-Ansar Sports Club's illuminated entrance and signage in Madinah at night",
+                url: '/images/sabbaq-stats-og.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'SABBAQ 2026: 400+ registered, 90+ teams, 3 winning projects',
             },
         ],
     },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: post.title,
         description: post.excerpt,
-        images: ['/images/sabbaq-al-ansar-exterior.jpg'],
+        images: ['/images/sabbaq-stats-og.jpg'],
     },
 };
 
