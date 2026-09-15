@@ -407,59 +407,35 @@ export default function SabbaqArticlePage() {
 
                         <h2>With thanks</h2>
                         <p>
-                            An event like this doesn&apos;t happen without institutional
-                            backing. Thank you to:
-                        </p>
-                        <ul>
-                            <li>
-                                <a href="https://alansar.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
-                                    Al-Ansar FC
-                                </a>{' '}
-                                (نادي الأنصار)
-                            </li>
-                            <li>
-                                <a href="https://www.businesshub.com.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
-                                    Business Hub Madinah
-                                </a>{' '}
-                                (بزنس هب)
-                            </li>
-                            <li>
-                                <a href="https://abasco.com.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
-                                    ABASCO
-                                </a>{' '}
-                                (شركة عودة البلادي وأبنائه)
-                            </li>
-                            <li>
-                                <a href="https://mda.gov.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
-                                    Al Madinah Region Development Authority
-                                </a>{' '}
-                                (هيئة تطوير منطقة المدينة المنورة)
-                            </li>
-                            <li>
-                                <a href="https://www.mcci.org.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
-                                    Al Madinah Al Munawwarah Chamber of Commerce
-                                </a>{' '}
-                                (غرفة المدينة المنورة)
-                            </li>
-                            <li>
-                                <a href="https://mcit.gov.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
-                                    Ministry of Communications and Information Technology
-                                </a>{' '}
-                                (وزارة الاتصالات وتقنية المعلومات)
-                            </li>
-                            <li>
-                                <a href="https://mos.gov.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
-                                    Ministry of Sport
-                                </a>{' '}
-                                (وزارة الرياضة)
-                            </li>
-                        </ul>
-                        <p>
-                            Thank you to Al-Ansar and Business Hub Madinah for organizing, and
-                            to the Ministry of Sport, the Ministry of Communications and
-                            Information Technology, the Al Madinah Region Development
-                            Authority, ABASCO, and the Al Madinah Al Munawwarah Chamber of
-                            Commerce for backing an event like this.
+                            Thank you to{' '}
+                            <a href="https://alansar.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
+                                Al-Ansar
+                            </a>{' '}
+                            and{' '}
+                            <a href="https://www.businesshub.com.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
+                                Business Hub Madinah
+                            </a>{' '}
+                            for organizing, and to the{' '}
+                            <a href="https://mos.gov.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
+                                Ministry of Sport
+                            </a>
+                            , the{' '}
+                            <a href="https://mcit.gov.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
+                                Ministry of Communications and Information Technology
+                            </a>
+                            , the{' '}
+                            <a href="https://mda.gov.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
+                                Al Madinah Region Development Authority
+                            </a>
+                            ,{' '}
+                            <a href="https://abasco.com.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
+                                ABASCO
+                            </a>
+                            , and the{' '}
+                            <a href="https://www.mcci.org.sa" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>
+                                Al Madinah Al Munawwarah Chamber of Commerce
+                            </a>{' '}
+                            for backing an event like this.
                         </p>
                     </div>
 
