@@ -5,6 +5,7 @@ import { ArrowLeft } from 'lucide-react';
 import { BLOG_POSTS } from '../posts';
 import Faq from './Faq';
 import EngagementBar from '@/components/engagement/EngagementBar';
+import WritingCTA from '@/components/sections/WritingCTA';
 import styles from './page.module.css';
 
 const post = BLOG_POSTS.find((p) => p.slug === 'sabbaq-2026-madinah-sports-hackathon')!;
@@ -159,7 +160,7 @@ export default function SabbaqArticlePage() {
                             sports ecosystem.
                         </p>
                         <p>
-                            One part that particularly caught my attention was the focus on
+                            One part that resonated with me was the focus on
                             bringing the club closer to the families of Madinah. That changes
                             the way you think about a football club. It isn&apos;t only about
                             what happens on the pitch.
@@ -173,7 +174,7 @@ export default function SabbaqArticlePage() {
 
                         <h2>A three-day event with a wide range of ideas</h2>
                         <p>
-                            One thing that stood out to me was the scale of participation.
+                            What stood out most was the scale of participation.
                             SABBAQ&apos;s journey went from more than 200 applications to 75
                             accepted participants, 10 finalists and three winners.
                         </p>
@@ -257,7 +258,7 @@ export default function SabbaqArticlePage() {
 
                         <p>
                             It may seem like a small thing, but this is what made the
-                            experience interesting for me. I wasn&apos;t looking at these ideas
+                            experience personal for me. I wasn&apos;t looking at these ideas
                             from a distance. I was sitting in the room, listening to people
                             explain the problems they were trying to solve, seeing different
                             approaches to sports technology and watching people test whether
@@ -277,7 +278,7 @@ export default function SabbaqArticlePage() {
                         </p>
                         <p>
                             During one of the discussions, the topic of player transfers came
-                            up, including how data could potentially help predict and support
+                            up, including how data could help predict and support
                             transfers within the Saudi sports ecosystem. That immediately got
                             me thinking.
                         </p>
@@ -309,7 +310,7 @@ export default function SabbaqArticlePage() {
                             But ecosystems become much more powerful when these systems start
                             working together.
                         </p>
-                        <p>A player&apos;s journey could potentially generate data across multiple stages:</p>
+                        <p>A player&apos;s journey generates data across multiple stages:</p>
                         <p className={styles.flowLine}>
                             Discovery → Development → Performance → Recruitment → Transfer → Continued Development
                         </p>
@@ -323,7 +324,7 @@ export default function SabbaqArticlePage() {
 
                         <h2>Why Madinah matters</h2>
                         <p>
-                            What made SABBAQ particularly interesting to me was where it
+                            What struck me most about SABBAQ was where it
                             happened. This was happening in Madinah, Saudi Arabia. And the room
                             was full of people thinking about how technology could be applied
                             to sport in ways that could work within Saudi Arabia.
@@ -341,8 +342,8 @@ export default function SabbaqArticlePage() {
 
                         <h2>The people were perhaps the most encouraging part</h2>
                         <p>
-                            The products were interesting. The technology was interesting. But
-                            what I found most encouraging was the people.
+                            The products and technology were impressive, but it was the people
+                            who left the strongest impression.
                         </p>
                         <p>
                             There was genuine excitement from people who wanted to understand
@@ -360,7 +361,7 @@ export default function SabbaqArticlePage() {
                         <h2>My biggest takeaway from SABBAQ</h2>
                         <p>
                             I went to SABBAQ expecting a hackathon. What I saw was a glimpse of
-                            something potentially much bigger.
+                            something much bigger.
                         </p>
                         <p className={styles.pullquote}>Madinah has people who want to build in sports.</p>
                         <p>
@@ -402,6 +403,8 @@ export default function SabbaqArticlePage() {
                     </div>
 
                     <Faq items={FAQS} />
+
+                    <WritingCTA />
 
                     <p className={styles.footerNote}>
                         Written by Thariq Hamad ·{' '}
