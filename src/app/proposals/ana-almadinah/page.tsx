@@ -197,7 +197,7 @@ export default function AnaAlmadinahProposalPage() {
                         <div className={styles.heroPortraitWrap}>
                             <div className={styles.heroPortrait}>
                                 <Image
-                                    src="/images/portrait.jpg"
+                                    src="/images/headshot-white-square.jpg"
                                     alt="Thariq Hamad"
                                     fill
                                     sizes="220px"
