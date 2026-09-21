@@ -4557,7 +4557,7 @@ export const applications: Application[] = [
     "role": "Store Manager - Chanel Beauty",
     "channel": "Company Site/ATS (Teamtailor)",
     "location": "",
-    "status": "No Response"
+    "status": "Rejected"
   },
   {
     "date": "2026-08-06",
@@ -5538,9 +5538,9 @@ export const applications: Application[] = [
   {
     "date": "2026-09-04",
     "company": "Thoughtworks",
-    "role": "Unspecified role (confirmation email did not name the position)",
+    "role": "Principal Product Manager",
     "channel": "Company Site/ATS",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -5580,7 +5580,7 @@ export const applications: Application[] = [
     "company": "Deltek",
     "role": "Senior AI Product Manager",
     "channel": "Company Site/ATS",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -5620,7 +5620,7 @@ export const applications: Application[] = [
     "company": "AngelList",
     "role": "Product Manager, Funds",
     "channel": "Company Site/ATS (Lever)",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -5740,7 +5740,7 @@ export const applications: Application[] = [
     "company": "CHAMP Cargosystems",
     "role": "Project Manager",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Barcelona"
   },
   {
@@ -5772,7 +5772,7 @@ export const applications: Application[] = [
     "company": "Bridge BSS Talent",
     "role": "Associate Product Manager",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Colombo"
   },
   {
@@ -5844,7 +5844,7 @@ export const applications: Application[] = [
     "company": "E-Solutions",
     "role": "Product Manager - Digital Enterprise Solutions Governance & Portfolio Performance",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Riyadh, Saudi Arabia"
   },
   {
@@ -5852,7 +5852,7 @@ export const applications: Application[] = [
     "company": "TekWissen India",
     "role": "Business Analyst - PM",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Riyadh, Saudi Arabia"
   },
   {
@@ -5966,6 +5966,30 @@ export const applications: Application[] = [
     "channel": "Company Site/ATS (Jobgether)",
     "status": "No Response",
     "location": "Saudi Arabia"
+  },
+  {
+    "date": "2026-08-29",
+    "company": "Nasscom for Facilities Management",
+    "role": "Project Manager (Soft Services)",
+    "channel": "Indeed",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-09-04",
+    "company": "Netcompany",
+    "role": "Lead Product Manager",
+    "channel": "Company Site/ATS (SmartRecruiters)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-05",
+    "company": "Voodoo",
+    "role": "Product Manager - Paper.io 2",
+    "channel": "Company Site/ATS (Ashby)",
+    "status": "Rejected",
+    "location": ""
   }
 ];
 
