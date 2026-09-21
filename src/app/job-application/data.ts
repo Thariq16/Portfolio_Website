@@ -5766,6 +5766,206 @@ export const applications: Application[] = [
     "channel": "Company Site/ATS (Imploy)",
     "status": "No Response",
     "location": ""
+  },
+  {
+    "date": "2026-09-14",
+    "company": "Bridge BSS Talent",
+    "role": "Associate Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Colombo"
+  },
+  {
+    "date": "2026-09-15",
+    "company": "talabat",
+    "role": "Data Governance Analyst",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Dubai, United Arab Emirates"
+  },
+  {
+    "date": "2026-09-15",
+    "company": "قامات التعمير",
+    "role": "Project Manager | مدير مشاريع",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-15",
+    "company": "Riyad Bank",
+    "role": "Business Analysis Manager - Business Technology",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-15",
+    "company": "Ruya Recruitment",
+    "role": "Head of Business Development",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Jeddah"
+  },
+  {
+    "date": "2026-09-15",
+    "company": "Jobgether",
+    "role": "Technical Delivery Manager",
+    "channel": "Company Site/ATS (Jobgether)",
+    "status": "No Response",
+    "location": "Saudi Arabia (Remote)"
+  },
+  {
+    "date": "2026-09-15",
+    "company": "Malaa",
+    "role": "Senior Product Manager",
+    "channel": "Company Site/ATS (Pinpoint)",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-16",
+    "company": "Vrinda Global",
+    "role": "Senior Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-16",
+    "company": "ABANA Enterprises Group Co.",
+    "role": "Product Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh, Riyadh Province"
+  },
+  {
+    "date": "2026-09-17",
+    "company": "E-Solutions",
+    "role": "Product Manager - Digital Enterprise Solutions Governance & Portfolio Performance",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-17",
+    "company": "TekWissen India",
+    "role": "Business Analyst - PM",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-17",
+    "company": "Lifera",
+    "role": "Technology Business Specialist",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-17",
+    "company": "Rgheeb",
+    "role": "Project Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh, Riyadh Province"
+  },
+  {
+    "date": "2026-09-17",
+    "company": "Malaa",
+    "role": "Senior Product Manager",
+    "channel": "Company Site/ATS (Pinpoint)",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-17",
+    "company": "Halian",
+    "role": "Program Manager",
+    "channel": "Company Site/ATS (Halian)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-17",
+    "company": "Omran",
+    "role": "Chief Technology Officer",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Remote"
+  },
+  {
+    "date": "2026-09-17",
+    "company": "Kris MediaWorks Digital Solutions",
+    "role": "Senior Customer Experience Operations Manager",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Jeddah"
+  },
+  {
+    "date": "2026-09-17",
+    "company": "Sparc Consulting",
+    "role": "Manager",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Riyadh, Riyadh Province, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-18",
+    "company": "RiDiK (a Subsidiary of CLPS. Nasdaq: CLPS)",
+    "role": "Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-18",
+    "company": "Jobgether",
+    "role": "Senior Product Manager (Card Issuing)",
+    "channel": "Company Site/ATS (Jobgether)",
+    "status": "No Response",
+    "location": "Saudi Arabia"
+  },
+  {
+    "date": "2026-09-18",
+    "company": "Baytonia",
+    "role": "Technology Lead",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Jeddah"
+  },
+  {
+    "date": "2026-09-19",
+    "company": "Excel Career Solutions",
+    "role": "Business Analyst",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-09-20",
+    "company": "REEF GROUP",
+    "role": "Senior Digital Products Specialist",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-21",
+    "company": "ABANA Enterprises Group Co.",
+    "role": "Product Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-09-21",
+    "company": "Jobgether",
+    "role": "Head of Product",
+    "channel": "Company Site/ATS (Jobgether)",
+    "status": "No Response",
+    "location": "Saudi Arabia"
   }
 ];
 
