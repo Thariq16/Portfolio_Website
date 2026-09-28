@@ -4525,7 +4525,7 @@ export const applications: Application[] = [
     "role": "Senior Business Analyst, Product Development",
     "channel": "Company Site/ATS (Rooster)",
     "location": "",
-    "status": "No Response"
+    "status": "In Progress"
   },
   {
     "date": "2026-08-06",
@@ -5828,7 +5828,7 @@ export const applications: Application[] = [
     "company": "Vrinda Global",
     "role": "Senior Product Manager",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "In Progress",
     "location": "Riyadh, Saudi Arabia"
   },
   {
@@ -6086,6 +6086,342 @@ export const applications: Application[] = [
     "channel": "LinkedIn Easy Apply",
     "status": "No Response",
     "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2025-12-18",
+    "company": "Sports Hub",
+    "role": "PMO Projects Manager",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2025-12-28",
+    "company": "Thrivestate",
+    "role": "Senior Product / Project Manager",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-01-06",
+    "company": "Bynow.ai",
+    "role": "Product Operations Lead",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-01-10",
+    "company": "Discovered MENA",
+    "role": "Senior Business Analyst",
+    "channel": "Recruiter/Agency (Discovered)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-01-10",
+    "company": "Discovered MENA",
+    "role": "Senior Product Designer (Web3)",
+    "channel": "Recruiter/Agency (Discovered)",
+    "status": "No Response",
+    "location": "Europe & Asia"
+  },
+  {
+    "date": "2026-01-15",
+    "company": "Discovered MENA",
+    "role": "Associate Product Manager",
+    "channel": "Recruiter/Agency (Discovered)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-01-19",
+    "company": "Supertech Group",
+    "role": "Senior Product Manager",
+    "channel": "Company Site/ATS (BambooHR)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-01-22",
+    "company": "Undisclosed (via Basem Salah)",
+    "role": "Digital Product Owner - Product Management Team",
+    "channel": "Direct Email",
+    "status": "Rejected",
+    "location": "Egypt"
+  },
+  {
+    "date": "2026-01-31",
+    "company": "Aventus Global",
+    "role": "Senior Product Manager (UAE/KSA)",
+    "channel": "Recruiter/Agency (Aventus Global)",
+    "status": "No Response",
+    "location": "UAE / KSA"
+  },
+  {
+    "date": "2026-02-02",
+    "company": "Discovered MENA",
+    "role": "AI Product Owner - Financial Services",
+    "channel": "Recruiter/Agency (Discovered)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-02-02",
+    "company": "Discovered MENA",
+    "role": "Senior Product Manager - Digital Agency",
+    "channel": "Recruiter/Agency (Discovered)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-02-02",
+    "company": "Discovered MENA",
+    "role": "Mid Level Product Manager - HealthTech",
+    "channel": "Recruiter/Agency (Discovered)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-02-06",
+    "company": "Next Match AI",
+    "role": "Product Manager",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": "UAE"
+  },
+  {
+    "date": "2026-02-09",
+    "company": "WalkingTree Technologies (client: Riyadh Bank)",
+    "role": "Product Owner",
+    "channel": "Recruiter/Agency (WalkingTree Technologies)",
+    "status": "In Progress",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-02-16",
+    "company": "Halian",
+    "role": "Scrum Master",
+    "channel": "Recruiter/Agency (Halian)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-03-02",
+    "company": "Madinah Knowledge Economic City (KEC)",
+    "role": "(role n/a)",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": "Madinah"
+  },
+  {
+    "date": "2026-03-11",
+    "company": "Wipro Limited",
+    "role": "Testing Professional",
+    "channel": "Direct Recruiter Email",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-03-28",
+    "company": "Halalaplus",
+    "role": "Product Manager (speculative)",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-03-28",
+    "company": "صحصح | Sahseh",
+    "role": "Product Manager (speculative)",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-03-28",
+    "company": "Grove",
+    "role": "Product Manager (speculative)",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-04-19",
+    "company": "Jisr",
+    "role": "Product Manager (speculative)",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-04-21",
+    "company": "Boslah",
+    "role": "Brand Advisor",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-04-28",
+    "company": "Flint Arabia Consulting",
+    "role": "Senior Product Owner (Senior Digital Product Owner)",
+    "channel": "Recruiter/Agency (Naukrigulf)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-05-05",
+    "company": "Disty",
+    "role": "Product Manager",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-05-08",
+    "company": "ELITSER Recruitment Services",
+    "role": "AI - Business Analyst",
+    "channel": "Recruiter/Agency (Naukrigulf)",
+    "status": "No Response",
+    "location": "Al Khobar"
+  },
+  {
+    "date": "2026-05-21",
+    "company": "IPS MENA (Smart Innovation Platform)",
+    "role": "Senior Product Manager",
+    "channel": "Direct Email + Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-06-08",
+    "company": "Flint Arabia Consulting",
+    "role": "HIS Product Manager",
+    "channel": "Recruiter/Agency (Naukrigulf)",
+    "status": "No Response",
+    "location": "Jeddah"
+  },
+  {
+    "date": "2026-06-26",
+    "company": "Oceans",
+    "role": "Digital Marketing Manager",
+    "channel": "Unconfirmed",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-07-08",
+    "company": "Linnk Group",
+    "role": "Insights & Analytics Product Lead",
+    "channel": "Recruiter/Agency (Linnk Group)",
+    "status": "No Response",
+    "location": "Doha, Qatar"
+  },
+  {
+    "date": "2026-07-14",
+    "company": "Linnk Group",
+    "role": "Project Manager (Banking & AI)",
+    "channel": "Recruiter/Agency (Linnk Group)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-07-16",
+    "company": "Wipro Limited",
+    "role": "Product Owner",
+    "channel": "Recruiter/Agency (Naukrigulf)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-07-17",
+    "company": "MaharaMedia",
+    "role": "Client Sales Rep / Call Center Agent",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-08-06",
+    "company": "Linnk Arabia",
+    "role": "Contract Product Manager",
+    "channel": "Recruiter/Agency (Linnk Group)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-08-18",
+    "company": "Endemand IT",
+    "role": "Scrum Master",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-08-20",
+    "company": "Linnk Group",
+    "role": "Project Manager - Digital Experience Platform (6-month contract)",
+    "channel": "Recruiter/Agency (Linnk Group)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-08-24",
+    "company": "Nagarro",
+    "role": "Product Manager",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-08-28",
+    "company": "Upshifters",
+    "role": "Product Manager",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-08-30",
+    "company": "Torod",
+    "role": "Product Manager",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-08-30",
+    "company": "Fusion Group Holding",
+    "role": "IT Project Manager - Fraud Solutions Implementation",
+    "channel": "Recruiter/Agency (Naukrigulf)",
+    "status": "No Response",
+    "location": "Doha, Qatar"
+  },
+  {
+    "date": "2026-09-01",
+    "company": "Linnk Group",
+    "role": "SuperApp Strategy PM (6-month contract)",
+    "channel": "Recruiter/Agency (Linnk Group)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-09-03",
+    "company": "Halian",
+    "role": "Senior Product Manager (Financial Services & AI-Enabled Products)",
+    "channel": "Company Site/ATS (Halian)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-04",
+    "company": "George Bernard",
+    "role": "Senior Product Manager",
+    "channel": "Recruiter/Agency (George Bernard)",
+    "status": "No Response",
+    "location": ""
   }
 ];
 
@@ -6135,7 +6471,7 @@ export const recruiterOutreach: RecruiterOutreach[] = [
   {
     "date": "2026-07-08",
     "company": "Surjith C.M. - Linnk Group",
-    "context": "Reached out re: Insights & Analytics Product Lead, Qatar - Thariq responded with CV",
+    "context": "Reached out re: Insights & Analytics Product Lead, Qatar - Thariq responded with CV; followed up 2026-07-13",
     "channel": "Email"
   },
   {
@@ -6185,6 +6521,84 @@ export const recruiterOutreach: RecruiterOutreach[] = [
     "company": "Harry Wareham - Linnk Arabia",
     "context": "Contract Product Manager role, Riyadh - discussed on a phone call (no inbound email found); Thariq followed up by email pushing back on the GCC client-facing experience concern. Same recruiting team as Sajad Ali B.",
     "channel": "Phone Call"
+  },
+  {
+    "date": "2026-01-26",
+    "company": "Pradeepa Nanayakkara - Envoy Ortus",
+    "context": "Product Manager (client role, Colombo) - asked for CV with a recent photo (client requirement); Thariq sent updated details same day",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-02-09",
+    "company": "Paridhi Kaushik - WalkingTree Technologies",
+    "context": "Product Owner, Riyadh (client: Riyadh Bank) - screening 2026-02-10, interview 2026-02-11; 2026-02-17 profile put on hold for Ramadan, no update since",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-02-09",
+    "company": "Maya Laurent - Next Match AI",
+    "context": "Product Manager - profile \"selected for active hiring pipeline\" 2026-02-09; holding replies 2026-02-15 and 2026-04-07 (UAE remote-work directives); Thariq chased 2026-04-05",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-02-13",
+    "company": "Eddie Lumbard - Cander Group",
+    "context": "Product Manager, Jeddah - followed up on LinkedIn application with screening questions; Thariq replied and agreed to a call 2026-02-16",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-03-26",
+    "company": "Harry Lynch - Sporting Jobs",
+    "context": "Intro Teams call booked for 2026-03-31, recruiter postponed; Thariq chased 2026-04-08",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-06-12",
+    "company": "Saajid - personal referral",
+    "context": "Referral for Product Manager roles in Madinah - Thariq sent updated CV",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-06-23",
+    "company": "Atef (Mohamed A.) - Marc Ellis",
+    "context": "IT Project Manager - Infrastructure & IT Services Operations (Banking Sector) - Thariq replied interested",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-08-20",
+    "company": "Athul Das - Linnk Group",
+    "context": "Project Manager - Digital Experience Platform, Riyadh (6-month contract) - Thariq applied with CV same day, no reply",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-08-30",
+    "company": "R. Vandhana - Fusion Group Holding",
+    "context": "Recruiter invited via Naukrigulf re: IT Project Manager - Fraud Solutions Implementation, Doha - Thariq sent details + CV same day",
+    "channel": "Naukrigulf"
+  },
+  {
+    "date": "2026-09-01",
+    "company": "Jake Turner - Linnk Group",
+    "context": "SuperApp Strategy PM, 6-month contract, Riyadh - Thariq sent CV 2026-09-01 (reply reviewed with Zachary); followed up 2026-09-28, no reply yet",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-09-04",
+    "company": "Hemamali - George Bernard",
+    "context": "Senior Product Manager (LinkedIn post) - Thariq emailed CV, no reply",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-09-17",
+    "company": "Vrinda Bathla - Vrinda Global",
+    "context": "Senior Product Manager_AI (Real Estate client), Riyadh - Thariq sent CV + questionnaire answers 2026-09-17, replied again 2026-09-18 and 2026-09-21",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-09-24",
+    "company": "Trish Villena - Globant",
+    "context": "Product Team Lead, Riyadh - Thariq emailed after LinkedIn apply; 2026-09-25 Trish asked for examples of large-scale product ownership; Thariq replied same day",
+    "channel": "Email"
   }
 ];
 
