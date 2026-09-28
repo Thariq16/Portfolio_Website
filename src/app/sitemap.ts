@@ -7,7 +7,7 @@ export const dynamic = 'force-static';
 const DATES: Record<string, string> = {
     '':          '2025-06-01',
     '/about':    '2026-08-30',
-    '/projects': '2025-06-01',
+    '/projects': '2026-09-29',
     '/projects-preview': '2026-07-09',
     '/career':   '2026-08-30',
     '/design':   '2025-05-01',

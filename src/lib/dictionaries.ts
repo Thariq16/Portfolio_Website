@@ -470,6 +470,61 @@ export const dictionary = {
                     },
                 },
                 {
+                    slug: 'fortude-product-team-building',
+                    title: 'Training a Delivery Team Into a Product Team',
+                    company: 'Fortude',
+                    logo: getAssetPath('/logos/fortude.png'),
+                    website: 'https://www.fortude.co',
+                    market: 'B2B SaaS | Product Organization Design',
+                    timeframe: 'Oct 2024 – Jan 2026',
+                    category: 'Ops' as CaseStudyCategory,
+                    impactScore: 7,
+                    jobSlug: 'fortude-product-manager',
+                    metrics: [
+                        { label: 'PMs Trained', value: '5' },
+                        { label: 'Background Shift', value: 'Delivery → Product' },
+                        { label: 'Team Structure', value: 'Fully Restructured' },
+                    ],
+                    context: {
+                        goal: "Turn a delivery-oriented team into a product organisation that could make its own prioritisation calls, not just execute tickets.",
+                        details: "When I joined [Fortude](https://www.fortude.co), the team around the AI products looked like a delivery function: project managers running tickets rather than product people making prioritisation calls. Sprint planning was structured for output, not for learning, and delivery managers with **no product background** were making feature decisions with no shared method to reason through trade-offs.",
+                    },
+                    role: {
+                        details: "Alongside my product strategy remit, I owned **restructuring the team itself**. I ran 1:1s designed to surface problems early rather than just track task status, built KPIs tied to what each person needed to learn next, and personally coached **five delivery project managers with no product background** through the shift into product management.",
+                    },
+                    constraints: {
+                        details: "**No headcount to hire experienced product managers externally**, the team had to be grown from inside the existing delivery bench. People had built their careers around delivery metrics, so changing how they were evaluated had to be done **without eroding trust**. This had to happen alongside **live roadmap work**, not as a separate off-cycle initiative.",
+                    },
+                    discovery: {
+                        details: "1:1s revealed people could execute against a spec but had **no shared method** for deciding what to build next, whether to cut a feature, or how to defend a call with data. The team wasn't under-skilled, it was missing a **common language and process for product thinking**, the same gap I'd already closed once with a similar team at Sling Mobility.",
+                    },
+                    decisions: {
+                        details: "Restructured the team so it was organised around **product ownership areas** rather than delivery workstreams. Rebuilt **KPIs around what each person was learning next**, not just what they'd shipped that sprint. Introduced **sprint planning and user-story formats** adapted for product lifecycle decisions rather than single tickets, and a defined way to **weigh feature trade-offs**.",
+                    },
+                    tradeoff: {
+                        details: "I chose to spend the first stretch of my time **restructuring the team and coaching individuals** rather than pushing straight into roadmap execution, a slower start on visible delivery in exchange for a team that could eventually make its own prioritisation calls without me in every decision. That meant some near-term roadmap items moved slower while **five people were being coached** through a genuinely different way of working.",
+                    },
+                    execution: {
+                        details: "Ran regular **1:1s** built around surfacing problems early and tying each person's KPIs to a specific thing they needed to learn next. Delivered **training sessions on product and project process** so the team worked from one shared method. Coached **five delivery project managers** individually through the shift from execution to ownership, sitting with them on real prioritisation calls rather than teaching it abstractly.",
+                    },
+                    outcomes: {
+                        details: "Trained **five delivery project managers with no prior product background** into product managers making their own prioritisation and trade-off calls. Restructured the team so it functioned as an **actual product department** rather than a delivery function reporting up through project status. Decisions about what to keep or cut started coming from the **team itself, backed by data**, rather than escalating to me by default.",
+                    },
+                    learnings: {
+                        repeat: "Tying **KPIs to what someone needed to learn next**, not just what they shipped, is what actually changed behaviour, not the training sessions themselves.",
+                        change: "I'd formalise the **trade-off framework in writing earlier**, so the five PMs had something concrete to point back to when defending a call to stakeholders.",
+                    },
+                    featured: {
+                        headline: 'Training a Delivery Team Into a Product Team',
+                        tag: 'Team & Org Design',
+                        outcome: 'Restructured a delivery-oriented team at Fortude and personally coached 5 project managers with no product background into product managers making their own prioritisation calls.',
+                        badges: [
+                            { value: '5 PMs Trained', label: 'Zero to Product Background', description: 'Coached delivery project managers into product managers through 1:1s tied to learning goals, not just delivery status.' },
+                            { value: 'Full Team Restructure', label: 'Delivery → Product Org', description: 'Rebuilt KPIs, sprint planning, and trade-off frameworks around product lifecycle decisions.' }
+                        ]
+                    },
+                },
+                {
                     slug: 'motion-miracles-gtm',
                     title: 'From Creative Studio to Revenue Engine: 23 Game Launches & a FinTech MVP',
                     company: 'Motion Miracles',
@@ -521,6 +576,61 @@ export const dictionary = {
                         badges: [
                             { value: '23 Games', label: 'Games Launched', description: 'Shipped through strategic publisher selection across multiple game genres.' },
                             { value: 'SAR 200K', label: 'New Revenue', description: 'Generated through optimized publisher relationships and game portfolio strategy.' }
+                        ]
+                    },
+                },
+                {
+                    slug: 'motion-miracles-animation-turnaround',
+                    title: 'From Zero Revenue to a Self-Funding Department in 60 Days',
+                    company: 'Motion Miracles',
+                    logo: getAssetPath('/logos/motion-miracles.png'),
+                    website: 'https://www.motionmiracles.com',
+                    market: 'Creative Studio | Content Monetization',
+                    timeframe: 'Dec 2020 – Jun 2021',
+                    category: 'Marketing' as CaseStudyCategory,
+                    impactScore: 7,
+                    jobSlug: 'motion-miracles-pm',
+                    metrics: [
+                        { label: 'YouTube Revenue', value: '+400%' },
+                        { label: 'Cost Coverage', value: '2.5× in 60 Days' },
+                        { label: 'New Revenue Line', value: 'Game Studios' },
+                    ],
+                    context: {
+                        goal: 'Turn a zero-revenue creative department into a self-funding unit within a two-month window, without adding headcount.',
+                        details: '[Motion Miracles](https://www.motionmiracles.com)\'s animation department had full-time creative staff producing content daily but was generating **zero revenue**. Leadership needed the department to justify its own cost without cutting the team, and needed to see proof quickly rather than over a multi-quarter build-out.',
+                    },
+                    role: {
+                        details: 'Alongside my broader Project Manager duties, I owned **monetization strategy for the animation department** specifically: building the content plan, sourcing outside collaborators, and pitching game studios directly on paid supplier work.',
+                    },
+                    constraints: {
+                        details: '**No existing revenue or track record** to point to when pitching creators or studios. A **small in-house animator bench**, meaning capacity had to be layered rather than expanded through hiring. Leadership wanted proof the department could pay for itself in a **short, defined window**, not a slow multi-quarter ramp.',
+                    },
+                    discovery: {
+                        details: 'Reviewing the department\'s output showed **strong creative capability with no distribution or monetization strategy** attached to it: content was being made but not pointed at any market. Conversations with outside creators and game studios surfaced two **immediately available revenue paths**: YouTube content partnerships and paid supplier work for game studios.',
+                    },
+                    decisions: {
+                        details: 'Built a series of **video concepts** and paired **outside content creators with in-house animators** to produce them, rather than trying to build an in-house content team from scratch. Pitched **game studios directly** on using the animation team as a paid supplier, opening a second revenue line independent of content performance. Tracked both lines against the department\'s **actual monthly cost**, not as separate initiatives.',
+                    },
+                    tradeoff: {
+                        details: "I chose to split effort across **two revenue lines** at once, YouTube content and game-studio supplier work, rather than concentrating everything on whichever showed early traction faster, betting that a single channel would leave the department exposed if it underperformed. That meant slower initial output on each line individually, in exchange for a more resilient revenue base once both proved out.",
+                    },
+                    execution: {
+                        details: 'Paired **outside content creators with in-house animators** on a structured video slate. Directly **pitched game studios** on paid supplier arrangements. Tracked **monthly revenue against the department\'s cost base** to make the case with numbers rather than anecdotes.',
+                    },
+                    outcomes: {
+                        details: 'Grew **YouTube income by 400%**. Opened a **second, independent revenue line** through game-studio supplier work. Within **60 days**, the department was generating roughly **SAR 39,200 a month against a cost of about SAR 15,300**, more than **2.5× its own running cost**. Turned a previously cost-only department into a **self-funding unit** using the same team and creative assets.',
+                    },
+                    learnings: {
+                        repeat: 'Pointing **existing creative capacity at an actual market**, rather than adding headcount, unlocked the revenue almost immediately.',
+                        change: 'I would build the **cost-tracking dashboard on day one** instead of after the first revenue line landed, it would have made the case to leadership faster.',
+                    },
+                    featured: {
+                        headline: 'From Zero Revenue to a Self-Funding Department',
+                        tag: 'Departmental Turnaround',
+                        outcome: 'Turned a zero-revenue animation department into a self-funding unit in 60 days, growing YouTube income 400% and opening a second revenue line with game studios.',
+                        badges: [
+                            { value: '+400% YouTube Revenue', label: 'Content Monetization', description: 'Achieved by pairing outside content creators with in-house animators on a structured video slate.' },
+                            { value: '2.5× Cost Coverage', label: '60-Day Turnaround', description: 'Department revenue reached SAR 39.2K/month against SAR 15.3K in running costs.' }
                         ]
                     },
                 },
@@ -592,7 +702,7 @@ export const dictionary = {
             jobs: [
                 {
                     slug: 'fortude-product-manager',
-                    title: 'Senior Product Manager',
+                    title: 'Product Manager (Head of Product Scope)',
                     company: 'Fortude',
                     logo: getAssetPath('/logos/fortude.png'),
                     website: 'https://www.fortude.co',
@@ -604,9 +714,10 @@ export const dictionary = {
 **Key Outcomes:**
 • Built a **SAR 7.5M annual revenue pipeline** from scratch by activating the European enterprise market
 • Generated **SAR 750K in net-new revenue** by reframing AI value around specific Infor M3 ERP pain points
-• Pivoted Charlie AI strategy from accuracy to trust, driving a **75% increase in early-adopter usage** and unlocking a Toyota Sri Lanka enterprise pilot`,
+• Pivoted Charlie AI strategy from accuracy to trust, driving a **75% increase in early-adopter usage** and unlocking a Toyota Sri Lanka enterprise pilot
+• Trained **5 delivery project managers with no product background** into product managers, restructuring the team into an actual product department`,
                     skills: ['Stakeholder Management', 'Product Roadmap Management', 'Product Strategy', 'AI Products', 'Enterprise SaaS', 'Revenue Growth'],
-                    caseStudyIds: ['saas-growth-platform', 'charlie-ai-product-strategy'],
+                    caseStudyIds: ['saas-growth-platform', 'charlie-ai-product-strategy', 'fortude-product-team-building'],
                 } as Job,
                 {
                     slug: 'fieldr-product-lead',
@@ -660,9 +771,10 @@ export const dictionary = {
 **Key Outcomes:**
 • Led publisher strategy for **23 hyper-casual games**, matching titles to publishers by genre and audience, generating **SAR 200K in new revenue**
 • Delivered a **FinTech BNPL MVP** with a structured KYC process informed by direct user research on trust and conversion friction
-• Built the organization's first unified **financial tracking and KPI dashboard** across all departments`,
+• Built the organization's first unified **financial tracking and KPI dashboard** across all departments
+• Turned the animation department from **zero revenue to self-funding in 60 days**, growing YouTube income **400%** and opening a second revenue line with game studios`,
                     skills: ['Operational Planning', 'Delivery Management', 'Cross-functional Coordination', 'Budget Management', 'KPI Tracking'],
-                    caseStudyIds: ['motion-miracles-gtm'],
+                    caseStudyIds: ['motion-miracles-gtm', 'motion-miracles-animation-turnaround'],
                 } as Job,
                 {
                     slug: 'goodlifex-program-associate',

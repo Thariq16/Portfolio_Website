@@ -9,7 +9,7 @@
 
 | Role | Canonical Title | Notes |
 |---|---|---|
-| Fortude | **Senior Product Manager** | Defensible: roadmap ownership, ~30 cross-functional, board/CSO reporting |
+| Fortude | **Product Manager (Head of Product Scope)** | Corrected by Thariq 2026-09-29 — matches Sling Mobility's "(Head of Product Scope)" pattern. Defensible: roadmap ownership, ~30 cross-functional, board/CSO reporting |
 | Sling Mobility | **Product Lead** | Matches LinkedIn recommendation wording |
 | FieldR | **Co-Founder & Product Lead** | Full title, not inverted |
 | Motion Miracles | **Project Manager** | Scope was PM + de-facto Ops Manager |
@@ -54,6 +54,9 @@
 | Sling revenue growth | **+30%** | ✅ |
 | Motion Miracles revenue | **SAR 200K** | ✅ |
 | Motion Miracles games | **23** | ✅ |
+| Motion Miracles animation dept. YouTube revenue growth | **+400%** | New case study `motion-miracles-animation-turnaround`, sourced from Ana Al-Madinah proposal doc |
+| Motion Miracles animation dept. monthly revenue vs. cost | **SAR 39.2K vs SAR 15.3K (2.5×) in 60 days** | Same source |
+| Fortude delivery PMs trained into product managers | **5** | New case study `fortude-product-team-building`, sourced from Ana Al-Madinah proposal doc |
 | Rotaract total project value | **SAR 18.75M** | USD 5M × 3.75. Replace old "SAR 714K Funds Raised Overall" stat. |
 | Rotaract presidential raise | **SAR 1.875M** | USD 500K × 3.75. Fix "SAR 1,500" in About timeline — was a currency conversion error. |
 | Rotaract projects completed | **150+** | ✅ |
@@ -98,4 +101,6 @@
 - [x] about/page.tsx — Presidential term: "SAR 1,500" → "SAR 1.875M"
 - [x] projects/layout.tsx — "$180K revenue generated" meta → "SAR 750K new revenue generated"
 - [x] globals.css — Removed render-blocking @import font (duplicate of next/font)
+- [x] dictionaries.ts — Added 2 new case studies from Ana Al-Madinah proposal doc: `motion-miracles-animation-turnaround` (Motion Miracles) and `fortude-product-team-building` (Fortude), wired into `caseStudyIds` and career descriptions
+- [x] dictionaries.ts — Fortude career title: "Senior Product Manager" → "Product Manager (Head of Product Scope)"
 - [ ] LinkedIn headline — Manual update by Thariq
