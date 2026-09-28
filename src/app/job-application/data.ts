@@ -3180,7 +3180,7 @@ export const applications: Application[] = [
     "company": "Lucid Motors",
     "role": "Business Process Specialist",
     "channel": "Company Site/ATS",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -3684,7 +3684,7 @@ export const applications: Application[] = [
     "company": "Abu Dhabi Commercial Bank (ADCB)",
     "role": "Product Manager",
     "channel": "Company Site/ATS",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -4653,7 +4653,7 @@ export const applications: Application[] = [
     "role": "Senior Business Development Manager",
     "channel": "Company Site/ATS (Oracle)",
     "location": "",
-    "status": "No Response"
+    "status": "Rejected"
   },
   {
     "date": "2026-08-06",
@@ -5756,7 +5756,7 @@ export const applications: Application[] = [
     "company": "Checkout.com",
     "role": "Sales Manager - Saudi Arabia",
     "channel": "Company Site/ATS (Ashby)",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Saudi Arabia"
   },
   {
@@ -5990,6 +5990,102 @@ export const applications: Application[] = [
     "channel": "Company Site/ATS (Ashby)",
     "status": "Rejected",
     "location": ""
+  },
+  {
+    "date": "2026-09-21",
+    "company": "Dar Jana International Schools",
+    "role": "General Application",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-22",
+    "company": "Salt",
+    "role": "Project Manager - AI & Technology",
+    "channel": "LinkedIn Easy Apply",
+    "status": "Rejected",
+    "location": "Dubai, United Arab Emirates"
+  },
+  {
+    "date": "2026-09-22",
+    "company": "Mercans",
+    "role": "AI Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "EMEA"
+  },
+  {
+    "date": "2026-09-22",
+    "company": "Harnham",
+    "role": "Senior Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "England, United Kingdom"
+  },
+  {
+    "date": "2026-09-22",
+    "company": "dataPARC",
+    "role": "Project Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "EMEA"
+  },
+  {
+    "date": "2026-09-23",
+    "company": "Grupo Saemi Tech",
+    "role": "IT Project Coordinator",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Dammam"
+  },
+  {
+    "date": "2026-09-23",
+    "company": "Effect Doctors London",
+    "role": "Marketing Manager",
+    "channel": "Indeed",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-09-23",
+    "company": "TGP International",
+    "role": "Senior Operations Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-23",
+    "company": "JASARA PMC",
+    "role": "System Analyst / Junior Project Manager (IT)",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-24",
+    "company": "Globant",
+    "role": "Product Team Lead",
+    "channel": "LinkedIn Easy Apply",
+    "status": "In Progress",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-28",
+    "company": "Jobgether",
+    "role": "Product Owner (Recommendation Systems)",
+    "channel": "Company Site/ATS (Jobgether)",
+    "status": "No Response",
+    "location": "Saudi Arabia"
+  },
+  {
+    "date": "2026-09-28",
+    "company": "PROVEN",
+    "role": "Business Development Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
   }
 ];
 
