@@ -6422,6 +6422,206 @@ export const applications: Application[] = [
     "channel": "Recruiter/Agency (George Bernard)",
     "status": "No Response",
     "location": ""
+  },
+  {
+    "date": "2026-09-28",
+    "company": "autobia",
+    "role": "Business Development Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-28",
+    "company": "موعد المستقبل للاستقدام",
+    "role": "Quality & Performance Monitoring Specialist | أخصائية جودة ومراقبة أداء",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Jiddah"
+  },
+  {
+    "date": "2026-09-28",
+    "company": "Hilton",
+    "role": "Sales Manager (Job ID 222017)",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-29",
+    "company": "Aditya Consulting",
+    "role": "Senior Product Manager",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-09-29",
+    "company": "Criclabs",
+    "role": "Product Owner",
+    "channel": "Direct Email",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-09-30",
+    "company": "JASARA PMC",
+    "role": "Senior IT Business Analyst",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-01",
+    "company": "webook.com",
+    "role": "Project Manager - CEO Office",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-01",
+    "company": "webook.com",
+    "role": "Tribe Lead Product Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-01",
+    "company": "webook.com",
+    "role": "Technical Lead",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-01",
+    "company": "Qiddiya Investment Company",
+    "role": "Analyst - Data & AI Product Owner",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-01",
+    "company": "Qiddiya Investment Company",
+    "role": "Senior Manager - Digital CX",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-03",
+    "company": "DPL",
+    "role": "Sports Business Strategist",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-03",
+    "company": "Stranger Soccer",
+    "role": "License Owner / Operator",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-03",
+    "company": "Bona Fide",
+    "role": "Project Manager - Trophy Tour",
+    "channel": "Company Site/ATS (nahjerp)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-03",
+    "company": "Sanabil Studio",
+    "role": "Head of Product",
+    "channel": "Company Site/ATS (Teamtailor)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-04",
+    "company": "Qiddiya Investment Company",
+    "role": "Senior Manager - Technical Product Management",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-04",
+    "company": "Snoonu",
+    "role": "Head of Product - Operations & Logistics",
+    "channel": "Company Site/ATS (Kekamail)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-04",
+    "company": "ByteDance",
+    "role": "Senior Product Manager - Corporate Information Systems - AI Vertical Team",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-04",
+    "company": "ByteDance",
+    "role": "Product Operations & AI Enablement Manager",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-04",
+    "company": "Scale AI",
+    "role": "(role n/a)",
+    "channel": "Company Site/ATS (Greenhouse)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Cygnify",
+    "role": "Murex Business Analyst (Back Office)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Singapore"
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Intelligenz IT",
+    "role": "Lead Business Analyst",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Germany"
+  },
+  {
+    "date": "2026-10-05",
+    "company": "g2 Recruitment",
+    "role": "Senior Business Analyst",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Brussels Metropolitan Area"
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Salt",
+    "role": "Payments Product Manager (JO-2609-363606)",
+    "channel": "Company Site/ATS (Broadbean)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Snoonu",
+    "role": "Operations Performance Analyst",
+    "channel": "Company Site/ATS (Kekamail)",
+    "status": "No Response",
+    "location": ""
   }
 ];
 
@@ -6598,6 +6798,18 @@ export const recruiterOutreach: RecruiterOutreach[] = [
     "date": "2026-09-24",
     "company": "Trish Villena - Globant",
     "context": "Product Team Lead, Riyadh - Thariq emailed after LinkedIn apply; 2026-09-25 Trish asked for examples of large-scale product ownership; Thariq replied same day",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-09-29",
+    "company": "Vikas - Aditya Consulting",
+    "context": "Senior Product Manager, Riyadh - Thariq emailed CV after Vikas's LinkedIn post (available immediately, transferable Iqama); no reply in thread as of 2026-10-05",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-10-02",
+    "company": "Mahmoud - Masco",
+    "context": "Senior Product Manager / Head of Product (GCC) - recruiter-initiated 2026-10-02; Thariq replied interested and sent CV 2026-10-04; 2026-10-05 recruiter sent JDs, Thariq said he prefers the Unifonic opportunity; recruiter then offered a CV positioning review; Thariq asked 2026-10-05 about the fee and who is paid, awaiting reply",
     "channel": "Email"
   }
 ];
