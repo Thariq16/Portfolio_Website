@@ -6622,6 +6622,550 @@ export const applications: Application[] = [
     "channel": "Company Site/ATS (Kekamail)",
     "status": "No Response",
     "location": ""
+  },
+  {
+    "date": "2026-10-05",
+    "company": "GBS",
+    "role": "Senior Business Analyst",
+    "channel": "Company Site/ATS (SmartRecruiters)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Uber",
+    "role": "Operations Manager, Rider Growth, KSA (302819)",
+    "channel": "Company Site/ATS (Workday)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Emerson",
+    "role": "Inventory and Business Analyst",
+    "channel": "Company Site/ATS (Oracle)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-05",
+    "company": "IFS",
+    "role": "IT Business Analyst & Application Engineer",
+    "channel": "Company Site/ATS",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Sarmad",
+    "role": "Senior Product Manager - Digital Investment Platform",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "Rejected",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Al Ramz PJSC (ALRAMZ:UH)",
+    "role": "Information Technology Business Analyst",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Auxo Talent",
+    "role": "AI Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Salt",
+    "role": "Product Owner – Retail Technology",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Zippy Talent Recruitment Agency Dubai",
+    "role": "(role n/a)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Dubai"
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Binghatti",
+    "role": "Product Owner",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Jobgether",
+    "role": "Senior Product Analyst (CX)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "United Arab Emirates"
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Jobgether",
+    "role": "Tech Lead, Android Core Product",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "United Arab Emirates"
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Etihad",
+    "role": "Product Manager – Mobile & Digital Apps",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Synechron",
+    "role": "AI Technical Project Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-05",
+    "company": "1inch",
+    "role": "(role n/a)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Qiddiya Investment Company",
+    "role": "Senior Manager - Product - Martech - Shared Capabilities",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Spike Media",
+    "role": "(role n/a)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Cargoz.com",
+    "role": "(role n/a)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-06",
+    "company": "robusta",
+    "role": "Senior Business Analyst Onsite in KSA - Octopus by RTG",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-06",
+    "company": "BRKZ",
+    "role": "Product Manager (Fulfilment & Operations)",
+    "channel": "Company Site/ATS (Greenhouse)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-06",
+    "company": "Sumerge",
+    "role": "Software Project Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-06",
+    "company": "TRU IT",
+    "role": "Project Manager",
+    "channel": "Company Site/ATS (Keka)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-06",
+    "company": "Microlise",
+    "role": "Product Manager - Analytics & Data Products",
+    "channel": "Company Site/ATS",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-10-06",
+    "company": "Lobo Management",
+    "role": "(role n/a)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-07",
+    "company": "CSi - LANDMARK GROUP",
+    "role": "(role n/a)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-07",
+    "company": "Hantec Trader",
+    "role": "Product Marketing Lead",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-07",
+    "company": "Digital Zone",
+    "role": "Lead Product Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-07",
+    "company": "Starlink Qatar",
+    "role": "IoT - Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-07",
+    "company": "Open Innovation AI",
+    "role": "(role n/a)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-07",
+    "company": "REACH Group",
+    "role": "Senior Product Manager – Digital Government / AI Products",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-07",
+    "company": "Linnk Group",
+    "role": "Insights & Analytics Product Lead",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-07",
+    "company": "Ansen Technology",
+    "role": "(role n/a)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-07",
+    "company": "CargoX",
+    "role": "Product Manager (CoreConnect)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-07",
+    "company": "Fanatics Momentum",
+    "role": "Lead Product Manager, Sportsbook",
+    "channel": "Company Site/ATS (Greenhouse)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-07",
+    "company": "Property Finder",
+    "role": "Senior Product Manager - Value Creation",
+    "channel": "Company Site/ATS (Teamtailor)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-07",
+    "company": "qlub",
+    "role": "Head of Product Analytics & Experimentation",
+    "channel": "Company Site/ATS (Ashby)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-07",
+    "company": "Penny Software",
+    "role": "Implementation Manager",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Riyadh, Riyadh Province, Saudi Arabia"
+  },
+  {
+    "date": "2026-10-07",
+    "company": "deep campaigns",
+    "role": "Marketing Project Manager",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-07",
+    "company": "Rawaj - Human Capital Management",
+    "role": "Marketing Manager - F&B | Saudi Arabia",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-10-07",
+    "company": "Saudi AZM",
+    "role": "Enterprise Project Manager",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Riyadh, 01, SA"
+  },
+  {
+    "date": "2026-10-07",
+    "company": "Alpaca Markets",
+    "role": "Product Manager - Brokerage - Middle East",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-07",
+    "company": "Esports Foundation",
+    "role": "Senior Manager Digital Products Growth & Engagement",
+    "channel": "Company Site/ATS (Recruitee)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-07",
+    "company": "Mastercard",
+    "role": "Global Markets Summer Internship 2027 - Product Management Intern",
+    "channel": "Company Site/ATS (Workday)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-08",
+    "company": "SBS",
+    "role": "Senior Product Owner",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-08",
+    "company": "Murphy AI",
+    "role": "Product Manager",
+    "channel": "Company Site/ATS (Teamtailor)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-08",
+    "company": "Revolut",
+    "role": "Product Owner (Technical)",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-08",
+    "company": "pubGENIUS",
+    "role": "Freelance Project Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-10-09",
+    "company": "The Engine Room",
+    "role": "Project Manager",
+    "channel": "Company Site/ATS (HRPartner)",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-10-10",
+    "company": "Abdul Latif Jameel Enterprises",
+    "role": "Head of PMO",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-10",
+    "company": "بروج المدينة للتطوير العقاري",
+    "role": "AI & Digital Transformation Consultant",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-10",
+    "company": "Marriott",
+    "role": "Dir-Sales & Marketing-C (26074118)",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-10",
+    "company": "Saudi AZM",
+    "role": "Product Manager",
+    "channel": "Company Site/ATS (Recruitee)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-11",
+    "company": "Confidential Company",
+    "role": "Business Development Manager",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-11",
+    "company": "AnchorGF",
+    "role": "Sales & Business Development",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-11",
+    "company": "Human Capital Group Qatar",
+    "role": "Business Development Manager-2",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-11",
+    "company": "Human Capital Group Qatar",
+    "role": "Business Development Manager",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-11",
+    "company": "Network Tarmeez",
+    "role": "Managed Services & Maintenance Business Development Manager",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-11",
+    "company": "Saudi Seven Group for general contracting",
+    "role": "Business Developer",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-11",
+    "company": "MTM Group",
+    "role": "Development Manager (Progression to General Manager)",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-11",
+    "company": "Career Gulf",
+    "role": "Bd Manager",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-11",
+    "company": "Royal Cyber KSA",
+    "role": "Product Technical and Business Development Manager",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-11",
+    "company": "Business Enhancers",
+    "role": "Business Development - Technology and IT Software Services",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-11",
+    "company": "Basamh Industrial Co. Ltd.",
+    "role": "Business Data Analyst",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-11",
+    "company": "Expertise Industrial Services",
+    "role": "Business Development Executive",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-11",
+    "company": "شركة محاسن الشرق للخدمات اللوجستية",
+    "role": "Business Development / B2B Sales Specialist",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-11",
+    "company": "Swan Global",
+    "role": "(role n/a)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-12",
+    "company": "Salla",
+    "role": "Product Manager - Storefront",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-12",
+    "company": "United Group",
+    "role": "(role n/a)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
   }
 ];
 
@@ -6809,7 +7353,7 @@ export const recruiterOutreach: RecruiterOutreach[] = [
   {
     "date": "2026-10-02",
     "company": "Mahmoud - Masco",
-    "context": "Senior Product Manager / Head of Product (GCC) - recruiter-initiated 2026-10-02; Thariq replied interested and sent CV 2026-10-04; 2026-10-05 recruiter sent JDs, Thariq said he prefers the Unifonic opportunity; recruiter then offered a CV positioning review; Thariq asked 2026-10-05 about the fee and who is paid, awaiting reply",
+    "context": "Senior Product Manager / Head of Product (GCC) - recruiter-initiated 2026-10-02; Thariq replied interested and sent CV 2026-10-04; 2026-10-05 recruiter sent JDs, Thariq said he prefers the Unifonic opportunity; recruiter then offered a CV positioning review; Thariq asked 2026-10-05 about the fee and who is paid; 2026-10-05 recruiter replied pointing to a paid 'resume expert'/new application standard rather than answering the fee question directly - matches a fee-based CV-review scam pattern, no further reply from Thariq as of this sync",
     "channel": "Email"
   }
 ];
