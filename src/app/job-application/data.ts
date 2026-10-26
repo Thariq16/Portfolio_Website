@@ -4869,7 +4869,7 @@ export const applications: Application[] = [
     "role": "Assistant IT Manager",
     "channel": "Company Site/ATS (SmartRecruiters)",
     "location": "",
-    "status": "No Response"
+    "status": "Rejected"
   },
   {
     "date": "2026-08-12",
@@ -6988,7 +6988,7 @@ export const applications: Application[] = [
     "company": "Revolut",
     "role": "Product Owner (Technical)",
     "channel": "Company Site/ATS",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -7166,6 +7166,334 @@ export const applications: Application[] = [
     "channel": "LinkedIn Easy Apply",
     "status": "No Response",
     "location": ""
+  },
+  {
+    "date": "2026-10-12",
+    "company": "Enhance ROI",
+    "role": "Co-Founder & Managing Partner, Saudi Arabia",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Al Khobar"
+  },
+  {
+    "date": "2026-10-13",
+    "company": "Tru",
+    "role": "Project Manager",
+    "channel": "Direct Email",
+    "status": "In Progress",
+    "location": ""
+  },
+  {
+    "date": "2026-10-14",
+    "company": "SAUDI AIRLINES",
+    "role": "Senior Manager, Product & Member Experience",
+    "channel": "LinkedIn Easy Apply",
+    "status": "Rejected",
+    "location": "Jeddah"
+  },
+  {
+    "date": "2026-10-14",
+    "company": "TASC Outsourcing",
+    "role": "Digital Product Manager – Mobility",
+    "channel": "LinkedIn Easy Apply",
+    "status": "Rejected",
+    "location": "Dubai, United Arab Emirates"
+  },
+  {
+    "date": "2026-10-15",
+    "company": "Keystone Consulting",
+    "role": "Management Consultant",
+    "channel": "Company Site/ATS (SmartRecruiters)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-15",
+    "company": "TG KSA",
+    "role": "Technical Manager",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-18",
+    "company": "Sumerge",
+    "role": "Software Sr. Project Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-18",
+    "company": "Patronus",
+    "role": "(Senior) Mobile Product Manager (f/m/x)",
+    "channel": "Company Site/ATS (Ashby)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-18",
+    "company": "Space42",
+    "role": "Specialist - Product Management",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-19",
+    "company": "Fusion Outsourcing & Services",
+    "role": "Project Management Specialist",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Doha, Qatar"
+  },
+  {
+    "date": "2026-10-19",
+    "company": "RAKN",
+    "role": "Independant Business Development Partner",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-19",
+    "company": "Panda Retail Company – Savola Group",
+    "role": "Project Lead",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Jeddah"
+  },
+  {
+    "date": "2026-10-19",
+    "company": "Jobgether",
+    "role": "Senior Business Analyst – Commercial P&C / MGA",
+    "channel": "Company Site/ATS (Jobgether)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-20",
+    "company": "Systems Arabia",
+    "role": "Business Analyst",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-10-20",
+    "company": "CommuniTech Recruitment Group",
+    "role": "Backend Developer | PHP | Mid-Senior Level",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-20",
+    "company": "BlackStone eIT",
+    "role": "Senior Business Analyst",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-20",
+    "company": "CFA Club IIT Indore",
+    "role": "Product Director",
+    "channel": "LinkedIn Easy Apply",
+    "status": "Rejected",
+    "location": "Dubai, United Arab Emirates"
+  },
+  {
+    "date": "2026-10-20",
+    "company": "Confidential",
+    "role": "Senior Manager, Digital Products (AI Native)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Abu Dhabi Emirate, United Arab Emirates"
+  },
+  {
+    "date": "2026-10-20",
+    "company": "Confidential Careers",
+    "role": "Head of Product Innovation",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Dubai, United Arab Emirates"
+  },
+  {
+    "date": "2026-10-20",
+    "company": "Holland Advisors",
+    "role": "Senior Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Dubai, United Arab Emirates"
+  },
+  {
+    "date": "2026-10-20",
+    "company": "Bybit",
+    "role": "Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "Rejected",
+    "location": "Abu Dhabi Emirate, United Arab Emirates"
+  },
+  {
+    "date": "2026-10-20",
+    "company": "Confidentiel",
+    "role": "Brand Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "Rejected",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-10-20",
+    "company": "Lean Technologies",
+    "role": "Principal Product Manager, LeanX",
+    "channel": "Company Site/ATS (Ashby)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-21",
+    "company": "Naseej",
+    "role": "Business Analyst",
+    "channel": "Company Site/ATS (Teamtailor)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-21",
+    "company": "Robusta Technology Group",
+    "role": "Technical Project Manager - Remote - Octopus RTG",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Remote"
+  },
+  {
+    "date": "2026-10-21",
+    "company": "Enhance ROI",
+    "role": "Business Development Manager",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Al Khobar"
+  },
+  {
+    "date": "2026-10-21",
+    "company": "AlMosafer",
+    "role": "Product Manager",
+    "channel": "Company Site/ATS (SmartRecruiters)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-21",
+    "company": "Saudi AZM",
+    "role": "Senior IT Project Manager",
+    "channel": "Company Site/ATS (Recruitee)",
+    "status": "No Response",
+    "location": "Riyadh, 01, SA"
+  },
+  {
+    "date": "2026-10-21",
+    "company": "The Blue Group",
+    "role": "Government Relations Officer",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-22",
+    "company": "ABEC Ltd",
+    "role": "Project Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-10-22",
+    "company": "Synechron",
+    "role": "Product Owner",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-10-22",
+    "company": "Synechron",
+    "role": "Product Owner / Business Analyst (GRC)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-10-22",
+    "company": "MPCCO - Multiple Paths Contracting Company",
+    "role": "Business Development Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Jiddah"
+  },
+  {
+    "date": "2026-10-22",
+    "company": "Ohara IT Solutions Pvt Ltd",
+    "role": "Senior Technical Program Manager",
+    "channel": "Company Site/ATS (Recooty)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-25",
+    "company": "Kleos",
+    "role": "Product Manager (Global AI HR Platform)",
+    "channel": "Company Site/ATS (Teamtailor)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-26",
+    "company": "Artfield Co. LTD",
+    "role": "Creative & Brand Communications Manager",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-26",
+    "company": "Peroptyx",
+    "role": "Data Analyst - No Experience Required",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-26",
+    "company": "شركة تقنيات القمم",
+    "role": "محلل نظم",
+    "channel": "Bayt",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-26",
+    "company": "TechBiz Global GmbH",
+    "role": "Bilingual Business Analyst",
+    "channel": "Company Site/ATS (Recruitee)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-26",
+    "company": "Müller's Solutions",
+    "role": "Agile Project Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-26",
+    "company": "IntelliSense.io",
+    "role": "Technical Project Manager",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
   }
 ];
 
@@ -7354,6 +7682,12 @@ export const recruiterOutreach: RecruiterOutreach[] = [
     "date": "2026-10-02",
     "company": "Mahmoud - Masco",
     "context": "Senior Product Manager / Head of Product (GCC) - recruiter-initiated 2026-10-02; Thariq replied interested and sent CV 2026-10-04; 2026-10-05 recruiter sent JDs, Thariq said he prefers the Unifonic opportunity; recruiter then offered a CV positioning review; Thariq asked 2026-10-05 about the fee and who is paid; 2026-10-05 recruiter replied pointing to a paid 'resume expert'/new application standard rather than answering the fee question directly - matches a fee-based CV-review scam pattern, no further reply from Thariq as of this sync",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-10-12",
+    "company": "Vipin Krishnan K - Linnk Group",
+    "context": "Project Manager – Digital Banking, Qatar (yearly renewable contract) - Thariq replied same day with CV, open to relocating to Qatar",
     "channel": "Email"
   }
 ];
