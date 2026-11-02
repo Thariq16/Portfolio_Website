@@ -612,7 +612,7 @@ export const applications: Application[] = [
     "company": "Confidential",
     "role": "Senior Product Specialist",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Riyadh, Saudi Arabia"
   },
   {
@@ -716,7 +716,7 @@ export const applications: Application[] = [
     "company": "Confidential",
     "role": "Senior Product Specialist",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -2780,7 +2780,7 @@ export const applications: Application[] = [
     "company": "The Flaavours",
     "role": "Associate Business Manager",
     "channel": "Indeed",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Jeddah"
   },
   {
@@ -4509,7 +4509,7 @@ export const applications: Application[] = [
     "role": "Senior Manager - Product Owner",
     "channel": "Company Site/ATS (Workable)",
     "location": "Riyadh, Saudi Arabia",
-    "status": "No Response"
+    "status": "Rejected"
   },
   {
     "date": "2026-08-06",
@@ -4853,7 +4853,7 @@ export const applications: Application[] = [
     "role": "Senior Product Manager - Limitless Naturals",
     "channel": "Company Site/ATS (Workable)",
     "location": "",
-    "status": "No Response"
+    "status": "Rejected"
   },
   {
     "date": "2026-08-12",
@@ -4973,7 +4973,7 @@ export const applications: Application[] = [
     "role": "Senior Product Manager-New Initiatives",
     "channel": "Company Site/ATS (Delivery Hero)",
     "location": "Riyadh",
-    "status": "No Response"
+    "status": "Rejected"
   },
   {
     "date": "2026-08-13",
@@ -5013,7 +5013,7 @@ export const applications: Application[] = [
     "role": "Product Manager - Travel Solutions",
     "channel": "Company Site/ATS (TalentLyft)",
     "location": "Riyadh, Saudi Arabia",
-    "status": "No Response"
+    "status": "Rejected"
   },
   {
     "date": "2026-08-14",
@@ -5069,7 +5069,7 @@ export const applications: Application[] = [
     "role": "Business Analyst",
     "channel": "Company Site/ATS",
     "location": "",
-    "status": "No Response"
+    "status": "Rejected"
   },
   {
     "date": "2026-08-16",
@@ -5148,7 +5148,7 @@ export const applications: Application[] = [
     "company": "Abu Dhabi Commercial Bank (ADCB)",
     "role": "Product Owner - Generative AI",
     "channel": "Company Site/ATS",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -5252,7 +5252,7 @@ export const applications: Application[] = [
     "company": "Salt",
     "role": "Product Owner",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Riyadh, Saudi Arabia"
   },
   {
@@ -5268,7 +5268,7 @@ export const applications: Application[] = [
     "company": "Essity",
     "role": "Customer Marketing Manager",
     "channel": "Company Site/ATS (Workday)",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -5276,7 +5276,7 @@ export const applications: Application[] = [
     "company": "neoleap",
     "role": "Product Owner Manager",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Riyadh, Saudi Arabia"
   },
   {
@@ -5292,7 +5292,7 @@ export const applications: Application[] = [
     "company": "neoleap",
     "role": "Senior Technical Lead",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Riyadh, Saudi Arabia"
   },
   {
@@ -5332,7 +5332,7 @@ export const applications: Application[] = [
     "company": "Embelo",
     "role": "AI Product Owner",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Riyadh, Saudi Arabia"
   },
   {
@@ -5364,7 +5364,7 @@ export const applications: Application[] = [
     "company": "Confidential",
     "role": "Business Analyst",
     "channel": "Indeed",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -5372,7 +5372,7 @@ export const applications: Application[] = [
     "company": "Confidential",
     "role": "Project Manager",
     "channel": "Indeed",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -5420,7 +5420,7 @@ export const applications: Application[] = [
     "company": "Systems Limited",
     "role": "Agile Product Manager",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Al Saudia"
   },
   {
@@ -5444,7 +5444,7 @@ export const applications: Application[] = [
     "company": "Nameless Ventures",
     "role": "Product Manager",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Dubai"
   },
   {
@@ -5452,7 +5452,7 @@ export const applications: Application[] = [
     "company": "People In AI",
     "role": "Director of Product, AI Transformation",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "California, United States"
   },
   {
@@ -5468,7 +5468,7 @@ export const applications: Application[] = [
     "company": "ThoughtLabs Belgium",
     "role": "Business Analyst (Open Data)",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Luxembourg, Luxembourg"
   },
   {
@@ -5508,7 +5508,7 @@ export const applications: Application[] = [
     "company": "DXC Technology",
     "role": "Senior Business Analyst",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Doha, Qatar"
   },
   {
@@ -5548,7 +5548,7 @@ export const applications: Application[] = [
     "company": "Agoda",
     "role": "Business Analyst (Supply Analytics)",
     "channel": "Company Site/ATS",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Bangkok, Thailand"
   },
   {
@@ -5572,7 +5572,7 @@ export const applications: Application[] = [
     "company": "Red Sea Global Hospitality",
     "role": "Assistant IT Manager",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Jeddah"
   },
   {
@@ -5596,7 +5596,7 @@ export const applications: Application[] = [
     "company": "Almarai",
     "role": "Senior Marketing Manager",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Riyadh, Saudi Arabia"
   },
   {
@@ -5652,7 +5652,7 @@ export const applications: Application[] = [
     "company": "Agoda",
     "role": "Senior Product Manager",
     "channel": "Company Site/ATS",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Bangkok, Thailand"
   },
   {
@@ -5876,7 +5876,7 @@ export const applications: Application[] = [
     "company": "Malaa",
     "role": "Senior Product Manager",
     "channel": "Company Site/ATS (Pinpoint)",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Riyadh, Saudi Arabia"
   },
   {
@@ -5980,7 +5980,7 @@ export const applications: Application[] = [
     "company": "Netcompany",
     "role": "Lead Product Manager",
     "channel": "Company Site/ATS (SmartRecruiters)",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -6376,6 +6376,14 @@ export const applications: Application[] = [
     "location": ""
   },
   {
+    "date": "2026-08-24",
+    "company": "Sidra Medicine",
+    "role": "Manager - Innovation - 3914",
+    "channel": "Company Site/ATS (Oracle Cloud)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
     "date": "2026-08-28",
     "company": "Upshifters",
     "role": "Product Manager",
@@ -6424,6 +6432,126 @@ export const applications: Application[] = [
     "location": ""
   },
   {
+    "date": "2026-09-04",
+    "company": "Snoonu",
+    "role": "Growth Operations Manager",
+    "channel": "Company Site/ATS",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-09-06",
+    "company": "Starways",
+    "role": "أخصائي أول منتجات",
+    "channel": "LinkedIn Easy Apply",
+    "status": "Rejected",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-09-06",
+    "company": "Deel",
+    "role": "Product Manager",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-06",
+    "company": "Employ",
+    "role": "AI Product Manager",
+    "channel": "Company Site/ATS (Lever)",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-09-07",
+    "company": "Broadbean (client undisclosed)",
+    "role": "Senior Programme and Delivery Manager (JO-2609-363270)",
+    "channel": "Company Site/ATS (Broadbean)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-08",
+    "company": "WEELOY PTE. LTD.",
+    "role": "Product Manager",
+    "channel": "Seek",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-09",
+    "company": "C3 AI",
+    "role": "(role n/a)",
+    "channel": "Company Site/ATS (Greenhouse)",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-09-09",
+    "company": "efanfa",
+    "role": "Loyalty Excellence Senior Manager (2023756)",
+    "channel": "Company Site/ATS (Oracle Cloud)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-09",
+    "company": "Halliburton",
+    "role": "PM315-ESG-Project Coordinator - 202629",
+    "channel": "Company Site/ATS (SuccessFactors)",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-09-11",
+    "company": "Mace Group",
+    "role": "46329 Broadcast/ICT",
+    "channel": "Company Site/ATS",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-09-13",
+    "company": "IFS",
+    "role": "IT Business Analyst & Application Engineer",
+    "channel": "Company Site/ATS",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-09-15",
+    "company": "Billogram",
+    "role": "Product Manager",
+    "channel": "Company Site/ATS (Teamtailor)",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-09-18",
+    "company": "Lendo",
+    "role": "Senior Product Manager",
+    "channel": "Company Site/ATS (Teamtailor)",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-09-21",
+    "company": "Dar Jana International Schools",
+    "role": "(role n/a)",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-22",
+    "company": "vCluster Labs",
+    "role": "Staff Product Manager (vMetal)",
+    "channel": "Company Site/ATS",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
     "date": "2026-09-28",
     "company": "autobia",
     "role": "Business Development Manager",
@@ -6448,6 +6576,30 @@ export const applications: Application[] = [
     "location": ""
   },
   {
+    "date": "2026-09-28",
+    "company": "2P",
+    "role": "Project Manager (SOURC02358)",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-28",
+    "company": "ADCB",
+    "role": "Product Manager",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-09-28",
+    "company": "Devoteam Middle East",
+    "role": "Data & AI Strategy Manager",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
     "date": "2026-09-29",
     "company": "Aditya Consulting",
     "role": "Senior Product Manager",
@@ -6461,6 +6613,14 @@ export const applications: Application[] = [
     "role": "Product Owner",
     "channel": "Direct Email",
     "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-09-29",
+    "company": "Rimthan (client undisclosed)",
+    "role": "Senior Product Manager - AI-Enabled Ventures",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
     "location": ""
   },
   {
@@ -6540,7 +6700,7 @@ export const applications: Application[] = [
     "company": "Sanabil Studio",
     "role": "Head of Product",
     "channel": "Company Site/ATS (Teamtailor)",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -6556,7 +6716,7 @@ export const applications: Application[] = [
     "company": "Snoonu",
     "role": "Head of Product - Operations & Logistics",
     "channel": "Company Site/ATS (Kekamail)",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -6596,7 +6756,7 @@ export const applications: Application[] = [
     "company": "Intelligenz IT",
     "role": "Lead Business Analyst",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Germany"
   },
   {
@@ -6604,7 +6764,7 @@ export const applications: Application[] = [
     "company": "g2 Recruitment",
     "role": "Senior Business Analyst",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Brussels Metropolitan Area"
   },
   {
@@ -6620,7 +6780,7 @@ export const applications: Application[] = [
     "company": "Snoonu",
     "role": "Operations Performance Analyst",
     "channel": "Company Site/ATS (Kekamail)",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -6636,7 +6796,7 @@ export const applications: Application[] = [
     "company": "Uber",
     "role": "Operations Manager, Rider Growth, KSA (302819)",
     "channel": "Company Site/ATS (Workday)",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -6668,7 +6828,7 @@ export const applications: Application[] = [
     "company": "Al Ramz PJSC (ALRAMZ:UH)",
     "role": "Information Technology Business Analyst",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -6676,7 +6836,7 @@ export const applications: Application[] = [
     "company": "Auxo Talent",
     "role": "AI Product Manager",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -6684,7 +6844,7 @@ export const applications: Application[] = [
     "company": "Salt",
     "role": "Product Owner – Retail Technology",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -6700,7 +6860,7 @@ export const applications: Application[] = [
     "company": "Binghatti",
     "role": "Product Owner",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -6732,7 +6892,7 @@ export const applications: Application[] = [
     "company": "Synechron",
     "role": "AI Technical Project Manager",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -6768,6 +6928,54 @@ export const applications: Application[] = [
     "location": ""
   },
   {
+    "date": "2026-10-05",
+    "company": "1inch",
+    "role": "Senior Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "Rejected",
+    "location": "Dubai, United Arab Emirates"
+  },
+  {
+    "date": "2026-10-05",
+    "company": "STATERA",
+    "role": "Insights & Analytics Product Lead",
+    "channel": "LinkedIn Easy Apply",
+    "status": "Rejected",
+    "location": "Doha, Qatar"
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Spike Media",
+    "role": "Technical Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Jeddah"
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Cargoz.com",
+    "role": "Head of Product (Director/VP)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Snoonu",
+    "role": "Project Manager",
+    "channel": "Company Site/ATS",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-10-05",
+    "company": "Broadbean (client undisclosed)",
+    "role": "Payments Product Manager (JO-2609-363606)",
+    "channel": "Company Site/ATS (Broadbean)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
     "date": "2026-10-06",
     "company": "robusta",
     "role": "Senior Business Analyst Onsite in KSA - Octopus by RTG",
@@ -6796,7 +7004,7 @@ export const applications: Application[] = [
     "company": "TRU IT",
     "role": "Project Manager",
     "channel": "Company Site/ATS (Keka)",
-    "status": "No Response",
+    "status": "In Progress",
     "location": "Riyadh"
   },
   {
@@ -6816,6 +7024,22 @@ export const applications: Application[] = [
     "location": ""
   },
   {
+    "date": "2026-10-06",
+    "company": "Lobo Management",
+    "role": "Product Marketing (MDA and SDA) - KSA",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-10-06",
+    "company": "Click&Boat",
+    "role": "Head of Product",
+    "channel": "Company Site/ATS (Teamtailor)",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
     "date": "2026-10-07",
     "company": "CSi - LANDMARK GROUP",
     "role": "(role n/a)",
@@ -6828,7 +7052,7 @@ export const applications: Application[] = [
     "company": "Hantec Trader",
     "role": "Product Marketing Lead",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -6844,7 +7068,7 @@ export const applications: Application[] = [
     "company": "Starlink Qatar",
     "role": "IoT - Product Manager",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -6860,7 +7084,7 @@ export const applications: Application[] = [
     "company": "REACH Group",
     "role": "Senior Product Manager – Digital Government / AI Products",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -6868,7 +7092,7 @@ export const applications: Application[] = [
     "company": "Linnk Group",
     "role": "Insights & Analytics Product Lead",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -6884,7 +7108,7 @@ export const applications: Application[] = [
     "company": "CargoX",
     "role": "Product Manager (CoreConnect)",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -6968,11 +7192,35 @@ export const applications: Application[] = [
     "location": ""
   },
   {
+    "date": "2026-10-07",
+    "company": "Open Innovation AI",
+    "role": "AI Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Abu Dhabi Emirate, United Arab Emirates"
+  },
+  {
+    "date": "2026-10-07",
+    "company": "Ansen Technology",
+    "role": "Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Abu Dhabi"
+  },
+  {
+    "date": "2026-10-07",
+    "company": "CSi - LANDMARK GROUP",
+    "role": "Senior Manager - Personalisation & AI Activation",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Dubai, United Arab Emirates"
+  },
+  {
     "date": "2026-10-08",
     "company": "SBS",
     "role": "Senior Product Owner",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -6996,6 +7244,22 @@ export const applications: Application[] = [
     "company": "pubGENIUS",
     "role": "Freelance Project Manager",
     "channel": "Company Site/ATS (Workable)",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-10-08",
+    "company": "Databricks",
+    "role": "Sr. Product Manager, Lakeflow",
+    "channel": "Company Site/ATS (Greenhouse)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-08",
+    "company": "Ford Motor Company",
+    "role": "Lead Technical Program Manager - 72217",
+    "channel": "Company Site/ATS",
     "status": "Rejected",
     "location": ""
   },
@@ -7152,11 +7416,19 @@ export const applications: Application[] = [
     "location": ""
   },
   {
+    "date": "2026-10-11",
+    "company": "Swan Global",
+    "role": "Business Analyst",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Doha, Qatar"
+  },
+  {
     "date": "2026-10-12",
     "company": "Salla",
     "role": "Product Manager - Storefront",
     "channel": "Company Site/ATS (Workable)",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -7176,12 +7448,28 @@ export const applications: Application[] = [
     "location": "Al Khobar"
   },
   {
+    "date": "2026-10-12",
+    "company": "United Group",
+    "role": "Senior Business Applications Specialist",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Jeddah"
+  },
+  {
     "date": "2026-10-13",
     "company": "Tru",
     "role": "Project Manager",
     "channel": "Direct Email",
     "status": "In Progress",
     "location": ""
+  },
+  {
+    "date": "2026-10-13",
+    "company": "Ebra",
+    "role": "Project Manager",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Riyadh, Riyadh Province"
   },
   {
     "date": "2026-10-14",
@@ -7228,7 +7516,7 @@ export const applications: Application[] = [
     "company": "Patronus",
     "role": "(Senior) Mobile Product Manager (f/m/x)",
     "channel": "Company Site/ATS (Ashby)",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -7236,7 +7524,7 @@ export const applications: Application[] = [
     "company": "Space42",
     "role": "Specialist - Product Management",
     "channel": "Direct Email",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -7270,6 +7558,14 @@ export const applications: Application[] = [
     "channel": "Company Site/ATS (Jobgether)",
     "status": "No Response",
     "location": ""
+  },
+  {
+    "date": "2026-10-19",
+    "company": "Jobgether",
+    "role": "Senior Technical Program Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Saudi Arabia"
   },
   {
     "date": "2026-10-20",
@@ -7316,7 +7612,7 @@ export const applications: Application[] = [
     "company": "Confidential Careers",
     "role": "Head of Product Innovation",
     "channel": "LinkedIn Easy Apply",
-    "status": "No Response",
+    "status": "Rejected",
     "location": "Dubai, United Arab Emirates"
   },
   {
@@ -7349,6 +7645,22 @@ export const applications: Application[] = [
     "role": "Principal Product Manager, LeanX",
     "channel": "Company Site/ATS (Ashby)",
     "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-20",
+    "company": "Thoughtworks",
+    "role": "Principal Product Manager",
+    "channel": "Company Site/ATS",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-10-20",
+    "company": "Ethos",
+    "role": "Product Manager Expert",
+    "channel": "AI Screening Platform",
+    "status": "In Progress",
     "location": ""
   },
   {
@@ -7440,6 +7752,14 @@ export const applications: Application[] = [
     "location": ""
   },
   {
+    "date": "2026-10-22",
+    "company": "Honeywell",
+    "role": "Program Manager - 160242",
+    "channel": "Company Site/ATS",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
     "date": "2026-10-25",
     "company": "Kleos",
     "role": "Product Manager (Global AI HR Platform)",
@@ -7460,7 +7780,7 @@ export const applications: Application[] = [
     "company": "Peroptyx",
     "role": "Data Analyst - No Experience Required",
     "channel": "Bayt",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -7494,6 +7814,54 @@ export const applications: Application[] = [
     "channel": "Indeed",
     "status": "No Response",
     "location": "Riyadh, Saudi Arabia"
+  },
+  {
+    "date": "2026-10-26",
+    "company": "webook.com",
+    "role": "Product Manager",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Riyadh, Riyadh Province"
+  },
+  {
+    "date": "2026-10-27",
+    "company": "Anthropic",
+    "role": "Product Manager, Claude",
+    "channel": "Company Site/ATS (Greenhouse)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-10-28",
+    "company": "Saaki Argus & Averil Consulting",
+    "role": "Project Manager",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "India"
+  },
+  {
+    "date": "2026-10-28",
+    "company": "Independent Food Company",
+    "role": "CRM & Loyalty Manager",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Riyadh, SA"
+  },
+  {
+    "date": "2026-10-28",
+    "company": "GBS",
+    "role": "Senior Business Analyst",
+    "channel": "Indeed",
+    "status": "No Response",
+    "location": "Riyadh, Riyadh Province"
+  },
+  {
+    "date": "2026-10-28",
+    "company": "Confidential Company",
+    "role": "محلل أعمال",
+    "channel": "Recruiter/Agency (Bayt)",
+    "status": "No Response",
+    "location": ""
   }
 ];
 
@@ -7688,6 +8056,42 @@ export const recruiterOutreach: RecruiterOutreach[] = [
     "date": "2026-10-12",
     "company": "Vipin Krishnan K - Linnk Group",
     "context": "Project Manager – Digital Banking, Qatar (yearly renewable contract) - Thariq replied same day with CV, open to relocating to Qatar",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-08-30",
+    "company": "Fusion Group Holding",
+    "context": "Recruiter Vandhana invited via Naukrigulf re: IT Project Manager - Fraud Solutions Implementation, Doha, Qatar (8-15 years) - Thariq responded interested, shared full details (9 years experience, current employer Fortude, current salary 20000 SAR) and CV",
+    "channel": "Naukrigulf"
+  },
+  {
+    "date": "2026-09-09",
+    "company": "AIPB Capital",
+    "context": "Laura emailed re: next steps for remote Community Manager role (hosting monthly virtual town halls, moderating discussions)",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-09-17",
+    "company": "YO HR Consultancy",
+    "context": "Alex Morgan invited Thariq to the next step for Product Manager/Product Owner - Remote (client Micro1, contract USD 90-140/hr): mandatory AI-led interview, plus referral links for Mercor, SuperAnnotate, AfterQuery and Ethos (follow-up sent 2026-09-18)",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-09-18",
+    "company": "Vrinda Global",
+    "context": "Recruiter rechecked interest for Senior Product Manager - AI opportunity (Real Estate) after the LinkedIn application",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-10-13",
+    "company": "TRU IT (Tru Inc)",
+    "context": "Shalini Katoch (Lead Talent Acquisition) invited Thariq to a 20-minute on-camera prescreen for Project Manager - Thariq booked 1pm KSA on 2026-10-14, completed the call and sent a thank-you",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-10-20",
+    "company": "Ethos",
+    "context": "Product Manager Expert (USD 80/hr): voice-agent conversation requested 2026-10-20, interview completed 2026-10-23, profile shortlisted for client review 2026-10-26",
     "channel": "Email"
   }
 ];
