@@ -1,4 +1,4 @@
-// Auto-generated from Job_Search_Dashboard.html: do not hand-edit, regenerate instead.
+// Source of truth for the /job-application page. Updated directly by the Gmail sync; Job_Search_Dashboard.html is regenerated from this file, not the other way round.
 
 export interface Application {
   date: string;
