@@ -1,0 +1,215 @@
+.section {
+    padding: 6rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+/* The sticky panel only exists on wide screens; on mobile each block carries its own metrics. */
+.sticky {
+    display: none;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+
+.block {
+    position: relative;
+}
+
+.num {
+    display: block;
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    color: var(--muted-foreground);
+    margin-bottom: 0.75rem;
+}
+
+.title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1;
+    color: var(--foreground);
+    margin-bottom: 1rem;
+}
+
+.body {
+    font-size: 1.125rem;
+    line-height: 1.65;
+    color: var(--muted-foreground);
+    max-width: 34rem;
+}
+
+.metrics {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 2rem;
+    margin: 1.5rem 0 1.25rem;
+    padding: 0;
+}
+
+.metrics li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.metrics strong {
+    font-family: var(--font-display), Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--primary);
+    line-height: 1;
+}
+
+.metrics span {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+}
+
+.link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary);
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.25s ease;
+    padding-bottom: 2px;
+}
+
+.link:hover {
+    background-size: 100% 1px;
+}
+
+@media (min-width: 960px) {
+    .grid {
+        grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+        gap: 5rem;
+    }
+
+    .sticky {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        position: sticky;
+        top: 6.5rem;
+        align-self: start;
+        height: fit-content;
+    }
+
+    .panel {
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        background: var(--card);
+        padding: 3rem 2.5rem;
+        min-height: 22rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        animation: panelIn 0.35s ease both;
+    }
+
+    .panelValue {
+        font-family: var(--font-display), Georgia, serif;
+        font-weight: 500;
+        font-size: clamp(3.5rem, 6vw, 5.5rem);
+        line-height: 1;
+        letter-spacing: -0.02em;
+        color: var(--primary);
+        overflow-wrap: anywhere;
+    }
+
+    .panelLabel {
+        font-family: var(--font-mono), 'JetBrains Mono', monospace;
+        font-size: 0.8125rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--foreground);
+        margin-top: 1rem;
+    }
+
+    .panelCase {
+        font-size: 0.9375rem;
+        color: var(--muted-foreground);
+        margin-top: 0.5rem;
+    }
+
+    .dots {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .dot,
+    .dotOn {
+        height: 3px;
+        width: 1.5rem;
+        border-radius: 2px;
+        background: var(--border);
+        transition: background-color 0.25s ease, width 0.25s ease;
+    }
+
+    .dotOn {
+        width: 2.75rem;
+        background: var(--primary);
+    }
+
+    .list {
+        gap: 0;
+    }
+
+    .block {
+        min-height: 68vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 0.42;
+        transition: opacity 0.3s ease;
+    }
+
+    .blockOn {
+        opacity: 1;
+    }
+}
+
+@keyframes panelIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .panel {
+        animation: none;
+    }
+
+    .block {
+        opacity: 1;
+        transition: none;
+    }
+}

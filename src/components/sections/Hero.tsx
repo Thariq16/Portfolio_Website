@@ -34,7 +34,7 @@ export default function Hero() {
                     </motion.div>
                     <motion.h1 className={styles.headline} variants={fadeUp} initial="hidden" animate="visible" custom={1}>
                         {t.hero.headline.split('\n').map((line, i) => (
-                            <span key={i} className={styles.headlineLine}>{line}<br /></span>
+                            <span key={i} className={`${styles.headlineLine} ${i > 0 ? styles.headlineMuted : ''}`}>{line}<br /></span>
                         ))}
                     </motion.h1>
                     <motion.p className={styles.subheadline} variants={fadeUp} initial="hidden" animate="visible" custom={2}>

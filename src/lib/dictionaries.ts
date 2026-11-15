@@ -97,6 +97,47 @@ export const dictionary = {
             ctaSecondary: 'View Case Studies',
             location: 'Based in Saudi Arabia (Iqama Transferable)',
         },
+        home: {
+            thesis:
+                "I build products from zero, put a price on them, and measure every outcome in revenue. As Employee #1, I helped scale an EV team from one to thirty-four. At Fortude, I built a SAR 7.5M pipeline in fifteen months. Now I'm bringing that rigor to Senior PM and Head of Product roles across KSA and the GCC.",
+            pillarsEyebrow: 'How I work',
+            pillars: [
+                {
+                    slug: 'saas-growth-platform',
+                    title: 'Revenue',
+                    body: 'Pricing, packaging and go-to-market that turn product value into pipeline.',
+                },
+                {
+                    slug: 'retention-engine',
+                    title: 'Retention',
+                    body: 'Real-time data loops that move a product from fixing problems to delivering value before they surface.',
+                },
+                {
+                    slug: 'ev-battery-ecosystem',
+                    title: 'Zero-to-one',
+                    body: 'From a blank page to a launched product, then to a market that pays for it.',
+                },
+            ],
+            readCase: 'Read the case study',
+            audiencesTitle: 'Who this is for',
+            audiences: [
+                {
+                    title: 'For hiring managers',
+                    body: 'Senior PM and Head of Product roles in KSA and the GCC, available now. Pick the CV that matches the role.',
+                    cta: 'Download CV',
+                    href: '/cv',
+                },
+                {
+                    title: 'For founders and teams',
+                    body: 'Short engagements on pricing, retention, zero-to-one builds and go-to-market. Start with a 30-minute call.',
+                    cta: 'Book a Call',
+                    href: 'https://calendar.app.google/vDMbaPoDc2vYVQaK8',
+                },
+            ],
+            writingTitle: 'Latest writing',
+            writingAll: 'All writing',
+            read: 'Read the essay',
+        },
         trust: {
             title: "Where I've Built",
         },
@@ -848,6 +889,47 @@ export const dictionary = {
             ctaSecondary: 'عرض دراسات الحالة',
             location: 'مقرها المملكة العربية السعودية (إقامة قابلة للتحويل)',
         },
+        home: {
+            thesis:
+                'أبني المنتجات من الصفر، وأضع لها سعراً، وأقيس كل نتيجة بالإيرادات. بصفتي الموظف الأول ساعدت في توسيع فريق السيارات الكهربائية من شخص واحد إلى أربعة وثلاثين. وفي Fortude بنيت خط مبيعات بقيمة 7.5 مليون ريال خلال خمسة عشر شهراً. والآن أحمل هذه الصرامة إلى أدوار مدير المنتج الأول ورئيس المنتج في السعودية ودول الخليج.',
+            pillarsEyebrow: 'كيف أعمل',
+            pillars: [
+                {
+                    slug: 'saas-growth-platform',
+                    title: 'الإيرادات',
+                    body: 'تسعير وتجميع وخطة دخول للسوق تحوّل قيمة المنتج إلى خط مبيعات.',
+                },
+                {
+                    slug: 'retention-engine',
+                    title: 'الاحتفاظ بالعملاء',
+                    body: 'حلقات بيانات لحظية تنقل المنتج من إصلاح المشكلات إلى تقديم القيمة قبل ظهورها.',
+                },
+                {
+                    slug: 'ev-battery-ecosystem',
+                    title: 'من صفر إلى واحد',
+                    body: 'من صفحة بيضاء إلى منتج مُطلَق، ثم إلى سوق يدفع مقابله.',
+                },
+            ],
+            readCase: 'اقرأ دراسة الحالة',
+            audiencesTitle: 'لمن هذا الموقع',
+            audiences: [
+                {
+                    title: 'لمديري التوظيف',
+                    body: 'أدوار مدير المنتج الأول ورئيس المنتج في السعودية ودول الخليج، متاح الآن. اختر السيرة الذاتية المناسبة للدور.',
+                    cta: 'تحميل السيرة الذاتية',
+                    href: '/cv',
+                },
+                {
+                    title: 'للمؤسسين والفرق',
+                    body: 'مشاريع قصيرة في التسعير والاحتفاظ بالعملاء وبناء المنتجات من الصفر وخطط دخول السوق. ابدأ بمكالمة مدتها 30 دقيقة.',
+                    cta: 'احجز مكالمة',
+                    href: 'https://calendar.app.google/vDMbaPoDc2vYVQaK8',
+                },
+            ],
+            writingTitle: 'أحدث الكتابات',
+            writingAll: 'كل الكتابات',
+            read: 'اقرأ المقال',
+        },
         trust: {
             title: 'موثوق به لدى شركات التكنولوجيا الرائدة',
         },
@@ -898,7 +980,7 @@ export const dictionary = {
                     impactScore: 9,
                     jobSlug: 'fortude-product-manager',
                     metrics: [
-                        { label: 'إيرادات جديدة', value: '675 ألف ريال' },
+                        { label: 'إيرادات جديدة', value: '750 ألف ريال' },
                         { label: 'عائد الإعلان', value: '1,800%' },
                         { label: 'قيمة المبيعات', value: '7.5 مليون ريال' },
                     ],
@@ -922,7 +1004,7 @@ export const dictionary = {
                         details: 'اعتماد نهج Agile. التركيز على الاستقرار والامتثال الأمني أولاً لكسب ثقة المؤسسات.',
                     },
                     outcomes: {
-                        details: 'تحقيق 675 ألف ريال في السنة الأولى. تحقيق عائد 1800% على الإنفاق الإعلاني.',
+                        details: 'تحقيق 750 ألف ريال في السنة الأولى. تحقيق عائد 1800% على الإنفاق الإعلاني.',
                     },
                     learnings: {
                         repeat: 'التحقق المبكر مع العملاء قبل كتابة الكود.',

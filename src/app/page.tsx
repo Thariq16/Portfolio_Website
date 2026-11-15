@@ -6,6 +6,10 @@ import ImpactShowcase from '@/components/sections/ImpactShowcase';
 import BeyondResume from '@/components/sections/BeyondResume';
 import TestimonialsStrip from '@/components/sections/TestimonialsStrip';
 import ContactCTA from '@/components/sections/ContactCTA';
+import Thesis from '@/components/sections/Thesis';
+import Pillars from '@/components/sections/Pillars';
+import Audiences from '@/components/sections/Audiences';
+import WritingStrip from '@/components/sections/WritingStrip';
 import { PersonSchema, WebsiteSchema } from '@/components/seo/JsonLd';
 
 export default function Home() {
@@ -31,10 +35,14 @@ export default function Home() {
       />
       <Hero />
       <TrustBar />
+      <Thesis />
+      <Pillars />
       <LeadershipStrip />
-      <SkillConstellation />
       <ImpactShowcase />
+      <SkillConstellation />
       <TestimonialsStrip />
+      <Audiences />
+      <WritingStrip />
       <BeyondResume />
       <ContactCTA />
     </main>
