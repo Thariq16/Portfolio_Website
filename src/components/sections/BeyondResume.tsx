@@ -4,14 +4,13 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './BeyondResume.module.css';
 import { ArrowRight } from 'lucide-react';
-import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const cards = [
     {
         eyebrow: 'Performance Analysis · Football',
         title: 'The Analytical Edge',
         description:
-            'Performance Analyst at Glacis United FC. Built a bespoke Python analysis platform for the club, currently in active use by the first team in the Gibraltar Premier Division. Completing a Professional Diploma at Barca Innovation Hub.',
+            'Performance Analyst at Glacis United FC. Built a Python analysis platform for the club, currently in active use by the first team in the Gibraltar Premier Division. Completed a Professional Diploma at Barca Innovation Hub.',
         cta: 'View Football Work',
         href: '/football',
         pills: ['Glacis United FC', 'Barca Innovation Hub', 'Python · Pass Maps'],
@@ -28,9 +27,8 @@ const cards = [
 ];
 
 export default function BeyondResume() {
-    const ref = useScrollReveal<HTMLElement>();
     return (
-        <section ref={ref} className={`${styles.section} reveal`}>
+        <section className={styles.section}>
             <div className={styles.container}>
                 <div className={styles.header}>
                     <p className={styles.eyebrow}>Beyond the Resume</p>

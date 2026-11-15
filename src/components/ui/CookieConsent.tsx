@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useCookieConsent } from '@/components/providers/CookieConsentProvider';
@@ -29,10 +29,26 @@ export default function CookieBanner() {
         }
     }, [consent, isChromeless]);
 
+    // The banner is fixed, so pad the page by its height while it shows; otherwise it sits on top of the footer.
+    const bannerRef = useRef<HTMLDivElement>(null);
+    useEffect(() => {
+        if (!visible) return;
+        const pad = () => {
+            if (bannerRef.current) document.body.style.paddingBottom = `${bannerRef.current.offsetHeight}px`;
+        };
+        pad();
+        window.addEventListener('resize', pad);
+        return () => {
+            window.removeEventListener('resize', pad);
+            document.body.style.paddingBottom = '';
+        };
+    }, [visible]);
+
     if (!visible) return null;
 
     return (
         <div
+            ref={bannerRef}
             className={styles.banner}
             dir={direction}
             role="dialog"
@@ -45,7 +61,7 @@ export default function CookieBanner() {
                 <div className={styles.text}>
                     <p className={styles.message}>{t.cookieBanner.message}</p>
                     <Link href="/privacy" className={styles.policyLink}>
-                        {t.cookieBanner.policyLink} →
+                        {t.cookieBanner.policyLink}
                     </Link>
                 </div>
                 <div className={styles.actions}>

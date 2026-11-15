@@ -100,7 +100,6 @@ export const dictionary = {
         home: {
             thesis:
                 "I build products from zero, put a price on them, and measure every outcome in revenue. As Employee #1, I helped scale an EV team from one to thirty-four. At Fortude, I built a SAR 7.5M pipeline in fifteen months. Now I'm bringing that rigor to Senior PM and Head of Product roles across KSA and the GCC.",
-            pillarsEyebrow: 'How I work',
             pillars: [
                 {
                     slug: 'saas-growth-platform',
@@ -136,7 +135,6 @@ export const dictionary = {
             ],
             writingTitle: 'Latest writing',
             writingAll: 'All writing',
-            read: 'Read the essay',
         },
         trust: {
             title: "Where I've Built",
@@ -892,7 +890,6 @@ export const dictionary = {
         home: {
             thesis:
                 'أبني المنتجات من الصفر، وأضع لها سعراً، وأقيس كل نتيجة بالإيرادات. بصفتي الموظف الأول ساعدت في توسيع فريق السيارات الكهربائية من شخص واحد إلى أربعة وثلاثين. وفي Fortude بنيت خط مبيعات بقيمة 7.5 مليون ريال خلال خمسة عشر شهراً. والآن أحمل هذه الصرامة إلى أدوار مدير المنتج الأول ورئيس المنتج في السعودية ودول الخليج.',
-            pillarsEyebrow: 'كيف أعمل',
             pillars: [
                 {
                     slug: 'saas-growth-platform',
@@ -928,7 +925,6 @@ export const dictionary = {
             ],
             writingTitle: 'أحدث الكتابات',
             writingAll: 'كل الكتابات',
-            read: 'اقرأ المقال',
         },
         trust: {
             title: 'موثوق به لدى شركات التكنولوجيا الرائدة',

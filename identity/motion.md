@@ -8,7 +8,8 @@ Restraint. Motion confirms and orients; it never performs.
 | Base | 300-550 ms ease | reveal-on-scroll (`opacity` + 24px rise, 550 ms), accordion chevron |
 | Slow | 800 ms+ | reserved for one deliberate moment per page |
 
-- **Reveal:** sections enter once, only when reached. A scroll fallback guarantees nothing stays hidden after a jump (End key, anchor, restored scroll).
+- **No section fade-ins on the homepage.** Fade-and-rise on every section is the generic default. Homepage sections are simply there; the motion budget goes to the hero entrance and two dealt moments (the thesis reading itself in, the pillar panel swapping). Other pages still use `useScrollReveal`, which has a scroll fallback so nothing stays hidden after a jump (End key, anchor, restored scroll).
+- **Structure over decoration:** no numbered markers unless the content is a sequence, no arrows appended to links, no identical boxed cards with hover lifts. Use a rule, a column, or an underline.
 - **Hover:** links draw a 1px underline; cards lift 2px and gain the green border; no tilt, no parallax on text.
 - **Reduced motion:** everything rests and nothing stays hidden (`prefers-reduced-motion`).
 - **Brand moment (planned):** the ledger rule drawing left to right under the hero headline, once, on load.

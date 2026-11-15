@@ -7,7 +7,6 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 2.5rem;
-    margin-top: 2rem;
 }
 
 /* The sticky panel only exists on wide screens; on mobile each block carries its own metrics. */
@@ -25,18 +24,9 @@
     position: relative;
 }
 
-.num {
-    display: block;
-    font-family: var(--font-mono), 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
-    letter-spacing: 0.14em;
-    color: var(--muted-foreground);
-    margin-bottom: 0.75rem;
-}
-
 .title {
-    font-size: clamp(2rem, 4vw, 3rem);
-    line-height: 1.1;
+    font-size: 2.25rem;
+    line-height: 1.15;
     color: var(--foreground);
     margin-bottom: 1rem;
 }
@@ -72,33 +62,25 @@
 }
 
 .metrics span {
-    font-family: var(--font-mono), 'JetBrains Mono', monospace;
-    font-size: 0.6875rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    font-size: 0.8125rem;
     color: var(--muted-foreground);
 }
 
 .link {
+    align-self: flex-start;
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
-    font-family: var(--font-mono), 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
+    min-height: 44px;
+    font-size: 0.9375rem;
     font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
     color: var(--primary);
-    background-image: linear-gradient(currentColor, currentColor);
-    background-size: 0% 1px;
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.25s ease;
-    padding-bottom: 2px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 
 .link:hover {
-    background-size: 100% 1px;
+    text-decoration-thickness: 2px;
 }
 
 @media (min-width: 960px) {
@@ -182,12 +164,14 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        opacity: 0.42;
-        transition: opacity 0.3s ease;
+        padding-inline-start: 1.5rem;
+        border-inline-start: 2px solid transparent;
+        transition: border-color 0.3s ease;
     }
 
+    /* The active pillar is marked by a rule, never by dimming the others: every block stays fully legible. */
     .blockOn {
-        opacity: 1;
+        border-inline-start-color: var(--primary);
     }
 }
 
@@ -209,7 +193,6 @@
     }
 
     .block {
-        opacity: 1;
         transition: none;
     }
 }
