@@ -91,6 +91,19 @@
     gap: 0.5rem;
 }
 
+/* The main action stays in the bar beside the menu button once there is room for it. */
+.mobileCta {
+    display: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+@media (min-width: 560px) {
+    .mobileCta {
+        display: inline-flex;
+    }
+}
+
 .menuToggle {
     background: none;
     border: none;

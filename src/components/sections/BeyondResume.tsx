@@ -10,7 +10,7 @@ const cards = [
         eyebrow: 'Performance Analysis · Football',
         title: 'The Analytical Edge',
         description:
-            'Performance Analyst at Glacis United FC. Built a bespoke Python analysis platform for the club, currently in active use by the first team in the Gibraltar Premier Division. Completing a Professional Diploma at Barca Innovation Hub.',
+            'Performance Analyst at Glacis United FC. Built a Python analysis platform for the club, currently in active use by the first team in the Gibraltar Premier Division. Completed a Professional Diploma at Barca Innovation Hub.',
         cta: 'View Football Work',
         href: '/football',
         pills: ['Glacis United FC', 'Barca Innovation Hub', 'Python · Pass Maps'],

@@ -46,7 +46,6 @@
     color: var(--muted-foreground);
     text-decoration: none;
     transition: color 0.2s;
-    opacity: 0.75;
 }
 
 .privacyLink:hover {

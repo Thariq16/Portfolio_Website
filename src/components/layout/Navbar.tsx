@@ -59,6 +59,13 @@ export default function Navbar() {
 
                 {/* Mobile Toggle */}
                 <div className={styles.mobileControls}>
+                    <Button
+                        size="sm"
+                        className={styles.mobileCta}
+                        onClick={() => window.open('https://calendar.app.google/vDMbaPoDc2vYVQaK8', '_blank')}
+                    >
+                        {t.nav.contact}
+                    </Button>
                     <Button variant="ghost" size="sm" onClick={toggleTheme} className={styles.iconBtn} aria-label={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}>
                         {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
                     </Button>

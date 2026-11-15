@@ -9,9 +9,13 @@
     transition: all 0.2s ease;
     cursor: pointer;
     border: 1px solid transparent;
-    outline: none;
     gap: 0.75rem;
     letter-spacing: 0.08em;
+}
+
+.button:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
 }
 
 .button:disabled {

@@ -1,5 +1,4 @@
 .banner {
-    border-radius: var(--radius);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -14,6 +13,7 @@
         opacity: 0;
         transform: translateY(100%);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -26,23 +26,12 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1rem 1.25rem;
-    background: rgba(15, 15, 20, 0.85);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow:
-        0 -4px 30px rgba(0, 0, 0, 0.3),
-        0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+    padding: 1rem 3rem 1rem 1.25rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.12);
     position: relative;
-}
-
-:global([data-theme='light']) .inner {
-    background: rgba(255, 255, 255, 0.92);
-    border-color: rgba(0, 0, 0, 0.08);
-    box-shadow:
-        0 -4px 30px rgba(0, 0, 0, 0.1),
-        0 0 0 1px rgba(0, 0, 0, 0.03) inset;
 }
 
 .iconWrap {
@@ -52,13 +41,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(99, 102, 241, 0.15);
+    background: var(--secondary);
     color: var(--primary);
-}
-
-:global([data-theme='light']) .iconWrap {
-    background: rgba(99, 102, 241, 0.1);
-    color: var(--primary);
+    border-radius: var(--radius);
 }
 
 .text {
@@ -70,34 +55,22 @@
 }
 
 .message {
-    font-size: 0.8rem;
+    font-size: 0.8125rem;
     line-height: 1.5;
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--muted-foreground);
     margin: 0;
 }
 
-:global([data-theme='light']) .message {
-    color: rgba(0, 0, 0, 0.65);
-}
-
 .policyLink {
-    font-size: 0.75rem;
-    color: var(--primary);
-    text-decoration: none;
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 0.8125rem;
     font-weight: 500;
-    transition: color 0.2s;
-}
-
-.policyLink:hover {
     color: var(--primary);
-}
-
-:global([data-theme='light']) .policyLink {
-    color: var(--primary);
-}
-
-:global([data-theme='light']) .policyLink:hover {
-    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .actions {
@@ -108,85 +81,68 @@
 
 .btnDecline,
 .btnAccept {
-    padding: 0.45rem 1rem;
-    font-size: 0.8rem;
+    min-height: 44px;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.2s;
     white-space: nowrap;
-    border: none;
+    border-radius: var(--radius);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .btnDecline {
     background: transparent;
-    color: rgba(255, 255, 255, 0.55);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: var(--foreground);
+    border: 1px solid var(--border);
 }
 
 .btnDecline:hover {
-    background: rgba(255, 255, 255, 0.06);
-    color: rgba(255, 255, 255, 0.8);
-}
-
-:global([data-theme='light']) .btnDecline {
-    color: rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 0.12);
-}
-
-:global([data-theme='light']) .btnDecline:hover {
-    background: rgba(0, 0, 0, 0.05);
-    color: rgba(0, 0, 0, 0.75);
+    border-color: var(--foreground);
 }
 
 .btnAccept {
     background: var(--primary);
     color: var(--primary-foreground);
-    box-shadow: 0 2px 12px rgba(99, 102, 241, 0.35);
+    border: 1px solid var(--primary);
 }
 
 .btnAccept:hover {
-    background: var(--primary); opacity: 0.9;
-    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.5);
-    transform: translateY(-1px);
+    opacity: 0.9;
 }
 
 .closeBtn {
     position: absolute;
-    top: 0.5rem;
-    right: 0.75rem;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
     background: none;
     border: none;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.3);
-    padding: 0.25rem;
-    line-height: 1;
-    transition: color 0.2s;
+    color: var(--muted-foreground);
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .closeBtn:hover {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--foreground);
 }
 
-:global([data-theme='light']) .closeBtn {
-    color: rgba(0, 0, 0, 0.25);
+[dir='rtl'] .inner {
+    padding: 1rem 1.25rem 1rem 3rem;
 }
 
-:global([data-theme='light']) .closeBtn:hover {
-    color: rgba(0, 0, 0, 0.5);
-}
-
-/* RTL layout fixes */
 [dir='rtl'] .closeBtn {
     right: auto;
-    left: 0.75rem;
+    left: 0;
 }
 
 @media (max-width: 640px) {
     .inner {
         flex-wrap: wrap;
-        gap: 0.75rem;
+        gap: 0.5rem;
     }
 
     .iconWrap {

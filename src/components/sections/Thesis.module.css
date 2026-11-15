@@ -16,9 +16,14 @@
     text-align: start;
 }
 
-/* Words dim until the reader reaches them. Only when JS is live, so the text is never hidden. */
+/* Words move from muted ink to full ink as the reader reaches them. Both ends are legible
+   (muted-foreground is 5.3:1 on paper, 6.5:1 on night), so the text is never dim to the point of unreadable. */
 .thesis[data-live='true'] .word {
-    opacity: clamp(0.28, calc(0.28 + (var(--p) * var(--n) - var(--i)) * 0.72), 1);
+    color: color-mix(
+        in srgb,
+        var(--foreground) calc(clamp(0, (var(--p) * var(--n) - var(--i)), 1) * 100%),
+        var(--muted-foreground)
+    );
 }
 
 @media (max-width: 640px) {
