@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/components/providers/LanguageProvider';
 import { BLOG_POSTS } from '@/app/blog/posts';
 import styles from './WritingStrip.module.css';
@@ -17,25 +16,23 @@ export default function WritingStrip() {
                 <header className={styles.header}>
                     <h2 className={styles.heading}>{t.home.writingTitle}</h2>
                     <Link href="/blog" className={styles.all}>
-                        {t.home.writingAll} <ArrowRight size={14} />
+                        {t.home.writingAll}
                     </Link>
                 </header>
-                <div className={styles.grid}>
+                <ul className={styles.list}>
                     {posts.map((p) => (
-                        <Link key={p.slug} href={`/blog/${p.slug}`} className={styles.card}>
-                            <div className={styles.meta}>
-                                <span className={styles.cat}>{p.category}</span>
-                                <span aria-hidden="true">·</span>
-                                <span>{p.displayDate}</span>
-                            </div>
-                            <h3 className={styles.title}>{p.title}</h3>
-                            <p className={styles.excerpt}>{p.excerpt}</p>
-                            <span className={styles.cta}>
-                                {t.home.read} <ArrowRight size={14} />
-                            </span>
-                        </Link>
+                        <li key={p.slug} className={styles.item}>
+                            <Link href={`/blog/${p.slug}`} className={styles.link}>
+                                <span className={styles.meta}>
+                                    <span>{p.category}</span>
+                                    <time dateTime={p.date}>{p.displayDate}</time>
+                                </span>
+                                <h3 className={styles.title}>{p.title}</h3>
+                                <p className={styles.excerpt}>{p.excerpt}</p>
+                            </Link>
+                        </li>
                     ))}
-                </div>
+                </ul>
             </div>
         </section>
     );

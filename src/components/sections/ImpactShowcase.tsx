@@ -6,12 +6,10 @@ import { useLanguage } from '@/components/providers/LanguageProvider';
 import { ArrowRight } from 'lucide-react';
 import styles from './ImpactShowcase.module.css';
 import { CaseStudy } from '@/lib/dictionaries';
-import { useScrollReveal } from '@/hooks/useScrollReveal';
 import CasePlate from '@/components/ui/CasePlate';
 
 export default function ImpactShowcase() {
     const { t } = useLanguage();
-    const ref = useScrollReveal<HTMLElement>();
 
     // Showcase top featured projects (Lead with zero-to-one stories to back up Hero claim)
     const featuredSlugs = ['foundership-product', 'chonk-cookies-d2c', 'saas-growth-platform', 'retention-engine'];
@@ -20,7 +18,7 @@ export default function ImpactShowcase() {
         .filter(Boolean) as CaseStudy[];
 
     return (
-        <section ref={ref} className={`${styles.section} reveal`}>
+        <section className={styles.section}>
             <div className="container">
                 <header className={styles.header}>
                     <div className={styles.titleRow}>

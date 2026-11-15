@@ -7,7 +7,6 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 2.5rem;
-    margin-top: 2rem;
 }
 
 /* The sticky panel only exists on wide screens; on mobile each block carries its own metrics. */
@@ -23,15 +22,6 @@
 
 .block {
     position: relative;
-}
-
-.num {
-    display: block;
-    font-family: var(--font-mono), 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
-    letter-spacing: 0.14em;
-    color: var(--muted-foreground);
-    margin-bottom: 0.75rem;
 }
 
 .title {
@@ -72,33 +62,22 @@
 }
 
 .metrics span {
-    font-family: var(--font-mono), 'JetBrains Mono', monospace;
-    font-size: 0.6875rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    font-size: 0.8125rem;
     color: var(--muted-foreground);
 }
 
 .link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-family: var(--font-mono), 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
+    align-self: flex-start;
+    font-size: 0.9375rem;
     font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
     color: var(--primary);
-    background-image: linear-gradient(currentColor, currentColor);
-    background-size: 0% 1px;
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.25s ease;
-    padding-bottom: 2px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 
 .link:hover {
-    background-size: 100% 1px;
+    text-decoration-thickness: 2px;
 }
 
 @media (min-width: 960px) {

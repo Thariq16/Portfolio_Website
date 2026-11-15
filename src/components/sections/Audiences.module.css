@@ -12,24 +12,16 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.25rem;
+    gap: 3rem;
 }
 
-.card {
+/* Two open columns, not two boxes: the rule above each one is the only structure. */
+.col {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 2.25rem;
-    min-height: 15rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background: var(--card);
-    transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.card:hover {
-    transform: translateY(-2px);
-    border-color: var(--primary);
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--foreground);
 }
 
 .title {
@@ -46,31 +38,23 @@
 }
 
 .cta {
-    margin-top: auto;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-family: var(--font-mono), 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
+    align-self: flex-start;
+    margin-top: 0.5rem;
+    font-size: 1rem;
     font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
     color: var(--primary);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+.cta:hover {
+    text-decoration-thickness: 2px;
 }
 
 @media (min-width: 768px) {
     .grid {
         grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .card {
-        transition: none;
-    }
-
-    .card:hover {
-        transform: none;
+        gap: 4rem;
     }
 }

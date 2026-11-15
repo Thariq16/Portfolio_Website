@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/components/providers/LanguageProvider';
 import { trackButtonClick } from '@/utils/analytics';
 import type { CaseStudy } from '@/lib/dictionaries';
@@ -38,7 +37,6 @@ export default function Pillars() {
     return (
         <section className={styles.section}>
             <div className="container">
-                <p className="eyebrow">{t.home.pillarsEyebrow}</p>
                 <div className={styles.grid}>
                     <aside className={styles.sticky} aria-hidden="true">
                         <div key={active} className={styles.panel}>
@@ -67,7 +65,6 @@ export default function Pillars() {
                                     data-index={i}
                                     className={`${styles.block} ${i === active ? styles.blockOn : ''}`}
                                 >
-                                    <span className={styles.num}>{String(i + 1).padStart(2, '0')}</span>
                                     <h2 className={styles.title}>{p.title}</h2>
                                     <p className={styles.body}>{p.body}</p>
                                     {p.study && (
@@ -85,7 +82,7 @@ export default function Pillars() {
                                                 className={styles.link}
                                                 onClick={() => trackButtonClick(p.title, 'home_pillars')}
                                             >
-                                                {t.home.readCase} <ArrowRight size={14} />
+                                                {t.home.readCase}
                                             </Link>
                                         </>
                                     )}
