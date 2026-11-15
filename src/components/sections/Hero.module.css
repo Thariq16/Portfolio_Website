@@ -71,6 +71,11 @@
     color: var(--foreground);
 }
 
+/* Two-tone headline: the role in ink, the promise in muted ink. */
+.headlineMuted {
+    color: var(--muted-foreground);
+}
+
 .subheadline {
     font-size: 1.25rem;
     color: var(--muted-foreground);
