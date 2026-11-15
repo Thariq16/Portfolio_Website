@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/Button';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import styles from './Navbar.module.css';
 import clsx from 'clsx';
+import { Monogram } from '@/components/brand/Monogram';
 
 // Routes that render as standalone, chrome-free pages (e.g. the NFC/QR digital card)
 const CHROMELESS_ROUTES = ['/intro', '/qr'];
@@ -26,8 +27,9 @@ export default function Navbar() {
     return (
         <header className={styles.header}>
             <div className={clsx('container', styles.container)}>
-                <Link href="/" className={styles.logo}>
-                    THARIQ HAMAD
+                <Link href="/" className={styles.logo} aria-label="Thariq Hamad, home">
+                    <Monogram size={30} />
+                    <span>Thariq Hamad</span>
                 </Link>
 
                 {/* Desktop Nav */}
