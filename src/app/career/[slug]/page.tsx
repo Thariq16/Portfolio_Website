@@ -30,7 +30,7 @@ export async function generateMetadata(
             url: `https://thariqhamad.com/career/${job.slug}/`,
             images: [
                 {
-                    url: '/images/og-image.png',
+                    url: `/images/og/career-${job.slug}.jpg`,
                     width: 1200,
                     height: 630,
                     alt: `${job.title} at ${job.company}`,
@@ -41,7 +41,7 @@ export async function generateMetadata(
             card: 'summary_large_image',
             title: `${job.title} at ${job.company} | Thariq Hamad`,
             description,
-            images: ['/images/og-image.png'],
+            images: [`/images/og/career-${job.slug}.jpg`],
         },
         alternates: {
             canonical: `/career/${job.slug}/`,

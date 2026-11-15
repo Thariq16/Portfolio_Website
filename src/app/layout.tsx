@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     description: 'Senior Product Manager with 8+ years driving revenue, monetization, and growth for SaaS & AI platforms. Based in Saudi Arabia.',
     images: [
       {
-        url: '/images/og-image.png',
+        url: '/images/og/site.jpg',
         width: 1200,
         height: 630,
         alt: 'Thariq Hamad - Senior Product Manager',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Thariq Hamad | Senior Product Manager',
     description: 'Senior Product Manager with 8+ years driving revenue, monetization, and growth for SaaS & AI platforms.',
-    images: ['/images/og-image.png'],
+    images: ['/images/og/site.jpg'],
   },
   robots: {
     index: true,

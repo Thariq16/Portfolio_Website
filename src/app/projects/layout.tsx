@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         url: 'https://thariqhamad.com/projects/',
         images: [
             {
-                url: '/images/og-projects.png',
+                url: '/images/og/projects.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'Thariq Hamad – Case Studies & Product Impact',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Case Studies | Thariq Hamad',
         description: 'Product management case studies: SAR 750K new revenue generated, 17% retention improvement, 75% free-to-paid conversion.',
-        images: ['/images/og-projects.png'],
+        images: ['/images/og/projects.jpg'],
     },
 };
 

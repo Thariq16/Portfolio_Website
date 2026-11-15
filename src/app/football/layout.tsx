@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         url: 'https://thariqhamad.com/football/',
         images: [
             {
-                url: '/images/og-image.png',
+                url: '/images/og/site.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'Thariq Hamad – Football Performance Analyst',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Football Performance Analysis | Thariq Hamad',
         description: 'Performance Analyst at Glacis United FC. Custom analysis platform, Python data science, Barca Innovation Hub diploma.',
-        images: ['/images/og-image.png'],
+        images: ['/images/og/site.jpg'],
     },
 };
 

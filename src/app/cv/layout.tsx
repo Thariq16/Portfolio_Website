@@ -10,7 +10,7 @@ export const metadata: Metadata = {
         type: 'website',
         images: [
             {
-                url: '/images/og-image.png',
+                url: '/images/og/site.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'Thariq Hamad – Download CV',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Download CV | Thariq Hamad',
         description: 'Role-specific CVs for download: Fintech, Business Analysis, Digital Transformation, Strategy, Startup Product, and Football Analysis.',
-        images: ['/images/og-image.png'],
+        images: ['/images/og/site.jpg'],
     },
     alternates: {
         canonical: '/cv/',

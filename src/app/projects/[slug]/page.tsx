@@ -34,7 +34,7 @@ export async function generateMetadata(
             url: `https://thariqhamad.com/projects/${item.slug}/`,
             images: [
                 {
-                    url: '/images/og-projects.png',
+                    url: `/images/og/case-${item.slug}.jpg`,
                     width: 1200,
                     height: 630,
                     alt: item.title,
@@ -45,7 +45,7 @@ export async function generateMetadata(
             card: 'summary_large_image',
             title: `${item.title} | Thariq Hamad`,
             description,
-            images: ['/images/og-projects.png'],
+            images: [`/images/og/case-${item.slug}.jpg`],
         },
         alternates: {
             canonical: `/projects/${item.slug}/`,

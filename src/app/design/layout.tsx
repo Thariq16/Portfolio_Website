@@ -10,7 +10,7 @@ export const metadata: Metadata = {
         type: 'website',
         images: [
             {
-                url: '/images/og-image.png',
+                url: '/images/og/site.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'Thariq Hamad – UI/UX Design Portfolio',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'UI/UX Design Portfolio | Thariq Hamad',
         description: 'Mobile app and product UI/UX designs from FieldR, Sling Mobility, ConnMe, and Allo Qatar.',
-        images: ['/images/og-image.png'],
+        images: ['/images/og/site.jpg'],
     },
     alternates: {
         canonical: '/design/',

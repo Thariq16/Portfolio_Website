@@ -1,5 +1,8 @@
 import type { Metadata } from 'next';
 import ProjectsContent from './ProjectsContent';
+import { dictionary } from '@/lib/dictionaries';
+
+const caseCount = dictionary.en.projects.items.length;
 
 export const metadata: Metadata = {
     title: 'Case Studies – Thariq Hamad',
@@ -12,10 +15,10 @@ export const metadata: Metadata = {
         url: '/projects/',
         images: [
             {
-                url: '/images/projects-case-studies-og.jpg',
+                url: '/images/og/projects.jpg',
                 width: 1200,
                 height: 630,
-                alt: 'Product Case Studies by Thariq Hamad: 8 case studies, SAR 7.5M+ pipeline built, 1 to 34 team scaled',
+                alt: `Product Case Studies by Thariq Hamad: ${caseCount} case studies, SAR 7.5M+ pipeline built, 1 to 34 team scaled`,
             },
         ],
     },
@@ -23,7 +26,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Case Studies – Thariq Hamad',
         description: 'Product case studies from Thariq Hamad — zero-to-one builds, enterprise SaaS pricing and growth, and GTM work across the GCC.',
-        images: ['/images/projects-case-studies-og.jpg'],
+        images: ['/images/og/projects.jpg'],
     },
 };
 

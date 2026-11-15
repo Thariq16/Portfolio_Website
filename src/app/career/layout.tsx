@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         url: 'https://thariqhamad.com/career/',
         images: [
             {
-                url: '/images/og-image.png',
+                url: '/images/og/site.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'Thariq Hamad – Senior Product Manager',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Career | Thariq Hamad',
         description: '8+ years of product management experience across SaaS, mobility, AI, and fintech.',
-        images: ['/images/og-image.png'],
+        images: ['/images/og/site.jpg'],
     },
 };
 

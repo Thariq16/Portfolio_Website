@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         url: 'https://thariqhamad.com/projects-preview/',
         images: [
             {
-                url: '/images/og-projects.png',
+                url: '/images/og/projects.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'Thariq Hamad – Case Studies & Product Impact',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Case Studies: Full View | Thariq Hamad',
         description: 'Every case study on one scrolling page: role, timeframe, impact metrics, and outcomes for each project Thariq Hamad has led.',
-        images: ['/images/og-projects.png'],
+        images: ['/images/og/projects.jpg'],
     },
 };
 
