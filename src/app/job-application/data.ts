@@ -5412,7 +5412,7 @@ export const applications: Application[] = [
     "company": "Apricot International",
     "role": "Technical Lead - Business Automation & AI Development",
     "channel": "Company Site/ATS",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -7116,7 +7116,7 @@ export const applications: Application[] = [
     "company": "Fanatics Momentum",
     "role": "Lead Product Manager, Sportsbook",
     "channel": "Company Site/ATS (Greenhouse)",
-    "status": "No Response",
+    "status": "Rejected",
     "location": ""
   },
   {
@@ -7862,6 +7862,206 @@ export const applications: Application[] = [
     "channel": "Recruiter/Agency (Bayt)",
     "status": "No Response",
     "location": ""
+  },
+  {
+    "date": "2026-10-28",
+    "company": "700apps",
+    "role": "Senior Project Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-10-29",
+    "company": "Qiddiya Investment Company",
+    "role": "Director - Gaming & Esports Innovation Product Strategy",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-11-02",
+    "company": "Jobgether",
+    "role": "Product Manager - Spark",
+    "channel": "Company Site/ATS (Jobgether)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-11-02",
+    "company": "Alkhorayef Commercial Company",
+    "role": "Product Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Jeddah"
+  },
+  {
+    "date": "2026-11-02",
+    "company": "Halian",
+    "role": "Senior Business Analyst",
+    "channel": "Company Site/ATS (Halian)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-11-04",
+    "company": "Joblet-AI",
+    "role": "Senior Project Manager, Retail Tech (Remote)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-11-11",
+    "company": "Lucidya",
+    "role": "Director of Products",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-11-11",
+    "company": "AIQU",
+    "role": "Product Manager (AI, Smart Cities)",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-11-11",
+    "company": "Masarra",
+    "role": "Senior Project Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Abu Dhabi"
+  },
+  {
+    "date": "2026-11-11",
+    "company": "PinarArabia",
+    "role": "Marketing Manager",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Abu Dhabi"
+  },
+  {
+    "date": "2026-11-11",
+    "company": "GSM - Xanh SM",
+    "role": "Head of Set up /Expansion Manager/Project Manager - Middle East",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Dubai"
+  },
+  {
+    "date": "2026-11-11",
+    "company": "Easygenerator",
+    "role": "Product Analyst",
+    "channel": "Company Site/ATS (Ashby)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-11-11",
+    "company": "Mastercard",
+    "role": "Creative Project Manager",
+    "channel": "Company Site/ATS (Workday)",
+    "status": "Rejected",
+    "location": ""
+  },
+  {
+    "date": "2026-11-11",
+    "company": "Soar",
+    "role": "Head of Product",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-11-15",
+    "company": "PetroApp",
+    "role": "Senior Product Manager",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-11-15",
+    "company": "Jerome Eliane Partnership Ltd",
+    "role": "Head of Product Development",
+    "channel": "LinkedIn Easy Apply",
+    "status": "No Response",
+    "location": "Riyadh"
+  },
+  {
+    "date": "2026-11-15",
+    "company": "Awaed",
+    "role": "Senior Product Manager",
+    "channel": "Company Site/ATS (Teamtailor)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-11-15",
+    "company": "Eram Talent",
+    "role": "Program Coordinator",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-11-15",
+    "company": "Eram Talent",
+    "role": "Lead Digital Solutions Analyst - Data science (Saudi Arabia)",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-11-15",
+    "company": "Eram Talent",
+    "role": "Community & Startups Coordinator (Saudi Arabia)",
+    "channel": "Company Site/ATS (Workable)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-11-15",
+    "company": "Echelon",
+    "role": "Forward Deployed AI Engineer",
+    "channel": "Company Site/ATS (Ashby)",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-11-15",
+    "company": "HALA",
+    "role": "Payment Product Manager",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-11-15",
+    "company": "BNY",
+    "role": "Senior Vice President, POM Product Management (Saudi Arabia)",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-11-15",
+    "company": "Skyro",
+    "role": "Senior Product Manager - KSA Based",
+    "channel": "Company Site/ATS",
+    "status": "No Response",
+    "location": ""
+  },
+  {
+    "date": "2026-11-14",
+    "company": "Shokran",
+    "role": "Head of Product",
+    "channel": "Direct Email",
+    "status": "No Response",
+    "location": ""
   }
 ];
 
@@ -8092,6 +8292,12 @@ export const recruiterOutreach: RecruiterOutreach[] = [
     "date": "2026-10-20",
     "company": "Ethos",
     "context": "Product Manager Expert (USD 80/hr): voice-agent conversation requested 2026-10-20, interview completed 2026-10-23, profile shortlisted for client review 2026-10-26",
+    "channel": "Email"
+  },
+  {
+    "date": "2026-11-14",
+    "company": "Alina Karp - Shokran",
+    "context": "Head of Product role (seen via her LinkedIn post) - Thariq emailed a.karp@shokran.io directly on 2026-11-14 with his CV and interest; no reply yet",
     "channel": "Email"
   }
 ];
